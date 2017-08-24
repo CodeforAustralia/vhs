@@ -18,6 +18,7 @@ class CreateLettersTable extends Migration
             $table->uuid('uuid');
             $table->string('reference_id');
             $table->string('template_id');
+            $table->string('filename');
             $table->date('letter_date');
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();

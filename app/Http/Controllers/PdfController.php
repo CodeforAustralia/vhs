@@ -183,14 +183,15 @@ class PdfController extends Controller
         $letters->uuid = '1';
         $letters->reference_id = $refNumber;
         $letters->template_id = $letterTemplateID;
+        $letters->filename = $filename;
         $letters->letter_date = $finalDate;
 
         // Create new pdf in fbsql_database(link_identifier)
         $letters->save();
 
-        $templateID = Letters::where('template_id', '=', $letterTemplateID)->first();
+        $checkTemplateID = Templates::where('template_id', '=', $letterTemplateID)->first();
 
-        if (!$templateID) {
+        if (!count($checkTemplateID)) {
             $letters = new templates;
 
             $letters->template_id = $letterTemplateID;
@@ -198,7 +199,6 @@ class PdfController extends Controller
 
             $letters->save();
         }
-
     }
 
     /**
