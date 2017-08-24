@@ -100,8 +100,8 @@ class PdfController extends Controller
 
         // convert to html string
         $html = $pdf->html();
-        // echo $html;
-        // die();
+        echo $html;
+        die();
 
         // Finds substring inside string, looks for the word 'Ref'
         $refNumber = substr($html, strpos($html, "Ref") + 10);
@@ -163,15 +163,18 @@ class PdfController extends Controller
         $letterTemplateID = substr($html, strpos($html, "TMP") - 0);
         $letterTemplateID = substr($letterTemplateID, 0, strpos($letterTemplateID, '</p>'));
 
-         $firstParagraph = substr($html, strpos($html, "Dear") + 0);
-         // $firstParagraph = substr($firstParagraph, 0, strpos($firstParagraph, "</p>"));
-         $firstParagraph2 = substr($firstParagraph, strpos($firstParagraph, "ft01") + strlen($firstParagraph));
-         // $firstParagraph2 = substr($firstParagraph2, strpos($firstParagraph2, 'ft01') + strlen($firstParagraph), strpos($firstParagraph2, '</p>'));
+         $firstParagraph = substr($html, strpos($html, "Dear") + 0, strpos($html, "</p>"));
+         $firstParagraph = substr($firstParagraph, strpos($firstParagraph, "ft01"), strpos($firstParagraph, ".") + strlen($firstParagraph));
+         $firstParagraph2 = substr($firstParagraph, strpos($firstParagraph, "<p>"));
+         $firstParagraph2 = substr($firstParagraph, 0, strpos($firstParagraph2, '</p>'));
+         $firstParagraph3 = substr($firstParagraph, strpos($firstParagraph, "ft01") + strlen($firstParagraph2));
+         $firstParagraph4 = substr($firstParagraph3, strpos($firstParagraph3, "ft01") + 6);
+         $firstParagraph4 = substr($firstParagraph4, 0, strpos($firstParagraph4, '</p>'));
          // $pos2 = strpos($haystack, $needle, $pos1 + strlen($needle));
         // $firstParagraph2 = substr($firstParagraph2, 0, strpos($firstParagraph2, '</p>'));
 
-        echo $firstParagraph;
-        die();
+        // echo $firstParagraph4;
+        // die();
 
         // Create new pdf object
         $letters = new letters;
@@ -182,14 +185,14 @@ class PdfController extends Controller
         $letters->template_id = $letterTemplateID;
         $letters->letter_date = $finalDate;
 
-        // Create new pdf in database
+        // Create new pdf in fbsql_database(link_identifier)
         $letters->save();
 
          // Create new pdf object
         $letters = new templates;
 
         $letters->template_id = $letterTemplateID;
-        $letters->summary = $firstParagraph;
+        $letters->summary = $firstParagraph6;
 
         $letters->save();
 
