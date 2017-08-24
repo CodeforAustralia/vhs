@@ -4,8 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Letters extends Model
+class Templates extends Model
 {
      // The table associated with PDF
-     protected $fillable = ['name'];
+     protected $fillable = ['template_id'];
 }

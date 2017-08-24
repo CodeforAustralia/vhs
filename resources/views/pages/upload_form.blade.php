@@ -24,8 +24,10 @@
     Product photos (can attach more than one):
     <br />
     <input type="file" name="files[]" multiple />
-    
+
     <br /><br />
     <input type="submit" value="Upload" />
 </form>
+
+
 @endsection

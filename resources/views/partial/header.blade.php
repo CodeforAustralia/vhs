@@ -8,10 +8,18 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>Magic Box</title>
+  <!-- Scripts -->
+  <script>
+    window.Laravel = <?php echo json_encode([
+      'csrfToken' => csrf_token(),
+      ]); ?>
+    </script>
 
-  <!-- Styles -->
-  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
-</head>
+    <title>Magic Box</title>
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
+  </head>
+

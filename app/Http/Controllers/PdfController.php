@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Gufy\PdfToHtml\Pdf as Pdf;
 use App\Models\Letters;
+use App\Models\Templates;
 use File;
 
 class PdfController extends Controller
@@ -31,10 +32,34 @@ class PdfController extends Controller
         $files = File::allFiles('../pdf');
         foreach ($files as $file)
         {
-            echo '<pre>';
-            echo (string)$file, "\n";
+            // if (File::exists($file)) {
+            //     $Letters = Letters::all();
+            //     return view('pages/letters')->with([
+            //         'Letters' => $Letters
+            //         ]);
+            // }
+            // else {
+
+                // echo '<pre>';
+            // echo (string)$file, "\n";
+                $filename = $file;
+            // echo $filename;
+            // die();
+                $file = $this->pdfUpload($filename);
+
+                // echo $html;
+                // die();
+            // }
+            
+
         }
 
+        // $problems = Problem::with('letters')->with('suburb')->get();
+        // $problems = Letters::with('letters')->get();
+        $Letters = Letters::all();
+        return view('pages/letters')->with([
+            'Letters' => $Letters
+            ]);
     }
 
     /**
@@ -44,13 +69,15 @@ class PdfController extends Controller
      */
     public function letters()
     {   
-        return view('pages/pdf')->with([
-            'refNumber' => $refNumber,
-            'dateMatched' => $finalDate,
-            'clientName' => $clientName,
-            'letterTemplateID' => $letterTemplateID,
+        // return view('pages/pdf')->with([
+        //     'refNumber' => $refNumber,
+        //     'dateMatched' => $finalDate,
+        //     'clientName' => $clientName,
+        //     'letterTemplateID' => $letterTemplateID,
 
-            ]);
+        //     ]);
+
+        return view('pages/upload_form');
     }
 
     /**
@@ -59,7 +86,7 @@ class PdfController extends Controller
      * @return \Illuminate\Http\Response
      */
     
-    public function pdfUpload()
+    public function pdfUpload($filename)
     {
         // Form uploads file to the server using $_POST
         // You get the filename from the post
@@ -73,7 +100,6 @@ class PdfController extends Controller
 
         // convert to html string
         $html = $pdf->html();
-
         // echo $html;
         // die();
 
@@ -130,12 +156,22 @@ class PdfController extends Controller
         // die();
 
         // Finds substring inside string, looks for the word 'Dear'
-        $clientName = substr($html, strpos($html, "Dear") + 6);
-        $clientName = substr($clientName, 0, strpos($clientName, '</p>'));
+        $getclientName = substr($html, strpos($html, "Dear") + 6);
+        $clientName = substr($getclientName, 0, strpos($getclientName, '</p>'));
 
         // Find Letter Template ID
         $letterTemplateID = substr($html, strpos($html, "TMP") - 0);
         $letterTemplateID = substr($letterTemplateID, 0, strpos($letterTemplateID, '</p>'));
+
+         $firstParagraph = substr($html, strpos($html, "Dear") + 0);
+         // $firstParagraph = substr($firstParagraph, 0, strpos($firstParagraph, "</p>"));
+         $firstParagraph2 = substr($firstParagraph, strpos($firstParagraph, "ft01") + strlen($firstParagraph));
+         // $firstParagraph2 = substr($firstParagraph2, strpos($firstParagraph2, 'ft01') + strlen($firstParagraph), strpos($firstParagraph2, '</p>'));
+         // $pos2 = strpos($haystack, $needle, $pos1 + strlen($needle));
+        // $firstParagraph2 = substr($firstParagraph2, 0, strpos($firstParagraph2, '</p>'));
+
+        echo $firstParagraph;
+        die();
 
         // Create new pdf object
         $letters = new letters;
@@ -148,6 +184,15 @@ class PdfController extends Controller
 
         // Create new pdf in database
         $letters->save();
+
+         // Create new pdf object
+        $letters = new templates;
+
+        $letters->template_id = $letterTemplateID;
+        $letters->summary = $firstParagraph;
+
+        $letters->save();
+
     }
 
     /**

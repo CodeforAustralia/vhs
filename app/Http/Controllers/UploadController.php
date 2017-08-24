@@ -36,7 +36,6 @@ class UploadController extends Controller
         foreach ($request->files as $file) {
         	// $filename = $file->store('files');
         	$filename = $request->file('file')->storeAs('uploads', 'files');
-        	{!! Form::open(['url' => '/']) !!}
         	$upload = (new PdfController)->pdfUpload();
             // $filename = $file->store('files');
             // LettersPdf::create([
