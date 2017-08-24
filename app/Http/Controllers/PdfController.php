@@ -42,10 +42,10 @@ class PdfController extends Controller
 
                 // echo '<pre>';
             // echo (string)$file, "\n";
-                $filename = $file;
+            $filename = $file;
             // echo $filename;
             // die();
-                $file = $this->pdfUpload($filename);
+            $file = $this->pdfUpload($filename);
 
                 // echo $html;
                 // die();
@@ -100,8 +100,8 @@ class PdfController extends Controller
 
         // convert to html string
         $html = $pdf->html();
-        echo $html;
-        die();
+        // echo $html;
+        // die();
 
         // Finds substring inside string, looks for the word 'Ref'
         $refNumber = substr($html, strpos($html, "Ref") + 10);
@@ -163,13 +163,13 @@ class PdfController extends Controller
         $letterTemplateID = substr($html, strpos($html, "TMP") - 0);
         $letterTemplateID = substr($letterTemplateID, 0, strpos($letterTemplateID, '</p>'));
 
-         $firstParagraph = substr($html, strpos($html, "Dear") + 0, strpos($html, "</p>"));
-         $firstParagraph = substr($firstParagraph, strpos($firstParagraph, "ft01"), strpos($firstParagraph, ".") + strlen($firstParagraph));
-         $firstParagraph2 = substr($firstParagraph, strpos($firstParagraph, "<p>"));
-         $firstParagraph2 = substr($firstParagraph, 0, strpos($firstParagraph2, '</p>'));
-         $firstParagraph3 = substr($firstParagraph, strpos($firstParagraph, "ft01") + strlen($firstParagraph2));
-         $firstParagraph4 = substr($firstParagraph3, strpos($firstParagraph3, "ft01") + 6);
-         $firstParagraph4 = substr($firstParagraph4, 0, strpos($firstParagraph4, '</p>'));
+        $firstParagraph = substr($html, strpos($html, "Dear") + 0, strpos($html, "</p>"));
+        $firstParagraph = substr($firstParagraph, strpos($firstParagraph, "ft01"), strpos($firstParagraph, ".") + strlen($firstParagraph));
+        $firstParagraph2 = substr($firstParagraph, strpos($firstParagraph, "<p>"));
+        $firstParagraph2 = substr($firstParagraph, 0, strpos($firstParagraph2, '</p>'));
+        $firstParagraph3 = substr($firstParagraph, strpos($firstParagraph, "ft01") + strlen($firstParagraph2));
+        $firstParagraph4 = substr($firstParagraph3, strpos($firstParagraph3, "ft01") + 6);
+        $firstParagraph4 = substr($firstParagraph4, 0, strpos($firstParagraph4, '</p>'));
          // $pos2 = strpos($haystack, $needle, $pos1 + strlen($needle));
         // $firstParagraph2 = substr($firstParagraph2, 0, strpos($firstParagraph2, '</p>'));
 
@@ -188,13 +188,16 @@ class PdfController extends Controller
         // Create new pdf in fbsql_database(link_identifier)
         $letters->save();
 
-         // Create new pdf object
-        $letters = new templates;
+        $templateID = Letters::where('template_id', '=', $letterTemplateID)->first();
 
-        $letters->template_id = $letterTemplateID;
-        $letters->summary = $firstParagraph6;
+        if (!$templateID) {
+            $letters = new templates;
 
-        $letters->save();
+            $letters->template_id = $letterTemplateID;
+            $letters->summary = $firstParagraph4;
+
+            $letters->save();
+        }
 
     }
 
