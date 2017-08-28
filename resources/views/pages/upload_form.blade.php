@@ -19,7 +19,7 @@
     {{ csrf_field() }}
     Product photos (can attach more than one):
     <br />
-    <input type="file" name="files[]" multiple />
+    <input type="file" name="pdfUploaded[]" multiple />
 
     <br /><br />
     <input type="submit" value="Upload" />

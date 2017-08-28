@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 use App\Models\Letters;
 use App\Http\Requests;
 // use Request;
@@ -35,31 +36,21 @@ class UploadController extends Controller
 
     public function uploadSubmit(Request $request)
     {
-        if (request()->hasFile('files'))
-        {
-             $letters = Letters::create($request->all());
-             // $files = $request->input('files');
-             // echo $letters;
-             // die();
-             foreach ($letters as $file)
-             {
-                // $filename = $file->store('files');
-
-                $filename = $request->input('files');
-                echo $filename;
-                die();
+        // $letters = Letters::create($request->all('files'));
+        // $filename = $request->file('files')->storeAs('uploads', 'files');
+        // $files = $request->input('files');
+        // $files = Input::get('files');
+         $input=$request->all();
+         $pdfUploaded=array();
+         if($files=$request->file('pdfUploaded')){
+            foreach($files as $file){
+                $filename=$file->getClientOriginalName();
+                $file->move('../pdf', $filename);
+                $pdfUploaded[]=$filename;
                 $upload = (new PdfController)->pdfUpload($filename);
-                // $filename = $file->store('files');
-                // LettersPdf::create([
-                //     'letter_id' => $letters->id,
-                //     'filename' => $filename,
-                // ]);
             }
-            return 'Upload successful!';
-        } else{
-            echo 'No document';
-
         }
+        return 'Upload successful!';
     }
 
 }
