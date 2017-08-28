@@ -12,20 +12,17 @@
           @foreach ($Letters as $letter)
           {{ date('d F Y', strtotime($letter->letter_date)) }}&nbsp;-&nbsp;
           {{ $letter->template_id }} &nbsp;-&nbsp;
-        
-        <?php
-        $templates = DB::table('templates')->where('template_id', $letter->template_id)->get();
-        ?>
+          
 
-        @foreach ($templates as $template)
-        {{ $template->summary }}
-        @endforeach
+          @foreach ($Templates as $template)
+          {{ $template->summary }}
+          @endforeach
 
-        <br/>
-        @endforeach
+          <br/>
+          @endforeach
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 @endsection

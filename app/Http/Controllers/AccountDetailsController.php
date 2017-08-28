@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\AccountDetails;
 
-class YourDetailsController extends Controller
+class AccountDetailsController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,6 +24,11 @@ class YourDetailsController extends Controller
      */
     public function index()
     {
-        return view('pages/yourdetails');
+        return view('pages/accountdetails');
+
+        $AccountDetails = AccountDetails::all();
+        return view('accountdetails')->with([
+            'AccountDetails' => $AccountDetails
+            ]);
     }
 }

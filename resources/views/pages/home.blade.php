@@ -12,7 +12,10 @@
                     <i class="icon-magic"></i></div>
 
                 <div class="panel-body">
-                    <a href="/yourdetails">Your Details</a>
+                    <a href="/accountdetails">Account Details</a>
+                </div>
+                <div class="panel-body">
+                    <a href="/upload">Upload</a>
                 </div>
                 <div class="panel-body">
                     <a href="/letters">Letters</a>

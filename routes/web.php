@@ -12,15 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('pages/home');
+	return view('pages/home');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('ho†me');
-Route::get('/pdf', 'PdfController@index')->name('pdf');
-Route::get('/letters', 'PdfController@allFiles')->name('allFiles');
-Route::get('/yourdetails', 'YourDetailsController@index')->name('yourdetails');
-Route::get('/status', 'StatusController@index')->name('status');
-Route::get('/upload', 'UploadController@uploadForm');
-Route::post('/upload', 'UploadController@uploadSubmit');
+	Route::get('/home', 'HomeController@index')->name('ho†me');
+	Route::get('/pdf', 'PdfController@index')->name('pdf');
+	Route::get('/letters', 'PdfController@allFiles')->name('allFiles');
+	Route::get('/accountdetails', 'AccountDetailsController@index')->name('accountdetails');
+	Route::get('/status', 'StatusController@index')->name('status');
+	Route::get('/upload', 'UploadController@uploadForm');
+	Route::post('/upload', 'UploadController@uploadSubmit');

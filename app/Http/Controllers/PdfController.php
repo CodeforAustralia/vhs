@@ -29,36 +29,21 @@ class PdfController extends Controller
     {
 
         // $directory = File::directories('../pdf');
-        $files = File::allFiles('../pdf');
-        foreach ($files as $file)
-        {
-            // if (File::exists($file)) {
-            //     $Letters = Letters::all();
-            //     return view('pages/letters')->with([
-            //         'Letters' => $Letters
-            //         ]);
-            // }
-            // else {
 
-                // echo '<pre>';
-            // echo (string)$file, "\n";
-            $filename = $file;
-            // echo $filename;
-            // die();
-            $file = $this->pdfUpload($filename);
-
-                // echo $html;
-                // die();
-            // }
-            
-
-        }
+        // $files = File::allFiles('../pdf');
+        // foreach ($files as $file)
+        // {
+        //     $filename = $file;
+        //     $file = $this->pdfUpload($filename);
+        // }
 
         // $problems = Problem::with('letters')->with('suburb')->get();
         // $problems = Letters::with('letters')->get();
         $Letters = Letters::all();
+        $Templates = Templates::all();
         return view('pages/letters')->with([
-            'Letters' => $Letters
+            'Letters' => $Letters,
+            'Templates' => $Templates
             ]);
     }
 

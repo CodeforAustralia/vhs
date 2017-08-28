@@ -42,6 +42,11 @@ class UploadController extends Controller
         // $files = Input::get('files');
          $input=$request->all();
          $pdfUploaded=array();
+         $pdf = array(
+                'file' => 'required|max:10000|mimes:pdf'
+                );
+
+
          if($files=$request->file('pdfUploaded')){
             foreach($files as $file){
                 $filename=$file->getClientOriginalName();
@@ -50,7 +55,10 @@ class UploadController extends Controller
                 $upload = (new PdfController)->pdfUpload($filename);
             }
         }
-        return 'Upload successful!';
+       $Letters = Letters::all();
+        return redirect('letters')->with([
+            'Letters' => $Letters
+            ]);
     }
 
 }
