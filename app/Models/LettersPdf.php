@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class LettersPdf extends Model
 {
     //
-    protected $fillable = ['name'];
+    protected $fillable = ['filename'];
 }
