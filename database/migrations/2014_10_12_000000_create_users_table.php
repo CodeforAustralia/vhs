@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+
 class CreateUsersTable extends Migration
 {
     /**
@@ -17,7 +18,9 @@ class CreateUsersTable extends Migration
             $table->bigIncrements('id');
             $table->rememberToken();
             $table->string('reference_id')->nullable();
-            $table->string('name');
+            $table->string('sex');
+            $table->string('firstName');
+            $table->string('lastName');
             $table->string('email')->unique();
             $table->string('password');
             $table->timestamps();

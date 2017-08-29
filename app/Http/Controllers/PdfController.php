@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Gufy\PdfToHtml\Pdf as Pdf;
 use App\Models\Letters;
+use Database\Factories;
 use App\Models\Templates;
 use File;
 
@@ -61,6 +62,7 @@ class PdfController extends Controller
         //     'letterTemplateID' => $letterTemplateID,
 
         //     ]);
+        // use the factory to create a Faker\Generator instance
 
         return view('pages/upload_form');
     }
