@@ -17,10 +17,10 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 
     return [
         
-		'reference_id' => $reference_id, // '609',
-		'sex' => $sex,
-		'firstName' => $test,
-		'lastName' => $faker->lastName,
+			'reference_id' => $reference_id, // '609',
+			'sex' => $sex,
+			'firstName' => $test,
+			'lastName' => $faker->lastName,
         'firstName' => $faker->firstName,
         'email' => $faker->unique()->safeEmail,
         'reference_id' => $faker->randomDigit(10),
