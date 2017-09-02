@@ -38,6 +38,7 @@ class GenerateController extends Controller
 			$addToDB = new user;
 
 			$addToDB->gender = $sex;
+			$addToDB->client_id = $client_id;
 			$addToDB->reference_id = $reference_id;
 			$addToDB->firstName = $firstName;
 			$addToDB->lastName = $lastName;
@@ -65,7 +66,7 @@ class GenerateController extends Controller
             // add user's address to the database
 			$addToDB_userAddress = new UserAddress;
 
-			$addToDB_userAddress->client_id = $user_last_id;
+			$addToDB_userAddress->user_id = $user_last_id;
 			$addToDB_userAddress->address_1 = $address_1;
 			$addToDB_userAddress->suburb_town = $suburb_town['name'];
 			$addToDB_userAddress->postcode = $postcode['postcode'];
@@ -78,7 +79,7 @@ class GenerateController extends Controller
 		$AccountDetails = AccountDetails::all();
 		$UserAddress = UserAddress::all();
 
-		return view('pages/database')->with([
+		return view('pages/account/index')->with([
 			'AccountDetails' => $AccountDetails,
 			'UserAddress' => $UserAddress
 			]);

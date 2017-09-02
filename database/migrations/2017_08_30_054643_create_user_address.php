@@ -18,8 +18,8 @@ class CreateUserAddress extends Migration
         $table->engine = 'InnoDB';
 
         $table->increments('id');
-        $table->bigInteger('client_id')->unsigned();
-        $table->foreign('client_id')->references('id')->on('users')->onDelete('cascade');
+        $table->bigInteger('user_id')->unsigned();
+        $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         $table->string('address_1');
         $table->string('address_2')->nullable();
         $table->string('address_3')->nullable();

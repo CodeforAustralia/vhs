@@ -1,0 +1,6 @@
+.float-right {
+	float:right;
+}
+.panel-heading_link, .panel-heading_link:hover, .panel-heading_link:visited {
+	color: #ffffff;
+}

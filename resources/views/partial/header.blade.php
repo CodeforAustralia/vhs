@@ -15,7 +15,7 @@
       ]); ?>
     </script>
 
-    <title>Magic Box</title>
+    <title>VHS</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
