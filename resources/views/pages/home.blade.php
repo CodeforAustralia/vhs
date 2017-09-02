@@ -21,7 +21,7 @@
                     <a href="/letters">Letters</a>
                 </div>
                 <div class="panel-body">
-                    <a href="/status">Status on the Hogwarts Register</a>
+                    <a href="/status">Status</a>
                 </div>
             </div>
         </div>

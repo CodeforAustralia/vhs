@@ -12,7 +12,7 @@
 
           <!-- Branding Image -->
           <a class="navbar-brand" href="{{ url('/home') }}">
-            Magic Box
+            VHS
           </a>
         </div>
 
@@ -32,7 +32,7 @@
             @else
             <li><a href="/upload">Upload</a></li>
               <li><a href="/letters">Letters</a></li>
-              <li><a href="/status">Status on the Hogwarts Register</a></li>
+              <li><a href="/status">Status</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                 {{ Auth::user()->name }} <span class="caret"></span>
