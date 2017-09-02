@@ -12,7 +12,7 @@
 				<div class="panel-heading">Generate</div>
 				<ul>
 					@foreach ($AccountDetails as $AccountDetail)
-					<li>firstname: {{ $firstName }}</li>
+					<li>{{ $AccountDetail->firstName }}, {{ $AccountDetail->lastName }}</li>
 					@endforeach
 				</ul>
 			</div>
