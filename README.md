@@ -22,6 +22,17 @@ Recommended technologies setup:
     <li>Laravel Server Requirements: (<a href="https://laravel.com/docs/5.4/installation" target="_blank">https://laravel.com/docs/5.4/installation</a>)</li>
 </ul>
 
+### To Generate Data
+********************
+You will need to run:
+php artisan db:seed
+
+This command will add all the postcodes of victoria as well as suburbs.
+Postcode has a one to many relationship with Suburb.
+
+If you haven't had data, go to /database to generate, it will generate up to 10 users with corresponding user address.
+The funtion will select a random Postcode and will also select a random suburb that is related to the postcode.
+
 #### Team
 ********************
 <ul>

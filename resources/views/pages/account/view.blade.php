@@ -10,7 +10,7 @@
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 					<span class="float-left">Account Details</span>
-					<span class="float-right"><a class="panel-heading_divnk" href="/accountdetails/edit/{{ $AccountDetails[0]->id }}">Edit</a></span>
+					<span class="float-right"><a class="panel-heading_link" href="/accountdetails/edit/{{ $AccountDetails[0]->id }}">Edit</a></span>
 				</div>
 				<div class="panel-body">
 					@if(Session::has('message'))
@@ -58,7 +58,6 @@
 						<div class="col-md-9">
 							@if ($AccountDetails[0]->postcode = 'NULL') No postcode @else {{ $AccountDetails[0]->postcode }} @endif
 						</div>
-
 					</div>
 				</div>
 			</div>

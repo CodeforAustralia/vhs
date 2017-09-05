@@ -30,8 +30,6 @@ Route::get('/accounts', 'AccountDetailsController@index')->name('accounts.index'
 Route::get('/accountdetails/{id}', 'AccountDetailsController@view')->name('accounts.view');
 Route::get('/accountdetails/edit/{id}', 'AccountDetailsController@edit')->name('accounts.edit');
 Route::post('/accounts/update/{id}', 'AccountDetailsController@update')->name('accounts.update');
-Route::get('/accounts/error', 'AccountDetailsController@error')->name('accounts.error');
-Route::get('/accounts/success', 'AccountDetailsController@success')->name('accounts.success');
 Route::get('/status', 'StatusController@index')->name('status');
 Route::get('/upload', 'UploadController@uploadForm');
 Route::post('/upload', 'UploadController@uploadSubmit');
