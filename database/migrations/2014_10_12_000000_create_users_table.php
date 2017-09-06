@@ -19,6 +19,8 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->string('client_id')->nullable();
             $table->string('usertype')->nullable();
+            $table->string('last_login_at')->nullable();
+            $table->string('last_login_ip')->nullable();
             $table->string('reference_id')->nullable();
             $table->string('gender')->nullable();
             $table->string('firstName');

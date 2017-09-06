@@ -1,6 +1,122 @@
 .float-right {
 	float:right;
 }
+.top_blackbar {
+	background-color: #000;
+	border-color: #000;
+	height: 18px;
+}
+body {
+	background-color: #ffffff;
+	font-family: HelveticaNeue;
+}
+/************************
+NAVIGATION
+*************************/
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+	font-family: HelveticaNeue;
+}
+.navbar-inverse .navbar-brand {
+	color: #ffffff;
+	font-weight: bold;
+}
+span.housing_services-title {
+	color: #3282bb;
+	font-weight: bold;
+}
+.user-icon {
+	font-size: 24px !important;
+	color: #ffffff;
+}
 .panel-heading_link, .panel-heading_link:hover, .panel-heading_link:visited {
 	color: #ffffff;
+}
+.navbar-inverse {
+	background-color: #04446c;
+	border-color: #04446c;
+	height: 36px;
+}
+
+/************************
+DASHBOARD
+*************************/
+.welcome-banner h3 {
+	color: #232323;
+	font-weight: 600;
+}
+.dashboard_notifications {
+    padding-bottom: 30px;
+}
+.toolbox-banner h3 {
+    color: #3482b8;
+    font-weight: 600;
+}
+.container-wrapper.tools-wrapper {
+	background-color: #f8f8fb;
+}
+.quick-escape_wrapper {
+	text-align: right;
+}
+.btn-danger {
+	color: #fff;
+	background-color: #bf5329;
+	border-color: #aa4a24;
+	border-radius: 0px;
+	font-weight: 600;
+	font-size: 18px;
+	padding: 8px;
+	width: 130px;
+	line-height: 1;
+}
+.tool-box {
+    border: #000 solid 1px;
+    margin: 10px;
+    padding: 20px;
+}
+.toolbox-row {
+    width: 107%;
+    display: flex;
+}
+.toolbox-banner {
+    padding-top: 30px;
+}
+
+/*.col-md-6.tool-box:nth-child(1) {
+    margin-right: 0px;
+    width: 48%;
+}*/
+/*.col-md-6.tool-box:nth-child(2) {
+    margin-right: 0px;
+    margin-left: 20px
+}
+.col-md-6.tool-box {
+    display: inline-block;
+    width: 48%;
+}
+*/
+@media screen and (max-width: 768px) {
+	button.navbar-toggle.collapsed {
+		margin-right: 0px !important;
+	}
+	.navigation-offset-col {
+		padding: 0px !important;
+	}
+	button.navbar-toggle {
+		margin-right: 0px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.navbar-brand {
+		padding: 15px 0px;
+		font-size: 12px;
+	}
+
+}
+@media screen and (min-width: 960px) {
+	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+		margin-left: 0px;
+		position: absolute;
+		left: 30%;
+	}
 }

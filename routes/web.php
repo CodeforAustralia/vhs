@@ -18,12 +18,12 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::get('/', function () {
-	return view('pages/home');
+	return view('pages/dashboard');
 });
 
 
 
-Route::get('/home', 'HomeController@index')->name('ho†me');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/pdf', 'PdfController@index')->name('pdf');
 Route::get('/letters', 'PdfController@allFiles')->name('allFiles');
 Route::get('/accounts', 'AccountDetailsController@index')->name('accounts.index');
