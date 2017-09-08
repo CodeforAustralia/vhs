@@ -15,7 +15,7 @@
 				<div class="panel-body">
 					<ul>
 						@foreach ($AccountDetails as $AccountDetail)
-						<li><a href="/accountdetails/{{$AccountDetail->id}}">{{ $AccountDetail->firstName }}, {{ $AccountDetail->lastName }}</a></li>
+						<li><a href="/accountdetails/{{$AccountDetail->id}}">{{ $AccountDetail->firstName }} {{ $AccountDetail->lastName }}</a></li>
 						@endforeach
 					</ul>
 				</div>

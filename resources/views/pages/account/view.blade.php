@@ -9,8 +9,14 @@
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
-					<span class="float-left">Account Details</span>
-					<span class="float-right"><a class="panel-heading_link" href="/accountdetails/edit/{{ $AccountDetails[0]->id }}">Edit</a></span>
+					<div class="welcome-banner">
+						<div class="col-xs-8">
+							<p>Account Details</p>
+						</div>
+						<div class="col-xs-4">
+							<p class="pull-right"><a class="panel-heading_link" href="/accountdetails/edit/{{ $AccountDetails[0]->id }}">Edit</a></p>
+						</div>
+					</div>
 				</div>
 				<div class="panel-body">
 					@if(Session::has('message'))

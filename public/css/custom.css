@@ -148,6 +148,12 @@ DASHBOARD
 .col-md-8.col-md-offset-2.navigation-offset-col {
     padding-left: 0px;
 }
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #3097D1;
+    border-color: #3097D1;
+    height: 40px;
+}
 
 @media screen and (max-width: 768px) {
 	button.navbar-toggle.collapsed {

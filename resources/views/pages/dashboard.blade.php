@@ -38,7 +38,11 @@
             <div class="row toolbox_half-row">
                 <div class="tool-box_half col-xs-12">
                     <!-- <a href="/upload">Upload</a> -->
-                    <a href="/accounts">Account Details</a>
+                    @if ( Auth::user()->usertype == '1' )
+                        <a href="/accounts">Account Details</a>
+                    @else 
+                    <a href="/accountdetails/{{ Auth::user()->id }}">Account Details</a>
+                    @endif
                 </div>
                 <div class="tool-box_half col-xs-12">
                     <a href="/status">Status</a>
