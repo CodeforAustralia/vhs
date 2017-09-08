@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="row toolbox_half-row">
-            <div class="tool-box_half col-xs-12">
+                <div class="tool-box_half col-xs-12">
                     <!-- <a href="/upload">Upload</a> -->
                     <a href="/accounts">Account Details</a>
                 </div>
@@ -47,4 +47,21 @@
         </div>
     </div>
 </div>
+<div class="container-wrapper recommended_links-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="recommended_links-banner">
+                    <h3>Recommended Links</h3>
+                </div>
+                <div>
+                   <p>Looking into private rental? <a href="#">Learn more about VHS Bonding Assistance.</a></p>
+                   <p>Need advice and support? <a href="#">Find a service provider near you</a></p>
+                   <p><a href="#">Nearest Housing Office</a></p>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
 @endsection
