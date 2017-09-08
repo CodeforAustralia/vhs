@@ -24,20 +24,23 @@
 <div class="container-wrapper tools-wrapper">
     <div class="container">
         <div class="col-md-8 col-md-offset-2">
-            <div class="toolbox-banner">
+            <div class="toolbox-banner col-md-8 col-xs-6">
                 <h3>Tools</h3>
             </div>
-            <div class="row">
-                <div class="col-md-12 tool-box">
-                    <a href="/letters">Mail</a>
-                </div>
+            <div class="toolbox-banner manage-profiles_link"><br/>
+                <p><i class="fa fa-cog" aria-hidden="true"></i> Manage Profile</p>
             </div>
             <div class="row toolbox-row">
-                <div class="col-md-6 tool-box">
+                <div class="col-md-12 col-xs-12 col-lg-12 tool-box">
+                    <a href="/letters"><i class="fa fa-envelope-o" aria-hidden="true"></i>Mail</a>
+                </div>
+            </div>
+            <div class="row toolbox_half-row">
+            <div class="tool-box_half col-xs-12">
                     <!-- <a href="/upload">Upload</a> -->
                     <a href="/accounts">Account Details</a>
                 </div>
-                <div class="col-md-6 tool-box">
+                <div class="tool-box_half col-xs-12">
                     <a href="/status">Status</a>
                 </div>
             </div>
