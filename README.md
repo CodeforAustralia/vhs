@@ -33,6 +33,14 @@ Postcode has a one to many relationship with Suburb.
 If you haven't had data, go to /database to generate, it will generate up to 10 users with corresponding user address.
 The funtion will select a random Postcode and will also select a random suburb that is related to the postcode.
 
+--
+IMPORTANT - Change admin login details!!!
+--
+
+Admin user is added in the generation of users
+E-mail Address: test@test.com.au
+Password: TestPassword
+
 #### Team
 ********************
 <ul>
