@@ -109,15 +109,6 @@ DASHBOARD
 	font-size: 24px;
 	color: #454545;
 }
-.tool-box_half.col-xs-12:nth-child(1) {
-	margin-right: 10px;
-}
-.tool-box_half.col-xs-12:nth-child(2) {
-	margin-left: 10px;
-}
-.toolbox_half-row {
-	display: flex;
-}
 .toolbox-banner {
 	padding-left: 0px;
 }
@@ -127,15 +118,35 @@ DASHBOARD
 .toolbox-banner.mail_icon-link i {
 	font-size: 30px;
 }
-.tool-box-title p {
+.services_heading_right {
+	padding: 10px 0px;
+}
+.panel-heading .services_heading_right p {
 	line-height: 0.7;
 }
-.tool-box-title h3 {
+.panel-heading .services_heading_right h3 {
 	font-size: 24px;
 	line-height: 0.7;
-	color: #454545;
+	color: #ffffff;
 	font-weight: 600;
 	margin-top: 0;
+}
+.panel-footer {
+	background-color: #f8f6f5;
+	border: 0px;
+	color: #7e7d7d;
+}
+.icon_read_mark {
+	padding: 0px;
+}
+.services_body_right p {
+	font-size: 16px;
+}
+.services_body_right strong {
+	color: #0d293c;
+}
+.services_body_date {
+	padding: 0px;
 }
 /* Recommended Links */
 .recommended_links-wrapper {
@@ -167,9 +178,17 @@ DASHBOARD
 }
 .panel-primary>.panel-heading {
 	color: #fff;
-	background-color: #3097D1;
-	border-color: #3097D1;
-	height: 40px;
+	background-color: #0263aa;
+	border-color: #0263aa;
+	min-height: 40px;
+	display: flex;
+}
+.panel-primary {
+	border: 0px;
+	box-shadow: 1px 2px 3px grey;
+	margin: 20px 0px;
+	/* padding: 30px 20px; */
+	background: #ffffff;
 }
 
 @media screen and (max-width: 768px) {

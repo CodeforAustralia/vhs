@@ -44,7 +44,13 @@
                 </a>
 
                 <ul class="dropdown-menu" role="menu">
-                  <li class=""><a href="/accountdetails">Account Details</a></li>
+                  <li class="">
+                    @if ( Auth::user()->usertype == '1' )
+                    <a href="/accounts">Account Details</a>
+                    @else 
+                    <a href="/accountdetails/{{ Auth::user()->id }}">Account Details</a>
+                    @endif
+                  </li>
 
                   <li>
                     <a href="{{ route('logout') }}"
