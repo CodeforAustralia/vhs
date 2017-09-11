@@ -25,7 +25,7 @@ class DashboardController extends Controller
     public function index()
     {
       // get time of day
-      $time = Carbon::now('Australia/Melbourne')->format('g');
+      $time = Carbon::now('Australia/Melbourne')->format('G');
 
       $message = '';
       if($time < 12){
