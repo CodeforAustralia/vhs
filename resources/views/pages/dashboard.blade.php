@@ -7,9 +7,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <div class="quick-escape_wrapper">
-                    <button type="button" class="btn btn-danger">Quick<br/>Escape</button>
-                </div>
+                
                 <div class="welcome-banner">
                     <h3>{{ $message }} {{ Auth::user()->firstName }}</h3>
                 </div>
@@ -31,7 +29,7 @@
                 <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
             </div>
             <div class="row toolbox-row">
-            <div class="col-md-12 col-xs-12 col-lg-12 tool-box tool-box-title">
+                <div class="col-md-12 col-xs-12 col-lg-12 tool-box tool-box-title">
                     <p>Victorian Housing Register Application #{{ Auth::user()->service_id }}</p>
                     <h3>Application</h3>
                 </div>
@@ -60,13 +58,13 @@
                     <h3>Recommended Links</h3>
                 </div>
                 <div>
-                 <p>Looking into private rental? <a href="#">Learn more about VHS Bonding Assistance.</a></p>
-                 <p>Need advice and support? <a href="#">Find a service provider near you</a></p>
-                 <p><a href="#">Nearest Housing Office</a></p>
-             </div>
-         </div>
-     </div>
- </div>
+                   <p>Looking into private rental? <a href="#">Learn more about VHS Bonding Assistance.</a></p>
+                   <p>Need advice and support? <a href="#">Find a service provider near you</a></p>
+                   <p><a href="#">Nearest Housing Office</a></p>
+               </div>
+           </div>
+       </div>
+   </div>
 </div>
 
 @endsection
