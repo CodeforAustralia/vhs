@@ -137,7 +137,6 @@ class PdfController extends Controller
 
 
         preg_match('/\b(\d{4})\b/', $year, $yearMatched);
-
         $finalDate = $yearMatched[1] . '-' . $monthNumberFinal . '-' . $day;
         // echo $finalDate;
         // die();

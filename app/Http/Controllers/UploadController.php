@@ -52,7 +52,7 @@ class UploadController extends Controller
                 $filename=$file->getClientOriginalName();
                 $file->move('../pdf', $filename);
                 $pdfUploaded[]=$filename;
-                $upload = (new PdfController)->pdfUpload($filename);
+                // $upload = (new PdfController)->pdfUpload($filename);
             }
         }
        $Letters = Letters::all();
