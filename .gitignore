@@ -15,4 +15,4 @@ Homestead.yaml
 *.bak
 *.log
 composer.lock
-
+.DS_Store
