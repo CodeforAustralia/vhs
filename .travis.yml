@@ -20,6 +20,6 @@ script:
 notifications:
   email:
     recipients:
-      - gtaylor@electricwerks.com
+      - rachellesalvadora@gmail.com
     on_success: always
     on_failure: always
