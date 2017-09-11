@@ -11,7 +11,7 @@
 }
 body {
 	background-color: #ffffff;
-	font-family: "HelveticaNeue";
+	font-family: "Helvetica Neue", Roboto, Arial, sans-serif;
 }
 footer {
 	padding-top: 30px;
@@ -25,7 +25,7 @@ NAVIGATION
 *************************/
 
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-	font-family: "HelveticaNeue-CondensedBold";
+	font-family: "HelveticaNeue-CondensedBold", Roboto, Arial, sans-serif;
 	font-size: 22px;
 }
 .navbar-inverse .navbar-brand {
