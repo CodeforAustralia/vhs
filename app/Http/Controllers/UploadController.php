@@ -50,9 +50,9 @@ class UploadController extends Controller
          if($files=$request->file('pdfUploaded')){
             foreach($files as $file){
                 $filename=$file->getClientOriginalName();
-                $file->move('../pdf', $filename);
+                $file->move('../pdf/', $filename);
                 $pdfUploaded[]=$filename;
-                // $upload = (new PdfController)->pdfUpload($filename);
+                $upload = (new PdfController)->pdfUpload($filename);
             }
         }
        $Letters = Letters::all();

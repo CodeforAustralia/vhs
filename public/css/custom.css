@@ -60,7 +60,7 @@ DASHBOARD
 }
 .toolbox-banner h3 {
 	color: #3482b8;
-	font-weight: 600;
+	font-weight: 100;
 }
 .container-wrapper.tools-wrapper {
 	background-color: #F3EEE9;
@@ -117,8 +117,21 @@ DASHBOARD
 .toolbox-banner {
 	padding-left: 0px;
 }
-.manage-profiles_link {
+.mail_icon-link {
 	text-align:right;
+}
+.toolbox-banner.mail_icon-link i {
+    font-size: 30px;
+}
+.tool-box-title p {
+    line-height: 0.7;
+}
+.tool-box-title h3 {
+    font-size: 24px;
+    line-height: 0.7;
+    color: #454545;
+    font-weight: 600;
+    margin-top: 0;
 }
 /* Recommended Links */
 .recommended_links-wrapper {
