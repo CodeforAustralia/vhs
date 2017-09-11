@@ -22,6 +22,39 @@ class GenerateController extends Controller
 
 		$faker = Faker\Factory::create();
 
+		$account_email = User::where('email', '=', 'test@test.com.au')->first();
+
+		if ($account_email===NULL) {
+			$addToDB = new user;
+
+			$addToDB->gender = '';
+			$addToDB->client_id = '';
+			$addToDB->reference_id = '';
+			$addToDB->firstName = 'Admin';
+			$addToDB->lastName = 'Admin';
+			$addToDB->usertype = '1';
+			$addToDB->email = 'test@test.com.au';
+			$addToDB->password = \Hash::make('TestPassword');
+
+			$addToDB->save();
+
+			// add user's address to the database
+			$addToDB_userAddress = new UserAddress;
+
+			$addToDB_userAddress->user_id =$addToDB->id;
+			$addToDB_userAddress->address_1 = 'Admin Street Address';
+			$addToDB_userAddress->suburb_town = 'Lonsdale';
+			$addToDB_userAddress->postcode = '3000';
+			$addToDB_userAddress->postal_address_1 = 'No postal Address';
+			$addToDB_userAddress->postal_suburb_town = 'test';
+			$addToDB_userAddress->postal_postcode = 'test';
+
+			$addToDB_userAddress->save();
+		} else {
+
+		}
+
+
 		for($i=0; $i<30; $i++){
 
             // Generate user data
@@ -76,13 +109,15 @@ class GenerateController extends Controller
 
 			$addToDB_userAddress->save();
 		}
-		$AccountDetails = AccountDetails::all();
-		$UserAddress = UserAddress::all();
-
-		return view('pages/account/index')->with([
-			'AccountDetails' => $AccountDetails,
-			'UserAddress' => $UserAddress
-			]);
+		
+		// Add Admin Account
+		// $AccountDetails = AccountDetails::all();
+		// $UserAddress = UserAddress::all();
+		// return view('/pages/account/index')->with([
+		// 	'AccountDetails' => $AccountDetails,
+		// 	'UserAddress' => $UserAddress
+		// 	]);
+		 return redirect('/dashboard');
 	}
 
 }
