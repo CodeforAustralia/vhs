@@ -82,9 +82,8 @@ class PdfController extends Controller
         // $pdf = new Pdf(public_path() . '/' . $filename);
 
         // initiate
-        // $pdf = new Pdf(public_path() . '/dms.pdf');
-        $pdf = new Pdf('../pdf/' . $filename);
-
+        $pdf = new Pdf(base_path() . '/pdf/'. $filename);
+        // $pdf = new Pdf('../pdf/' . $filename);
         // convert to html string
         $html = $pdf->html();
         // echo $html;

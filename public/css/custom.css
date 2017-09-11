@@ -11,7 +11,7 @@
 }
 body {
 	background-color: #ffffff;
-	font-family: "HelveticaNeue";
+	font-family: "Helvetica Neue", Roboto, Arial, sans-serif;
 }
 footer {
 	padding-top: 30px;
@@ -25,7 +25,7 @@ NAVIGATION
 *************************/
 
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-	font-family: "HelveticaNeue-CondensedBold";
+	font-family: "HelveticaNeue-CondensedBold", Roboto, Arial, sans-serif;
 	font-size: 22px;
 }
 .navbar-inverse .navbar-brand {
@@ -46,8 +46,12 @@ span.housing_services-title {
 .navbar-inverse {
 	background-color: #04446c;
 	border-color: #04446c;
-	height: 36px;
+	margin-bottom: 0px;
 }
+/*.quick-escape_wrapper button {
+    position: fixed;
+    right: 0;
+    }*/
 /************************
 DASHBOARD
 *************************/
@@ -60,7 +64,7 @@ DASHBOARD
 }
 .toolbox-banner h3 {
 	color: #3482b8;
-	font-weight: 600;
+	font-weight: 100;
 }
 .container-wrapper.tools-wrapper {
 	background-color: #F3EEE9;
@@ -117,8 +121,21 @@ DASHBOARD
 .toolbox-banner {
 	padding-left: 0px;
 }
-.manage-profiles_link {
+.mail_icon-link {
 	text-align:right;
+}
+.toolbox-banner.mail_icon-link i {
+	font-size: 30px;
+}
+.tool-box-title p {
+	line-height: 0.7;
+}
+.tool-box-title h3 {
+	font-size: 24px;
+	line-height: 0.7;
+	color: #454545;
+	font-weight: 600;
+	margin-top: 0;
 }
 /* Recommended Links */
 .recommended_links-wrapper {
@@ -146,13 +163,13 @@ DASHBOARD
 	font-size: 18px;
 }
 .col-md-8.col-md-offset-2.navigation-offset-col {
-    padding-left: 0px;
+	padding-left: 0px;
 }
 .panel-primary>.panel-heading {
-    color: #fff;
-    background-color: #3097D1;
-    border-color: #3097D1;
-    height: 40px;
+	color: #fff;
+	background-color: #3097D1;
+	border-color: #3097D1;
+	height: 40px;
 }
 
 @media screen and (max-width: 768px) {
@@ -169,6 +186,10 @@ DASHBOARD
 	.navbar-brand {
 		padding: 15px 0px;
 		font-size: 12px;
+	}
+	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+		font-family: "HelveticaNeue-CondensedBold", Roboto, Arial, sans-serif;
+		font-size: 18px;
 	}
 	.tool-box_half.col-xs-12:nth-child(1) {
 		margin: 0px;

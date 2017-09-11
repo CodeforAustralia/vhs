@@ -67,3 +67,10 @@
       </div>
     </div>
   </nav>
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2 navigation-offset-col">
+      <div class="quick-escape_wrapper">
+        <button type="button" class="btn btn-danger">Quick<br/>Escape</button>
+      </div>
+    </div>
+  </div>

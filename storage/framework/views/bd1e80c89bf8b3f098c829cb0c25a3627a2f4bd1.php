@@ -23,21 +23,22 @@
     <div class="container">
         <div class="col-md-8 col-md-offset-2">
             <div class="toolbox-banner col-md-8 col-xs-6">
-                <h3>Tools</h3>
+                <h3>My Services</h3>
             </div>
-            <div class="toolbox-banner manage-profiles_link"><br/>
-                <p><i class="fa fa-cog" aria-hidden="true"></i> Manage Profile</p>
+            <div class="toolbox-banner mail_icon-link"><br/>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
             </div>
             <div class="row toolbox-row">
-                <div class="col-md-12 col-xs-12 col-lg-12 tool-box">
-                    <a href="/letters"><i class="fa fa-envelope-o" aria-hidden="true"></i>Mail</a>
+            <div class="col-md-12 col-xs-12 col-lg-12 tool-box tool-box-title">
+                    <p>Victorian Housing Register Application #<?php echo e(Auth::user()->service_id); ?></p>
+                    <h3>Application</h3>
                 </div>
             </div>
             <div class="row toolbox_half-row">
                 <div class="tool-box_half col-xs-12">
                     <!-- <a href="/upload">Upload</a> -->
                     <?php if( Auth::user()->usertype == '1' ): ?>
-                        <a href="/accounts">Account Details</a>
+                    <a href="/accounts">Account Details</a>
                     <?php else: ?> 
                     <a href="/accountdetails/<?php echo e(Auth::user()->id); ?>">Account Details</a>
                     <?php endif; ?>
@@ -57,13 +58,13 @@
                     <h3>Recommended Links</h3>
                 </div>
                 <div>
-                   <p>Looking into private rental? <a href="#">Learn more about VHS Bonding Assistance.</a></p>
-                   <p>Need advice and support? <a href="#">Find a service provider near you</a></p>
-                   <p><a href="#">Nearest Housing Office</a></p>
-               </div>
-           </div>
-       </div>
-   </div>
+                 <p>Looking into private rental? <a href="#">Learn more about VHS Bonding Assistance.</a></p>
+                 <p>Need advice and support? <a href="#">Find a service provider near you</a></p>
+                 <p><a href="#">Nearest Housing Office</a></p>
+             </div>
+         </div>
+     </div>
+ </div>
 </div>
 
 <?php $__env->stopSection(); ?>
