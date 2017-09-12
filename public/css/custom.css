@@ -18,9 +18,9 @@ footer {
 	padding-top: 30px;
 }
 footer p {
-    color: #c0dbf4;
-    margin: 0px;
-    font-size: 16px;
+	color: #c0dbf4;
+	margin: 0px;
+	font-size: 16px;
 }
 /************************
 NAVIGATION
@@ -177,9 +177,9 @@ DASHBOARD
 	font-weight: 600;
 }
 .quicklinks_half ul li {
-    color: #c0dbf4;
-    font-size: 18px;
-    padding: 10px 0px;
+	color: #c0dbf4;
+	font-size: 18px;
+	padding: 10px 0px;
 }
 .col-md-8.col-md-offset-2.navigation-offset-col {
 	padding-left: 0px;
@@ -211,16 +211,16 @@ DASHBOARD
 
 .letter-read, .letter-unread {
 	border: 2px solid #3282be;
-	 background-color: #ffffff;
-	 height: 100px;
-	 border-radius:50%;
-	 width: 22px;
-   height: 22px;
- }
+	background-color: #ffffff;
+	height: 100px;
+	border-radius:50%;
+	width: 22px;
+	height: 22px;
+}
 
 .letter-unread {
- 	 background-color: #3282be;
-  }
+	background-color: #3282be;
+}
 
 .letter-title {
 	color: #0d293c;
@@ -236,12 +236,12 @@ DASHBOARD
 	padding: 30px;
 }
 .panel-body {
-    padding: 30px;
-    margin: 0;
+	padding: 30px;
+	margin: 0;
 }
 .services_toolbox .panel-body {
-    padding:  0px;
-    margin: 0;
+	padding:  0px;
+	margin: 0;
 }
 
 .panel-first {
@@ -288,9 +288,9 @@ Recommended Links
 	background-color: #F3EEE9;
 }
 .recommended_links-text li {
-    font-size: 18px;
-    padding: 10px 0px;
-    color: #35515f;
+	font-size: 18px;
+	padding: 10px 0px;
+	color: #35515f;
 
 }
 .recommended_links-text li a {
@@ -298,8 +298,8 @@ Recommended Links
 	text-decoration: underline;
 }
 .recommended_links-text ul {
-    list-style: none;
-    padding-left: 20px;
+	list-style: none;
+	padding-left: 20px;
 }
 .recommended_links-text li:before {
 	content: "● ";
@@ -351,11 +351,11 @@ Footer
 		margin-right: 0px;
 	}
 	.letter-title {
-	 font-size:14px;
-  }
-  .letter-date {
-	 padding-top: 6px;
- }
+		font-size:14px;
+	}
+	.letter-date {
+		padding-top: 6px;
+	}
 }
 @media screen and (max-width: 480px) {
 	.navbar-brand {
@@ -392,6 +392,12 @@ Footer
 	.services_body_right {
 		padding-left: 0px;
 	}
+	.footer-wrapper {
+		margin: 0 auto;
+		float: none;
+		padding-left: 15px;
+	}
+
 }
 @media screen and (min-width: 960px) {
 	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
