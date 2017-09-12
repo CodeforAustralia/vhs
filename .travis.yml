@@ -20,6 +20,6 @@ script:
 notifications:
   email:
     recipients:
-      - rachellesalvadora@gmail.com
-      on_success: always
-      on_failure: always
+       - rachellesalvadora@gmail.com
+    on_success: always
+    on_failure: always
