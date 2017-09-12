@@ -71,6 +71,57 @@ class AccountDetailsController extends Controller
     }
 
      /**
+     * Updatebyadmin function
+     *
+     * @return \Illuminate\Http\Response
+     */
+     public function updatebyadmin(Request $request, $id)
+     {
+        $password = $request->input('password');
+        $current_password = $request->input('current_password');
+        $firstName = $request->input('firstName');
+        $lastName = $request->input('lastName');
+        $email = $request->input('email');
+        $reference_id = $request->input('reference_id');
+        $client_id = $request->input('client_id');
+        $password_confirmation = $request->input('password_confirmation');
+
+            // Find the User to update
+        $updateUser = AccountDetails::where('id', $id)->first();
+
+        $updateUser->firstName = $firstName;
+        $updateUser->lastName = $lastName;
+        $updateUser->client_id = $client_id;
+        $updateUser->reference_id = $reference_id;
+
+        if($password == '') {
+            
+        } else {
+                    // if password is not empty
+            if($password != $password_confirmation) {
+                        // if password field is not the same as password_confirmation
+                Session::flash('message', 'New password didn\'n match.');
+                return redirect()->route('accounts.edit', ['id' => $id]);
+            } else {
+                        // change password
+                $updateUser->password = bcrypt($password);
+            }
+        } 
+
+
+        $updateUser->save();
+
+        if (!$updateUser) {
+            Session::flash('message', 'There was a problem submitting your form! Please try again!');
+            return redirect()->route('accounts.edit', ['id' => $id]);
+        }
+        else {
+            Session::flash('message', 'You\'ve successfully completed your submission!');
+            return redirect()->route('accounts.view', ['id' => $id]);
+        }
+    }
+
+     /**
      * Update function
      *
      * @return \Illuminate\Http\Response

@@ -22,7 +22,7 @@
 					@if(Session::has('message'))
 					<p class="alert alert-success">{{ Session::get('message') }}</p>
 					@endif
-					@if ($AccountDetails[0]->reference_id == 'NULL')
+					@if ($AccountDetails[0]->reference_id == '')
 					<p class="alert alert-danger">
 						You don't have any services at the moment. Please refer to <a href="http://www.housing.vic.gov.au/" target="_blank" title="Victorian Housing Website">Victorian Housing website</a> for more information about available service.  
 					</p>
@@ -36,15 +36,15 @@
 						<div class="col-md-9">{{ $AccountDetails[0]->email }}</div>
 						<div class="col-md-3">Gender: </div>
 						<div class="col-md-9">
-							@if ($AccountDetails[0]->gender == 'NULL') Not Defined @else {{ $AccountDetails[0]->gender }} @endif
+							@if ($AccountDetails[0]->gender == '') Not Defined @else {{ $AccountDetails[0]->gender }} @endif
 						</div>
 						<div class="col-md-3">Client ID: </div>
 						<div class="col-md-9">
-							@if ($AccountDetails[0]->client_id == 'NULL') No client ID @else {{ $AccountDetails[0]->client_id }} @endif
+							@if ($AccountDetails[0]->client_id == '') No client ID @else {{ $AccountDetails[0]->client_id }} @endif
 						</div>
 						<div class="col-md-3">Service ID: </div>
 						<div class="col-md-9">
-							@if ($AccountDetails[0]->reference_id == 'NULL') No service ID @else {{ $AccountDetails[0]->reference_id }} @endif
+							@if ($AccountDetails[0]->reference_id == '') No service ID @else {{ $AccountDetails[0]->reference_id }} @endif
 						</div>
 						<div class="col-md-3">Address Line 1: </div>
 						<div class="col-md-9">
