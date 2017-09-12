@@ -30,7 +30,7 @@ class AccountDetailsController extends Controller
     public function index()
     {
         // Get all account details
-        $AccountDetails = AccountDetails::all();
+        $AccountDetails = AccountDetails::paginate(15);
         // Get all account address details
         // $UserAddress = UserAddress::all();
 
