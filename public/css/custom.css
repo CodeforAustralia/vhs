@@ -12,13 +12,15 @@
 body {
 	background-color: #ffffff;
 	font-family: "HelveticaNeue", Roboto, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 footer {
 	padding-top: 30px;
 }
 footer p {
-	color: #c0dbf4;
-	margin: 0px;
+    color: #c0dbf4;
+    margin: 0px;
+    font-size: 16px;
 }
 /************************
 NAVIGATION
@@ -83,15 +85,15 @@ DASHBOARD
 	text-align: right;
 }
 .btn-danger {
-    color: #fff;
-    background-color: #ae0000;
-    border-color: #ae0000;
-    border-radius: 0px;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 8px;
-    width: 130px;
-    line-height: 1;
+	color: #fff;
+	background-color: #ae0000;
+	border-color: #ae0000;
+	border-radius: 0px;
+	font-weight: 600;
+	font-size: 18px;
+	padding: 8px;
+	width: 130px;
+	line-height: 1;
 }
 .tool-box {
 	box-shadow: 1px 2px 3px grey;
@@ -133,7 +135,7 @@ DASHBOARD
 .panel-heading .services_heading_right h3 {
 	font-size: 32px;
 	color: #ffffff;
-	font-weight: 500;
+	font-weight: bold;
 	margin-top: 0;
 }
 .panel-footer {
@@ -175,18 +177,19 @@ DASHBOARD
 	font-weight: 600;
 }
 .quicklinks_half ul li {
-	color: #c0dbf4;
-	font-size: 18px;
+    color: #c0dbf4;
+    font-size: 18px;
+    padding: 10px 0px;
 }
 .col-md-8.col-md-offset-2.navigation-offset-col {
 	padding-left: 0px;
 }
 .panel-primary>.panel-heading {
-    color: #fff;
-    background-color: #0063ae;
-    border-color: #0063ae;
-    min-height: 40px;
-    display: flex;
+	color: #fff;
+	background-color: #0063ae;
+	border-color: #0063ae;
+	min-height: 40px;
+	display: flex;
 }
 .panel-primary {
 	border: 0px;
@@ -196,52 +199,85 @@ DASHBOARD
 	background: #ffffff;
 }
 .toolbox-wrapper{
-    margin: 0 auto;
-    float: none;
+	margin: 0 auto;
+	float: none;
 }
 .services_toolbox {
-    margin: 0 auto;
-    float: none;
+	margin: 0 auto;
+	float: none;
 }
 .welcome_banner-wrapper {
-    margin: 0 auto;
-    float: none;
+	margin: 0 auto;
+	float: none;
 }
 
 /************************
 Recommended Links
 *************************/
 .recommended_links-wrapper {
-    padding: 50px 0px;
-    margin: 0 auto;
-    float: none;
+	padding: 50px 0px;
+	margin: 0 auto;
+	float: none;
 }
-
+.recommended_links-banner {
+	padding: 0px 20px;
+}
+.recommended_tools-wrapper {
+	padding: 0px;
+	background-color: #F3EEE9;
+}
+.recommended_links-text li {
+    font-size: 18px;
+    padding: 10px 0px;
+    color: #35515f;
+    
+}
+.recommended_links-text li a {
+	color: #3282bb;
+	text-decoration: underline;
+}
+.recommended_links-text ul {
+    list-style: none;
+    padding-left: 20px;
+}
+.recommended_links-text li:before {
+	content: "● ";
+	font-size: 20px;
+	color: #3382be;
+}
+.recommended_links-banner p {
+	font-size: 22px;
+	color:#0063ae;
+}
 /************************
 Recommendation buttons
 *************************/
 .recommendation_buttons a {
-    width: 100%;
-    padding: 25px;
-    font-size: 22px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    background-color: #3382be;
-    border: 0px;
-    border-radius: 0px;
+	width: 100%;
+	padding: 25px;
+	font-size: 22px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	background-color: #3382be;
+	border: 0px;
+	border-radius: 0px;
+}
+.recommendation_buttons {
+	padding: 10px 10px;
 }
 .recommendation_buttons-wrapper {
-    margin: 0 auto !important;
-    float: none;
+	margin: 0 auto !important;
+	float: none;
 }
+
 /************************
 Footer
 *************************/
 
 .footer-wrapper {
-    margin: 0 auto;
-    float: none;
-    padding-left: 0px;
+	margin: 0 auto;
+	float: none;
+	padding-left: 0px;
 }
 
 @media screen and (max-width: 768px) {

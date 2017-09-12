@@ -44,7 +44,7 @@
 						<div class="col-md-8">
 							<p class="">Last Updated: 19/07/2017</p>
 
-							<p>&copy; State Government of Victoria 2017 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+							<p>&copy; State Government of Victoria 2017</p>
 							<p class="">Authorised by: Department of Health and Human Services</p>
 						</div>
 						<div class="col-md-4">
