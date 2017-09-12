@@ -6,15 +6,16 @@ php:
 sudo: false
 
 before_script:
-  - travis -f setup
+  - travis setup service -f
   - cp .env.travis .env
-  - composer install --dev --prefer-source --no-interaction
+  - mysql -e 'create database homestead_test;'
+  - composer self-update
+  - composer install --no-interaction
   - php artisan key:generate
   - php artisan migrate --seed
   
 script:
-  - vendor/bin/phpmd app text codesize design naming unusedcode
-  - vendor/bin/phpunit --testdox --coverage-text tests
+  - vendor/bin/phpunit
 
 notifications:
   email:
