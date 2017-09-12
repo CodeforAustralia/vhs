@@ -11,7 +11,7 @@
 }
 body {
 	background-color: #ffffff;
-	font-family: "Helvetica Neue", Roboto, Arial, sans-serif;
+	font-family: "HelveticaNeue", Roboto, Arial, sans-serif;
 }
 footer {
 	padding-top: 30px;
@@ -83,15 +83,15 @@ DASHBOARD
 	text-align: right;
 }
 .btn-danger {
-	color: #fff;
-	background-color: #bf5329;
-	border-color: #aa4a24;
-	border-radius: 0px;
-	font-weight: 600;
-	font-size: 18px;
-	padding: 8px;
-	width: 130px;
-	line-height: 1;
+    color: #fff;
+    background-color: #ae0000;
+    border-color: #ae0000;
+    border-radius: 0px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px;
+    width: 130px;
+    line-height: 1;
 }
 .tool-box {
 	box-shadow: 1px 2px 3px grey;
@@ -182,11 +182,11 @@ DASHBOARD
 	padding-left: 0px;
 }
 .panel-primary>.panel-heading {
-	color: #fff;
-	background-color: #0263aa;
-	border-color: #0263aa;
-	min-height: 40px;
-	display: flex;
+    color: #fff;
+    background-color: #0063ae;
+    border-color: #0063ae;
+    min-height: 40px;
+    display: flex;
 }
 .panel-primary {
 	border: 0px;
@@ -194,6 +194,54 @@ DASHBOARD
 	margin: 20px 0px;
 	/* padding: 30px 20px; */
 	background: #ffffff;
+}
+.toolbox-wrapper{
+    margin: 0 auto;
+    float: none;
+}
+.services_toolbox {
+    margin: 0 auto;
+    float: none;
+}
+.welcome_banner-wrapper {
+    margin: 0 auto;
+    float: none;
+}
+
+/************************
+Recommended Links
+*************************/
+.recommended_links-wrapper {
+    padding: 50px 0px;
+    margin: 0 auto;
+    float: none;
+}
+
+/************************
+Recommendation buttons
+*************************/
+.recommendation_buttons a {
+    width: 100%;
+    padding: 25px;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    background-color: #3382be;
+    border: 0px;
+    border-radius: 0px;
+}
+.recommendation_buttons-wrapper {
+    margin: 0 auto !important;
+    float: none;
+}
+/************************
+Footer
+*************************/
+
+.footer-wrapper {
+    margin: 0 auto;
+    float: none;
+    padding-left: 0px;
 }
 
 @media screen and (max-width: 768px) {

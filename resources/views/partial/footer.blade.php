@@ -1,7 +1,7 @@
 <div class="container-wrapper quick_links-wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+			<div class="col-md-9 footer-wrapper">
 				<div class="col-md-4 quicklinks_half">
 					<div class="quicklinks-title">
 						<h4>Help with information</h4>
@@ -38,7 +38,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
+				<div class="col-md-9 footer-wrapper">
 					<!-- FOOTER -->
 					<footer>
 						<div class="col-md-8">
