@@ -37,7 +37,7 @@
                     <div class="col-md-2">
 
                     </div>
-                    <div class="col-md-8 services_heading_right">
+                    <div class="col-md-7 services_heading_right">
                         <p>Victorian Housing Register Application #{{ Auth::user()->service_id }}</p>
                         <h3>Application</h3>
                     </div>
@@ -46,11 +46,16 @@
                             <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
                         </div>
                     </div>
+                    <div class="col-md-1 services_heading_right">
+                        <div class="toolbox-banner mail_icon-link">
+                            <!-- <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p> -->
+                        </div>
+                    </div>
                 </div>
                 <div class="panel-body">
                     <div class="col-md-1 icon_read_mark">
                         <div class="text-center col-md-12">
-                         <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                           <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
                             <title>ico-unread@2x</title>
                             <desc>Created with Sketch.</desc>
@@ -91,15 +96,25 @@
                 <div class="col-md-2">
 
                 </div>
-                <div class="col-md-10 services_heading_right">
+                <div class="col-md-7 services_heading_right">
                     <p>Tenacy #{{ Auth::user()->service_id }}</p>
                     <h3>Tenancy</h3>
+                </div>
+                <div class="col-md-2 services_heading_right">
+                    <div class="toolbox-banner mail_icon-link">
+                        <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+                <div class="col-md-1 services_heading_right">
+                    <div class="toolbox-banner mail_icon-link">
+                        <!-- <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p> -->
+                    </div>
                 </div>
             </div>
             <div class="panel-body">
                 <div class="col-md-1 icon_read_mark">
                     <div class="text-center col-md-12">
-                     <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                       <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
                         <title>ico-read@2x</title>
                         <desc>Created with Sketch.</desc>
@@ -125,13 +140,13 @@
                     </svg>
                 </div>
                 <div class="text-center col-md-12 icon_read_mark">
-                 <i class="fa fa-arrow-up" aria-hidden="true"></i>
-             </div>
-         </div>
-         <div class="col-md-1 services_body_right">
+                   <i class="fa fa-arrow-up" aria-hidden="true"></i>
+               </div>
+           </div>
+           <div class="col-md-1 services_body_right">
 
-         </div>
-         <div class="col-md-2 services_body_date">
+           </div>
+           <div class="col-md-2 services_body_date">
             <p><i>9 Sep 2017</i></p>
 
         </div>
@@ -147,15 +162,25 @@
         <div class="col-md-2">
 
         </div>
-        <div class="col-md-10 services_heading_right">
+        <div class="col-md-7 services_heading_right">
             <p>Bond #{{ Auth::user()->service_id }}</p>
             <h3>Bond</h3>
+        </div>
+        <div class="col-md-2 services_heading_right">
+            <div class="toolbox-banner mail_icon-link">
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+            </div>
+        </div>
+        <div class="col-md-1 services_heading_right">
+            <div class="toolbox-banner mail_icon-link">
+                <!-- <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p> -->
+            </div>
         </div>
     </div>
     <div class="panel-body">
         <div class="col-md-1 icon_read_mark">
             <div class="text-center col-md-12">
-             <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+               <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
                 <title>ico-read@2x</title>
                 <desc>Created with Sketch.</desc>
@@ -181,16 +206,16 @@
             </svg>
         </div>
         <div class="text-center col-md-12 icon_read_mark">
-         <i class="fa fa-arrow-up" aria-hidden="true"></i>
-     </div>
- </div>
- <div class="col-md-1 services_body_right">
+           <i class="fa fa-arrow-up" aria-hidden="true"></i>
+       </div>
+   </div>
+   <div class="col-md-1 services_body_right">
 
- </div>
- <div class="col-md-2 services_body_date">
-     <p><i>9 Sep 2017</i></p>
- </div>
- <div class="col-md-8 services_body_right">
+   </div>
+   <div class="col-md-2 services_body_date">
+       <p><i>9 Sep 2017</i></p>
+   </div>
+   <div class="col-md-8 services_body_right">
     <p><strong>Letter</strong></p>
 </div>
 </div>
@@ -199,7 +224,7 @@
 
     <!-- <div class="row toolbox_half-row">
     <div class="tool-box_half col-xs-12"> -->
-       <!-- <a href="/upload">Upload</a> -->
+     <!-- <a href="/upload">Upload</a> -->
            <!-- @if ( Auth::user()->usertype == '1' )
            <a href="/accounts">Account Details</a>
            @else 
@@ -223,13 +248,13 @@
                     <h3>Recommended Links</h3>
                 </div>
                 <div>
-                 <p>Looking into private rental? <a href="#">Learn more about VHS Bonding Assistance.</a></p>
-                 <p>Need advice and support? <a href="#">Find a service provider near you</a></p>
-                 <p><a href="#">Nearest Housing Office</a></p>
-             </div>
-         </div>
-     </div>
- </div>
+                   <p>Looking into private rental? <a href="#">Learn more about VHS Bonding Assistance.</a></p>
+                   <p>Need advice and support? <a href="#">Find a service provider near you</a></p>
+                   <p><a href="#">Nearest Housing Office</a></p>
+               </div>
+           </div>
+       </div>
+   </div>
 </div>
 
 @endsection
