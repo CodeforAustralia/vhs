@@ -69,7 +69,7 @@
 						<div class="form-group{{ $errors->has('client_id') ? ' has-error' : '' }}">
 							<label for="client_id" class="col-md-4 control-label">Client ID:</label>
 							<div class="col-md-6">	
-								<input id="client_id" type="number" class="form-control" name="client_id" value="{{ $AccountDetails[0]->client_id }}" required autofocus>
+								<input id="client_id" type="number" class="form-control" name="client_id" value="{{ $AccountDetails[0]->client_id }}" autofocus>
 
 								@if ($errors->has('client_id'))
 								<span class="help-block">
@@ -82,7 +82,7 @@
 						<div class="form-group{{ $errors->has('reference_id') ? ' has-error' : '' }}">
 							<label for="reference_id" class="col-md-4 control-label">Service ID:</label>
 							<div class="col-md-6">	
-								<input id="client_id" type="number" class="form-control" name="reference_id" value="{{ $AccountDetails[0]->reference_id }}" required autofocus>
+								<input id="client_id" type="number" class="form-control" name="reference_id" value="{{ $AccountDetails[0]->reference_id }}" autofocus>
 
 								@if ($errors->has('reference_id'))
 								<span class="help-block">

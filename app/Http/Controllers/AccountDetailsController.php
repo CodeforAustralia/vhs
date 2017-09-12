@@ -78,7 +78,6 @@ class AccountDetailsController extends Controller
      public function updatebyadmin(Request $request, $id)
      {
         $password = $request->input('password');
-        $current_password = $request->input('current_password');
         $firstName = $request->input('firstName');
         $lastName = $request->input('lastName');
         $email = $request->input('email');
