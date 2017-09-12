@@ -1,7 +1,7 @@
 ********************
 VHS Project
 ********************
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)]()
+[![Travis](https://travis-ci.org/CodeforAustralia/vhs.svg?branch=master)]()
 
 ### Built With
 ********************
