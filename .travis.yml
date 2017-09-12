@@ -3,18 +3,12 @@ language: php
 php:
   - 5.6
 
-sudo: false
-
 before_script:
   - cp .env.travis .env
-  - apt-get install php
-  - composer install --no-interaction
-  - composer update 
   - mysql -e 'create database homestead_test;'
-  - php artisan migrate
-  - php artisan key:generate
-  - php artisan migrate --seed
-  
+  - composer self-update
+  - composer install --no-interaction
+
 script:
   - vendor/bin/phpunit
 
