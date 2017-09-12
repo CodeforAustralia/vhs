@@ -198,6 +198,61 @@ DASHBOARD
 	/* padding: 30px 20px; */
 	background: #ffffff;
 }
+
+.show-more {
+	font-weight: bold;
+}
+
+.letters-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.letter-read, .letter-unread {
+	border: 2px solid #3282be;
+	 background-color: #ffffff;
+	 height: 100px;
+	 border-radius:50%;
+	 width: 22px;
+   height: 22px;
+ }
+
+.letter-unread {
+ 	 background-color: #3282be;
+  }
+
+.letter-title {
+	color: #0d293c;
+	font-weight: 500;
+	font-size:16px;
+}
+
+.arrow-up {
+	padding-left: 8px;
+	margin: 0;
+}
+
+.panel-body {
+	padding: 0;
+	margin: 0;
+}
+
+.panel-first {
+	padding-top: 10px;
+}
+.panel-last {
+	padding-bottom: 10px;
+}
+
+.service-name, .service-type {
+	padding-left: 15%%;
+}
+
+.service-type {
+	font-size: 24px;
+}
+
 .toolbox-wrapper{
 	margin: 0 auto;
 	float: none;
@@ -230,7 +285,7 @@ Recommended Links
     font-size: 18px;
     padding: 10px 0px;
     color: #35515f;
-    
+
 }
 .recommended_links-text li a {
 	color: #3282bb;
@@ -289,6 +344,12 @@ Footer
 	button.navbar-toggle {
 		margin-right: 0px;
 	}
+	.letter-title {
+	 font-size:14px;
+  }
+  .letter-date {
+	 padding-top: 6px;
+ }
 }
 @media screen and (max-width: 480px) {
 	.navbar-brand {
