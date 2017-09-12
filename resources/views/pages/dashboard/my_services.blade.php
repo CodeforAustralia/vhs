@@ -16,14 +16,13 @@
 <!-- Service Panel 0 -->
                 <div class="panel panel-primary">
     	             <div class="panel-heading">
-
-                     <div class="col-xs-2">
+                     <div class="col-md-2">
                      </div>
-                     <div class="col-xs-7 services_heading_right">
+                     <div class="col-md-7 col-xs-10 services_heading_right">
                          <p>Victorian Housing Register Application #1234567890</p>
                          <h3>Application</h3>
                      </div>
-                     <div class="col-xs-2 services_heading_right">
+                     <div class="col-md-2 services_heading_right">
                          <div class="toolbox-banner mail_icon-link">
                              <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
                          </div>
@@ -37,9 +36,9 @@
 
                    <!-- Letter 0 -->
     	             <div class="panel-body row panel-first">
-                     <div class="col-sm-1 letter-status"><div class="letter-read"></div></div>
-                     <div class="col-sm-3 letter-date"><i>12 Sept 2017</i></div>
-                     <div class="col-sm-8 letter-title">You are on a waiting list</div>
+                     <div class="col-xs-4 col-md-2 letter-status"><div class="letter-read"></div></div>
+                     <div class="col-xs-8 col-md-2 letter-date"><i>12 Sept 2017</i></div>
+                     <div class="col-xs-8 col-md-8 letter-title">You are on a waiting list</div>
     	             </div>
 
                    <!-- Arrow -->
@@ -49,9 +48,9 @@
 
                    <!-- Letter 1 -->
                    <div class="panel-body row">
-                     <div class="col-sm-1 letter-status"><div class="letter-read"></div></div>
-                     <div class="col-sm-3 letter-date"><i>1 Aug 2017</i></div>
-                     <div class="col-sm-8 letter-title">Further documents are needed</div>
+                      <div class="col-xs-4 col-md-2 letter-status"><div class="letter-read"></div></div>
+                     <div class="col-xs-8 col-md-2 letter-date"><i>12 Sept 2017</i></div>
+                     <div class="col-xs-8 col-md-8 letter-title">You are on a waiting list</div>
                    </div>
 
                    <!-- Arrow -->
@@ -61,9 +60,9 @@
 
                    <!-- Letter 2 -->
     	             <div class="panel-body row panel-last">
-                     <div class="col-sm-1 letter-status"><div class="letter-read"></div></div>
-                     <div class="col-sm-3 letter-date"><i>1 July 2017</i></div>
-                     <div class="col-sm-8 letter-title">Your application is being reviewed</div>
+                      <div class="col-xs-4 col-md-2 letter-status"><div class="letter-read"></div></div>
+                     <div class="col-xs-8 col-md-2 letter-date"><i>12 Sept 2017</i></div>
+                     <div class="col-xs-8 col-md-8 letter-title">You are on a waiting list</div>
     	             </div>
 
     	             <div class="panel-footer text-center show-more" id="panel-footer-01">
@@ -76,13 +75,13 @@
 <!-- Service Panel 1 -->
                 <div class="panel panel-primary">
     	             <div class="panel-heading">
-                     <div class="col-xs-2">
+                     <div class="col-md-2">
                      </div>
-                     <div class="col-xs-7 services_heading_right">
+                     <div class="col-md-7 col-xs-10 services_heading_right">
                          <p>Tenancy #1234567891</p>
                          <h3>Tenancy</h3>
                      </div>
-                     <div class="col-xs-2 services_heading_right">
+                      <div class="col-md-2 services_heading_right">
                          <div class="toolbox-banner mail_icon-link">
                              <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
                          </div>
@@ -95,9 +94,9 @@
 
                    <!-- Letter 0 -->
     	             <div class="panel-body row panel-first">
-                     <div class="col-sm-1 letter-status"><div class="letter-read"></div></div>
-                     <div class="col-sm-3 letter-date"><i>12 Sept 2017</i></div>
-                     <div class="col-sm-8 letter-title">You are on a waiting list</div>
+                      <div class="col-xs-4 col-md-2 letter-status"><div class="letter-read"></div></div>
+                     <div class="col-xs-8 col-md-2 letter-date"><i>12 Sept 2017</i></div>
+                     <div class="col-xs-8 col-md-8 letter-title">You are on a waiting list</div>
     	             </div>
 
                    <!-- Arrow -->
@@ -107,9 +106,9 @@
 
                    <!-- Letter 1 -->
                    <div class="panel-body row">
-                     <div class="col-sm-1 letter-status"><div class="letter-read"></div></div>
-                     <div class="col-sm-3 letter-date"><i>1 Aug 2017</i></div>
-                     <div class="col-sm-8 letter-title">Further documents are needed</div>
+                      <div class="col-xs-4 col-md-2 letter-status"><div class="letter-read"></div></div>
+                     <div class="col-xs-8 col-md-2 letter-date"><i>12 Sept 2017</i></div>
+                     <div class="col-xs-8 col-md-8 letter-title">You are on a waiting list</div>
                    </div>
 
                    <!-- Arrow -->
@@ -119,9 +118,9 @@
 
                    <!-- Letter 2 -->
     	             <div class="panel-body row panel-last">
-                     <div class="col-sm-1 letter-status"><div class="letter-read"></div></div>
-                     <div class="col-sm-3 letter-date"><i>1 July 2017</i></div>
-                     <div class="col-sm-8 letter-title">Your application is being reviewed</div>
+                      <div class="col-xs-4 col-md-2 letter-status"><div class="letter-read"></div></div>
+                     <div class="col-xs-8 col-md-2 letter-date"><i>12 Sept 2017</i></div>
+                     <div class="col-xs-8 col-md-8 letter-title">You are on a waiting list</div>
     	             </div>
 
     	             <div class="panel-footer text-center show-more" id="panel-footer-01">
@@ -133,18 +132,18 @@
 <!-- Service Panel 2 -->
                 <div class="panel panel-primary">
     	             <div class="panel-heading">
-                     <div class="col-xs-2">
+                     <div class="col-md-2">
                      </div>
-                     <div class="col-xs-7 services_heading_right">
+                     <div class="col-md-7 col-xs-10 services_heading_right">
                          <p>Bond #1234567892</p>
                          <h3>Bond</h3>
                      </div>
-                     <div class="col-xs-2 services_heading_right">
+                     <div class="col-md-2 services_heading_right">
                          <div class="toolbox-banner mail_icon-link">
                              <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
                          </div>
                      </div>
-                     <div class="col-xs-1 services_heading_right">
+                     <div class="col-md-1 services_heading_right">
                          <div class="toolbox-banner mail_icon-link">
                          </div>
                      </div>
@@ -152,9 +151,9 @@
 
                    <!-- Letter 0 -->
     	             <div class="panel-body row panel-first">
-                     <div class="col-sm-1 letter-status"><div class="letter-read"></div></div>
-                     <div class="col-sm-3 letter-date"><i>12 Sept 2017</i></div>
-                     <div class="col-sm-8 letter-title">You are on a waiting list</div>
+                      <div class="col-xs-4 col-md-2 letter-status"><div class="letter-read"></div></div>
+                     <div class="col-xs-8 col-md-2 letter-date"><i>12 Sept 2017</i></div>
+                     <div class="col-xs-8 col-md-8 letter-title">You are on a waiting list</div>
     	             </div>
 
                    <!-- Arrow -->
@@ -164,9 +163,9 @@
 
                    <!-- Letter 1 -->
                    <div class="panel-body row">
-                     <div class="col-sm-1 letter-status"><div class="letter-read"></div></div>
-                     <div class="col-sm-3 letter-date"><i>1 Aug 2017</i></div>
-                     <div class="col-sm-8 letter-title">Further documents are needed</div>
+                      <div class="col-xs-4 col-md-2 letter-status"><div class="letter-read"></div></div>
+                     <div class="col-xs-8 col-md-2 letter-date"><i>12 Sept 2017</i></div>
+                     <div class="col-xs-8 col-md-8 letter-title">You are on a waiting list</div>
                    </div>
 
                    <!-- Arrow -->
@@ -176,9 +175,9 @@
 
                    <!-- Letter 2 -->
     	             <div class="panel-body row panel-last">
-                     <div class="col-sm-1 letter-status"><div class="letter-read"></div></div>
-                     <div class="col-sm-3 letter-date"><i>1 July 2017</i></div>
-                     <div class="col-sm-8 letter-title">Your application is being reviewed</div>
+                      <div class="col-xs-4 col-md-2 letter-status"><div class="letter-read"></div></div>
+                     <div class="col-xs-8 col-md-2 letter-date"><i>12 Sept 2017</i></div>
+                     <div class="col-xs-8 col-md-8 letter-title">You are on a waiting list</div>
     	             </div>
 
     	             <div class="panel-footer text-center show-more" id="panel-footer-01">
