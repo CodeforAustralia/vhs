@@ -1,13 +1,17 @@
 <!-- My Services -->
 
 <div class="container-wrapper tools-wrapper">
+<div class="container">
+  <div class="col-md-6 toolbox-wrapper col-xs-12">
+      <div class="toolbox-banner col-md-10 col-xs-12">
+        <h3>My Services</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="toolbox-banner">
-                    <h3>My Services</h3>
-                </div>
-
+            <div class="col-md-9 services_toolbox">
 
 <!-- Service Panel 0 -->
                 <div class="panel panel-primary">
