@@ -7,11 +7,11 @@ sudo: false
 
 before_script:
   - cp .env.travis .env
-  - composer install 
+  - apt-get install php
+  - composer install --no-interaction
   - composer update 
   - mysql -e 'create database homestead_test;'
   - php artisan migrate
-  - composer install --no-interaction
   - php artisan key:generate
   - php artisan migrate --seed
   
