@@ -66,8 +66,9 @@ DASHBOARD
 	padding-bottom: 30px;
 }
 .toolbox-banner h3 {
-	color: #3482b8;
-	font-weight: 100;
+    color: #0263aa;
+    font-weight: normal;
+    font-size: 22px;
 }
 .container-wrapper.tools-wrapper {
 	background-color: #F3EEE9;
@@ -125,10 +126,10 @@ DASHBOARD
 	padding: 10px 0px;
 }
 .panel-heading .services_heading_right h3 {
-	font-size: 24px;
-	color: #ffffff;
-	font-weight: 400;
-	margin-top: 0;
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: 0;
 }
 .panel-footer {
 	background-color: #f8f6f5;
