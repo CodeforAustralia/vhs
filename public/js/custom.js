@@ -12,8 +12,7 @@ $('.show-more').on('click',function(e){
   } else {
     $(this).parent().find(".row").hide();
     $(this).parent().find(".row").first().show();
-    $(this).parent().find(".row").first().css("padding-bottom","10px");
-
+    $(this).parent().find(".row").first().css("padding","30px 0px");
     current_text = "Show More";
   }
   $(this).text(current_text);
