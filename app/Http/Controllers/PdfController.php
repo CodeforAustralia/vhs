@@ -68,7 +68,7 @@ class PdfController extends Controller
     public function pdfUpload($filename)
     {
         // Change outout folder
-        $outputDir = Config::set('pdftohtml.output', public_path().'/pdftohtml/');
+        Config::set('pdftohtml.output', public_path().'/pdftohtml/');
 
         // initiate
         $pdf = new Pdf(public_path() . '/pdf/' . $filename);
