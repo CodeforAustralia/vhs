@@ -1,5 +1,5 @@
 
-<div class="container-wrapper recommended_links-wrapper">
+<div class="container-wrapper recommendation_links-wrapper">
 	<div class="container">
 		<div class="row">
 			<div class="recommendation_buttons-wrapper col-md-8 ">
