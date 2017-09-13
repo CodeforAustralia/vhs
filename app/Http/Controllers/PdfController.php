@@ -8,6 +8,7 @@ use App\Models\Letters;
 use Database\Factories;
 use App\Models\Templates;
 use File;
+use Storage;
 
 class PdfController extends Controller
 {
@@ -30,10 +31,14 @@ class PdfController extends Controller
     {
 
         // $directory = File::directories('../pdf');
-
-        // $files = File::allFiles('../pdf');
+        // // print_r($directory);
+        // // die;
+        // $files = File::allFiles($directory);
+        // // 
         // foreach ($files as $file)
         // {
+        //      echo (string)$file, "\n";
+        // die;
         //     $filename = $file;
         //     $file = $this->pdfUpload($filename);
         // }
@@ -75,20 +80,11 @@ class PdfController extends Controller
     
     public function pdfUpload($filename)
     {
-        // Form uploads file to the server using $_POST
-        // You get the filename from the post
-        // $filename = $request->('fileName');
-        // Put filename into PDF call
-        // $pdf = new Pdf(public_path() . '/' . $filename);
 
         // initiate
-        $pdf = new Pdf(base_path() . '/pdf/'. $filename);
-        // $pdf = new Pdf('../pdf/' . $filename);
-        // convert to html string
+        $pdf = new Pdf(base_path() . '/pdf/' . $filename);
+        
         $html = $pdf->html();
-        // echo $html;
-        // die();
-
         // Finds substring inside string, looks for the word 'Ref'
         $refNumber = substr($html, strpos($html, "Ref") + 10);
         $refNumber = substr($refNumber, 0, strpos($refNumber, '</p>'));
