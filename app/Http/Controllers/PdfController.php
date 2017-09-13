@@ -67,15 +67,17 @@ class PdfController extends Controller
     
     public function pdfUpload($filename)
     {
+        // Change outout folder
+        $outputDir = Config::set('pdftohtml.output', public_path().'/pdftohtml/');
+
         // initiate
         $pdf = new Pdf(public_path() . '/pdf/' . $filename);
         
-        $html = $pdf->html()->bin->setOutputDirectory(base_path().'/pdftohtml');;
+        $html = $pdf->html();
         // Finds substring inside string, looks for the word 'Ref'
         $refNumber = substr($html, strpos($html, "Ref") + 10);
         $refNumber = substr($refNumber, 0, strpos($refNumber, '</p>'));
-        // Change outout folder
-        Config::set('pdftohtml.output', public_path().'/pdftohtml/'. $refNumber);
+        
 
         $months = array(
             'January',
