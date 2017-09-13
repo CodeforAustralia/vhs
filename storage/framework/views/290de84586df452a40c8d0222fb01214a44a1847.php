@@ -1,7 +1,7 @@
 <div class="container-wrapper quick_links-wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+			<div class="col-md-9 footer-wrapper">
 				<div class="col-md-4 quicklinks_half">
 					<div class="quicklinks-title">
 						<h4>Help with information</h4>
@@ -38,13 +38,13 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
+				<div class="col-md-9 footer-wrapper">
 					<!-- FOOTER -->
 					<footer>
 						<div class="col-md-8">
 							<p class="">Last Updated: 19/07/2017</p>
 
-							<p>&copy; State Government of Victoria 2017 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+							<p>&copy; State Government of Victoria 2017</p>
 							<p class="">Authorised by: Department of Health and Human Services</p>
 						</div>
 						<div class="col-md-4">
@@ -63,4 +63,4 @@
 
 <!-- Scripts -->
 <script src="<?php echo e(asset('js/app.js')); ?>"></script>
-
+<script src="<?php echo e(asset('js/custom.js')); ?>"></script>

@@ -45,7 +45,13 @@
                 </a>
 
                 <ul class="dropdown-menu" role="menu">
-                  <li class=""><a href="/accountdetails">Account Details</a></li>
+                  <li class="">
+                    <?php if( Auth::user()->usertype == '1' ): ?>
+                    <a href="/accounts">Account Details</a>
+                    <?php else: ?> 
+                    <a href="/accountdetails/<?php echo e(Auth::user()->id); ?>">Account Details</a>
+                    <?php endif; ?>
+                  </li>
 
                   <li>
                     <a href="<?php echo e(route('logout')); ?>"
