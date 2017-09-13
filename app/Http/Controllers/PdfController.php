@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Gufy\PdfToHtml\Pdf as Pdf;
+use Gufy\PdfToHtml\Config;
 use App\Models\Letters;
 use Database\Factories;
 use App\Models\Templates;
@@ -30,21 +31,7 @@ class PdfController extends Controller
     public function allFiles()
     {
 
-        // $directory = File::directories('../pdf');
-        // // print_r($directory);
-        // // die;
-        // $files = File::allFiles($directory);
-        // // 
-        // foreach ($files as $file)
-        // {
-        //      echo (string)$file, "\n";
-        // die;
-        //     $filename = $file;
-        //     $file = $this->pdfUpload($filename);
-        // }
-
-        // $problems = Problem::with('letters')->with('suburb')->get();
-        // $problems = Letters::with('letters')->get();
+        // get all letters
         $Letters = Letters::all();
         $Templates = Templates::all();
         return view('pages/letters')->with([
@@ -80,14 +67,20 @@ class PdfController extends Controller
     
     public function pdfUpload($filename)
     {
+        // Change outout folder
+        $outputDir = Config::set('pdftohtml.output', public_path().'/pdftohtml/');
 
-        \Gufy\PdfToHtml\Config::set('pdftohtml.output', public_path().'/pdftohtml/');
         // initiate
         $pdf = new Pdf(public_path() . '/pdf/' . $filename);
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 29eac4782ab0782386992a7c1c6272f622cb304b
         $html = $pdf->html();
         // Finds substring inside string, looks for the word 'Ref'
         $refNumber = substr($html, strpos($html, "Ref") + 10);
         $refNumber = substr($refNumber, 0, strpos($refNumber, '</p>'));
+        
 
         $months = array(
             'January',
@@ -133,8 +126,6 @@ class PdfController extends Controller
 
         preg_match('/\b(\d{4})\b/', $year, $yearMatched);
         $finalDate = $yearMatched[1] . '-' . $monthNumberFinal . '-' . $day;
-        // echo $finalDate;
-        // die();
 
         // Finds substring inside string, looks for the word 'Dear'
         $getclientName = substr($html, strpos($html, "Dear") + 6);
@@ -151,11 +142,6 @@ class PdfController extends Controller
         $firstParagraph3 = substr($firstParagraph, strpos($firstParagraph, "ft01") + strlen($firstParagraph2));
         $firstParagraph4 = substr($firstParagraph3, strpos($firstParagraph3, "ft01") + 6);
         $firstParagraph4 = substr($firstParagraph4, 0, strpos($firstParagraph4, '</p>'));
-         // $pos2 = strpos($haystack, $needle, $pos1 + strlen($needle));
-        // $firstParagraph2 = substr($firstParagraph2, 0, strpos($firstParagraph2, '</p>'));
-
-        // echo $firstParagraph4;
-        // die();
 
         // Create new pdf object
         $letters = new letters;
