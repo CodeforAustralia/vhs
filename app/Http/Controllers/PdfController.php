@@ -71,20 +71,12 @@ class PdfController extends Controller
         // Change outout folder
         Config::set('pdftohtml.output', public_path().'/pdftohtml/'. $random_dir);
         // $outputDir = public_path().'/pdftohtml/';
-        Config::set('pdfinfo.bin', '/usr/local/bin/pdfinfo/');
-        Config::set('pdftohtml.bin', '/usr/local/bin/pdftohtml/');
+        Config::set('pdfinfo.bin', '/usr/bin/pdfinfo');
+        Config::set('pdftohtml.bin', '/usr/bin/pdftohtml');
 
         // initiate
         $pdf = new Pdf(public_path() . '/pdf/' . $filename);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        
->>>>>>> 29eac4782ab0782386992a7c1c6272f622cb304b
-=======
-        // $total_pages = $pdf->getPages();
 
->>>>>>> a0f16c1839153fcf720f6311f4e5ceb9a80cecb7
         $html = $pdf->html();
         // print_r('<pre>');
         // print_r($pdf);

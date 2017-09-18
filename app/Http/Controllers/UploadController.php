@@ -20,7 +20,7 @@ class UploadController extends Controller
      */
     public function index()
     {
-    	// return view('pages/upload_form');
+        // return view('pages/upload_form');
     }
 
 
@@ -31,7 +31,7 @@ class UploadController extends Controller
      */
     public function uploadForm()
     {
-    	return view('pages/upload_form');
+        return view('pages/upload_form');
     }
 
     public function uploadSubmit(Request $request)
@@ -40,28 +40,29 @@ class UploadController extends Controller
         // $filename = $request->file('files')->storeAs('uploads', 'files');
         // $files = $request->input('files');
         // $files = Input::get('files');
-         $input=$request->all();
-         $pdfUploaded=array();
-         $pdf = array(
-                'file' => 'required|max:10000|mimes:pdf'
-                );
+       $input=$request->all();
+       $pdfUploaded=array();
+       $filetype = array(
+        'file' => 'required|max:10000|mimes:pdf,jpeg,bmp,png,xml'
+        );
 
 
-         if($files=$request->file('pdfUploaded')){
-            foreach($files as $file){
-                $filename=$file->getClientOriginalName();
-<<<<<<< HEAD
-                $file->move(public_path(). '/pdf/', $filename);
-=======
+       if($files=$request->file('pdfUploaded')){
+        foreach($files as $file){
+            $filename=$file->getClientOriginalName();
+            if($filetype->file('pdf')){
                 $file->move(public_path().'/pdf/', $filename);
->>>>>>> a0f16c1839153fcf720f6311f4e5ceb9a80cecb7
                 app('App\Http\Controllers\PdfController')->pdfUpload($filename);
+            } elseif($filetype->file('pdf')) {
+                $file->move(public_path().'/xml/', $filename);
             }
+
         }
-       $Letters = Letters::all();
-        return redirect('letters')->with([
-            'Letters' => $Letters
-            ]);
     }
+    $Letters = Letters::all();
+    return redirect('letters')->with([
+        'Letters' => $Letters
+        ]);
+}
 
 }

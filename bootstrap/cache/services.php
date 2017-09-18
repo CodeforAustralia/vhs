@@ -28,6 +28,7 @@
     24 => 'App\\Providers\\AuthServiceProvider',
     25 => 'App\\Providers\\EventServiceProvider',
     26 => 'App\\Providers\\RouteServiceProvider',
+    27 => 'Orchestra\\Parser\\XmlServiceProvider',
   ),
   'eager' => 
   array (
@@ -138,6 +139,7 @@
     'validator' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'command.tinker' => 'Laravel\\Tinker\\TinkerServiceProvider',
+    'orchestra.parser.xml' => 'Orchestra\\Parser\\XmlServiceProvider',
   ),
   'when' => 
   array (
@@ -178,6 +180,9 @@
     array (
     ),
     'Laravel\\Tinker\\TinkerServiceProvider' => 
+    array (
+    ),
+    'Orchestra\\Parser\\XmlServiceProvider' => 
     array (
     ),
   ),
