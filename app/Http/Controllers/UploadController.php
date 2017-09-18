@@ -50,7 +50,11 @@ class UploadController extends Controller
          if($files=$request->file('pdfUploaded')){
             foreach($files as $file){
                 $filename=$file->getClientOriginalName();
+<<<<<<< HEAD
                 $file->move(public_path(). '/pdf/', $filename);
+=======
+                $file->move(public_path().'/pdf/', $filename);
+>>>>>>> a0f16c1839153fcf720f6311f4e5ceb9a80cecb7
                 app('App\Http\Controllers\PdfController')->pdfUpload($filename);
             }
         }
