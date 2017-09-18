@@ -40,24 +40,29 @@ class UploadController extends Controller
         // $filename = $request->file('files')->storeAs('uploads', 'files');
         // $files = $request->input('files');
         // $files = Input::get('files');
-         $input=$request->all();
-         $pdfUploaded=array();
-         $pdf = array(
-                'file' => 'required|max:10000|mimes:pdf'
-                );
+       $input=$request->all();
+       $pdfUploaded=array();
+       $filetype = array(
+        'file' => 'required|max:10000|mimes:pdf,jpeg,bmp,png,xml'
+        );
 
 
-         if($files=$request->file('pdfUploaded')){
-            foreach($files as $file){
-                $filename=$file->getClientOriginalName();
+       if($files=$request->file('pdfUploaded')){
+        foreach($files as $file){
+            $filename=$file->getClientOriginalName();
+            if($filetype->file('pdf')){
                 $file->move(public_path().'/pdf/', $filename);
                 app('App\Http\Controllers\PdfController')->pdfUpload($filename);
+            } elseif($filetype->file('pdf')) {
+                $file->move(public_path().'/xml/', $filename);
             }
+
         }
-       $Letters = Letters::all();
-        return redirect('letters')->with([
-            'Letters' => $Letters
-            ]);
     }
+    $Letters = Letters::all();
+    return redirect('letters')->with([
+        'Letters' => $Letters
+        ]);
+}
 
 }

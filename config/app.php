@@ -179,6 +179,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // Laravel XML Parser
+        Orchestra\Parser\XmlServiceProvider::class,
+
         ],
 
     /*
@@ -227,6 +230,8 @@ return [
     'URL' => Illuminate\Support\Facades\URL::class,
     'Validator' => Illuminate\Support\Facades\Validator::class,
     'View' => Illuminate\Support\Facades\View::class,
+    // Laravel XML Parser
+    'XmlParser' => Orchestra\Parser\Xml\Facade::class,
 
     ],
 
