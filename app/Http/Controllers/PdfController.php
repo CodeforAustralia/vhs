@@ -33,7 +33,7 @@ class PdfController extends Controller
 
         // get all letters
         $Letters = Letters::all();
-        $Templates = Templates::all();
+        $Templates = Templates::where('template_id', $Letters[0]['template_id'])->get();
         return view('pages/letters')->with([
             'Letters' => $Letters,
             'Templates' => $Templates
@@ -67,13 +67,23 @@ class PdfController extends Controller
     
     public function pdfUpload($filename)
     {
+        $random_dir = uniqid();
         // Change outout folder
-        Config::set('pdftohtml.output', public_path().'/pdftohtml/');
+        Config::set('pdftohtml.output', public_path().'/pdftohtml/'. $random_dir);
+        // $outputDir = public_path().'/pdftohtml/';
+        Config::set('pdfinfo.bin', '/usr/local/bin/pdfinfo/');
+        Config::set('pdftohtml.bin', '/usr/local/bin/pdftohtml/');
 
         // initiate
         $pdf = new Pdf(public_path() . '/pdf/' . $filename);
-        
+        // $total_pages = $pdf->getPages();
+
         $html = $pdf->html();
+        // print_r('<pre>');
+        // print_r($pdf);
+        // die;
+        // check if your pdf has more than one pages
+        
         // Finds substring inside string, looks for the word 'Ref'
         $refNumber = substr($html, strpos($html, "Ref") + 10);
         $refNumber = substr($refNumber, 0, strpos($refNumber, '</p>'));
