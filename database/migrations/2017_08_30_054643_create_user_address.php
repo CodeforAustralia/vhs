@@ -20,14 +20,14 @@ class CreateUserAddress extends Migration
         $table->increments('id');
         $table->bigInteger('user_id')->unsigned();
         $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-        $table->string('address_1');
+        $table->string('address_1')->nullable();
         $table->string('address_2')->nullable();
         $table->string('address_3')->nullable();
-        $table->string('suburb_town');
-        $table->string('postcode');
-        $table->string('postal_address_1');
-        $table->string('postal_suburb_town');
-        $table->string('postal_postcode');
+        $table->string('suburb_town')->nullable();
+        $table->string('postcode')->nullable();
+        $table->string('postal_address_1')->nullable();
+        $table->string('postal_suburb_town')->nullable();
+        $table->string('postal_postcode')->nullable();
         $table->timestamps();
     });
  }

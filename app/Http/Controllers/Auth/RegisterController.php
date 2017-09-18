@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Models\UserAddress;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -52,7 +53,7 @@ class RegisterController extends Controller
             'lastName' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
-        ]);
+            ]);
     }
 
     /**
@@ -63,11 +64,32 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'firstName' => $data['firstName'],
-            'lastName' => $data['lastName'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
+         // add to user  to the database
+        $addToDB = new user;
+
+        $addToDB->firstName = $data['firstName'];
+        $addToDB->lastName = $data['lastName'];
+        $addToDB->email = $data['email'];
+        $addToDB->password = bcrypt($data['password']);
+
+        $addToDB->save();
+
+            // Get last inserted ID from users table
+        $user_last_id = $addToDB->id;
+
+         // add user's address to the database
+        $addToDB_userAddress = new UserAddress;
+
+        $addToDB_userAddress->user_id = $user_last_id;
+        $addToDB_userAddress->address_1 = '';
+        $addToDB_userAddress->suburb_town = '';
+        $addToDB_userAddress->postcode = '';
+        $addToDB_userAddress->postal_address_1 = '';
+        $addToDB_userAddress->postal_suburb_town = '';
+        $addToDB_userAddress->postal_postcode = '';
+
+        $addToDB_userAddress->save();
+
+        return $addToDB;
     }
 }
