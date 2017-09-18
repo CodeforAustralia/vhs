@@ -26,7 +26,10 @@ Recommended technologies setup:
 ### To Generate Data
 ********************
 You will need to run:
+```
+composer dump-autoload
 php artisan db:seed
+```
 
 This command will add all the postcodes of victoria as well as suburbs.
 Postcode has a one to many relationship with Suburb.
