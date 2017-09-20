@@ -8,6 +8,7 @@ use App\Models\Letters;
 use App\Http\Requests;
 // use Request;
 use storeAs;
+use Session;
 
 class UploadController extends Controller
 {
@@ -20,7 +21,7 @@ class UploadController extends Controller
      */
     public function index()
     {
-        // return view('pages/upload_form');
+        return view('pages/upload/index');
     }
 
 
@@ -29,40 +30,78 @@ class UploadController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function uploadForm()
+    public function uploadPdf()
     {
-        return view('pages/upload_form');
+        return view('pages/upload/upload_pdf');
     }
 
-    public function uploadSubmit(Request $request)
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function uploadXml()
+    {
+        return view('pages/upload/upload_xml');
+    }
+
+    public function uploadPdfSubmit(Request $request)
     {
         // $letters = Letters::create($request->all('files'));
         // $filename = $request->file('files')->storeAs('uploads', 'files');
         // $files = $request->input('files');
         // $files = Input::get('files');
-       $input=$request->all();
-       $pdfUploaded=array();
-       $filetype = array(
-        'file' => 'required|max:10000|mimes:pdf,jpeg,bmp,png,xml'
-        );
+         $input=$request->all();
+         $pdfUploaded=array();
+         $filetype = array(
+            'file' => 'required|max:10000|mimes:pdf,jpeg,bmp,png,xml'
+            );
 
 
-       if($files=$request->file('pdfUploaded')){
-        foreach($files as $file){
-            $filename=$file->getClientOriginalName();
-            // if($filetype->file('pdf')){
+         if($files=$request->file('pdfUploaded')) {
+            foreach($files as $file) {
+                $filename=$file->getClientOriginalName();
                 $file->move(public_path().'/pdf/', $filename);
                 app('App\Http\Controllers\PdfController')->pdfUpload($filename);
-            // } elseif($filetype->file('pdf')) {
-            //     $file->move(public_path().'/xml/', $filename);
-            // }
 
+            }
+        }
+        $Letters = Letters::all();
+        return redirect('letters')->with([
+            'Letters' => $Letters
+            ]);
+    }
+
+    public function uploadXmlSubmit(Request $request)
+    {
+        // $letters = Letters::create($request->all('files'));
+        // $filename = $request->file('files')->storeAs('uploads', 'files');
+        // $files = $request->input('files');
+        // $files = Input::get('files');
+         $input=$request->all();
+         $xmlUploaded=array();
+         $filetype = array(
+            'file' => 'required|max:10000|mimes:pdf,jpeg,bmp,png,xml'
+            );
+
+
+         if($files=$request->file('xmlUploaded')) {
+            foreach($files as $file) {
+                $filename=$file->getClientOriginalName();
+                $file->move(public_path().'/xml/', $filename);
+                // app('App\Http\Controllers\PdfController')->pdfUpload($filename);
+
+            }
+        }
+
+
+        if (!$file) {
+            Session::flash('message', 'File is not uploaded! Please try again!');
+            return redirect('upload_xml');
+        } else {
+           Session::flash('message', 'File is uploaded successfully!');
+            return redirect('upload_xml');
         }
     }
-    $Letters = Letters::all();
-    return redirect('letters')->with([
-        'Letters' => $Letters
-        ]);
-}
 
 }
