@@ -31,8 +31,12 @@ Route::get('/accountdetails/edit/{id}', 'AccountDetailsController@edit')->name('
 Route::post('/accounts/update/user/{id}', 'AccountDetailsController@update')->name('accounts.update');
 Route::post('/accounts/update/{id}', 'AccountDetailsController@updatebyadmin')->name('accounts.updatebyadmin');
 Route::get('/status', 'StatusController@index')->name('status');
-Route::get('/upload', 'UploadController@uploadForm');
-Route::post('/upload', 'UploadController@uploadSubmit');
+Route::get('/upload', 'UploadController@index');
+Route::get('/upload_pdf', 'UploadController@uploadPdf');
+// Route::get('/upload', 'UploadController@uploadForm');
+Route::post('/upload_pdf', 'UploadController@uploadPdfSubmit');
+Route::get('/upload_xml', 'UploadController@uploadXml');
+Route::post('/upload_xml', 'UploadController@uploadXmlSubmit');
 
 
 Route::get('/database', 'GenerateController@index')->name('database');
