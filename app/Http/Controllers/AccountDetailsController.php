@@ -134,7 +134,7 @@ class AccountDetailsController extends Controller
         $email = $request->input('email');
         $password_confirmation = $request->input('password_confirmation');
 
-            // Find the User to update
+        // Find the User to update
         $updateUser = AccountDetails::where('id', $id)->first();
 
         $updateUser->firstName = $firstName;
