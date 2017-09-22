@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Carbon\Carbon;
+use Auth;
+use App\Models\UserService;
+
 
 class DashboardController extends Controller
 {
@@ -40,8 +43,24 @@ class DashboardController extends Controller
        $message = "Good Evening";
 
      }
+
+// get the services for the logged-in user
+     $user_id = Auth::user()->id;
+     $user_services = UserService::where('user_id',$user_id)->get();
+
+
+// get the total number of unread letters (for all services assigned to user)
+    $total_unread = 0;
+    foreach ($user_services as &$user_service) {
+      $unreadForService = count($user_service->service->unreadLetters);
+      $total_unread = $total_unread + $unreadForService;
+    }
+
      return view('pages/dashboard')->with([
-      'message' => $message
+      'message' => $message,
+      'user_services' => $user_services,
+      'total_unread' => $total_unread,
+      'include_links' => true   // include links on summary of services and new letters
       ]);
    }
  }

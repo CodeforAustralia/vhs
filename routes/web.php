@@ -37,7 +37,11 @@ Route::get('/upload_pdf', 'UploadController@uploadPdf');
 Route::post('/upload_pdf', 'UploadController@uploadPdfSubmit');
 Route::get('/upload_xml', 'UploadController@uploadXml');
 Route::post('/upload_xml', 'UploadController@uploadXmlSubmit');
-
+Route::get('correspondence', 'DashboardController@index')->name('dashboard'); // if no reference_id route to dashboard
+Route::get('correspondence/{reference_id}', 'LettersListController@index');
+Route::get('letter/{id}', 'LettersListController@show');
+Route::get('actual-letter', function () {
+    return view('actual-letter');
+});
 
 Route::get('/database', 'GenerateController@index')->name('database');
-

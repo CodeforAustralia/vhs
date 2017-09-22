@@ -81,6 +81,11 @@ DASHBOARD
 	background-color: #F3EEE9;
 	padding: 50px 0px;
 }
+
+.container-wrapper.tools-wrapper.no-padding {
+	padding: 0;
+}
+
 .quick-escape_wrapper {
 	text-align: right;
 }
@@ -222,10 +227,14 @@ DASHBOARD
 	background-color: #3282be;
 }
 
-.letter-title {
+.mark-as-unread {
 	color: #0d293c;
 	font-weight: 500;
 	font-size:16px;
+}
+
+.letter-date {
+	font-style: italic;
 }
 
 .arrow-up {
@@ -270,6 +279,39 @@ DASHBOARD
 .welcome_banner-wrapper {
 	margin: 0 auto;
 	float: none;
+}
+
+/************************
+DASHBOARD - mail icons
+*************************/
+.letter-numbers{
+	color: white;
+	text-align: center;
+	font-size: 0.4em;
+	position: relative;
+	top: -1.6em;
+	z-index: 100;
+	font-weight: 700;
+}
+
+/* Between 1 and 9 */
+.few {
+	margin-right: 0.8em;
+}
+
+/* Between 10 and 99 */
+.some {
+	margin-right: 0.55em;
+}
+
+/* Between 100 and 999 */
+.lots {
+	margin-right: 0.3em;
+}
+
+/* Between >999 */
+.too-many {
+	margin-right: 0.1em;
 }
 
 /************************
@@ -365,9 +407,13 @@ Footer
 	button.navbar-toggle {
 		margin-right: 0px;
 	}
-	.letter-title {
+
+	.mark-as-unread {
+		color: #0d293c;
+		font-weight: 500;
 		font-size:14px;
 	}
+
 	.letter-date {
 		padding-top: 6px;
 	}
@@ -411,6 +457,9 @@ Footer
 		margin: 0 auto;
 		float: none;
 		padding-left: 15px;
+	}
+	.panel-heading .services_heading_right h3 {
+		font-size: 28px;
 	}
 
 }

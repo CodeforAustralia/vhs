@@ -18,6 +18,8 @@ class CreateServicesTable extends Migration
             $table->string('reference_id');
             $table->string('type');
             $table->string('description');
+            $table->date('service_started')->nullable();
+            $table->date('service_finished')->nullable();
             $table->timestamps();
         });
     }

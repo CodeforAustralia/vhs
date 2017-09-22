@@ -12,8 +12,15 @@
           <h3>{{ $message }} {{ Auth::user()->firstName }}</h3>
         </div>
         <div class="dashboard_notifications">
-          <p>Your Application for the Victorian Housing Register is being reviewed.</p>
-          <p>You have <strong>1 new letter</strong>.</p>
+          @if ($total_unread == 0)
+            <p>You have <strong>no new letters</strong>.</p>
+          @else
+            @if ($total_unread == 1)
+              <p>You have <strong>{{$total_unread}} new letter</strong>.</p>
+            @else
+              <p>You have <strong>{{$total_unread}} new letters</strong>.</p>
+            @endif
+          @endif
         </div>
       </div>
     </div>

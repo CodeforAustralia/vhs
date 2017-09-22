@@ -26,7 +26,7 @@
 							</div>
 						</div>
 						<div class="col-md-1 services_heading_right">
-							<div class="toolbox-banner mail_icon-link">
+							<div class="toolbox-bannetest@test.com.aur mail_icon-link">
 							</div>
 						</div>
 					</div>
@@ -37,10 +37,10 @@
 					@endif
 					@if ($AccountDetails[0]->reference_id == '')
 					<p class="alert alert-danger">
-						You don't have any services at the moment. Please refer to <a href="http://www.housing.vic.gov.au/" target="_blank" title="Victorian Housing Website">Victorian Housing website</a> for more information about available service.  
+						You don't have any services at the moment. Please refer to <a href="http://www.housing.vic.gov.au/" target="_blank" title="Victorian Housing Website">Victorian Housing website</a> for more information about available service.
 					</p>
 					@else <p class="alert alert-success">
-					You have a service  
+					You have a service
 				</p> @endif
 				<ul>
 					<div class="col-md-3">Name:</div>
