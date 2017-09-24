@@ -45,12 +45,10 @@
                         <div class="toolbox-banner mail_icon-link">
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 
 @endsection

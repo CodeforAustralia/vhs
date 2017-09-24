@@ -2,79 +2,78 @@
 
 </div>
 <nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container">
-    <div class="col-md-8 col-md-offset-2 navigation-offset-col">
-      <div class="navbar-header ">
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2 navigation-offset-col">
+            <div class="navbar-header ">
 
-        <!-- Collapsed Hamburger -->
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-          <span class="sr-only">Toggle Navigation</span>
+                <!-- Collapsed Hamburger -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
 
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-        <!-- Branding Image -->
+                <!-- Branding Image -->
 
-        <a class="navbar-brand" href="{{ url('/dashboard') }} ">
-          VICTORIAN <span class="housing_services-title">HOUSING SERVICES</span>
-        </a>
-      </div>
-
-      <div class="collapse navbar-collapse" id="app-navbar-collapse">
-        <!-- Left Side Of Navbar -->
-        <ul class="nav navbar-nav">
-        </ul>
-
-        <!-- Right Side Of Navbar -->
-        <ul class="nav navbar-nav navbar-right">
-          <!-- <li><a href="/contact">Contact</a></li> -->
-          <!-- Authentication Links -->
-          @if (Auth::guest())
-          <li><a href="{{ route('login') }}">Login</a></li>
-          <li><a href="{{ route('register') }}">Register</a></li>
-          @else
-           <!--  <li><a href="/upload">Upload</a></li>
-              <li><a href="/letters">Letters</a></li>
-              <li><a href="/status">Status</a></li> -->
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user user-icon" aria-hidden="true"></i>
-                  {{ Auth::user()->name }}
+                <a class="navbar-brand" href="{{ url('/dashboard') }} ">
+                    VICTORIAN <span class="housing_services-title">HOUSING SERVICES</span>
                 </a>
+            </div>
 
-                <ul class="dropdown-menu" role="menu">
-                  <li class="">
-                    @if ( Auth::user()->usertype == '1' )
-                    <a href="/accounts">Account Details</a>
-                    @else 
-                    <a href="/accountdetails/{{ Auth::user()->id }}">Account Details</a>
+            <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                <!-- Left Side Of Navbar -->
+                <ul class="nav navbar-nav">
+                </ul>
+
+                <!-- Right Side Of Navbar -->
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li><a href="/contact">Contact</a></li> -->
+                    <!-- Authentication Links -->
+                    @if (Auth::guest())
+                    <li><a href="{{ route('login') }}">Login</a></li>
+                    <li><a href="{{ route('register') }}">Register</a></li>
+                    @else
+                    <!--  <li><a href="/upload">Upload</a></li>
+                    <li><a href="/letters">Letters</a></li>
+                    <li><a href="/status">Status</a></li> -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user user-icon" aria-hidden="true"></i>
+                            {{ Auth::user()->name }}
+                        </a>
+
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="">
+                                @if ( Auth::user()->usertype == '1' )
+                                <a href="/accounts">Account Details</a>
+                                @else 
+                                <a href="/accounts/{{ Auth::user()->id }}">Account Details</a>
+                                @endif
+                            </li>
+
+                            <li>
+                                <a href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                Logout</a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
                     @endif
-                  </li>
-
-                  <li>
-                    <a href="{{ route('logout') }}"
-                    onclick="event.preventDefault();
-                    document.getElementById('logout-form').submit();">
-                    Logout
-                  </a>
-
-                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    {{ csrf_field() }}
-                  </form>
-                </li>
-              </ul>
-            </li>
-            @endif
-          </ul>
+                </ul>
+            </div>
         </div>
-      </div>
     </div>
-  </nav>
-  <div class="container">
+</nav>
+<div class="container">
     <div class="col-md-8 col-md-offset-2 navigation-offset-col">
-      <div class="quick-escape_wrapper">
-        <button type="button" class="btn btn-danger">Quick<br/>Escape</button>
-      </div>
+        <div class="quick-escape_wrapper">
+            <button type="button" class="btn btn-danger">Quick<br/>Escape</button>
+        </div>
     </div>
-  </div>
+</div>

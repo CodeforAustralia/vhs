@@ -22,7 +22,7 @@
 						</div>
 						<div class="col-md-2 services_heading_right">
 							<div class="toolbox-banner mail_icon-link">
-								<p class="pull-right"><a class="panel-heading_link" href="/accountdetails/edit/{{ $AccountDetails[0]->id }}">Edit</a></p>
+								<p class="pull-right"><a class="panel-heading_link" href="/accounts/edit/{{ $AccountDetails[0]->id }}">Edit</a></p>
 							</div>
 						</div>
 						<div class="col-md-1 services_heading_right">

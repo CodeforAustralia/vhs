@@ -33,37 +33,33 @@
 							<table class="table">
 								<thead>
 									<tr>
-										<th> Name
-										</th>
-										<th> Client ID
-										</th>
+										<th> Name</th>
+										<th> Client ID</th>
 									</tr>
-									<thead>
-										<tbody>
-											@foreach ($AccountDetails as $AccountDetail)
-											<tr>
-												<td class="account-list"><a href="/accountdetails/{{$AccountDetail->id}}">{{ $AccountDetail->firstName }} {{ $AccountDetail->lastName }}</a></td>
-												<td class="account-list"><a href="/accountdetails/{{$AccountDetail->id}}">{{ $AccountDetail->client_id }}</a>
-												</td>
-											</tr>
-											@endforeach
-										</tbody>
-									</table>
-								</div>
-								{{ $AccountDetails->links() }}
-							</div>
-							<div class="col-md-2 services_heading_right">
-								<div class="toolbox-banner mail_icon-link">
-								</div>
-							</div>
-							<div class="col-md-1 services_heading_right">
-								<div class="toolbox-banner mail_icon-link">
-								</div>
-							</div>
-
+								<thead>
+								<tbody>
+									@foreach ($AccountDetails as $AccountDetail)
+										<tr>
+											<td class="account-list"><a href="/accounts/{{$AccountDetail->id}}">{{ $AccountDetail->firstName }} {{ $AccountDetail->lastName }}</a></td>
+											<td class="account-list"><a href="/accounts/{{$AccountDetail->id}}">{{ $AccountDetail->client_id }}</a></td>
+										</tr>
+									@endforeach
+								</tbody>
+							</table>
+						</div>
+						{{ $AccountDetails->links() }}
+					</div>
+					<div class="col-md-2 services_heading_right">
+						<div class="toolbox-banner mail_icon-link">
+						</div>
+					</div>
+					<div class="col-md-1 services_heading_right">
+						<div class="toolbox-banner mail_icon-link">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		@endsection
+	</div>
+</div>
+@endsection

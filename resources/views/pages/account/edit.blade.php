@@ -34,33 +34,44 @@
 					<p class="alert alert-danger">{{ Session::get('message') }}</p>
 					@endif
 					<!-- Add client ID -->
-						 @if ( Auth::user()->usertype == '1' )
+					@if ( Auth::user()->usertype == '1' )
 
 						 <form class="form-horizontal" method="POST" action="{{ route('accounts.updatebyadmin', $AccountDetails[0]->id) }}">
 						{{ csrf_field() }}
 
-						<div class="form-group">
+						<div class="form-group{{ $errors->has('fistName') ? ' has-error' : '' }}">
 							<label for="firstName" class="col-md-4 control-label">First Name:</label>
 							<div class="col-md-6">	
-								<input id="firstName" type="text" class="form-control" name="firstName" value="{{ $AccountDetails[0]->firstName }}" required autofocus>
+								<input id="firstName" type="text" class="form-control" name="firstName" value="{{ $AccountDetails[0]->firstName }}"/>
+								@if ($errors->has('firstName'))
+								<span class="help-block">
+									<strong>{{ $errors->first('firstName') }}</strong>
+								</span>
+								@endif
 							</div>
 						</div>
 
-						<div class="form-group">
+						<div class="form-group{{ $errors->has('lastName') ? ' has-error' : '' }}">
 							<label for="lastName" class="col-md-4 control-label">Last Name:</label>
 							<div class="col-md-6">
-								<input id="lastName" type="text" class="form-control" name="lastName" value="{{ $AccountDetails[0]->lastName }}" required autofocus>
+								<input id="lastName" type="text" class="form-control" name="lastName" value="{{ $AccountDetails[0]->lastName }}"/>
+
+								@if ($errors->has('lastName'))
+								<span class="help-block">
+									<strong>{{ $errors->first('lastName') }}</strong>
+								</span>
+								@endif
 							</div>
 						</div>
 
 						<div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-							<label for="email" class="col-md-4 control-label">E-Mail:</label>
+							<label for="email" class="col-md-4 control-label">Email:</label>
 							<div class="col-md-6">	
-								<input id="email" type="email" class="form-control" name="email" value="{{ $AccountDetails[0]->email }}" required autofocus>
+								<input id="email" type="email" class="form-control" name="email" value="{{ $AccountDetails[0]->email }}" autofocus>
 
-								@if ($errors->has('email'))
+								@if ($errors->has('client_id'))
 								<span class="help-block">
-									<strong>{{ $errors->first('email') }}</strong>
+									<strong>{{ $errors->first('client_id') }}</strong>
 								</span>
 								@endif
 							</div>

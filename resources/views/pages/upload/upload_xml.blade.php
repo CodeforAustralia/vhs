@@ -27,12 +27,11 @@
                 </div>
                 <div class="panel-body">
                     <div class="col-md-2">
-
                     </div>
                     <div class="col-md-7 services_heading_right">
-                    @if(Session::has('message'))
-                    <p class="alert alert-success">{{ Session::get('message') }}</p>
-                    @endif
+                        @if(Session::has('message'))
+                            <p class="alert alert-success">{{ Session::get('message') }}</p>
+                        @endif
                         @if (count($errors) > 0)
                         <ul>
                             @foreach ($errors->all() as $error)
@@ -58,7 +57,6 @@
                         <div class="toolbox-banner mail_icon-link">
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

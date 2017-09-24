@@ -1,11 +1,11 @@
 
-    @include('partial.header')
+@include('partial.header')
 
 <body>
-        @include('partial.nav')
+	@include('partial.nav')
 
-        @yield('content')
+	@yield('content')
 
-        @include('partial.footer')
+	@include('partial.footer')
 </body>
 </html>
