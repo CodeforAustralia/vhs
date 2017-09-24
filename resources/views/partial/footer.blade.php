@@ -42,10 +42,10 @@
 					<!-- FOOTER -->
 					<footer>
 						<div class="col-md-8">
-							<p class="">Last Updated: 19/07/2017</p>
+							<p class="">Pre-ALPHA Release</p>
 
-							<p>&copy; State Government of Victoria 2017</p>
-							<p class="">Authorised by: Department of Health and Human Services</p>
+							<p>&copy; State Government of Victoria <?php echo date("Y"); ?></p>
+							<p class="">To be authorised by: Department of Health and Human Services</p>
 						</div>
 						<div class="col-md-4">
 							<p class="pull-right"><a href="#">
@@ -55,11 +55,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
-<div class="container">
-
-</div>
+	</div><!-- /.container -->
+</div><!-- /.container-wrapper -->
 
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>

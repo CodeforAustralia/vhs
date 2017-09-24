@@ -26,9 +26,9 @@
     </div>
   </div>
 </div>
+
 @include('pages.dashboard.my_services')
 @include('pages.dashboard.recommendation_buttons')
 @include('pages.dashboard.recommended_links')
-
 
 @endsection

@@ -1,5 +1,6 @@
 database.php
 /config/database.php
+/correspondence/*
 /node_modules
 /public/hot
 /public/storage

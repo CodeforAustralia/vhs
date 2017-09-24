@@ -11,7 +11,7 @@
         <div class="panel-body">
           @foreach ($Letters as $letter)
           {{ date('d F Y', strtotime($letter->letter_date)) }}&nbsp;-&nbsp;
-          {{ $letter->template_id }} &nbsp;-&nbsp; 
+          {{ $letter->template_id }} &nbsp;-&nbsp;
 
            @foreach ($Templates as $template)
           {{ $template->summary }}
