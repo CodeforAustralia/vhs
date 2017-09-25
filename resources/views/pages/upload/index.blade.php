@@ -31,10 +31,10 @@
                     </div>
                     <div class="col-md-7 services_heading_right">
                         <div class="col-md-6">
-                            <button type="button" class="btn btn-info upload_index-button"><h4><a href="/upload_pdf">PDF</a></h4></button>
+                            <a href="/upload_pdf"><button type="button" class="btn btn-primary upload_index-button"><h4><strong>PDF</strong></h4></button></a>
                         </div>
                         <div class="col-md-6">
-                            <button type="button" class="btn btn-info upload_index-button"><h4><a href="/upload_xml">XML</a></h4></button>
+                            <a href="/upload_xml"><button type="button" class="btn btn-primary upload_index-button"><h4><strong>XML</strong></h4></button></a>
                         </div>
                     </div>
                     <div class="col-md-2 services_heading_right">
