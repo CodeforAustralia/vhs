@@ -21,7 +21,7 @@
 						</div>
 						<div class="col-md-2 services_heading_right">
 							<div class="toolbox-banner mail_icon-link">
-								<p class="pull-right"><a class="panel-heading_link" href="/accountdetails/{{ $AccountDetails[0]->id }}">Back to Profile</a></p>
+								<p class="pull-right"><a class="panel-heading_link" href="/accounts/{{ $AccountDetails[0]->id }}">Back to Profile</a></p>
 							</div>
 						</div>
 						<div class="col-md-1 services_heading_right">
@@ -67,11 +67,11 @@
 						<div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
 							<label for="email" class="col-md-4 control-label">Email:</label>
 							<div class="col-md-6">	
-								<input id="email" type="email" class="form-control" name="email" value="{{ $AccountDetails[0]->email }}" autofocus>
+								<input id="email" type="email" class="form-control" name="email" value="{{ $AccountDetails[0]->email }}"/>
 
-								@if ($errors->has('client_id'))
+								@if ($errors->has('email'))
 								<span class="help-block">
-									<strong>{{ $errors->first('client_id') }}</strong>
+									<strong>{{ $errors->first('email') }}</strong>
 								</span>
 								@endif
 							</div>
