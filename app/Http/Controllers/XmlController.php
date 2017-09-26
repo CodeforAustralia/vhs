@@ -21,43 +21,24 @@ class XmlController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function xmlUpload($filename)
+    public function templatesXmlUpload($filename)
     {
     	// $xml = XmlParser::load(public_path() . '/xml/' . $filename);
 
-    	$xmlPath = public_path() . '/xml/' . $filename;
+    	$xmlPath = public_path() . '/xml/templates/' . $filename;
 
     	$xml1 = simplexml_load_file($xmlPath);
 
     	$data = $xml1->templates->row;
 
-    	echo '<pre>';
-    	echo print_r($data, true);
-
     	foreach ($data as $row) {
-    		echo print_r($row);
-    	}
-    	die;
+    		$templates = new Templates;
 
-    	$users = $xml->parse([
-    		
-    		]);
+            $templates->template_id = $row->template_id;
+            $templates->summary = $row->summary;
+            $templates->action_needed = $row->action_needed;
 
-    	foreach($users as $user) {
-    		print_r('<pre>');
-    		var_dump($user);
-    		print_r('<pre>');
-    		
-    	}
-    	die;
-
-    	$templates = new Templates;
-
-    	$templates->template_id = $user['template_id'];
-    	$templates->summary = $user['summary'];
-    	$templates->action_needed = $user['action_needed'];
-
-    	$templates->save();
-
+            $templates->save();
+        }
     }
 }
