@@ -31,10 +31,12 @@
                     </div>
                     <div class="col-md-7 services_heading_right">
                         <div class="col-md-6">
+                            <!-- Upload PDF  link -->
                             <a href="/upload_pdf"><button type="button" class="btn btn-primary upload_index-button"><h4><strong>PDF</strong></h4></button></a>
                         </div>
+                        <!-- Upload XML Link -->
                         <div class="col-md-6">
-                            <a href="/upload_xml"><button type="button" class="btn btn-primary upload_index-button"><h4><strong>XML</strong></h4></button></a>
+                            <a href="/upload_templatesXml"><button type="button" class="btn btn-primary upload_index-button"><h4><strong>Templates XML</strong></h4></button></a>
                         </div>
                     </div>
                     <div class="col-md-2 services_heading_right">
