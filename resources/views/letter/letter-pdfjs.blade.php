@@ -1,7 +1,7 @@
 @if (count($letters)>0)
 <html>
   <head>
-    <title>PDF.js viewer</title>
+    <title>Letter</title>
 
     <script src="{{ asset('js/pdfjs/pdf.js-viewer/pdf.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('js/pdfjs/pdf.js-viewer/viewer.css') }}">

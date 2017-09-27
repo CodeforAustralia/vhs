@@ -10,7 +10,8 @@
                 <div class="panel panel-primary">
 
                     <!-- Service Panel -->
-                    @include('pages.dashboard.enumerate_services') @foreach ($user_services as $user_service) @foreach ($user_service->service->letters as $letter)
+                    @include('pages.dashboard.enumerate_services')
+                    @foreach ($user_services as $user_service) @foreach ($user_service->service->letters as $letter)
 
                     <!-- Letter -->
                     <a href="/letter/{{$letter->id}}">
@@ -30,10 +31,15 @@
                                     <?php echo \Carbon\Carbon::createFromFormat('Y-m-d', $letter->letter_date)->format('j M Y');?>
                                 </div>
                                 @if ($letter->unread)
-                                <div class="col-xs-8 col-md-8 mark-as-unread">
+                                <div class="col-xs-12 col-sm-12 col-md-8 mark-as-unread">
                                     @else
-                                    <div class="col-xs-8 col-md-8">
-                                        @endif @if(is_null($letter->template)) &nbsp; @else {{$letter->template->summary}} @endif
+                                    <div class="col-xs-12 col-sm-12 col-md-8">
+                                    @endif
+                                        @if(is_null($letter->template))
+                                          &nbsp;
+                                        @else
+                                          {{$letter->template->summary}}
+                                        @endif
                                     </div>
                                 </div>
                             </a>
