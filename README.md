@@ -45,6 +45,14 @@ Admin user is added in the generation of users
 E-mail Address: test@test.com.au
 Password: TestPassword
 
+### Notes for the Email Notification
+********************
+
+The notification will work when you go to 
+http://YOURAPPURL/notification
+
+The notification will be sent to the logged in user.
+
 #### Team
 ********************
 <ul>
