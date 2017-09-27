@@ -40,9 +40,9 @@ class UploadController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function uploadXml()
+    public function uploadTemplatesXml()
     {
-        return view('pages/upload/upload_xml');
+        return view('pages/upload/upload_templatesXml');
     }
 
     public function uploadPdfSubmit(Request $request)
@@ -72,7 +72,7 @@ class UploadController extends Controller
             ]);
     }
 
-    public function uploadXmlSubmit(Request $request)
+    public function uploadTemplatesXmlSubmit(Request $request)
     {
         // $letters = Letters::create($request->all('files'));
         // $filename = $request->file('files')->storeAs('uploads', 'files');
@@ -85,11 +85,11 @@ class UploadController extends Controller
             );
 
 
-         if($files=$request->file('xmlUploaded')) {
+         if($files=$request->file('TemplatesXmlUploaded')) {
             foreach($files as $file) {
                 $filename=$file->getClientOriginalName();
-                $file->move(public_path().'/xml/', $filename);
-                // app('App\Http\Controllers\PdfController')->pdfUpload($filename);
+                $file->move(public_path().'/xml/templates', $filename);
+                app('App\Http\Controllers\XmlController')->templatesXmlUpload($filename);
 
             }
         }
@@ -97,10 +97,10 @@ class UploadController extends Controller
 
         if (!$file) {
             Session::flash('message', 'File is not uploaded! Please try again!');
-            return redirect('upload_xml');
+            return redirect('upload_templatesXml');
         } else {
            Session::flash('message', 'File is uploaded successfully!');
-            return redirect('upload_xml');
+            return redirect('upload_templatesXml');
         }
     }
 
