@@ -10,7 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Models\Letters;
+use App\User as User;
 use Illuminate\Support\Facades\Auth;
+use App\Notifications\NewLetter;
 
 Route::get('/', function () {
 	return view('auth/login');
@@ -19,6 +22,11 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/', 'DashboardController@index')->name('dashboard');
 
+Route::get('/notification', function () {
+	$user = User::first();
+	$letter = Letters::first();
+	$user->notify(new NewLetter($letter));
+});
 
 
 
@@ -35,8 +43,8 @@ Route::get('/upload', 'UploadController@index');
 Route::get('/upload_pdf', 'UploadController@uploadPdf');
 // Route::get('/upload', 'UploadController@uploadForm');
 Route::post('/upload_pdf', 'UploadController@uploadPdfSubmit');
-Route::get('/upload_xml', 'UploadController@uploadXml');
-Route::post('/upload_xml', 'UploadController@uploadXmlSubmit');
+Route::get('/upload_templatesXml', 'UploadController@uploadTemplatesXml');
+Route::post('/upload_templatesXml', 'UploadController@uploadTemplatesXmlSubmit');
 Route::get('correspondence', 'DashboardController@index')->name('dashboard'); // if no reference_id route to dashboard
 Route::get('correspondence/{reference_id}', 'LettersListController@index');
 Route::get('letter/{id}', 'LettersListController@show');
