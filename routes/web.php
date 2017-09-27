@@ -14,6 +14,7 @@ use App\Models\Letters;
 use App\User as User;
 use Illuminate\Support\Facades\Auth;
 use App\Notifications\NewLetter;
+use Twilio as Twilio;
 
 Route::get('/', function () {
 	return view('auth/login');
@@ -22,12 +23,19 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/', 'DashboardController@index')->name('dashboard');
 
-Route::get('/notification', function () {
-	$user = User::first();
-	$letter = Letters::first();
-	$user->notify(new NewLetter($letter));
-});
+Route::group(array('after' => 'auth'), function() {
+	Route::get('/notification', function () {
+		$user = Auth::user();
+		$letter = Letters::first();
+		$notify = $user->notify(new NewLetter($letter, $user));
+	// echo '<pre>';
+	// echo print_r($notify, true);
+	// $twilio = new Twilio;
+	// $twilio->message($user['mobile'], 'Pink Elephants and Happy Rainbows');
 
+		return view('pages/emailNotification');
+	});
+});
 
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
@@ -49,7 +57,7 @@ Route::get('correspondence', 'DashboardController@index')->name('dashboard'); //
 Route::get('correspondence/{reference_id}', 'LettersListController@index');
 Route::get('letter/{id}', 'LettersListController@show');
 Route::get('actual-letter', function () {
-    return view('actual-letter');
+	return view('actual-letter');
 });
 
 Route::get('/database', 'GenerateController@index')->name('database');
