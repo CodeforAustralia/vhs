@@ -14,7 +14,7 @@
 
                     </div>
                     <div class="col-md-7 services_heading_right">
-                        <h3>Upload XML</h3>
+                        <h3>Upload Templates XML</h3>
                     </div>
                     <div class="col-md-2 services_heading_right">
                         <div class="toolbox-banner mail_icon-link">
@@ -39,11 +39,11 @@
                             @endforeach
                         </ul>
                         @endif
-                        <form action="/upload_xml" method="post" enctype="multipart/form-data">
+                        <form action="/upload_templatesXml" method="post" enctype="multipart/form-data">
                             {{ csrf_field() }}
                             Product photos (can attach more than one):
                             <br />
-                            <input type="file" name="xmlUploaded[]" multiple />
+                            <input type="file" name="TemplatesXmlUploaded[]" multiple />
 
                             <br /><br />
                             <input type="submit" value="Upload XML" />

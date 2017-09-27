@@ -61,7 +61,6 @@ class AccountDetailsController extends Controller
      */
      public function edit($id)
      {
-
         $AccountDetails = AccountDetails::where('id', $id)->get();
         $UserAddress = UserAddress::where('user_id', $id)->get();
         return view('pages/account/edit')->with([

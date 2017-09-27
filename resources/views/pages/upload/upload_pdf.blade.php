@@ -30,6 +30,7 @@
 
                     </div>
                     <div class="col-md-7 services_heading_right">
+                        <!-- Echo errors -->
                         @if (count($errors) > 0)
                         <ul>
                             @foreach ($errors->all() as $error)
