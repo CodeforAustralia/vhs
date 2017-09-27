@@ -18,10 +18,11 @@ class NewLetter extends Notification
      *
      * @return void
      */
-    public function __construct($letter)
+    public function __construct($letter, $user)
     {
         //
         $this->letter = $letter;
+        $this->user = $user;
     }
 
     /**
@@ -44,6 +45,9 @@ class NewLetter extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
+                    // ->view('mail/newLetter')
+                    ->greeting('Hello ' .$this->user['firstName'].',')
+                    ->subject('You have a new letter')
                     ->line('The introduction to the notification.')
                     ->action('Notification Action', url('/'))
                     ->line('Thank you for using our application!');
