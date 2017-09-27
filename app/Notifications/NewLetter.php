@@ -46,10 +46,15 @@ class NewLetter extends Notification
     {
         return (new MailMessage)
                     // ->view('mail/newLetter')
+                    // Greeting
                     ->greeting('Hello ' .$this->user['firstName'].',')
+                    // Subject line
                     ->subject('You have a new letter')
+                    // Paragraph
                     ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
+                    // Uncomment if needed some buttons in the page
+                    // ->action('Actionable Item', url('/'))
+                    // Second Praragraph
                     ->line('Thank you for using our application!');
     }
 
