@@ -1,0 +1,3897 @@
+<?xml version="1.0"?>
+
+<pdftohtml_testing>
+
+	<templates>
+		<row>
+			<id>1</id>
+			<template_id>TMP-CL-01</template_id>
+			<summary>Acknowledgement of receipt of Public Housing Application</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>2</id>
+			<template_id>TMP-CL-02</template_id>
+			<summary>Request for further documentation</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>3</id>
+			<template_id>TMP-CL-03</template_id>
+			<summary>Appointment confirmation or appointment request</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>4</id>
+			<template_id>TMP-CL-05</template_id>
+			<summary>Public Housing Application Removal Letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>5</id>
+			<template_id>TMP-CL-06</template_id>
+			<summary>Ineligible Public Housing Application</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>6</id>
+			<template_id>TMP-CL-07</template_id>
+			<summary>Notification split Public Housing Application</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>7</id>
+			<template_id>TMP-CL-08</template_id>
+			<summary>Public housing application rejected: unable to be revived</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>8</id>
+			<template_id>TMP-CL-09</template_id>
+			<summary>General Housing: Public Housing Application approval letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>9</id>
+			<template_id>TMP-CL-11</template_id>
+			<summary>Special Accommodation Requirements (SAR)</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>10</id>
+			<template_id>TMP-CL-12</template_id>
+			<summary>Early Housing Application approved letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>11</id>
+			<template_id>TMP-CL-13</template_id>
+			<summary>Early Housing Application not approved letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>12</id>
+			<template_id>TMP-CL-14</template_id>
+			<summary>Early Housing Application status removal letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>13</id>
+			<template_id>TMP-CL-15</template_id>
+			<summary>Offer Letter: Wait Turn</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>14</id>
+			<template_id>TMP-CL-16</template_id>
+			<summary>Offer letter: Early Housing</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>15</id>
+			<template_id>TMP-CL-17</template_id>
+			<summary>Offer Letter: Wait Turn Final</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>16</id>
+			<template_id>TMP-CL-18</template_id>
+			<summary>Offer Letter: Property Management</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>17</id>
+			<template_id>TMP-CL-19</template_id>
+			<summary>Reject letter (two WT offers have been refused)</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>18</id>
+			<template_id>TMP-CL-20</template_id>
+			<summary>First Offer Refused (Early Housing)</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>19</id>
+			<template_id>TMP-CL-21</template_id>
+			<summary>Special Accommodation Requirement (SAR) Request: Approval</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>20</id>
+			<template_id>TMP-CL-22</template_id>
+			<summary>Special Accommodation Requirement (SAR) Request: Partial Approval</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>21</id>
+			<template_id>TMP-CL-23</template_id>
+			<summary>Special Accommodation Requirement (SAR) Request: Non Approval</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>22</id>
+			<template_id>TMP-CL-24</template_id>
+			<summary>Eligibility Confirmation Questionnaire (ECQ)</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>23</id>
+			<template_id>TMP-CL-25</template_id>
+			<summary>Eligibility Confirmation Questionnaire Covering Letter (ECQ)</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>24</id>
+			<template_id>TMP-CL-26</template_id>
+			<summary>Reminder Letter: Eligibility Confirmation Questionnaire (ECQ)</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>25</id>
+			<template_id>TMP-CL-28</template_id>
+			<summary>Public Housing Application Update Confirmation</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>26</id>
+			<template_id>TMP-CL-29</template_id>
+			<summary>Revive Public Housing Application</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>27</id>
+			<template_id>TMP-CL-37</template_id>
+			<summary>Referral Confirmation by Applicant to Housing Association or Housing Provider</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>28</id>
+			<template_id>TMP-CL-38</template_id>
+			<summary>Applicant Referral to Housing Association or Housing Provider</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>29</id>
+			<template_id>TMP-CL-39</template_id>
+			<summary>Housing Association or Housing Provider Referral Notification to Applicant</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>30</id>
+			<template_id>TMP-CL-40</template_id>
+			<summary>Early Housing and SAR Approval letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>31</id>
+			<template_id>TMP-CL-42</template_id>
+			<summary>Early Housing not approved and SAR Approved letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>32</id>
+			<template_id>TMP-CL-43</template_id>
+			<summary>Community Agency Referral Form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>33</id>
+			<template_id>TMP-CL-45</template_id>
+			<summary>Early Housing Approved and SAR not approved</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>34</id>
+			<template_id>TMP-CL-61</template_id>
+			<summary>Appointment Cover Letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>35</id>
+			<template_id>TMP-CL-63</template_id>
+			<summary>Support Worker Appointment Cover Letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>36</id>
+			<template_id>TMP-CL-81</template_id>
+			<summary>Acknowledgement of Receipt of Appeal</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>37</id>
+			<template_id>TMP-CL-82</template_id>
+			<summary>Appeal Advocate Covering Letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>38</id>
+			<template_id>TMP-CL-83</template_id>
+			<summary>Appeal Successful at Tier 1</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>39</id>
+			<template_id>TMP-CL-84</template_id>
+			<summary>Appeal Unsuccessful at Tier 1</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>40</id>
+			<template_id>TMP-CL-85</template_id>
+			<summary>Appeal Not Considered: Resolved</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>41</id>
+			<template_id>TMP-CL-86</template_id>
+			<summary>Appeal Contact Letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>42</id>
+			<template_id>TMP-CL-88</template_id>
+			<summary>Appeal Generic Withdrawn</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>43</id>
+			<template_id>TMP-CL-89</template_id>
+			<summary>Appeal Response Letter: Tier 2</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>44</id>
+			<template_id>TMP-CL-93</template_id>
+			<summary>Appeal internal assessment Tier 1 Memo</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>45</id>
+			<template_id>TMP-CL-95</template_id>
+			<summary>Unable to revive Public Housing Application</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>46</id>
+			<template_id>TMP-CL-97</template_id>
+			<summary>Covering Letter to Support Worker</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>47</id>
+			<template_id>TMP-CL-98</template_id>
+			<summary>CHP Letter to Support Worker</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>48</id>
+			<template_id>TMP-CL-99</template_id>
+			<summary>Covering Letter to Support Worker</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>49</id>
+			<template_id>TMP-CL-102</template_id>
+			<summary>Early Housing approved with partial SAR Approval</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>50</id>
+			<template_id>TMP-CL-103</template_id>
+			<summary>Early Housing and SAR not approved</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>51</id>
+			<template_id>TMP-CL-104</template_id>
+			<summary>Early Housing not Approved Partial SAR approved</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>52</id>
+			<template_id>TMP-CL-106</template_id>
+			<summary>Early Housing Application Recommendation and Outcome</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>53</id>
+			<template_id>TMP-CL-107</template_id>
+			<summary>Referral Cover Letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>54</id>
+			<template_id>TMP-CL-109</template_id>
+			<summary>Supported Housing: Eligible Program form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>55</id>
+			<template_id>TMP-CL-111</template_id>
+			<summary>Final offer (Early Housing)</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>56</id>
+			<template_id>TMP-CL-112</template_id>
+			<summary>EH offer (first or final) has been refused due to(not SAR)</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>57</id>
+			<template_id>TMP-CL-115</template_id>
+			<summary>Refused Offer: Wait Turn</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>58</id>
+			<template_id>TMP-CL-116</template_id>
+			<summary>Form of Authority</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>59</id>
+			<template_id>TMP-CL-118</template_id>
+			<summary>Acknowledgement of Requested Information</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>60</id>
+			<template_id>TMP-CL-120</template_id>
+			<summary>Property Offer Sheet</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>61</id>
+			<template_id>TMP-CL-123</template_id>
+			<summary>Memo to Manager</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>62</id>
+			<template_id>TMP-CL-124</template_id>
+			<summary>Reassessment at Tier 1 Level</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>63</id>
+			<template_id>TMP-CL-125</template_id>
+			<summary>Memorandum to Director of HCB</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>64</id>
+			<template_id>TMP-CL-126</template_id>
+			<summary>Letter of Good Standing</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>65</id>
+			<template_id>TMP-CL-127</template_id>
+			<summary>Non Appealable Appeal Request</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>66</id>
+			<template_id>TMP-CL-128</template_id>
+			<summary>Recurring Homelessness Assessment form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>67</id>
+			<template_id>TMP-CL-129</template_id>
+			<summary>Complaint Confirmation</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>68</id>
+			<template_id>TMP-CL-140</template_id>
+			<summary>SAR Cover Letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>69</id>
+			<template_id>TMP-CL-141</template_id>
+			<summary>Removed Application Reminder</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>70</id>
+			<template_id>TMP-CL-152</template_id>
+			<summary>Other</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>71</id>
+			<template_id>TMP-CL-162</template_id>
+			<summary>Change in application details form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>72</id>
+			<template_id>TMP-CL-163</template_id>
+			<summary>Offer SAR Cover Letter and Form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>73</id>
+			<template_id>TMP-CL-164</template_id>
+			<summary>Public housing application rejected: unable to be revived</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>74</id>
+			<template_id>TMP-CL-165</template_id>
+			<summary>Factsheet: Tenant relocation</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>75</id>
+			<template_id>TMP-CL-166</template_id>
+			<summary>Factsheet: SHASP</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>76</id>
+			<template_id>TMP-CL-167</template_id>
+			<summary>Factsheet: Bond Loan</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>77</id>
+			<template_id>TMP-CL-168</template_id>
+			<summary>Factsheet: Housing Associations</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>78</id>
+			<template_id>TMP-CL-169</template_id>
+			<summary>Factsheet: Fixed Rent</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>79</id>
+			<template_id>TMP-CL-170</template_id>
+			<summary>Profit and Loss Statement</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>80</id>
+			<template_id>TMP-CL-171</template_id>
+			<summary>13 week wage statement</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>81</id>
+			<template_id>TMP-CL-172</template_id>
+			<summary>Factsheet: Income Confirmation Service</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>82</id>
+			<template_id>TMP-CL-173</template_id>
+			<summary>Factsheet: Tenant relocation</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>83</id>
+			<template_id>TMP-CL-174</template_id>
+			<summary>Withdrawal of Income Confirmation form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>84</id>
+			<template_id>TMP-CL-175</template_id>
+			<summary>Public Housing Application Form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>85</id>
+			<template_id>TMP-CL-176</template_id>
+			<summary>VEMP housing application form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>86</id>
+			<template_id>TMP-CL-177</template_id>
+			<summary>Acknowledgement of Enquiry Cover Letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>87</id>
+			<template_id>TMP-CL-178</template_id>
+			<summary>Acknowledgement of Enquiry Cover Letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>88</id>
+			<template_id>TMP-CL-179</template_id>
+			<summary>Acknowledgement of Enquiry Cover Letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>89</id>
+			<template_id>TMP-CL-180</template_id>
+			<summary>Acknowledgement of Enquiry Cover Letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>90</id>
+			<template_id>TMP-CL-181</template_id>
+			<summary>Relocation: Disclaimer form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>91</id>
+			<template_id>TMP-CL-182</template_id>
+			<summary>Arrears Repayment Agreement</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>92</id>
+			<template_id>TMP-CL-183</template_id>
+			<summary>Eligibility Confirmation Questionaire Form to be completed by the Primary applicant</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>93</id>
+			<template_id>TMP-CL-184</template_id>
+			<summary>Refused Move Back Offer Letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>94</id>
+			<template_id>TMP-CL-191</template_id>
+			<summary>Eligibility Confirmation Questionnaire Covering Letter (ECQ)</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>95</id>
+			<template_id>TMP-CL-192</template_id>
+			<summary>Appeals Request for Further Information</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>96</id>
+			<template_id>TMP-CL-193</template_id>
+			<summary>Eligibility Confirmation Questionaire Form to be completed by the Primary applicant</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>97</id>
+			<template_id>TMP-CL-194</template_id>
+			<summary>Applicant Choice Acknowledgement and Decision Form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>98</id>
+			<template_id>TMP-CL-195</template_id>
+			<summary>Applicant Choice Acknowledgement and Decision Form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>99</id>
+			<template_id>TMP-CL-196</template_id>
+			<summary>Bond Arrears Repayment Agreement</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>100</id>
+			<template_id>TMP-CL-200</template_id>
+			<summary>Community Housed Letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>101</id>
+			<template_id>TMP-CL-201</template_id>
+			<summary>CHP Removal Letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>102</id>
+			<template_id>TMP-CL-202</template_id>
+			<summary>CHP Rejected Letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>103</id>
+			<template_id>TMP-CL-210</template_id>
+			<summary>Generic offer letter (excluding Property Management)</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>104</id>
+			<template_id>TMP-CL-211</template_id>
+			<summary>Refused offer ROI letterGeneric refused offer letter (excluding property management)</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>105</id>
+			<template_id>TMP-CL-215</template_id>
+			<summary>Special Housing Requirement outcome letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>106</id>
+			<template_id>TMP-CL-102A</template_id>
+			<summary>Early Housing approved with partial SAR Approval</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>107</id>
+			<template_id>TMP-CL-106A</template_id>
+			<summary>Acknowledgement of Enquiry Cover Letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>108</id>
+			<template_id>TMP-CL-111A</template_id>
+			<summary>Final offer (Early Housing)</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>109</id>
+			<template_id>TMP-CL-12A</template_id>
+			<summary>Early Housing Application approved letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>110</id>
+			<template_id>TMP-CL-14A</template_id>
+			<summary>Early Housing Application status removal letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>111</id>
+			<template_id>TMP-CL-19A</template_id>
+			<summary>EH offer (first or final) has been refused due to(notSAR)</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>112</id>
+			<template_id>TMP-CL-40A</template_id>
+			<summary>Early Housing and SAR Approval letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>113</id>
+			<template_id>TMP-CL-45A</template_id>
+			<summary>Early Housing Approved and SAR not approved</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>114</id>
+			<template_id>TMP-CL-219</template_id>
+			<summary>Generic refused offer letter with SARs (CHP applications)</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>115</id>
+			<template_id>TMP-CL-216</template_id>
+			<summary>Generic Refused Letter with SARs (PM related only)</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>116</id>
+			<template_id>TMP-CL-217</template_id>
+			<summary>Generic Refused offer with SAR (DHHS)</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>117</id>
+			<template_id>TMP-CL-218</template_id>
+			<summary>Generic SAR not received</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>118</id>
+			<template_id>TMP-TN-003T00</template_id>
+			<summary>Generic covering letter to support worker</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>119</id>
+			<template_id>TMP-TN-005T</template_id>
+			<summary>Residential Tenancy Agreement - ongoing lease and service charges</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>120</id>
+			<template_id>TMP-TN-006T</template_id>
+			<summary>Ownership of Property - Statutory Declaration</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>121</id>
+			<template_id>TMP-TN-007T</template_id>
+			<summary>Leased Property Acknowledgement Form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>122</id>
+			<template_id>TMP-TN-008T00</template_id>
+			<summary>Rent Deduction Service form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>123</id>
+			<template_id>TMP-TN-008T01</template_id>
+			<summary>Rent Deduction Service form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>124</id>
+			<template_id>TMP-TN-008TDD</template_id>
+			<summary>Rent Deduction Service form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>125</id>
+			<template_id>TMP-TN-009T</template_id>
+			<summary>Water Authority Information Release</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>126</id>
+			<template_id>TMP-TN-010T00</template_id>
+			<summary>Emergency contact form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>127</id>
+			<template_id>TMP-TN-010T01</template_id>
+			<summary>Emergency contact form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>128</id>
+			<template_id>TMP-TN-011T00</template_id>
+			<summary>Authority for Centrelink to release customer information to the Director of Housing</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>129</id>
+			<template_id>TMP-TN-011T01</template_id>
+			<summary>Authority for Centrelink to release customer information to the Director of Housing</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>130</id>
+			<template_id>TMP-TN-012T00</template_id>
+			<summary>Form of authority TPT support Agency</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>131</id>
+			<template_id>TMP-TN-012T01</template_id>
+			<summary>Form of authority TPT support Agency</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>132</id>
+			<template_id>TMP-TN-013T00</template_id>
+			<summary>IC withdrawal Consent form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>133</id>
+			<template_id>TMP-TN-013T0202</template_id>
+			<summary>IC withdrawal Consent form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>134</id>
+			<template_id>TMP-TN-014T00</template_id>
+			<summary>Pet agreement form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>135</id>
+			<template_id>TMP-TN-014T01</template_id>
+			<summary>Pet agreement form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>136</id>
+			<template_id>TMP-TN-015T</template_id>
+			<summary>Residential Tenancy Agreement - fixed term lease and service charges</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>137</id>
+			<template_id>TMP-TN-016T</template_id>
+			<summary>Movable Unit Notice of Tenancy Commencement</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>138</id>
+			<template_id>TMP-TN-017T00</template_id>
+			<summary>Application For Rebated Rent Form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>139</id>
+			<template_id>TMP-TN-017T01</template_id>
+			<summary>Application For Rebated Rent Form</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>140</id>
+			<template_id>TMP-TN-019T02</template_id>
+			<summary>Market rent increase</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>141</id>
+			<template_id>TMP-TN-019T04</template_id>
+			<summary>Market rent increase</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>142</id>
+			<template_id>TMP-TN-020T02</template_id>
+			<summary>Market rent decrease and no change</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>143</id>
+			<template_id>TMP-TN-020T04</template_id>
+			<summary>Market rent decrease and no change</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>144</id>
+			<template_id>TMP-TN-028T02</template_id>
+			<summary>Service charge changes</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>145</id>
+			<template_id>TMP-TN-028T04</template_id>
+			<summary>Service charge changes</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>146</id>
+			<template_id>TMP-TN-031T</template_id>
+			<summary>Eligible for rebated rent assessment</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>147</id>
+			<template_id>TMP-TN-039T</template_id>
+			<summary>No longer eligible for rebated rent assessment</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>148</id>
+			<template_id>TMP-TN-043T</template_id>
+			<summary>Vacated Rebate Assessment - eligible and not eligible</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>149</id>
+			<template_id>TMP-TN-048T</template_id>
+			<summary>AFRR letter - Type 1 and Type 2</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>150</id>
+			<template_id>TMP-TN-049T</template_id>
+			<summary>Age promotion for 16 year old</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>151</id>
+			<template_id>TMP-TN-050T</template_id>
+			<summary>Age promotion letter for 18/25 year old</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>152</id>
+			<template_id>TMP-TN-052T</template_id>
+			<summary>Income verification letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>153</id>
+			<template_id>TMP-TN-053T</template_id>
+			<summary>Request for further documentation letter with cancellation date</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>154</id>
+			<template_id>TMP-TN-056T</template_id>
+			<summary>IC Error Discrepancy letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>155</id>
+			<template_id>TMP-TN-056AT</template_id>
+			<summary>IC Dependant discrepancy letter</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>156</id>
+			<template_id>TMP-TN-057T</template_id>
+			<summary>Rebate assessment stored rent</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>157</id>
+			<template_id>TMP-TN-059T</template_id>
+			<summary>Cancellation of Rebate - no response to contact review</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>158</id>
+			<template_id>TMP-TN-062T</template_id>
+			<summary>Rebate cancellation letter - manual</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>159</id>
+			<template_id>TMP-TN-063T</template_id>
+			<summary>Automated rebate contact review</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>160</id>
+			<template_id>TMP-TN-065T</template_id>
+			<summary>Subsidy-Fire, Flood, Property Repair/Upgrade, Resident caretaker, Tenant liaison officer, Compassionate tenancy, Tenant transfer/relocation</summary>
+			<action_needed>0</action_needed>
+			<created_at>2017-09-25 04:06:55</created_at>
+			<updated_at>2017-09-25 04:06:55</updated_at>
+		</row>
+
+		<row>
+			<id>161</id>
+			<template_id>TMP-TN-066T</template_id>
+			<summary>DHS legal services branch ruling
+				Tenant VCAT compensation</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>162</id>
+				<template_id>TMP-TN-068T</template_id>
+				<summary>Subsidy - Neighbourhood renewal</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>163</id>
+				<template_id>TMP-TN-069T</template_id>
+				<summary>Subsidy - Rent payable deferred approval letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>164</id>
+				<template_id>TMP-TN-071T</template_id>
+				<summary>Subsidy 100yo sole or joint occupancy</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>165</id>
+				<template_id>TMP-TN-072T</template_id>
+				<summary>Subsidy – Temp Absence sole or joint occupancy approved or not approved</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>166</id>
+				<template_id>TMP-TN-076T</template_id>
+				<summary>Subsidy – Sponsored migrant sole or joint occupancy approved</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>167</id>
+				<template_id>TMP-TN-078T</template_id>
+				<summary>Carer of children</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>168</id>
+				<template_id>TMP-TN-079T</template_id>
+				<summary>Cancel subsidy</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>169</id>
+				<template_id>TMP-TN-080T</template_id>
+				<summary>Amend subsidy</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>170</id>
+				<template_id>TMP-TN-081T</template_id>
+				<summary>Reverse subsidy</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>171</id>
+				<template_id>TMP-TN-082T00</template_id>
+				<summary>Income Confirmation Fact Sheet</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>172</id>
+				<template_id>TMP-TN-082T0202</template_id>
+				<summary>Income Confirmation Fact Sheet</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>173</id>
+				<template_id>TMP-TN-083T00</template_id>
+				<summary>How is my rent calculated? Fact sheet</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>174</id>
+				<template_id>TMP-TN-083T0202</template_id>
+				<summary>How is my rent calculated? Fact sheet</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>175</id>
+				<template_id>TMP-TN-084T00</template_id>
+				<summary>13 week profit and loss statement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>176</id>
+				<template_id>TMP-TN-084T0202</template_id>
+				<summary>13 week profit and loss statement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>177</id>
+				<template_id>TMP-TN-085T00</template_id>
+				<summary>13 week wage Statement Form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>178</id>
+				<template_id>TMP-TN-085T0202</template_id>
+				<summary>13 week wage Statement Form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>179</id>
+				<template_id>TMP-TN-086T00</template_id>
+				<summary>Fixed Rent Fact Sheet</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>180</id>
+				<template_id>TMP-TN-086T0202</template_id>
+				<summary>Fixed Rent Fact Sheet</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>181</id>
+				<template_id>TMP-TN-087T</template_id>
+				<summary>Automated tenure review letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>182</id>
+				<template_id>TMP-TN-088T</template_id>
+				<summary>Bankruptcy approved zero or credit balance letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>183</id>
+				<template_id>TMP-TN-089T</template_id>
+				<summary>Bankruptcy approved in debt letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>184</id>
+				<template_id>TMP-TN-090T</template_id>
+				<summary>Bankruptcy Not Approved</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>185</id>
+				<template_id>TMP-TN-091T03</template_id>
+				<summary>Internal - Briefing Note</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>186</id>
+				<template_id>TMP-TN-091T07</template_id>
+				<summary>Internal - Briefing Note</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>187</id>
+				<template_id>TMP-TN-092T</template_id>
+				<summary>Transfer of Tenancy - Request additional documentation</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>188</id>
+				<template_id>TMP-TN-093T00</template_id>
+				<summary>Transfer of Tenancy Application</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>189</id>
+				<template_id>TMP-TN-093T03</template_id>
+				<summary>Transfer of Tenancy Application</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>190</id>
+				<template_id>TMP-TN-094T</template_id>
+				<summary>Transfer of Tenancy Not Approved</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>191</id>
+				<template_id>TMP-TN-095T</template_id>
+				<summary>Transfer of Tenancy termination</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>192</id>
+				<template_id>TMP-TN-096T</template_id>
+				<summary>Transfer of Tenancy Approved/Appointment Letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>193</id>
+				<template_id>TMP-TN-098T05</template_id>
+				<summary>Agreement to Repay Vacated Rental/Maintenance Debt</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>194</id>
+				<template_id>TMP-TN-099T</template_id>
+				<summary>Deactivation Approval letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>195</id>
+				<template_id>TMP-TN-100T</template_id>
+				<summary>Deactivation Not Approved letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>196</id>
+				<template_id>TMP-TN-101T</template_id>
+				<summary>Accept liability for damage</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>197</id>
+				<template_id>TMP-TN-102T</template_id>
+				<summary>Form of Acceptance of Responsibility for Damage</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>198</id>
+				<template_id>TMP-TN-103T</template_id>
+				<summary>Notice of Repair - Section 78(1)</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>199</id>
+				<template_id>TMP-TN-104T</template_id>
+				<summary>Cost of Repairs Notice for a current tenancy</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>200</id>
+				<template_id>TMP-TN-105T</template_id>
+				<summary>Initial Home Visit Letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>201</id>
+				<template_id>TMP-TN-106T</template_id>
+				<summary>Periodic Home Visit Letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>202</id>
+				<template_id>TMP-TN-107T</template_id>
+				<summary>Home Visit Record Sheet</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>203</id>
+				<template_id>TMP-TN-109T</template_id>
+				<summary>Local agreement revised</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>204</id>
+				<template_id>TMP-TN-111T</template_id>
+				<summary>Agreement cancelled letter - Maintenance</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>205</id>
+				<template_id>TMP-TN-112T</template_id>
+				<summary>Agreement created</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>206</id>
+				<template_id>TMP-TN-115T</template_id>
+				<summary>Local Agreement (Rental &amp; Maintenance) - Making up missed payment loaded</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>207</id>
+				<template_id>TMP-TN-116T</template_id>
+				<summary>Making up missed payment honoured - agreement is reinstated</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>208</id>
+				<template_id>TMP-TN-118T</template_id>
+				<summary>Local agreement completed</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>209</id>
+				<template_id>TMP-TN-119T</template_id>
+				<summary>Initial arrears letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>210</id>
+				<template_id>TMP-TN-121T</template_id>
+				<summary>Maintenance debt not on an agreement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>211</id>
+				<template_id>TMP-TN-123T</template_id>
+				<summary>Broken legal agreement -rental</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>212</id>
+				<template_id>TMP-TN-125T</template_id>
+				<summary>Order of Possession agreement created - standard conditions</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>213</id>
+				<template_id>TMP-TN-127T</template_id>
+				<summary>Order of Possession agreement broken</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>214</id>
+				<template_id>TMP-TN-128T</template_id>
+				<summary>Order of Possession agreement created - roll into local agreement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>215</id>
+				<template_id>TMP-TN-131T</template_id>
+				<summary>Changed income - invitation to review terms of agreement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>216</id>
+				<template_id>TMP-TN-135T04</template_id>
+				<summary>Vacated Account Debt reminder letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>217</id>
+				<template_id>TMP-TN-137T</template_id>
+				<summary>Combined vacated debt agreement created</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>218</id>
+				<template_id>TMP-TN-138T</template_id>
+				<summary>Combined vacated debt agreement broken</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>219</id>
+				<template_id>TMP-TN-140T</template_id>
+				<summary>Combined vacated debt agreement completed</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>220</id>
+				<template_id>TMP-TN-141T</template_id>
+				<summary>Rental arrears agreement form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>221</id>
+				<template_id>TMP-TN-142T</template_id>
+				<summary>Maintenance arrears agreement form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>222</id>
+				<template_id>TMP-TN-143T</template_id>
+				<summary>Order of Possession agreement form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>223</id>
+				<template_id>TMP-TN-145T</template_id>
+				<summary>Local Agreement Broken</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>224</id>
+				<template_id>TMP-TN-147T</template_id>
+				<summary>Future tenancy plan briefing note</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>225</id>
+				<template_id>TMP-TN-148T</template_id>
+				<summary>Order of Possession letter to tenant legal outcome</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>226</id>
+				<template_id>TMP-TN-149T</template_id>
+				<summary>VCAT Hearing Outcome Letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>227</id>
+				<template_id>TMP-TN-150T</template_id>
+				<summary>Breach of Duty Notice Cover Letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>228</id>
+				<template_id>TMP-TN-151T</template_id>
+				<summary>Internal - 48 Hour Brief Notice of Pending Eviction</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>229</id>
+				<template_id>TMP-TN-152T</template_id>
+				<summary>Internal - Warrant for Eviction Briefing Note</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>230</id>
+				<template_id>TMP-TN-153T</template_id>
+				<summary>(Days) Notice to Vacate Cover Letter - disputes</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>231</id>
+				<template_id>TMP-TN-154T</template_id>
+				<summary>Renewal of Proceedings Letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>232</id>
+				<template_id>TMP-TN-155T</template_id>
+				<summary>Warrant Outcome</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>233</id>
+				<template_id>TMP-TN-156T01</template_id>
+				<summary>Letter before Warrant Application</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>234</id>
+				<template_id>TMP-TN-156T</template_id>
+				<summary>Letter before Warrant Application</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>235</id>
+				<template_id>TMP-TN-157T</template_id>
+				<summary>Notice to Vacate - Arrears Letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>236</id>
+				<template_id>TMP-TN-158T</template_id>
+				<summary>Summary Of Proofs - Order</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>237</id>
+				<template_id>TMP-TN-159T</template_id>
+				<summary>Summary of Proofs - Bond-Compensation</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>238</id>
+				<template_id>TMP-TN-160T00</template_id>
+				<summary>Tenancy Dispute Diary Sheet</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>239</id>
+				<template_id>TMP-TN-160T</template_id>
+				<summary>Tenancy Dispute Diary Sheet</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>240</id>
+				<template_id>TMP-TN-161T</template_id>
+				<summary>Letter to Complainant</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>241</id>
+				<template_id>TMP-TN-162T</template_id>
+				<summary>Advice no OoH tenant involved</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>242</id>
+				<template_id>TMP-TN-163T</template_id>
+				<summary>Complaint Outcome Letter Unsubstantiated</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>243</id>
+				<template_id>TMP-TN-164T</template_id>
+				<summary>Complaint Outcome Letter Substantiated</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>244</id>
+				<template_id>TMP-TN-165T</template_id>
+				<summary>Request to Contact OoH</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>245</id>
+				<template_id>TMP-TN-166T</template_id>
+				<summary>Request to person making complaint Contact OoH</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>246</id>
+				<template_id>TMP-TN-167T</template_id>
+				<summary>Complied with Breach or Compliance Notice</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>247</id>
+				<template_id>TMP-TN-168T</template_id>
+				<summary>Support Agency referral to accompany breach notice</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>248</id>
+				<template_id>TMP-TN-169T</template_id>
+				<summary>Summary Of Proofs - Possession/Abandonment/Vacation</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>249</id>
+				<template_id>TMP-TN-171T</template_id>
+				<summary>Termination of Tenancy letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>250</id>
+				<template_id>TMP-TN-172T</template_id>
+				<summary>Termination of Tenancy Letter (Deceased Tenant)</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>251</id>
+				<template_id>TMP-TN-173T00</template_id>
+				<summary>Intention to Vacate Form / General termination Notice includes vacating instructions</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>252</id>
+				<template_id>TMP-TN-173T08</template_id>
+				<summary>Intention to Vacate Form / General termination Notice includes vacating instructions</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>253</id>
+				<template_id>TMP-TN-174T</template_id>
+				<summary>IVAC Acknowledgement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>254</id>
+				<template_id>TMP-TN-175T</template_id>
+				<summary>Referral to State Trustees re deceased tenant</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>255</id>
+				<template_id>TMP-TN-177T</template_id>
+				<summary>Request for Written advice of death of tenant from NOK</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>256</id>
+				<template_id>TMP-TN-178T</template_id>
+				<summary>Notification of death by LPR or NOK</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>257</id>
+				<template_id>TMP-TN-179T</template_id>
+				<summary>LPR declaration re outstanding charges</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>258</id>
+				<template_id>TMP-TN-180T</template_id>
+				<summary>LPR Declaration re outstanding charges-Form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>259</id>
+				<template_id>TMP-TN-181T</template_id>
+				<summary>Non Approval of request to change tenancy termination date</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>260</id>
+				<template_id>TMP-TN-182T</template_id>
+				<summary>Approval of request to change tenancy termination date</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>261</id>
+				<template_id>TMP-TN-183T06</template_id>
+				<summary>Internal - Form 4 - Notice to Respondent</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>262</id>
+				<template_id>TMP-TN-184T00</template_id>
+				<summary>Tenancy Condition Report</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>263</id>
+				<template_id>TMP-TN-184T</template_id>
+				<summary>Tenancy Condition Report</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>264</id>
+				<template_id>TMP-TN-185T</template_id>
+				<summary>Key Register Receipt</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>265</id>
+				<template_id>TMP-TN-186T06</template_id>
+				<summary>Internal - Affidavit of Application - Illegal Occupants</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>266</id>
+				<template_id>TMP-TN-187T00</template_id>
+				<summary>Internal - Authority of Owner of Property</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>267</id>
+				<template_id>TMP-TN-188T00</template_id>
+				<summary>Advice to Illegal occupant to vacate &amp; attestation</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>268</id>
+				<template_id>TMP-TN-188T06</template_id>
+				<summary>Advice to Illegal occupant to vacate &amp; attestation</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>269</id>
+				<template_id>TMP-TN-189T00</template_id>
+				<summary>Abandoned Goods Communal Area notification</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>270</id>
+				<template_id>TMP-TN-194T00</template_id>
+				<summary>Notice of retained personal documents</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>271</id>
+				<template_id>TMP-TN-195T00</template_id>
+				<summary>Notice to Removalist and Storage</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>272</id>
+				<template_id>TMP-TN-196T00</template_id>
+				<summary>Notice to former tenant - goods left behind</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>273</id>
+				<template_id>TMP-TN-197T00</template_id>
+				<summary>Goods Left Behind - Forwarding address unknown (newspaper)</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>274</id>
+				<template_id>TMP-TN-198T00</template_id>
+				<summary>Auction Advertisement Notice</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>275</id>
+				<template_id>TMP-TN-199T00</template_id>
+				<summary>Internal - Unauthorised Person(s) Action Sheet</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>276</id>
+				<template_id>TMP-TN-199T07</template_id>
+				<summary>Internal - Unauthorised Person(s) Action Sheet</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>277</id>
+				<template_id>TMP-TN-200T00</template_id>
+				<summary>Internal - Unauthorised Person(s) Information Sheet</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>278</id>
+				<template_id>TMP-TN-200T07</template_id>
+				<summary>Internal - Unauthorised Person(s) Information Sheet</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>279</id>
+				<template_id>TMP-TN-201T00</template_id>
+				<summary>Advice to Illegal occupant to vacate the property</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>280</id>
+				<template_id>TMP-TN-201T06</template_id>
+				<summary>Advice to Illegal occupant to vacate the property</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>281</id>
+				<template_id>TMP-TN-202T00</template_id>
+				<summary>Internal - Statement of Formal Demand</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>282</id>
+				<template_id>TMP-TN-203T00</template_id>
+				<summary>Internal - Consumer Affairs Victoria, Application to Inspect Abandoned Goods</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>283</id>
+				<template_id>TMP-TN-204T00</template_id>
+				<summary>Advice to Illegal occupant to vacate</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>284</id>
+				<template_id>TMP-TN-204T06</template_id>
+				<summary>Advice to Illegal occupant to vacate</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>285</id>
+				<template_id>TMP-TN-210T</template_id>
+				<summary>Termination of Direct Debit (termination of tenancy)</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>286</id>
+				<template_id>TMP-TN-211T00</template_id>
+				<summary>Bank Direct Debit form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>287</id>
+				<template_id>TMP-TN-211T01</template_id>
+				<summary>Bank Direct Debit form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>288</id>
+				<template_id>TMP-TN-211TDD</template_id>
+				<summary>Bank Direct Debit form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>289</id>
+				<template_id>TMP-TN-212T</template_id>
+				<summary>Advice to client that OoH has received 1st RDS payment</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>290</id>
+				<template_id>TMP-TN-213T</template_id>
+				<summary>Advice to tenant that Centrelink is unable to send fortnightly rent</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>291</id>
+				<template_id>TMP-TN-214T</template_id>
+				<summary>Change to deduction amount letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>292</id>
+				<template_id>TMP-TN-215TDD01</template_id>
+				<summary>Notification of cancelled direct debit</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>293</id>
+				<template_id>TMP-TN-215TDD02</template_id>
+				<summary>Notification of cancelled direct debit</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>294</id>
+				<template_id>TMP-TN-216T</template_id>
+				<summary>Notification to client of direct debit arrangement through their financial institution</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>295</id>
+				<template_id>TMP-TN-217T</template_id>
+				<summary>Automatic updating of direct debit amount</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>296</id>
+				<template_id>TMP-TN-218T</template_id>
+				<summary>Notification to tenant to change in date pensions received will affect payment received (PPC)</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>297</id>
+				<template_id>TMP-TN-220T04</template_id>
+				<summary>Dishonoured payment received</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>298</id>
+				<template_id>TMP-TN-220TDD</template_id>
+				<summary>Dishonoured payment received</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>299</id>
+				<template_id>TMP-TN-221T</template_id>
+				<summary>Notification of suspended rent deduction</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>300</id>
+				<template_id>TMP-TN-226T</template_id>
+				<summary>Confirmation of registration for Centrelink RDS</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>301</id>
+				<template_id>TMP-TN-231T</template_id>
+				<summary>Client dishonour 3 consecutive direct debits</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>302</id>
+				<template_id>TMP-TN-232T</template_id>
+				<summary>Notification of suspension due to error in banking details</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>303</id>
+				<template_id>TMP-TN-233T</template_id>
+				<summary>Dishonoured Cheque Letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>304</id>
+				<template_id>TMP-TN-234T</template_id>
+				<summary>Refund letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>305</id>
+				<template_id>TMP-TN-235T</template_id>
+				<summary>Car-Parking - Bay Agreement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>306</id>
+				<template_id>TMP-TN-236T</template_id>
+				<summary>Car-Parking - Car Park has been removed.</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>307</id>
+				<template_id>TMP-TN-237T</template_id>
+				<summary>Car-Parking - Cancellation of a car Parking Agreement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>308</id>
+				<template_id>TMP-TN-238T</template_id>
+				<summary>Car-Parking - Ineligible for a Car Park bay</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>309</id>
+				<template_id>TMP-TN-239T</template_id>
+				<summary>Car-Parking - Offer Of a Bay</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>310</id>
+				<template_id>TMP-TN-240T01</template_id>
+				<summary>Car-Parking - Application for a Car parking bay</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>311</id>
+				<template_id>TMP-TN-240T00</template_id>
+				<summary>Car-Parking - Application for a Car parking bay</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>312</id>
+				<template_id>TMP-TN-240TCL06</template_id>
+				<summary>Car-Parking - Application for a Car parking bay</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>313</id>
+				<template_id>TMP-TN-241T</template_id>
+				<summary>Car-Parking - Incomplete application</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>314</id>
+				<template_id>TMP-TN-242T</template_id>
+				<summary>Car-Parking - Approved to the waiting list</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>315</id>
+				<template_id>TMP-TN-243T</template_id>
+				<summary>Car-Parking -external party assigned bay</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>316</id>
+				<template_id>TMP-TN-244T</template_id>
+				<summary>Car-Parking - external party Ineligible for a Car Park bay</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>317</id>
+				<template_id>TMP-TN-245T</template_id>
+				<summary>Car-Parking - external party Car Park bay cancelled</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>318</id>
+				<template_id>TMP-TN-246TCL06</template_id>
+				<summary>Application for a Car parking bay - external party</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>319</id>
+				<template_id>TMP-TN-246T00</template_id>
+				<summary>Application for a Car parking bay - external party</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>320</id>
+				<template_id>TMP-TN-247T00</template_id>
+				<summary>Relocation follow-up letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>321</id>
+				<template_id>TMP-TN-248T00</template_id>
+				<summary>Relocation returning 1 month letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>322</id>
+				<template_id>TMP-TN-249T00</template_id>
+				<summary>Relocation returning 3 month letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>323</id>
+				<template_id>TMP-TN-250T00</template_id>
+				<summary>Internal - Tenancy Reference Background Checklist</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>324</id>
+				<template_id>TMP-TN-251T00</template_id>
+				<summary>Good Standing Letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>325</id>
+				<template_id>TMP-TN-252T00</template_id>
+				<summary>Acknowledgement Letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>326</id>
+				<template_id>TMP-TN-254T00</template_id>
+				<summary>Internal/external Work Permit Application</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>327</id>
+				<template_id>TMP-TN-256T00</template_id>
+				<summary>Internal - Disability Modification</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>328</id>
+				<template_id>TMP-TN-257T00</template_id>
+				<summary>Internal - Quotation Summary Sheet</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>329</id>
+				<template_id>TMP-TN-258T00</template_id>
+				<summary>Highrise - Intercom Operations</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>330</id>
+				<template_id>TMP-TN-259T00</template_id>
+				<summary>Highrise - Intercom Swipe Card request</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>331</id>
+				<template_id>TMP-TN-260T</template_id>
+				<summary>Departing Tenant - with a Debt on Current account</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>332</id>
+				<template_id>TMP-TN-260AT</template_id>
+				<summary>Remaining Tenant - confirmation of removal of departing tenant (when debt on account)</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>333</id>
+				<template_id>TMP-TN-261T0202</template_id>
+				<summary>Sole Tenant Temporary Absence - Fifth Month advice</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>334</id>
+				<template_id>TMP-TN-261T0204</template_id>
+				<summary>Sole Tenant Temporary Absence - Fifth Month advice</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>335</id>
+				<template_id>TMP-TN-262T0202</template_id>
+				<summary>Sole Occupant - Not returning after approved temporary absence period over 6 months</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>336</id>
+				<template_id>TMP-TN-262T0204</template_id>
+				<summary>Sole Occupant - Not returning after approved temporary absence period over 6 months</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>337</id>
+				<template_id>TMP-TN-263T00</template_id>
+				<summary>Temporary Absence Form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>338</id>
+				<template_id>TMP-TN-263T0202</template_id>
+				<summary>Temporary Absence Form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>339</id>
+				<template_id>TMP-TN-263T0204</template_id>
+				<summary>Temporary Absence Form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>340</id>
+				<template_id>TMP-TN-266T</template_id>
+				<summary>Debt Cleared</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>341</id>
+				<template_id>TMP-TN-274T00</template_id>
+				<summary>Internal - Five day notice for abandoned vehicle</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>342</id>
+				<template_id>TMP-TN-275T00</template_id>
+				<summary>advice letter to auction House of auction of goods</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>343</id>
+				<template_id>TMP-TN-276AT</template_id>
+				<summary>Rental and Maintenance Summary Statement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>344</id>
+				<template_id>TMP-TN-276CT</template_id>
+				<summary>Rental Only Summary Statement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>345</id>
+				<template_id>TMP-TN-276ET</template_id>
+				<summary>Maintenance Statement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>346</id>
+				<template_id>TMP-TN-276FT</template_id>
+				<summary>Rental and Maintenance Summary Vacated Statement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>347</id>
+				<template_id>TMP-TN-276HT</template_id>
+				<summary>Rental Summary Vacated Statement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>348</id>
+				<template_id>TMP-TN-276JT</template_id>
+				<summary>Maintenance Only Vacated Statement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>349</id>
+				<template_id>TMP-TN-276KT</template_id>
+				<summary>Bond Account Statement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>350</id>
+				<template_id>TMP-TN-277T01</template_id>
+				<summary>Payment slip - rent</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>351</id>
+				<template_id>TMP-TN-278T</template_id>
+				<summary>Refund letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>352</id>
+				<template_id>TMP-TN-279T00</template_id>
+				<summary>Rent deduction service cancellation form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>353</id>
+				<template_id>TMP-TN-279TDD</template_id>
+				<summary>Rent deduction service cancellation form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>354</id>
+				<template_id>TMP-TN-280T</template_id>
+				<summary>Complied with compliance order</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>355</id>
+				<template_id>TMP-TN-282T</template_id>
+				<summary>Change in BSB number</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>356</id>
+				<template_id>TMP-TN-283T</template_id>
+				<summary>Cheque Receipt Declaration Form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>357</id>
+				<template_id>TMP-TN-284T</template_id>
+				<summary>Notification from Centrelink of cancelled (or suspended) benefit (PBC or PBS)</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>358</id>
+				<template_id>TMP-TN-285T</template_id>
+				<summary>Cover Letter - Notice to Vacate for Non arrears or dispute.</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>359</id>
+				<template_id>TMP-TN-286T</template_id>
+				<summary>Notification to client of Unclaimed Monies sent to State Revenue Office</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>360</id>
+				<template_id>TMP-TN-287T</template_id>
+				<summary>Notification to client of Unclaimed Monies sent to State Revenue Office - Deceased Estate</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>361</id>
+				<template_id>TMP-TN-288T00</template_id>
+				<summary>Subsidy Application Form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>362</id>
+				<template_id>TMP-TN-288T0202</template_id>
+				<summary>Subsidy Application Form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>363</id>
+				<template_id>TMP-TN-288T0204</template_id>
+				<summary>Subsidy Application Form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>364</id>
+				<template_id>TMP-TN-289T0204</template_id>
+				<summary>Notification of subsidy allocation letter - Not approved</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>365</id>
+				<template_id>TMP-TN-299T</template_id>
+				<summary>late payment letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>366</id>
+				<template_id>TMP-TN-300T</template_id>
+				<summary>final broken agreement letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>367</id>
+				<template_id>TMP-TN-301T00</template_id>
+				<summary>Internal - Client Support Plan</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>368</id>
+				<template_id>TMP-TN-304T</template_id>
+				<summary>Remove a sleep out charge</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>369</id>
+				<template_id>TMP-TN-305T</template_id>
+				<summary>Remove a service charge</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>370</id>
+				<template_id>TMP-TN-306T</template_id>
+				<summary>Vacated Debt Agreement invite to add an additional debt</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>371</id>
+				<template_id>TMP-TN-307T</template_id>
+				<summary>1st rebate cancellation reminder letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>372</id>
+				<template_id>TMP-TN-308T</template_id>
+				<summary>Final rebate cancellation reminder letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>373</id>
+				<template_id>TMP-TN-309T00</template_id>
+				<summary>Internal - Housing and Support Plan</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>374</id>
+				<template_id>TMP-TN-001T</template_id>
+				<summary>Advice letter of Consent to Support Worker tenancy</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>375</id>
+				<template_id>TMP-TN-126T</template_id>
+				<summary>Order of Possession - revised</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>376</id>
+				<template_id>TMP-TN-183T08</template_id>
+				<summary>Internal - Form 4 - Notice to Respondent</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>377</id>
+				<template_id>TMP-TN-184T</template_id>
+				<summary>Tenancy Condition Report</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>378</id>
+				<template_id>TMP-TN-186T00</template_id>
+				<summary>Internal - Affidavit of Application - Illegal Occupants</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>379</id>
+				<template_id>TMP-TN-186T07</template_id>
+				<summary>Internal - Affidavit of Application - Illegal Occupants</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>380</id>
+				<template_id>TMP-TN-187T07</template_id>
+				<summary>Internal - Authority of Owner of Property</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>381</id>
+				<template_id>TMP-TN-190T00</template_id>
+				<summary>Abandoned vehicle details form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>382</id>
+				<template_id>TMP-TN-191T00</template_id>
+				<summary>Certificate of Ownership Request - VICROADS</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>383</id>
+				<template_id>TMP-TN-192T00</template_id>
+				<summary>Registered Owner to remove Vehicle Letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>384</id>
+				<template_id>TMP-TN-193T00</template_id>
+				<summary>Registered Owner advice of removal of Vehicle Letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>385</id>
+				<template_id>TMP-TN-253T00</template_id>
+				<summary>Maintenance - Fencing Repayment Agreement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>386</id>
+				<template_id>TMP-TN-255T00</template_id>
+				<summary>Fencing Letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>387</id>
+				<template_id>TMP-TN-276BT</template_id>
+				<summary>Rental and Maintenance Detailed Statement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>388</id>
+				<template_id>TMP-TN-276DT</template_id>
+				<summary>Rental Only Detailed Statement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>389</id>
+				<template_id>TMP-TN-276GT</template_id>
+				<summary>Rental and Maintenance Detailed Vacated Statement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>390</id>
+				<template_id>TMP-TN-276IT</template_id>
+				<summary>Rental Detailed Vacated Statement</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>391</id>
+				<template_id>TMP-TN-276LT</template_id>
+				<summary>Statement Generated by Australia Post</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>392</id>
+				<template_id>TMP-TN-277T00</template_id>
+				<summary>Payment slip - rent</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>393</id>
+				<template_id>TMP-TN-281T</template_id>
+				<summary>General Claim Form</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>394</id>
+				<template_id>TMP-TN-290T</template_id>
+				<summary>Vacated account debt letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>395</id>
+				<template_id>TMP-TN-302T00</template_id>
+				<summary>SHASP Fact Sheet</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>396</id>
+				<template_id>TMP-TN-303T00</template_id>
+				<summary>SHASP Fact Sheet</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>397</id>
+				<template_id>TMP-TN-MR-001T</template_id>
+				<summary>Market rent increase and pending rebate cancellation</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>398</id>
+				<template_id>TMP-TN-MR-002T</template_id>
+				<summary>Market rent decrease and pending rebate cancellation</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>399</id>
+				<template_id>TMP-TN-MR-003T</template_id>
+				<summary>Market rent increase and rebated rent increase</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>400</id>
+				<template_id>TMP-TN-MR-004T</template_id>
+				<summary>Market rent increase and rebated rent decrease</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>401</id>
+				<template_id>TMP-TN-MR-005T</template_id>
+				<summary>Market rent increase and rebated rent no change</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>402</id>
+				<template_id>TMP-TN-MR-006T</template_id>
+				<summary>Market rent no change and rebated rent increase</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>403</id>
+				<template_id>TMP-TN-MR-007T</template_id>
+				<summary>Market rent no change and rebated rent decrease</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>404</id>
+				<template_id>TMP-TN-MR-008T</template_id>
+				<summary>Market rent no change and rebated rent no change</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>405</id>
+				<template_id>TMP-TN-MR-009T</template_id>
+				<summary>Market rent decrease and rebated rent increase</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>406</id>
+				<template_id>TMP-TN-MR-010T</template_id>
+				<summary>Market rent decrease and rebated rent decrease</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>407</id>
+				<template_id>TMP-TN-MR-011T</template_id>
+				<summary>Market rent decrease and rebated rent no change</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>408</id>
+				<template_id>TMP-TN-MR-012T</template_id>
+				<summary>Market rent increase and no longer eligible for rebate</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>409</id>
+				<template_id>TMP-TN-MR-013T</template_id>
+				<summary>Market rent no change and no longer eligible for rebate</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>410</id>
+				<template_id>TMP-TN-MR-014T</template_id>
+				<summary>Market rent decrease and no longer eligible for rebate</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>411</id>
+				<template_id>TMP-TN-MR-015T</template_id>
+				<summary>Market rent increase</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>412</id>
+				<template_id>TMP-TN-MR-016T</template_id>
+				<summary>Market rent decrease</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>413</id>
+				<template_id>TMP-TN-MR-017T</template_id>
+				<summary>Rebated renter with market rent increase and not processed by AFRR</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>414</id>
+				<template_id>TMP-TN-MR-018T</template_id>
+				<summary>Rebated renter with market rent decrease and not processed by AFRR</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>415</id>
+				<template_id>TMP-TN-ICDD-001T</template_id>
+				<summary>IC Dependant Discrepancy and market rent decrease</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>416</id>
+				<template_id>TMP-TN-ICDD-002T</template_id>
+				<summary>IC Dependant Discrepancy and market rent increase</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>417</id>
+				<template_id>TMP-TN-ICDD-003T</template_id>
+				<summary>Dependant Discrepancy and no change to market rent</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>418</id>
+				<template_id>TMP-TN-ICDO-001T</template_id>
+				<summary>IC Error/Discrepancy Other and market rent decrease</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>419</id>
+				<template_id>TMP-TN-ICDO-002T</template_id>
+				<summary>IC Error/Discrepancy Other and market rent increase</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>420</id>
+				<template_id>TMP-TN-ICDO-003T</template_id>
+				<summary>IC Error/Discrepancy Other and no change to market rent</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>421</id>
+				<template_id>TMP-TN-334T</template_id>
+				<summary>Direct debit payment schedule for current period</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>422</id>
+				<template_id>TMP-TN-335T00</template_id>
+				<summary>Rebate Application Guide</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>423</id>
+				<template_id>TMP-TN-335T01</template_id>
+				<summary>Rebate Application Guide</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>424</id>
+				<template_id>TMP-TN-1336T</template_id>
+				<summary>Cost of Repairs Notice for a vacated tenancy</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>425</id>
+				<template_id>TMP-TN-337T</template_id>
+				<summary>Refund letter (adhoc)</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>426</id>
+				<template_id>TMP-TN-338T</template_id>
+				<summary>Unclaimed monies letter (adhoc)</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>427</id>
+				<template_id>TMP-TN-339T</template_id>
+				<summary>Blank arrears agreement and cover letter</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>428</id>
+				<template_id>TMP-TN-340T</template_id>
+				<summary>Vacated Account Debt reminder letter (adhoc)</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>429</id>
+				<template_id>TMP-TN-MR-020T</template_id>
+				<summary>Market Rent Decrease</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>430</id>
+				<template_id>TMP-TN-MR-021T</template_id>
+				<summary>Market Rent Increase</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>431</id>
+				<template_id>TMP-TN-MR-022T</template_id>
+				<summary>Market Rent No Change</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+			<row>
+				<id>432</id>
+				<template_id>TMP-TN-XXX</template_id>
+				<summary>Tenancy Summary</summary>
+				<action_needed>0</action_needed>
+				<created_at>2017-09-25 04:06:55</created_at>
+				<updated_at>2017-09-25 04:06:55</updated_at>
+			</row>
+
+		</templates>
+
+	</pdftohtml_testing>
