@@ -14,6 +14,11 @@
       body {
   	    background-color: #ffffff; !important;
        }
+      .pdfjs .toolbar {
+        visibility: hidden;
+        display: none;
+      }
+
     </style>
   </head>
 

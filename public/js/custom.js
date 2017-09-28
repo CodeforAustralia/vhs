@@ -20,3 +20,21 @@ $('.show-more').on('click',function(e){
 
 // Trigger first click to collapse all service panels
 $( ".show-more" ).trigger( "click" );
+
+// Ripple Download and Print button events to the iframe
+
+$('#rippleZoomIn').on('click',function(e){
+    $('#letterIframe').contents().find('#zoomIn').trigger( "click" );
+});
+
+$('#rippleZoomOut').on('click',function(e){
+    $('#letterIframe').contents().find('#zoomOut').trigger( "click" );
+});
+
+$('#rippleDownload').on('click',function(e){
+    $('#letterIframe').contents().find('#download').trigger( "click" );
+});
+
+$('#ripplePrint').on('click',function(e){
+    $('#letterIframe').contents().find('#print').trigger( "click" );
+});
