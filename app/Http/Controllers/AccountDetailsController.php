@@ -90,6 +90,7 @@ class AccountDetailsController extends Controller
         $updateUser->firstName = $firstName;
         $updateUser->lastName = $lastName;
         $updateUser->client_id = $client_id;
+        $updateUser->email = $email;
         $updateUser->reference_id = $reference_id;
 
         if($password == '') {
