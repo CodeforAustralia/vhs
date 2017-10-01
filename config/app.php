@@ -183,7 +183,7 @@ return [
         Orchestra\Parser\XmlServiceProvider::class,
 
         // Text Messaging
-        'Aloha\Twilio\Support\Laravel\ServiceProvider',
+        Aloha\Twilio\Support\Laravel\ServiceProvider::class,
 
         ],
 
@@ -236,7 +236,7 @@ return [
     // Laravel XML Parser
     'XmlParser' => Orchestra\Parser\Xml\Facade::class,
     // Tesxt Messaging
-    'Twilio' => 'Aloha\Twilio\Support\Laravel\Facade',
+    'Twilio' => Aloha\Twilio\Support\Laravel\Facade::class,
 
     ],
 
