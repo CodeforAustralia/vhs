@@ -21,7 +21,8 @@
         "classmap": [
             "database/seeds",
             "database/factories",
-            "vendor/gufy/pdftohtml-php"
+            "vendor/gufy/pdftohtml-php",
+            "vendor/aloha/twilio"
         ],
         "psr-4": {
             "App\\": "app/"
