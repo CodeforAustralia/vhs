@@ -2,50 +2,65 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 
-use App\Http\Requests;
-use Illuminate\Bus\Queueable;
+require base_path().'/vendor/autoload.php';
 use App\Http\Controllers\Controller;
-use Twilio;
+use Aloha\Twilio\Twilio;
+use App\User as User;
+use Aloha\Twilio\TwilioInterface;
+use Twilio\Rest\Client; 
+use Autoload;
+use Log;
 
 class NotificationSMSController extends Controller
 {
     //
-    use Queueable;
-	protected $user;
+	protected $message;
 
-	public function __construct($letter, $user)
+
+
+	public function __construct(User $user)
 	{
-		//
-        $this->letter = $letter;
-        $this->user = $user;
+		$this->user = $user;
 	}
 
-	public function create($letter, $user)
+	/**
+     * Test the name of the command
+     */
+	public function letterNotificationSMS($user)
 	{
-		$formattedMessage = $this->formatMessage($letter, $user);
-		$this->sendMessage($formattedMessage);
-		return redirect()->route('/');
-	}
-
-	private function sendMessage($letter, $user)
-	{
-		$twilioPhoneNumber = config('services.twilio')['twilioPhoneNumber'];
-		$userMobileNumber = $user['mobile'];
-		$this->letter->account->messages->sendMessage(
-			$twilioPhoneNumber,
-			$userMobileNumber,
-			$message
+		$user = User::find($user);
+		$user_mobile = $user[0]['mobile'];
+		
+		$this->sendMessage(
+			$user,
+			$user_mobile,
+			'This messages is to notify you that you have a new mail from VHS. Please login to the website'
 			);
 	}
 
-	private function formatMessage($letter, $user)
+	private function sendMessage($user, $user_mobile, $messageBody)
 	{
-		return
-		"New letter received for " .$this->user['firstName']."" .
-		// "Call $name at $phone. " .
-		// "Message: $message";
-		"Message: You have a new letter from VHS";
+		$account_sid = env('TWILIO_SID', ''); 
+		$auth_token = env('TWILIO_TOKEN', ''); 
+		$fromNumber = env('TWILIO_FROM', ''); 
+		$MessagingServiceSid = env('TWILIO_MessagingServiceSid', ''); 
+		$client = new Twilio($account_sid, $auth_token, $fromNumber); 
+
+		$messageParams = array(
+			'Body' => $messageBody
+			);
+
+		try {
+			$messages = $client->message(
+				$user_mobile,
+				$messageParams
+				);
+		} catch (Exception $e) {
+			Log::error($e->getMessage());
+		}
+
+		return;
 	}
+
 }
