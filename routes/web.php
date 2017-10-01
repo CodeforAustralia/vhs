@@ -27,17 +27,13 @@ Route::group(array('after' => 'auth'), function() {
 	Route::get('/notification', function () {
 		$user = Auth::user();
 		$letter = Letters::first();
+		// Send Email notification
 		$notify = $user->notify(new NewLetter($letter, $user));
-	// echo '<pre>';
-	// echo print_r($notify, true);
-	// $twilio = new Twilio;
-	// $twilio->message($user['mobile'], 'Pink Elephants and Happy Rainbows');
-
+		// Send SMS Notification
+		app('App\Http\Controllers\NotificationSMSController')->letterNotificationSMS($user);
 		return view('pages/emailNotification');
 	});
 });
-
-
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/pdf', 'PdfController@index')->name('pdf');
@@ -50,11 +46,12 @@ Route::post('/accounts/update/{id}', 'AccountDetailsController@updatebyadmin')->
 Route::get('/status', 'StatusController@index')->name('status');
 Route::get('/upload', 'UploadController@index');
 Route::get('/upload_pdf', 'UploadController@uploadPdf');
-// Route::get('/upload', 'UploadController@uploadForm');
+	// Route::get('/upload', 'UploadController@uploadForm');
 Route::post('/upload_pdf', 'UploadController@uploadPdfSubmit');
 Route::get('/upload_templatesXml', 'UploadController@uploadTemplatesXml');
 Route::post('/upload_templatesXml', 'UploadController@uploadTemplatesXmlSubmit');
-Route::get('correspondence', 'DashboardController@index')->name('dashboard'); // if no reference_id route to dashboard
+Route::get('correspondence', 'DashboardController@index')->name('dashboard'); 
+	// if no reference_id route to dashboard
 Route::get('correspondence/{reference_id}', 'LettersListController@index');
 Route::get('letter/{id}', 'LettersListController@show');
 Route::get('actual-letter/{id}', 'ActualLetterController@index');
