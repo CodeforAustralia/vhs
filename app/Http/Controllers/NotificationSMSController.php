@@ -31,11 +31,11 @@ class NotificationSMSController extends Controller
 	{
 		$user = User::find($user);
 		$user_mobile = $user[1]['mobile'];
-		
+
 		$this->sendMessage(
 			$user,
 			$user_mobile,
-			'This messages is to notify you that you have a new mail from VHS. Please login to the website'
+			'You have a new letter in the Victorian Housing Services Portal. Please log into your account to access your mail.'
 			);
 	}
 
