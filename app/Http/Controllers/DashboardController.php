@@ -46,6 +46,7 @@ class DashboardController extends Controller
 
 // get the services for the logged-in user
      $user_id = Auth::user()->id;
+     $user_testType = Auth::user()->test_type;
      $user_services = UserService::where('user_id',$user_id)->get();
 
 
@@ -60,6 +61,7 @@ class DashboardController extends Controller
       'message' => $message,
       'user_services' => $user_services,
       'total_unread' => $total_unread,
+      'user_testType' => $user_testType,
       'include_links' => true   // include links on summary of services and new letters
       ]);
    }

@@ -28,7 +28,7 @@ Route::group(array('after' => 'auth'), function() {
 		$user = Auth::user();
 		$letter = Letters::first();
 		// Send Email notification
-		$notify = $user->notify(new NewLetter($letter, $user));
+		// $notify = $user->notify(new NewLetter($letter, $user));
 		// Send SMS Notification
 		app('App\Http\Controllers\NotificationSMSController')->letterNotificationSMS($user);
 		return view('pages/emailNotification');

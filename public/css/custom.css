@@ -81,6 +81,10 @@ DASHBOARD
 	background-color: #F3EEE9;
 	padding: 50px 0px;
 }
+.container-wrapper.services-wrapper {
+	background-color: #FFFFFF;
+	padding: 00px 0px 50px;
+}
 
 .container-wrapper.tools-wrapper.no-padding {
 	padding: 0;
@@ -160,6 +164,39 @@ DASHBOARD
 .services_body_date {
 	padding: 0px;
 }
+
+/************************
+DASHBOARD OPTION A
+*************************/
+.services_buttons a {
+	width: 100%;
+	padding: 25px 15px;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	background-color: #3382be;
+	border: 0px;
+	border-radius: 0px;
+	text-align: left;
+}
+
+.services_buttons {
+	padding-top: 20px;
+}
+.services_buttons:nth-child(1n) {
+	padding-left: 0px;
+}
+.services_buttons:nth-child(3n) {
+	padding-right: 20px;
+}
+.services_buttons.col-xs-6.col-md-4.col-lg-4 {
+    padding-left: 0px;
+}
+.services_buttons a svg {
+    height: 60px;
+    width: 60px;
+}
+
 /* Recommended Links */
 .recommended_links-wrapper {
 	padding: 50px 0px;
@@ -249,7 +286,7 @@ DASHBOARD
 	margin: 0;
 }
 .services_toolbox .panel-body {
-	padding:  0px;
+	padding:  10px;
 	margin: 0;
 }
 
@@ -353,6 +390,29 @@ Recommended Links
 	color:#0063ae;
 }
 /************************
+Recommended buttons
+*************************/
+.recommended_buttons {
+    padding: 10px 25px;
+}
+.recommended_buttons a {
+    width: 100%;
+    padding: 25px;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    border: 0px;
+    border: 0px;
+    box-shadow: 2px 2px 4px 0 rgba(170, 170, 170, 0.5);
+}
+.recommended_buttons_tools-wrapper {
+    padding: 30px 0px;
+    background-color: #F3EEE9;
+}
+.recommended_buttons_tools-wrapper .recommended_links-wrapper {
+	padding: 0px;
+}
+/************************
 Recommendation buttons
 *************************/
 .recommendation_buttons a {
@@ -373,8 +433,8 @@ Recommendation buttons
 	float: none;
 }
 .recommendation_links-wrapper {
-    background-color: #ffffff;
-    padding: 40px 0px;
+	background-color: #ffffff;
+	padding: 40px 0px;
 }
 /************************
 Recommendation buttons
@@ -384,8 +444,8 @@ Recommendation buttons
 	padding: 20px;
 }
 .upload_index-button {
-    width: 100%;
-    padding: 10px 0px;
+	width: 100%;
+	padding: 10px 0px;
 }
 
 /************************
@@ -398,7 +458,22 @@ Footer
 	padding-left: 0px;
 }
 
+@media screen and (max-width: 991px) {
+	.services_buttons {
+		padding-top: 20px 20px;
+	}
+	.services_buttons:nth-child(1n) {
+		padding-left: 0px;
+	}
+	.services_buttons:nth-child(2n) {
+		padding-right: 0px;
+	}
+	.services_buttons {
+		padding-right: 20px;
+	}
+}
 @media screen and (max-width: 768px) {
+
 	button.navbar-toggle.collapsed {
 	}
 	.navigation-offset-col {
@@ -419,6 +494,9 @@ Footer
 	}
 }
 @media screen and (max-width: 480px) {
+	.services_buttons a {
+		font-size: 14px;
+	}
 	.navbar-brand {
 		padding: 15px 0px;
 		font-size: 12px;
@@ -437,7 +515,6 @@ Footer
 	}
 	.tool-box:nth-child(2) {
 		margin-right: 4px;
-
 	}
 	.toolbox_half-row {
 		display: inline-block;
@@ -461,9 +538,16 @@ Footer
 	.panel-heading .services_heading_right h3 {
 		font-size: 28px;
 	}
+	.services_buttons {
+		padding:  10px 10px;
+	}
 
+	.services_buttons:nth-child(3) {
+		padding-right: 10px;
+	}
 }
 @media screen and (min-width: 960px) {
+
 	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 		margin: 0px;
 		padding: 15px 0px;

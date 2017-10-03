@@ -16,6 +16,7 @@ class CreateUserLettersTable extends Migration
         // Create user_letters table
         Schema::create('user_letters', function (Blueprint $table) {
             $table->increments('id');
+            // user test type will be A and B
             $table->bigInteger('letter_id')->unsigned();
             $table->foreign('letter_id')->references('id')->on('letters')->onDelete('cascade');
             $table->bigInteger('service_id')->unsigned();
