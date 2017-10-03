@@ -36,14 +36,14 @@
 					<!-- Add client ID -->
 					@if ( Auth::user()->usertype == '1' )
 
-					<form class="form-horizontal" method="GET" action="{{ route('accounts.updatebyadmin', $AccountDetails[0]->id) }}">
+					<form class="form-horizontal" method="POST" action="{{ route('accounts.updatebyadmin', $AccountDetails[0]->id) }}">
 						{{ csrf_field() }}
 
 						<div class="form-group{{ $errors->has('fistName') ? ' has-error' : '' }}">
 							<label for="firstName" class="col-md-4 control-label">First Name:</label>
 							<div class="col-md-6">	
 								<input id="firstName" type="text" class="form-control" name="firstName" value="{{ $AccountDetails[0]->firstName }}"/>
-								
+
 								@if ($errors->has('firstName'))
 								<span class="help-block">
 									<strong>{{ $errors->first('firstName') }}</strong>
