@@ -80,6 +80,7 @@ class AccountDetailsController extends Controller
         $firstName = $request->input('firstName');
         $lastName = $request->input('lastName');
         $email = $request->input('email');
+        $mobile = $request->input('mobile');
         $reference_id = $request->input('reference_id');
         $client_id = $request->input('client_id');
         $password_confirmation = $request->input('password_confirmation');
@@ -91,6 +92,7 @@ class AccountDetailsController extends Controller
         $updateUser->lastName = $lastName;
         $updateUser->client_id = $client_id;
         $updateUser->email = $email;
+        $updateUser->mobile = $mobile;
         $updateUser->reference_id = $reference_id;
 
         if($password == '') {

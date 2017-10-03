@@ -9,25 +9,25 @@
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
-				<div class="col-md-2">
+					<div class="col-md-2">
 
+					</div>
+					<div class="col-md-7 services_heading_right">
+						@if ( Auth::user()->usertype == '1' )
+						<h3><a href="/accounts">All Accounts</a></h3>
+						@else
+						<h3>Account Details</h3>
+						@endif
+					</div>
+					<div class="col-md-2 services_heading_right">
+						<div class="toolbox-banner mail_icon-link">
+							<p class="pull-right"><a class="panel-heading_link" href="/accounts/{{ $AccountDetails[0]->id }}">Back to Profile</a></p>
 						</div>
-						<div class="col-md-7 services_heading_right">
-							@if ( Auth::user()->usertype == '1' )
-							<h3><a href="/accounts">All Accounts</a></h3>
-							@else
-							<h3>Account Details</h3>
-							@endif
+					</div>
+					<div class="col-md-1 services_heading_right">
+						<div class="toolbox-banner mail_icon-link">
 						</div>
-						<div class="col-md-2 services_heading_right">
-							<div class="toolbox-banner mail_icon-link">
-								<p class="pull-right"><a class="panel-heading_link" href="/accounts/{{ $AccountDetails[0]->id }}">Back to Profile</a></p>
-							</div>
-						</div>
-						<div class="col-md-1 services_heading_right">
-							<div class="toolbox-banner mail_icon-link">
-							</div>
-						</div>
+					</div>
 				</div>
 				<div class="panel-body">
 					@if(Session::has('message'))
@@ -36,13 +36,14 @@
 					<!-- Add client ID -->
 					@if ( Auth::user()->usertype == '1' )
 
-						 <form class="form-horizontal" method="POST" action="{{ route('accounts.updatebyadmin', $AccountDetails[0]->id) }}">
+					<form class="form-horizontal" method="GET" action="{{ route('accounts.updatebyadmin', $AccountDetails[0]->id) }}">
 						{{ csrf_field() }}
 
 						<div class="form-group{{ $errors->has('fistName') ? ' has-error' : '' }}">
 							<label for="firstName" class="col-md-4 control-label">First Name:</label>
 							<div class="col-md-6">	
 								<input id="firstName" type="text" class="form-control" name="firstName" value="{{ $AccountDetails[0]->firstName }}"/>
+								
 								@if ($errors->has('firstName'))
 								<span class="help-block">
 									<strong>{{ $errors->first('firstName') }}</strong>
@@ -65,11 +66,24 @@
 						</div>
 
 						<div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-							<label for="email" class="col-md-4 control-label">Email:</label>
-							<div class="col-md-6">	
-								<input id="email" type="email" class="form-control" name="email" value="{{ $AccountDetails[0]->email }}"/>
+							<label for="email" class="col-md-4 control-label">E-mail:</label>
+							<div class="col-md-6">
+								<input id="email" type="text" class="form-control" name="email" value="{{ $AccountDetails[0]->email }}"/>
 
 								@if ($errors->has('email'))
+								<span class="help-block">
+									<strong>{{ $errors->first('email') }}</strong>
+								</span>
+								@endif
+							</div>
+						</div>
+
+						<div class="form-group{{ $errors->has('mobile') ? ' has-error' : '' }}">
+							<label for="mobile" class="col-md-4 control-label">Mobile:</label>
+							<div class="col-md-6">	
+								<input id="email" type="mobile" class="form-control" name="mobile" value="{{ $AccountDetails[0]->mobile }}"/>
+
+								@if ($errors->has('mobile'))
 								<span class="help-block">
 									<strong>{{ $errors->first('email') }}</strong>
 								</span>
@@ -128,9 +142,9 @@
 						</div>
 					</form>
 					@else
-						 
 
-						 <!-- IF NOT ADMIN USER -->
+
+					<!-- IF NOT ADMIN USER -->
 					<form class="form-horizontal" method="POST" action="{{ route('accounts.update', $AccountDetails[0]->id) }}">
 						{{ csrf_field() }}
 
