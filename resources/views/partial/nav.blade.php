@@ -39,9 +39,18 @@
                     <li><a href="/letters">Letters</a></li>
                     <li><a href="/status">Status</a></li> -->
                     <li class="dropdown">
+                        @if ( Auth::user()->test_type == 'A' )
+                        @if(Route::current()->getName() == 'accounts.view')
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user user-icon" aria-hidden="true"></i>
                             {{ Auth::user()->name }}
                         </a>
+                        @endif
+                        @else
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user user-icon" aria-hidden="true"></i>
+                            {{ Auth::user()->name }}
+                        </a>
+                        @endif
+                        
 
                         <ul class="dropdown-menu" role="menu">
                             <li class="">
@@ -70,6 +79,8 @@
         </div>
     </div>
 </nav>
+@if ( \Auth::check() )
+@if ( Auth::user()->test_type == 'B' )
 <div class="container">
     <div class="col-md-8 col-md-offset-2 navigation-offset-col">
         <div class="quick-escape_wrapper">
@@ -77,3 +88,5 @@
         </div>
     </div>
 </div>
+@endif
+@endif

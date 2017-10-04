@@ -20,11 +20,11 @@
 							@endif
 
 						</div>
-						<div class="col-md-2 services_heading_right">
+						<div class="col-md-3 services_heading_right">
 							<div class="toolbox-banner mail_icon-link">
-								<p class="pull-right"><a class="panel-heading_link" href="/accounts/edit/{{ $AccountDetails[0]->id }}">Edit</a></p>
+									<p class=""><a class="panel-heading_link" href="/accounts/edit/{{ $AccountDetails[0]->id }}">Edit</a></p>
 								@if ( Auth::user()->usertype == '1' )
-								<p class="pull-right"><a class="panel-heading_link" href="/notification/{{ $AccountDetails[0]->id }}">Send Notification</a></p>
+									<p class=""><a class="panel-heading_link" href="/notification/{{ $AccountDetails[0]->id }}">Send Notification</a></p>
 								@endif
 							</div>
 						</div>
@@ -45,7 +45,7 @@
 					</div>
 					<div class="col-md-7 services_heading_right">
 						<ul class="nav nav-tabs">
-						<li class="active"><a data-toggle="tab" href="#aboutMe">About Me</a></li>
+							<li class="active"><a data-toggle="tab" href="#aboutMe">About Me</a></li>
 							<li><a data-toggle="tab" href="#currentSituation">Current Situation</a></li>
 							<li><a data-toggle="tab" href="#location">Location</a></li>
 						</ul>
@@ -55,10 +55,10 @@
 								<h4>Contact Details</h4>
 								<p>{{ $UserAddress[0]->address_1 }} <br class="show-sm-down"/>{{ $UserAddress[0]->suburb_town }} VIC {{ $UserAddress[0]->postcode }}</p>
 								<p>
-								{{ $AccountDetails[0]->email }}
+									{{ $AccountDetails[0]->email }}
 								</p>
 								<p>
-								{{ $AccountDetails[0]->mobile }}
+									{{ $AccountDetails[0]->mobile }}
 								</p>
 								<h4>Services</h4>
 								<p>
@@ -84,9 +84,9 @@
 								</p>
 								<h4>Privacy & Security</h4>
 								<p>
-								Security Password
-								<br/>
-								<span style="font-size: 24px">**********************</span>
+									Security Password
+									<br/>
+									<span style="font-size: 24px">**********************</span>
 								</p>
 							</div>
 							<div id="currentSituation" class="tab-pane fade">

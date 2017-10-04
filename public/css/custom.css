@@ -53,7 +53,7 @@ span.housing_services-title {
 .services_heading_right h3 a,
 .services_heading_right h3 a:hover,
 .services_heading_right h3 a:visited {
-    color: #222222;
+	color: #222222;
 }
 /*.quick-escape_wrapper button {
     position: fixed;
@@ -139,13 +139,13 @@ DASHBOARD
 	font-size: 30px;
 }
 .services_heading_right {
-	padding: 10px 0px;
+	padding: 0px 0px;
 }
 .panel-heading .services_heading_right h3 {
-    font-size: 32px;
-    color: #222222;
-    font-weight: bold;
-    margin-top: 0;
+	font-size: 32px;
+	color: #222222;
+	font-weight: bold;
+	margin-top: 0;
 }
 .panel-footer {
 	background-color: #f8f6f5;
@@ -170,6 +170,12 @@ br.show-sm-down {
 /************************
 DASHBOARD OPTION A
 *************************/
+.panel.panel-primary h4 {
+	font-size: 14px;
+	color: #0063ae;
+	font-weight: bold;
+	padding-top: 20px;
+}
 .recommended_buttons a svg {
 	width: 40px;
 	height: 30px;
@@ -244,20 +250,22 @@ DASHBOARD OPTION A
 	padding-left: 0px;
 }
 .panel-primary>.panel-heading {
-    color: #222222;
-    background-color: #ffffff;
-    border-color: #ffffff;
-    min-height: 40px;
-    display: flex;
+	color: #222222;
+	background-color: #ffffff;
+	border-color: #ffffff;
+	min-height: 40px;
+	display: flex;
 }
 .panel-primary {
 	border: 0px;
-	box-shadow: 1px 2px 3px grey;
-	margin: 20px 0px;
+	box-shadow: none !important;
+	margin: 5px 0px;
 	/* padding: 30px 20px; */
 	background: #ffffff;
 }
-
+.toolbox-banner p {
+	margin: 0px;
+}
 .show-more {
 	font-weight: bold;
 }
@@ -299,8 +307,8 @@ DASHBOARD OPTION A
 	padding: 30px;
 }
 .panel-body {
-    padding: 15px;
-    margin: 0;
+	padding: 15px;
+	margin: 0;
 }
 .services_toolbox .panel-body {
 	padding:  10px;
@@ -410,7 +418,7 @@ Recommended Links
 Recommended buttons
 *************************/
 .recommended_buttons {
-    padding: 10px 10px;
+	padding: 10px 10px;
 }
 .recommended_buttons a {
 	width: 100%;
