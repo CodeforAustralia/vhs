@@ -46,11 +46,13 @@ class AccountDetailsController extends Controller
      */
     public function view($id)
     {
+        $user_testType = Auth::user()->test_type;
         $AccountDetails = AccountDetails::where('id', $id)->get();
         $UserAddress = UserAddress::where('user_id', $id)->get();
         return view('pages/account/view')->with([
             'AccountDetails' => $AccountDetails,
-            'UserAddress' => $UserAddress
+            'UserAddress' => $UserAddress,
+            'user_testType' => $user_testType
             ]);
     }
 
