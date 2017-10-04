@@ -17,21 +17,27 @@
       <div class="row">
         <div class="col-md-8 services_toolbox col-xs-12">
           <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
-            <a href="#" target="_blank" role="button" class="btn btn-primary need_housing_button">
-            {!! file_get_contents(asset('images/ico-profile.svg')) !!}
-
+            @if ( Auth::user()->usertype == '1' )
+            <a href="/accounts" target="_blank" role="button" class="btn btn-primary need_housing_button">
+              {!! file_get_contents(asset('images/ico-profile.svg')) !!}
               <br/>
-              My Profile
-            </a>
-          </div>
-          <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
-            <a href="#" target="_blank" role="button" class="btn btn-primary need_housing_button">
-             {!! file_get_contents(asset('images/ico-inbox.svg')) !!}
-              <br/>
-              Inbox
-            </a>
-          </div>
-          <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
+              View all Accounts</a>
+              @else 
+              <a href="/accounts/{{ Auth::user()->id }}" target="_blank" role="button" class="btn btn-primary need_housing_button">
+                {!! file_get_contents(asset('images/ico-profile.svg')) !!}
+                <br/>
+                My Profile</a>
+                @endif
+              </a>
+            </div>
+            <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
+              <a href="#" target="_blank" role="button" class="btn btn-primary need_housing_button">
+               {!! file_get_contents(asset('images/ico-inbox.svg')) !!}
+               <br/>
+               Inbox
+             </a>
+           </div>
+           <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
             <a href="#" target="_blank" role="button" class="btn btn-primary need_housing_button">
               {!! file_get_contents(asset('images/ico-services.svg')) !!}
               <br/>

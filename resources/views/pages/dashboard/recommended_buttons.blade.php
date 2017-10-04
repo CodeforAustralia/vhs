@@ -3,26 +3,14 @@
         <div class="row">
             <!-- <div class="col-md-8 col-md-offset-2"> -->
             <div class="col-md-8 recommended_links-wrapper">
-                <div class="recommended_buttons col-md-12 col-lg-6">
-                <a href="#" target="_blank" role="button" class="btn btn-default need_housing_button">Need urgent housing?</a>
+                <div class="recommended_buttons col-md-12 col-lg-12">
+                <a href="#" target="_blank" role="button" class="btn btn-default need_housing_button">{!! file_get_contents(asset('images/ico-urgenthousing.svg')) !!} <span>Need urgent housing?</span></a>
                 </div>
-                <div class="recommended_buttons col-md-12 col-lg-6">
-                    <a href="http://housing.vic.gov.au/housing-options-finder" target="_blank" role="button" class="btn btn-default housing_options_button">Find your Housing Options</a>
+                <div class="recommended_buttons col-md-12 col-lg-12">
+                    <a href="http://housing.vic.gov.au/housing-options-finder" target="_blank" role="button" class="btn btn-default housing_options_button">{!! file_get_contents(asset('images/ico-findyourhousing.svg')) !!} <span>Find your Housing Options</span></a>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container-wrapper recommendation_links-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="recommendation_buttons-wrapper col-md-8 ">
-                <div class="recommendation_buttons col-md-12 col-lg-6">
-                    <a href="#" target="_blank" role="button" class="btn btn-primary need_housing_button">Need urgent housing?</a>
-                </div>
-                <div class="recommendation_buttons col-md-12 col-lg-6">
-                    <a href="http://housing.vic.gov.au/housing-options-finder" target="_blank" role="button" class="btn btn-primary housing_options_button">Find your Housing Options</a>
+                <div class="recommended_buttons col-md-12 col-lg-12">
+                    <a href="http://housing.vic.gov.au/housing-options-finder" target="_blank" role="button" class="btn btn-default housing_options_button">{!! file_get_contents(asset('images/ico-nearest-ho.svg')) !!} <span>Nearest Housing Office</span></a>
                 </div>
             </div>
         </div>
