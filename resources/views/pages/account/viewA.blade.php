@@ -20,6 +20,14 @@
 							@endif
 
 						</div>
+						<div class="col-md-2 services_heading_right">
+							<div class="toolbox-banner mail_icon-link">
+								<p class="pull-right"><a class="panel-heading_link" href="/accounts/edit/{{ $AccountDetails[0]->id }}">Edit</a></p>
+								@if ( Auth::user()->usertype == '1' )
+								<p class="pull-right"><a class="panel-heading_link" href="/notification/{{ $AccountDetails[0]->id }}">Send Notification</a></p>
+								@endif
+							</div>
+						</div>
 						<!-- <div class="col-md-2 services_heading_right">
 							<div class="toolbox-banner mail_icon-link">
 								<p class="pull-right"><a class="panel-heading_link" href="/accounts/edit/{{ $AccountDetails[0]->id }}">Edit</a></p>

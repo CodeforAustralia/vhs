@@ -24,16 +24,9 @@ Auth::routes();
 Route::get('/', 'DashboardController@index')->name('dashboard');
 
 Route::group(array('after' => 'auth'), function() {
-	Route::get('/notification', function () {
-		$user = Auth::user();
-		$letter = Letters::first();
-		// Send Email notification
-		$notify = $user->notify(new NewLetter($letter, $user));
-		// Send SMS Notification
-		app('App\Http\Controllers\NotificationSMSController')->letterNotificationSMS($user);
-		return view('pages/emailNotification');
-	});
+	Route::get('/notification/{id}', 'NotificationController@index');
 });
+
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/pdf', 'PdfController@index')->name('pdf');
@@ -58,3 +51,6 @@ Route::get('actual-letter/{id}', 'ActualLetterController@index');
 Route::get('letter-pdfjs/{id}', 'ActualLetterController@pdfjs');
 
 Route::get('/database', 'GenerateController@index')->name('database');
+
+// Option A
+Route::get('/inbox', 'InboxController@index')->name('inbox.index');

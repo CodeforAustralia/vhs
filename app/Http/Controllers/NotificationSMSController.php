@@ -30,7 +30,7 @@ class NotificationSMSController extends Controller
 	public function letterNotificationSMS($user)
 	{
 		$user = User::find($user);
-		$user_mobile = $user[1]['mobile'];
+		$user_mobile = $user[0]['mobile'];
 
 		$this->sendMessage(
 			$user,
