@@ -11,15 +11,15 @@
             <div class="col-xs-1">
             </div>
             <div class="col-xs-7 col-xs-10 services_heading_right">
-                <p>{{ $user_service->description }}</p>
+                <p>{{ $user_service->service->description }}</p>
                 <p>Reference #{{ $user_service->reference_id }}</p>
-                <h3>{{ $user_service->type }}</h3>
+                <h3>{{ $user_service->service->type }}</h3>
             </div>
             <div class="col-xs-4 services_heading_right">
                 <div class="toolbox-banner mail_icon-link">
                     <?php $no_of_letters = count($user_service->service->unreadLetters);
 
-                    $unread_letters_class = ''; 
+                    $unread_letters_class = '';
 
                     switch ($no_of_letters) {
 
@@ -46,7 +46,7 @@
                     ?>
 
                     <p>
-                        <!-- <span class="fa-stack fa-2x">
+                        <span class="fa-stack fa-2x">
                             @if ($no_of_letters > 0)
                             @if ($no_of_letters > 999)
                             <span class="letter-numbers {{$unread_letters_class}}">&gt;999</span>
@@ -58,7 +58,7 @@
                             @else
                             <i class="fa fa-envelope-o fa-stack-1x"></i>
                             @endif
-                        </span> -->
+                        </span>
                     </p>
                 </div>
             </div>
