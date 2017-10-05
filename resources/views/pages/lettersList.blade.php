@@ -10,7 +10,7 @@
                 <div class="panel panel-primary">
 
                     <!-- Service Panel -->
-                    @include('pages.inbox.enumerate_services')
+                    @include('pages.dashboard.enumerate_services')
                     @foreach ($user_services as $user_service) @foreach ($user_service->service->letters as $letter)
 
                     <!-- Letter -->
