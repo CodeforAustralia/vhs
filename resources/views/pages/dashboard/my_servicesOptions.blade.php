@@ -21,7 +21,7 @@
             <a href="/accounts" target="_blank" role="button" class="btn btn-primary need_housing_button">
               {!! file_get_contents(asset('images/ico-profile.svg')) !!}
               <br/>
-              View all Accounts</a>
+              View Accountss</a>
               @else 
               <a href="/accounts/{{ Auth::user()->id }}" target="_blank" role="button" class="btn btn-primary need_housing_button">
                 {!! file_get_contents(asset('images/ico-profile.svg')) !!}
