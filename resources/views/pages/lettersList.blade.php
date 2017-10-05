@@ -11,7 +11,7 @@
 
                     <!-- Service Panel -->
                     @include('pages.dashboard.enumerate_services')
-                    @foreach ($user_services->services as $user_service) @foreach ($user_service->service->letters as $letter)
+                    @foreach ($user_services as $user_service) @foreach ($user_service->service->letters as $letter)
 
                     <!-- Letter -->
                     <a href="/letter/{{$letter->id}}">
