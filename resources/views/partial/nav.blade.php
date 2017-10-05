@@ -79,8 +79,6 @@
         </div>
     </div>
 </nav>
-@if ( \Auth::check() )
-@if ( Auth::user()->test_type == 'B' )
 <div class="container">
     <div class="col-md-8 col-md-offset-2 navigation-offset-col">
         <div class="quick-escape_wrapper">
@@ -88,5 +86,3 @@
         </div>
     </div>
 </div>
-@endif
-@endif
