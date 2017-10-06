@@ -502,6 +502,7 @@ Footer
 		padding-right: 20px;
 	}
 	.mark-as-unread {
+				padding-top: 6px;
 				color: #0d293c;
 				font-weight: 700;
 				font-size:14px;
