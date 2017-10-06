@@ -16,7 +16,7 @@
                     <!-- Letter -->
                     <a href="/letter/{{$letter->id}}">
                         <div class="panel-body row panel-first">
-                            <div class="col-xs-4 col-md-2 letter-status">
+                            <div class="col-xs-4 col-sm-2 col-md-2 letter-status">
                                 @if ($letter->unread)
                                 <div class="letter-unread"></div>
                                 @else
@@ -24,22 +24,22 @@
                                 @endif
                             </div>
                             @if ($letter->unread)
-                            <div class="col-xs-8 col-sm-2 col-md-2 letter-date mark-as-unread">
-                                @else
-                                <div class="col-xs-8 col-sm-2 col-md-2 letter-date">
-                                    @endif
+                              <div class="col-xs-8 col-sm-2 col-md-2 letter-date mark-as-unread">
+                            @else
+                              <div class="col-xs-8 col-sm-2 col-md-2 letter-date">
+                            @endif
                                     <?php echo \Carbon\Carbon::createFromFormat('Y-m-d', $letter->letter_date)->format('j M Y');?>
                                 </div>
                                 @if ($letter->unread)
                                 <div class="col-xs-12 col-sm-8 col-md-8 mark-as-unread">
-                                    @else
+                                @else
                                     <div class="col-xs-12 col-sm-8 col-md-8">
-                                    @endif
-                                        @if(is_null($letter->template))
-                                          &nbsp;
-                                        @else
-                                          {{$letter->template->summary}}
-                                        @endif
+                                @endif
+                                @if(is_null($letter->template))
+                                    &nbsp;
+                                @else
+                                    {{$letter->template->summary}}
+                                @endif
                                     </div>
                                 </div>
                             </a>

@@ -501,6 +501,11 @@ Footer
 	.services_buttons {
 		padding-right: 20px;
 	}
+	.mark-as-unread {
+				color: #0d293c;
+				font-weight: 500;
+				font-size:14px;
+	}
 }
 @media screen and (max-width: 768px) {
 
@@ -512,7 +517,6 @@ Footer
 	button.navbar-toggle {
 		margin-right: 0px;
 	}
-
 	.letter-date {
 		padding-top: 6px;
 	}
@@ -531,12 +535,6 @@ Footer
 	}
 	br.show-sm-down {
 		display: block;
-	}
-
-  .mark-as-unread {
-			color: #0d293c;
-			font-weight: 500;
-			font-size:14px;
 	}
 
 	.services_buttons a {
