@@ -24,16 +24,16 @@
                                 @endif
                             </div>
                             @if ($letter->unread)
-                            <div class="col-xs-8 col-md-2 letter-date mark-as-unread">
+                            <div class="col-xs-8 col-sm-2 col-md-2 letter-date mark-as-unread">
                                 @else
-                                <div class="col-xs-8 col-md-2 letter-date">
+                                <div class="col-xs-8 col-sm-2 col-md-2 letter-date">
                                     @endif
                                     <?php echo \Carbon\Carbon::createFromFormat('Y-m-d', $letter->letter_date)->format('j M Y');?>
                                 </div>
                                 @if ($letter->unread)
-                                <div class="col-xs-12 col-sm-12 col-md-8 mark-as-unread">
+                                <div class="col-xs-12 col-sm-8 col-md-8 mark-as-unread">
                                     @else
-                                    <div class="col-xs-12 col-sm-12 col-md-8">
+                                    <div class="col-xs-12 col-sm-8 col-md-8">
                                     @endif
                                         @if(is_null($letter->template))
                                           &nbsp;
