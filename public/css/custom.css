@@ -25,7 +25,9 @@ footer p {
 /************************
 NAVIGATION
 *************************/
-
+i.fa.fa-user.user-icon.user-toggle {
+    padding-top: 12px;
+}
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 	font-family: "HelveticaNeue-CondensedBold", Roboto, Arial, sans-serif;
 	font-size: 22px;

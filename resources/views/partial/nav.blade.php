@@ -7,13 +7,13 @@
             <div class="navbar-header ">
 
                 <!-- Collapsed Hamburger -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                    <span class="sr-only">Toggle Navigation</span>
+                <div class="hidden-sm">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
 
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                        <i class="fa fa-user user-icon" aria-hidden="true"></i>
+                    </button>
+                </div>
 
                 <!-- Branding Image -->
 
@@ -39,21 +39,40 @@
                     <li><a href="/letters">Letters</a></li>
                     <li><a href="/status">Status</a></li> -->
                     <li class="dropdown">
-                        @if ( Auth::user()->test_type == 'A' )
                         @if(Route::current()->getName() == 'accounts.view')
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user user-icon" aria-hidden="true"></i>
                             {{ Auth::user()->name }}
                         </a>
                         @endif
-                        @else
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user user-icon" aria-hidden="true"></i>
-                            {{ Auth::user()->name }}
-                        </a>
-                        @endif
-                        
+                        <div class="visible-sm">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user user-icon user-toggle" aria-hidden="true"></i>
+                                {{ Auth::user()->name }}
+                            </a>
 
-                        <ul class="dropdown-menu" role="menu">
-                            <li class="">
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="">
+                                    @if ( Auth::user()->usertype == '1' )
+                                    <a href="/accounts">Account Details</a>
+                                    @else 
+                                    <a href="/accounts/{{ Auth::user()->id }}">Account Details</a>
+                                    @endif
+                                </li>
+
+                                <li>
+                                    <a href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                                    Logout</a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        {{ csrf_field() }}
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="hidden-sm">
+                            <li class="hidden-sm">
                                 @if ( Auth::user()->usertype == '1' )
                                 <a href="/accounts">Account Details</a>
                                 @else 
@@ -61,7 +80,7 @@
                                 @endif
                             </li>
 
-                            <li>
+                            <li class="hidden-sm">
                                 <a href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
@@ -71,7 +90,8 @@
                                     {{ csrf_field() }}
                                 </form>
                             </li>
-                        </ul>
+                        </div>
+
                     </li>
                     @endif
                 </ul>
