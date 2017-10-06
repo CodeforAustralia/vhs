@@ -513,12 +513,6 @@ Footer
 		margin-right: 0px;
 	}
 
-	.mark-as-unread {
-		color: #0d293c;
-		font-weight: 500;
-		font-size:14px;
-	}
-
 	.letter-date {
 		padding-top: 6px;
 	}
@@ -538,6 +532,13 @@ Footer
 	br.show-sm-down {
 		display: block;
 	}
+
+  .mark-as-unread {
+			color: #0d293c;
+			font-weight: 500;
+			font-size:14px;
+	}
+
 	.services_buttons a {
 		font-size: 14px;
 	}
