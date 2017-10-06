@@ -39,11 +39,6 @@
                     <li><a href="/letters">Letters</a></li>
                     <li><a href="/status">Status</a></li> -->
                     <li class="dropdown">
-                        @if(Route::current()->getName() == 'accounts.view')
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user user-icon user-toggle" aria-hidden="true"></i>
-                            {{ Auth::user()->name }}
-                        </a>
-                        @endif
                         <div class="visible-sm visible-lg visible-md">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user user-icon user-toggle" aria-hidden="true"></i>
                                 {{ Auth::user()->name }}
