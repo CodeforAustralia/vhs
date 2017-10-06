@@ -296,7 +296,7 @@ DASHBOARD OPTION A
 
 .mark-as-unread {
 	color: #0d293c;
-	font-weight: 500;
+	font-weight: 700;
 	font-size:16px;
 }
 
@@ -503,7 +503,7 @@ Footer
 	}
 	.mark-as-unread {
 				color: #0d293c;
-				font-weight: 500;
+				font-weight: 700;
 				font-size:14px;
 	}
 }
