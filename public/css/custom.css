@@ -25,6 +25,9 @@ footer p {
 /************************
 NAVIGATION
 *************************/
+i.fa.fa-user.user-icon.user-toggle:before {
+    background: #08446c;
+}
 i.fa.fa-user.user-icon.user-toggle {
     padding-top: 12px;
 }

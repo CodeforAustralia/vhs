@@ -40,11 +40,11 @@
                     <li><a href="/status">Status</a></li> -->
                     <li class="dropdown">
                         @if(Route::current()->getName() == 'accounts.view')
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user user-icon" aria-hidden="true"></i>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user user-icon user-toggle" aria-hidden="true"></i>
                             {{ Auth::user()->name }}
                         </a>
                         @endif
-                        <div class="visible-sm">
+                        <div class="visible-sm visible-lg visible-md">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user user-icon user-toggle" aria-hidden="true"></i>
                                 {{ Auth::user()->name }}
                             </a>
@@ -70,9 +70,8 @@
                                 </li>
                             </ul>
                         </div>
-                        
-                        <div class="hidden-sm">
-                            <li class="hidden-sm">
+                        <div class="hidden-sm hidden-md hidden-lg">
+                            <li class="hidden-sm hidden-md hidden-lg">
                                 @if ( Auth::user()->usertype == '1' )
                                 <a href="/accounts">Account Details</a>
                                 @else 
@@ -80,7 +79,7 @@
                                 @endif
                             </li>
 
-                            <li class="hidden-sm">
+                            <li class="hidden-sm hidden-md hidden-lg">
                                 <a href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
@@ -91,7 +90,6 @@
                                 </form>
                             </li>
                         </div>
-
                     </li>
                     @endif
                 </ul>
