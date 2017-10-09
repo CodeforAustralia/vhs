@@ -12,9 +12,9 @@
           <h3>Notifications</h3>
         </div>
         <div class="dashboard_notifications">
-          <p class="alert alert-success">Email Sent to: <strong>{{ $AccountDetails[0]->email }}</strong>.</p>
-          @if($AccountDetails[0]->mobile != NULL)
-          <p class="alert alert-success">SMS Sent to: <strong>{{ $AccountDetails[0]->mobile }}</strong>.</p>
+          <p class="alert alert-success">Email Sent to: <strong>{{ $AccountDetails->email }}</strong>.</p>
+          @if($AccountDetails->mobile != NULL)
+          <p class="alert alert-success">SMS Sent to: <strong>{{ $AccountDetails->mobile }}</strong>.</p>
           @else
            <p class="alert alert-danger">Either no mobile number or mobile number is incorrect.</p>
           @endif

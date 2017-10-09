@@ -3,11 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\AccountDetails;
+use lluminate\Notifications\Notification;
+use Illuminate\Bus\Queueable;
+use Illuminate\Notifications\Messages\MailMessage;
+use App\Models\Letters;
+use App\User as User;
+use Illuminate\Support\Facades\Auth;
 use App\Notifications\NewLetter;
 use Twilio as Twilio;
-use App\Models\AccountDetails;
-use App\Models\Letters;
-use Illuminate\Notifications\Notification;
 
 class NotificationController extends Controller
 {
@@ -18,17 +22,22 @@ class NotificationController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index($id) {
-    	$user = AccountDetails::where('id', $id)->get();
-    	$letter = Letters::first();
+        // Get the user detail
+        $user = AccountDetails::where('id', $id)->first();
+        // Get the letter
+        $letter = Letters::first();
 		// Send Email notification
-    	$notify = new NewLetter($letter, $user);
-		// Send SMS Notification
-		if($user[0]->mobile != NULL) {
-			app('App\Http\Controllers\NotificationSMSController')->letterNotificationSMS($user, $id);
-		}
+        $notify = $user->notify(new NewLetter($letter, $user));
 
-    	return view('pages/emailNotification')->with([
-    		'AccountDetails' => $user
-    		]);
+        $user_mobile = $user->mobile;
+
+        // Send SMS Notification
+        if($user->mobile != NULL) {
+            app('App\Http\Controllers\NotificationSMSController')->letterNotificationSMS($user, $id);
+        }
+
+        return view('pages/emailNotification')->with([
+            'AccountDetails' => $user
+          ]);
     }
 }
