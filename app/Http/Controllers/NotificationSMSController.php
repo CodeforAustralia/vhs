@@ -11,6 +11,7 @@ use Aloha\Twilio\TwilioInterface;
 use Twilio\Rest\Client; 
 use Autoload;
 use Log;
+use App\Models\AccountDetails;
 
 class NotificationSMSController extends Controller
 {
@@ -27,10 +28,10 @@ class NotificationSMSController extends Controller
 	/**
      * Test the name of the command
      */
-	public function letterNotificationSMS($user)
+	public function letterNotificationSMS($user, $id)
 	{
-		$user = User::find($user);
-		$user_mobile = $user[0]['mobile'];
+		$user = AccountDetails::where('id', $id)->first();
+		$user_mobile = $user->mobile;
 
 		$this->sendMessage(
 			$user,
