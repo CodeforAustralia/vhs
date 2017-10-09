@@ -136,6 +136,7 @@ class AccountDetailsController extends Controller
         $firstName = $request->input('firstName');
         $lastName = $request->input('lastName');
         $email = $request->input('email');
+        $mobile = $request->input('mobile');
         $password_confirmation = $request->input('password_confirmation');
 
         // Find the User to update
@@ -144,6 +145,7 @@ class AccountDetailsController extends Controller
         $updateUser->firstName = $firstName;
         $updateUser->lastName = $lastName;
         $updateUser->email = $email;
+        $updateUser->mobile = $mobile;
         
         if ($current_password != '') {
             // if current password is not empty

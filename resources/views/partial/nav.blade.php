@@ -32,8 +32,20 @@
                     <!-- <li><a href="/contact">Contact</a></li> -->
                     <!-- Authentication Links -->
                     @if (Auth::guest())
-                    <li><a href="{{ route('login') }}">Login</a></li>
-                    <li><a href="{{ route('register') }}">Register</a></li>
+                    <div class="visible-sm visible-lg visible-md">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user user-icon user-toggle" aria-hidden="true"></i>
+                        </a>
+
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{ route('login') }}">Login</a></li>
+                            <li><a href="{{ route('register') }}">Register</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hidden-sm hidden-md hidden-lg">
+                        <li><a href="{{ route('login') }}">Login</a></li>
+                        <li><a href="{{ route('register') }}">Register</a></li>
+                    </div>
                     @else
                     <!--  <li><a href="/upload">Upload</a></li>
                     <li><a href="/letters">Letters</a></li>
