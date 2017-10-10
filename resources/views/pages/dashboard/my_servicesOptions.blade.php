@@ -18,12 +18,12 @@
         <div class="col-md-8 services_toolbox col-xs-12">
           <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
             @if ( Auth::user()->usertype == '1' )
-            <a href="/accounts" target="_blank" role="button" class="btn btn-primary need_housing_button">
+            <a href="/accounts" role="button" class="btn btn-primary need_housing_button">
               {!! file_get_contents(asset('images/ico-profile.svg')) !!}
               <br/>
               View Accounts</a>
               @else 
-              <a href="/accounts/{{ Auth::user()->id }}" target="_blank" role="button" class="btn btn-primary need_housing_button">
+              <a href="/accounts/{{ Auth::user()->id }}" role="button" class="btn btn-primary need_housing_button">
                 {!! file_get_contents(asset('images/ico-profile.svg')) !!}
                 <br/>
                 My Profile</a>
@@ -31,35 +31,35 @@
               </a>
             </div>
             <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
-              <a href="/inbox" target="_blank" role="button" class="btn btn-primary need_housing_button">
+              <a href="/inbox" role="button" class="btn btn-primary need_housing_button">
                {!! file_get_contents(asset('images/ico-inbox.svg')) !!}
                <br/>
                Inbox
              </a>
            </div>
            <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
-            <a href="#" target="_blank" role="button" class="btn btn-primary need_housing_button">
+            <a href="#" role="button" class="btn btn-primary need_housing_button">
               {!! file_get_contents(asset('images/ico-services.svg')) !!}
               <br/>
               Services
             </a>
           </div>
           <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
-            <a href="#" target="_blank" role="button" class="btn btn-primary need_housing_button">
+            <a href="#" role="button" class="btn btn-primary need_housing_button">
               {!! file_get_contents(asset('images/ico-payment.svg')) !!}
               <br/>
               Make Payment
             </a>
           </div>
           <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
-            <a href="#" target="_blank" role="button" class="btn btn-primary need_housing_button">
+            <a href="#" role="button" class="btn btn-primary need_housing_button">
               {!! file_get_contents(asset('images/ico-appointments.svg')) !!}
               <br/>
               Appointments
             </a>
           </div>
           <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
-            <a href="#" target="_blank" role="button" class="btn btn-primary need_housing_button">
+            <a href="#" role="button" class="btn btn-primary need_housing_button">
               {!! file_get_contents(asset('images/ico-translation.svg')) !!}
               <br/>
               Translation
