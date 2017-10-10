@@ -25,6 +25,9 @@ footer p {
 /************************
 NAVIGATION
 *************************/
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-text {
+    color: #e2e2e2;
+}
 i.fa.fa-user.user-icon.user-toggle:before {
     background: #08446c;
 }
