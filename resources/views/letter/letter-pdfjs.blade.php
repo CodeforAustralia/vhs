@@ -14,11 +14,13 @@
       body {
   	    background-color: #ffffff; !important;
        }
-      .pdfjs .toolbar {
-        visibility: hidden;
-        display: none;
+/* Hide pdf.js toolbar, solution came from https://support.mozilla.org/en-US/questions/1119523 */
+      #outerContainer #mainContainer div.toolbar {
+        display: none !important; /* hide PDF viewer toolbar */
       }
-
+      #outerContainer #mainContainer #viewerContainer {
+        top: 0 !important; /* move doc up into empty bar space */
+      }
     </style>
   </head>
 

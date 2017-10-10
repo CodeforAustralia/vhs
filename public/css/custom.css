@@ -381,6 +381,14 @@ DASHBOARD - mail icons
 	margin-right: 0.1em;
 }
 
+#rippleZoomIn, #rippleZoomOut, #rippleDownload, #ripplePrint {
+	margin: 10px;
+	width: 240px;
+}
+
+#rippleDownload {
+	margin-left: 0;
+}
 /************************
 Recommended Links
 *************************/
