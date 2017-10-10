@@ -343,8 +343,8 @@ DASHBOARD OPTION A
 	float: none;
 }
 .services_toolbox {
-	margin: 0 auto;
-	float: none;
+    margin: 30px auto;
+    float: none;
 }
 .welcome_banner-wrapper {
 	margin: 0 auto;
