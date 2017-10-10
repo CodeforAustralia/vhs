@@ -17,7 +17,7 @@ class Service extends Model
   }
 
   public function letters() {
-    return $this->hasMany(Letters::class, 'reference_id', 'reference_id' );
+    return $this->hasMany(Letters::class, 'reference_id', 'reference_id' )->orderBy('letter_date','DESC');
   }
 
   public function numberUnread() {
