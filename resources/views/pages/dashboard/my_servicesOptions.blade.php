@@ -19,12 +19,12 @@
           <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
             @if ( Auth::user()->usertype == '1' )
             <a href="/accounts" role="button" class="btn btn-primary need_housing_button">
-              {!! file_get_contents(asset('images/ico-profile.svg')) !!}
+              {!! file_get_contents(public_path('images/ico-profile.svg')) !!}
               <br/>
               View Accounts</a>
-              @else 
+              @else
               <a href="/accounts/{{ Auth::user()->id }}" role="button" class="btn btn-primary need_housing_button">
-                {!! file_get_contents(asset('images/ico-profile.svg')) !!}
+                {!! file_get_contents(public_path('images/ico-profile.svg')) !!}
                 <br/>
                 My Profile</a>
                 @endif
@@ -32,35 +32,35 @@
             </div>
             <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
               <a href="/inbox" role="button" class="btn btn-primary need_housing_button">
-               {!! file_get_contents(asset('images/ico-inbox.svg')) !!}
+               {!! file_get_contents(public_path('images/ico-inbox.svg')) !!}
                <br/>
                Inbox
              </a>
            </div>
            <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
             <a href="#" role="button" class="btn btn-primary need_housing_button">
-              {!! file_get_contents(asset('images/ico-services.svg')) !!}
+              {!! file_get_contents(public_path('images/ico-services.svg')) !!}
               <br/>
               Services
             </a>
           </div>
           <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
             <a href="#" role="button" class="btn btn-primary need_housing_button">
-              {!! file_get_contents(asset('images/ico-payment.svg')) !!}
+              {!! file_get_contents(public_path('images/ico-payment.svg')) !!}
               <br/>
               Make Payment
             </a>
           </div>
           <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
             <a href="#" role="button" class="btn btn-primary need_housing_button">
-              {!! file_get_contents(asset('images/ico-appointments.svg')) !!}
+              {!! file_get_contents(public_path('images/ico-appointments.svg')) !!}
               <br/>
               Appointments
             </a>
           </div>
           <div class="services_buttons col-xs-6 col-md-4 col-lg-4">
             <a href="#" role="button" class="btn btn-primary need_housing_button">
-              {!! file_get_contents(asset('images/ico-translation.svg')) !!}
+              {!! file_get_contents(public_path('images/ico-translation.svg')) !!}
               <br/>
               Translation
             </a>
