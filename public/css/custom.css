@@ -381,6 +381,9 @@ DASHBOARD - mail icons
 	margin-right: 0.1em;
 }
 
+/************************
+Letter
+*************************/
 #rippleZoomIn, #rippleZoomOut, #rippleDownload, #ripplePrint {
 	margin: 10px;
 	width: 240px;
@@ -389,6 +392,7 @@ DASHBOARD - mail icons
 #rippleDownload {
 	margin-left: 0;
 }
+
 /************************
 Recommended Links
 *************************/
