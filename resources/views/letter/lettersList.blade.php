@@ -11,26 +11,27 @@
 
                     <!-- Service Panel -->
                     @include('pages.dashboard.enumerate_services')
-                    @foreach ($user_services as $user_service) @foreach ($user_service->service->letters as $letter)
+                    @foreach ($user_services as $user_service)
+                    @foreach ($user_service->service->letters as $letter)
 
                     <!-- Letter -->
                     <a href="/letter/{{$letter->id}}">
                         <div class="panel-body row panel-first">
                             <div class="col-xs-4 col-sm-2 col-md-2 letter-status">
-                                @if ($letter->unread)
+                                @if ($letter->isUnread())
                                 <div class="letter-unread"></div>
                                 @else
                                 <div class="letter-read"></div>
                                 @endif
                             </div>
-                            @if ($letter->unread)
+                            @if ($letter->isUnread())
                               <div class="col-xs-8 col-sm-2 col-md-2 letter-date mark-as-unread">
                             @else
                               <div class="col-xs-8 col-sm-2 col-md-2 letter-date">
                             @endif
                                     <?php echo \Carbon\Carbon::createFromFormat('Y-m-d', $letter->letter_date)->format('j M Y');?>
                                 </div>
-                                @if ($letter->unread)
+                                @if ($letter->isUnread())
                                 <div class="col-xs-12 col-sm-8 col-md-8 mark-as-unread">
                                 @else
                                     <div class="col-xs-12 col-sm-8 col-md-8">
@@ -57,7 +58,8 @@
                             </div>
 
 
-                            @endforeach @endforeach
+                            @endforeach
+                            @endforeach
 
                         </div>
                     </div>

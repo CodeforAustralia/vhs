@@ -24,7 +24,7 @@ class InboxController extends Controller
 // get the total number of unread letters (for all services assigned to user)
     	$total_unread = 0;
     	foreach ($user_services as &$user_service) {
-    		$unreadForService = count($user_service->unreadLetters);
+        $unreadForService = $user_service->service->numberUnread();
     		$total_unread = $total_unread + $unreadForService;
     	}
 

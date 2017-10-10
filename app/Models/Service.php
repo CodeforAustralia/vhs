@@ -2,6 +2,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Auth;
 
 class Service extends Model
 {
@@ -19,8 +20,12 @@ class Service extends Model
     return $this->hasMany(Letters::class, 'reference_id', 'reference_id' );
   }
 
-  public function unreadLetters() {
-    return $this->hasMany(Letters::class, 'reference_id', 'reference_id' )->where('unread', '=', true);
+  public function numberUnread() {
+    $user_id = Auth::user()->id;
+    $letter_history = LetterHistory::where('user_id',$user_id)
+         ->where('reference_id', $this->reference_id)
+         ->where('unread', true)
+         ->get();
+    return count($letter_history);
   }
-  
 }

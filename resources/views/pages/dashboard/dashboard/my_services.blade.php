@@ -32,7 +32,7 @@
                                 </div>
                                 <div class="col-xs-4 services_heading_right">
                                     <div class="toolbox-banner mail_icon-link">
-                                        <?php $no_of_letters = count($user_service->service->unreadLetters);
+                                        <?php $no_of_letters = $user_service->service->numberUnread();
 
                                         $unread_letters_class = '';
 

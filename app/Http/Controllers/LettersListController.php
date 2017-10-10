@@ -34,7 +34,7 @@ class LettersListController extends Controller
       return redirect()->route('dashboard');
     }
 
-    return view('pages/lettersList')->with([
+    return view('letter/lettersList')->with([
          'user_services' => $user_services,
          'include_links' => false   // do not include links on summary of services and new letters
        ]);
@@ -54,7 +54,7 @@ class LettersListController extends Controller
 
 $letters = Letters::where('id', $id)->get();
 
-return view('pages/letter')->with([
+return view('letter/letter')->with([
     'letters' => $letters
     ]);
   }
