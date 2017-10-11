@@ -20,6 +20,10 @@ Route::get('/', function () {
 	return view('auth/login');
 });
 
+Route::get('/info', function () {
+	return view('pages/testInfo');
+});
+
 Auth::routes();
 Route::get('/', 'DashboardController@index')->name('dashboard');
 
@@ -53,4 +57,4 @@ Route::get('letter-pdfjs/{id}', 'ActualLetterController@pdfjs');
 Route::get('/database', 'GenerateController@index')->name('database');
 
 // Option A
-Route::get('/inbox', 'InboxController@index')->name('inbox.index');
+Route::get('/inbox/{id}', 'InboxController@getAllLetters')->name('inbox.index');
