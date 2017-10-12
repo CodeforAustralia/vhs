@@ -20,10 +20,6 @@ Route::get('/', function () {
 	return view('auth/login');
 });
 
-Route::get('/info', function () {
-	return view('pages/testInfo');
-});
-
 Auth::routes();
 Route::get('/', 'DashboardController@index')->name('dashboard');
 
@@ -47,7 +43,7 @@ Route::get('/upload_pdf', 'UploadController@uploadPdf');
 Route::post('/upload_pdf', 'UploadController@uploadPdfSubmit');
 Route::get('/upload_templatesXml', 'UploadController@uploadTemplatesXml');
 Route::post('/upload_templatesXml', 'UploadController@uploadTemplatesXmlSubmit');
-Route::get('correspondence', 'DashboardController@index')->name('dashboard');
+Route::get('correspondence', 'DashboardController@index')->name('dashboard'); 
 	// if no reference_id route to dashboard
 Route::get('correspondence/{reference_id}', 'LettersListController@index');
 Route::get('letter/{id}', 'LettersListController@show');
@@ -58,4 +54,3 @@ Route::get('/database', 'GenerateController@index')->name('database');
 
 // Option A
 Route::get('/inbox', 'InboxController@index')->name('inbox.index');
-Route::get('/inbox/{id}', 'InboxController@getAllLetters')->name('inbox.index');
