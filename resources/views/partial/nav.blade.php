@@ -40,7 +40,6 @@
             <li><a href="/#">Translation</a></li>
           </ul>
         </li>
-        <li><a href="/#">Help</a></li>
         <li>
             <a href="{{ route('logout') }}"
             onclick="event.preventDefault();
