@@ -1,113 +1,57 @@
-<div class="top_blackbar">
-
-</div>
-<nav class="navbar navbar-inverse navbar-static-top">
-    <div class="container">
-        <div class="col-md-8 col-md-offset-2 navigation-offset-col">
-            <div class="navbar-header ">
-
-                <!-- Collapsed Hamburger -->
-                <div class="hidden-sm">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">Toggle Navigation</span>
-
-                        <i class="fa fa-user user-icon" aria-hidden="true"></i>
-                    </button>
-                </div>
-
-                <!-- Branding Image -->
-
-                <a class="navbar-brand" href="{{ url('/dashboard') }} ">
-                    VICTORIAN <span class="housing_services-title">HOUSING SERVICES</span>
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav">
-                </ul>
-
-                <!-- Right Side Of Navbar -->
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- <li><a href="/contact">Contact</a></li> -->
-                    <!-- Authentication Links -->
-                    @if (Auth::guest())
-                    <div class="visible-sm visible-lg visible-md">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user user-icon user-toggle" aria-hidden="true"></i>
-                        </a>
-
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="hidden-sm hidden-md hidden-lg">
-                        <li><a href="{{ route('login') }}">Login</a></li>
-                        <li><a href="{{ route('register') }}">Register</a></li>
-                    </div>
-                    @else
-                    <!--  <li><a href="/upload">Upload</a></li>
-                    <li><a href="/letters">Letters</a></li>
-                    <li><a href="/status">Status</a></li> -->
-                    <li class="dropdown">
-                        <div class="visible-sm visible-lg visible-md">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user user-icon user-toggle" aria-hidden="true"></i>
-                                {{ Auth::user()->name }}
-                            </a>
-
-                            <ul class="dropdown-menu" role="menu">
-                                <li class="">
-                                    @if ( Auth::user()->usertype == '1' )
-                                    <a href="/accounts">Account Details</a>
-                                    @else 
-                                    <a href="/accounts/{{ Auth::user()->id }}">Account Details</a>
-                                    @endif
-                                </li>
-
-                                <li>
-                                    <a href="{{ route('logout') }}"
-                                    onclick="event.preventDefault();
-                                    document.getElementById('logout-form').submit();">
-                                    Logout</a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        {{ csrf_field() }}
-                                    </form>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="hidden-sm hidden-md hidden-lg">
-                            <li class="hidden-sm hidden-md hidden-lg">
-                                @if ( Auth::user()->usertype == '1' )
-                                <a href="/accounts">Account Details</a>
-                                @else 
-                                <a href="/accounts/{{ Auth::user()->id }}">Account Details</a>
-                                @endif
-                            </li>
-
-                            <li class="hidden-sm hidden-md hidden-lg">
-                                <a href="{{ route('logout') }}"
-                                onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
-                                Logout</a>
-
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
-                                </form>
-                            </li>
-                        </div>
-                    </li>
-                    @endif
-                </ul>
-            </div>
-        </div>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="pull-left allow-left-margin navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- Branding -->
+      <a class="navbar-brand" href="{{ url('/dashboard') }} ">
+              VICTORIAN <span class="housing_services-title">HOUSING SERVICES</span>
+          </a>
     </div>
+    @if (Auth::guest())
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{ route('register') }}">Register</a></li>
+      </ul>
+    </div>
+    @else
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Landing Page</a></li>
+        <li>
+          @if ( Auth::user()->usertype == '1' )
+          <a href="/accounts">User Accounts</a>
+          @else
+          <a href="/accounts/{{ Auth::user()->id }}">My Profile</a>
+          @endif
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Go to <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/inbox">Inbox</a></li>
+            <li><a href="/#">Services</a></li>
+            <li><a href="/#">Make Payment</a></li>
+            <li><a href="/#">Appointments</a></li>
+            <li><a href="/#">Translation</a></li>
+          </ul>
+        </li>
+        <li><a href="/#">Help</a></li>
+        <li>
+            <a href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();">
+            Logout</a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+            </form>
+        </li>
+      </ul>
+    </div>  <!--/.nav-collapse -->
+    @endif
+  </div>
 </nav>
-<div class="container">
-    <div class="col-md-8 col-md-offset-2 navigation-offset-col">
-        <div class="quick-escape_wrapper">
-            <button type="button" class="btn btn-danger">Quick<br/>Escape</button>
-        </div>
-    </div>
-</div>

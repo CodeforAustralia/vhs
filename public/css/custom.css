@@ -4,11 +4,6 @@
 .float-left {
 	float:left;
 }
-.top_blackbar {
-	background-color: #000;
-	border-color: #000;
-	height: 18px;
-}
 body {
 	background-color: #ffffff;
 	font-family: "HelveticaNeue", Roboto, Arial, sans-serif;
@@ -25,18 +20,28 @@ footer p {
 /************************
 NAVIGATION
 *************************/
+/* Account for top navbar */
+body {
+	padding-top: 60px;
+}
+
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-text {
     color: #e2e2e2;
+		font-weight: bold;
 }
-i.fa.fa-user.user-icon.user-toggle:before {
-    background: #08446c;
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+		font-weight: bold;
 }
-i.fa.fa-user.user-icon.user-toggle {
-    padding-top: 12px;
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+    background-color: #090909;
+    color: #fff;
 }
+
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 	font-family: "HelveticaNeue-CondensedBold", Roboto, Arial, sans-serif;
-	font-size: 22px;
+	font-size: 20px;
 }
 .navbar-inverse .navbar-brand {
 	color: #ffffff;
@@ -45,10 +50,6 @@ i.fa.fa-user.user-icon.user-toggle {
 span.housing_services-title {
 	color: #3282bb;
 	font-weight: bold;
-}
-.user-icon {
-	font-size: 24px !important;
-	color: #ffffff;
 }
 .panel-heading_link, .panel-heading_link:hover, .panel-heading_link:visited {
 	color: #222222;
@@ -67,6 +68,22 @@ span.housing_services-title {
     position: fixed;
     right: 0;
     }*/
+.allow-left-margin {
+	margin-left: 7px;
+}
+
+@media (min-width: 1200px) {
+    .navbar .container{
+        max-width: 780px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+		.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+			font-size: 14px;
+		}
+}
+
 /************************
 DASHBOARD
 *************************/
@@ -254,9 +271,6 @@ DASHBOARD OPTION A
 	font-size: 18px;
 	padding: 10px 0px;
 }
-.col-md-8.col-md-offset-2.navigation-offset-col {
-	padding-left: 0px;
-}
 .panel-primary>.panel-heading {
 	color: #222222;
 	background-color: #ffffff;
@@ -338,13 +352,20 @@ DASHBOARD OPTION A
 	font-size: 24px;
 }
 
+.services_toolbox {
+    margin: 30px auto;
+    float: none;
+}
+
 .toolbox-wrapper{
 	margin: 0 auto;
 	float: none;
 }
-.services_toolbox {
+.inbox_toolbox {
     margin: 30px auto;
     float: none;
+		background-color: #f3eee9;
+		padding: 50px;
 }
 .welcome_banner-wrapper {
 	margin: 0 auto;
@@ -524,15 +545,6 @@ Footer
 	}
 }
 @media screen and (max-width: 768px) {
-
-	button.navbar-toggle.collapsed {
-	}
-	.navigation-offset-col {
-		padding: 0px !important;
-	}
-	button.navbar-toggle {
-		margin-right: 0px;
-	}
 	.letter-date {
 		padding-top: 6px;
 	}
@@ -546,23 +558,14 @@ Footer
 	}
 	.recommended_buttons a svg {
 		width: 40px;
-		height: 30px;
-		margin-top: 10px;
 	}
+
 	br.show-sm-down {
 		display: block;
 	}
 
 	.services_buttons a {
 		font-size: 14px;
-	}
-	.navbar-brand {
-		padding: 15px 0px;
-		font-size: 12px;
-	}
-	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-		font-family: "HelveticaNeue-CondensedBold", Roboto, Arial, sans-serif;
-		font-size: 18px;
 	}
 	.tool-box_half.col-xs-12:nth-child(1) {
 		margin: 0px;
@@ -604,13 +607,12 @@ Footer
 	.services_buttons:nth-child(3) {
 		padding-right: 10px;
 	}
+
+	.inbox_toolbox {
+			padding: 12px;
+	}
 }
 @media screen and (min-width: 960px) {
-
-	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-		margin: 0px;
-		padding: 15px 0px;
-	}
 	.col-md-6.col-xs-12.col-lg-6.tool-box:nth-child(2) {
 		margin-right: -10px;
 	}

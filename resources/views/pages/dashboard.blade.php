@@ -6,7 +6,7 @@
 <div class="container-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 welcome_banner-wrapper">
+      <div class="col-md-8 welcome_banner-wrapper">
 
         <div class="welcome-banner">
           <h3>{{ $message }} {{ Auth::user()->firstName }}</h3>

@@ -6,29 +6,28 @@
 
 <!-- My Services -->
 
-<div class="container-wrapper tools-wrapper">
-    <div class="container">
-        <div class="col-md-6 toolbox-wrapper col-xs-12">
-            <div class="toolbox-banner col-md-10 col-xs-12">
-                @if (count($user_services) > 0)
-                <p>Unread</p> @else
-                <h3>No Message yet</h3>
-                <p>&nbsp;</p>
-                @endif
-            </div>
+<div class="container-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 welcome_banner-wrapper">
+        <div class="welcome-banner">
+          @if (count($user_services) > 0)
+            <h3>Inbox</h3>
+          @else
+            <h3>No Message yet</h3>
+            @endif
         </div>
+      </div>
     </div>
-    <div class="container">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9 services_toolbox">
+  </div>
 
-                    @include('pages.inbox.enumerate_services')
+  <div class="container">
+          <div class="row">
+              <div class="col-md-9 inbox_toolbox">
+                  @include('pages.inbox.enumerate_services')
+              </div>
+          </div>
+  </div>
 
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
-
 @endsection
