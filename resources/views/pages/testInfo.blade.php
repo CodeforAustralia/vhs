@@ -8,9 +8,9 @@
   <br/> Password: JDR48Q2GY3
 
   <h1>Prototypes</h1>
-  <a href="https://invis.io/MCDW9MXT4" target="_blank">Option A</a>
+  <a href="https://invis.io/XMDWVASCN" target="_blank">Option 1</a>
   <br/>
-  <a href="https://invis.io/RVDW9N6UE" target="_blank">Option B</a>
+  <a href="https://invis.io/SXDWVCJ2D" target="_blank">Option 2</a>
 
   <h1>System being Developed</h1>
   <a href="https://vhstesting.com" target="_blank">https://vhstesting.com</a>
