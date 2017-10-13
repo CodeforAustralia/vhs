@@ -13,7 +13,7 @@
             <div class="col-xs-7 col-xs-10 services_heading_right">
                 <p>{{ $user_service->service->description }}</p>
                 <p>Reference #{{ $user_service->reference_id }}</p>
-                <h3>{{ $user_service->service->type }}</h3>
+                <p><h3>{{ $user_service->service->type }}</h3></p>
             </div>
             <div class="col-xs-4 services_heading_right">
                 <div class="toolbox-banner mail_icon-link">

@@ -25,8 +25,9 @@ body {
 	padding-top: 60px;
 }
 
-.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-text {
-    color: #e2e2e2;
+/* Navbar menu items */
+.navbar-inverse .navbar-nav > li >a, .navbar-inverse .navbar-text {
+    color: #fff;
 		font-weight: bold;
 }
 
@@ -39,18 +40,21 @@ body {
     color: #fff;
 }
 
-.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-	font-family: "HelveticaNeue-CondensedBold", Roboto, Arial, sans-serif;
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+	font-family: "HelveticaNeue-CondensedBold", "Roboto Condensed", Arial, sans-serif;
 	font-size: 20px;
 }
+
 .navbar-inverse .navbar-brand {
 	color: #ffffff;
 	font-weight: bold;
 }
+
 span.housing_services-title {
 	color: #3282bb;
 	font-weight: bold;
 }
+
 .panel-heading_link, .panel-heading_link:hover, .panel-heading_link:visited {
 	color: #222222;
 }
@@ -59,17 +63,20 @@ span.housing_services-title {
 	border-color: #04446c;
 	margin-bottom: 0px;
 }
+
 .services_heading_right h3 a,
 .services_heading_right h3 a:hover,
 .services_heading_right h3 a:visited {
-	color: #222222;
+	color: #fff;
 }
-/*.quick-escape_wrapper button {
-    position: fixed;
-    right: 0;
-    }*/
+
 .allow-left-margin {
 	margin-left: 7px;
+	margin-right: auto;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .pre-scrollable {
+	max-height: 680px;
 }
 
 @media (min-width: 1200px) {
@@ -78,12 +85,77 @@ span.housing_services-title {
     }
 }
 
-@media screen and (max-width: 480px) {
-		.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-			font-size: 14px;
-		}
+@media only screen and (max-width: 767px) {
+
+	#navbar {
+		background-color: #0063ae;
+		border-color: #04446c;
+		margin-bottom: 0px;
+	}
+
+  .nav > li > a.dropdown-toggle {
+    display: none;
+  }
+
+  .nav .dropdown-menu {
+    display:block;
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+		padding: 0;
+    background-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+	.dropdown-menu > li > a {
+		color: #fff;
+		font-weight: bold;
+		border-bottom: 1px solid #5899c9;
+		font-size: 18px;
+	}
+
+	.dropdown-header, .dropdown-menu > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+		padding-left: 16px;
+    line-height: 24px;
+	}
+
+	.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-text {
+	    color: #fff;
+			font-weight: bold;
+			border-bottom: 1px solid #5899c9;
+			font-size: 18px;
+	}
+
+	.bottom_nav_items {
+		background-color: #ffffff;
+	}
+
+	 li.bottom_nav_items > a {
+		color: #000000 !important;
+		border-bottom: 1px solid #ffffff !important;
+	}
+
+	.navbar-nav {
+		margin: 7px -15px 0 -15px;
+	}
 }
 
+	/* For really small device e.g. iPhone 5 */
+	@media screen and (max-width: 320px) {
+			.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+				font-size: 18px;
+			}
+}
+
+/*.quick-escape_wrapper button {
+    position: fixed;
+    right: 0;
+    }*/
 /************************
 DASHBOARD
 *************************/
@@ -540,7 +612,7 @@ Footer
 	.mark-as-unread {
 				padding-top: 6px;
 				color: #0d293c;
-				font-weight: 700;
+				font-weight: 400;
 				font-size:14px;
 	}
 }

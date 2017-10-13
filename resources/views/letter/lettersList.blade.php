@@ -1,72 +1,49 @@
 @extends('layouts.app') @section('title', 'Home') @section('content')
-<!-- My Services -->
+<!-- My Letters (Option B) -->
 
 
 
 <div class="container-wrapper tools-wrapper no-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9 services_toolbox">
-                <div class="panel panel-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 services_toolbox">
+        <div class="panel panel-primary">
+          <!-- Service Panel -->
+          @include('pages.dashboard.enumerate_services')
+          <div class="stripe" style="margin-left: 30px; border-left: 3px solid orange;">
 
-                    <!-- Service Panel -->
-                    @include('pages.dashboard.enumerate_services')
-                    @foreach ($user_services as $user_service)
-                    @foreach ($user_service->service->letters as $letter)
+            @foreach ($user_services as $user_service)
+            @foreach ($user_service->service->letters as $letter)
 
-                    <!-- Letter -->
-                    <a href="/letter/{{$letter->id}}">
-                        <div class="panel-body row panel-first">
-                            <div class="col-xs-4 col-sm-2 col-md-2 letter-status">
-                                @if ($letter->isUnread())
-                                <div class="letter-unread"></div>
-                                @else
-                                <div class="letter-read"></div>
-                                @endif
-                            </div>
-                            @if ($letter->isUnread())
-                              <div class="col-xs-8 col-sm-2 col-md-2 letter-date mark-as-unread">
-                            @else
-                              <div class="col-xs-8 col-sm-2 col-md-2 letter-date">
-                            @endif
-                                    <?php echo \Carbon\Carbon::createFromFormat('Y-m-d', $letter->letter_date)->format('j M Y');?>
-                                </div>
-                                @if ($letter->isUnread())
-                                <div class="col-xs-12 col-sm-8 col-md-8 mark-as-unread">
-                                @else
-                                    <div class="col-xs-12 col-sm-8 col-md-8">
-                                @endif
-                                @if(is_null($letter->template))
-                                    &nbsp;
-                                @else
-                                    {{$letter->template->summary}}
-                                @endif
-                                    </div>
-                                </div>
-                            </a>
-
-
-                            <!-- Arrow (but not after last item/ letter) -->
-                            <div class="panel-body row">
-                                @if ( $letter != $user_service->service->letters->last() )
-                                <div class="col-xs-12 letter-status">
-                                    <div class="arrow-up"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></div>
-                                </div>
-                                @else
-                                <div class="col-xs-12 letter-status">&nbsp;</div>
-                                @endif
-                            </div>
-
-
-                            @endforeach
-                            @endforeach
-
-                        </div>
-                    </div>
+            <!-- Letter -->
+            <div class="row" style="font-size: 16px; color: black; line-height: 24px;margin: 24px;">
+              <a href="/letter/{{$letter->id}}">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                  @if ($letter->isUnread())
+                  <div class="letter-unread" style="margin-left: -3.2em; display: inline-block; vertical-align:middle;"></div>
+                  @else
+                  <div class="letter-read" style="margin-left: -3.2em; display: inline-block; vertical-align:middle;"></div>
+                  @endif
+                  <div style="display: inline-block; color: #0d293c; font-weight: 700; font-size: 16px; vertical-align:middle; padding-left: 1.6em;">
+                    <?php echo \Carbon\Carbon::createFromFormat('Y-m-d', $letter->letter_date)->format('j M Y');?>
+                  </div>
                 </div>
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /.container-wrapper -->
 
-        @endsection
+                <div class="col-xs-12 col-sm-9 col-md-9 mark-as-unread">
+                  @if(is_null($letter->template)) Text holder for some template that tells you to do stuff @else {{$letter->template->summary}} @endif
+                </div>
+              </a>
+            </div>
+            @endforeach
+            @endforeach
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.container-wrapper -->
+
+@endsection

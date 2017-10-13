@@ -22,17 +22,17 @@
     @else
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/">Landing Page</a></li>
-        <li>
-          @if ( Auth::user()->usertype == '1' )
-          <a href="/accounts">User Accounts</a>
-          @else
-          <a href="/accounts/{{ Auth::user()->id }}">My Profile</a>
-          @endif
-        </li>
+        <li><a href="/">Start Page</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Go to <span class="caret"></span></a>
           <ul class="dropdown-menu">
+            <li>
+              @if ( Auth::user()->usertype == '1' )
+              <a href="/accounts">User Accounts</a>
+              @else
+              <a href="/accounts/{{ Auth::user()->id }}">My Profile</a>
+              @endif
+            </li>
             <li><a href="/inbox">Inbox</a></li>
             <li><a href="/#">Services</a></li>
             <li><a href="/#">Make Payment</a></li>
@@ -40,7 +40,8 @@
             <li><a href="/#">Translation</a></li>
           </ul>
         </li>
-        <li>
+        <li class="bottom_nav_items"><a href="/#">Help</a></li>
+        <li class="bottom_nav_items">
             <a href="{{ route('logout') }}"
             onclick="event.preventDefault();
             document.getElementById('logout-form').submit();">
