@@ -33,6 +33,7 @@ body {
 
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
 		font-weight: bold;
+		font-size: 18px;
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
@@ -79,10 +80,38 @@ span.housing_services-title {
 	max-height: 680px;
 }
 
-@media (min-width: 1200px) {
+.navbar-menu-image {
+		display: inline;
+		position: relative;
+		top: 2px;
+}
+
+.navbar-menu-image svg {
+	color: #ffffff;
+	height: 18px;
+	width: 18px;
+  fill: currentColor;
+	stroke: currentColor;
+}
+
+ul.dropdown-menu > li > a > .navbar-menu-image svg {
+	color: #052236 !important;
+	height: 18px;
+	width: 18px;
+  fill: currentColor;
+	stroke: currentColor;
+}
+
+@media (min-width: 768px) {
     .navbar .container{
         max-width: 780px;
     }
+
+		.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-text {
+    font-size: 18px;
+		font-family: "HelveticaNeue-CondensedBold", "Roboto Condensed", Arial, sans-serif;
+    text-transform: uppercase;
+	}
 }
 
 @media only screen and (max-width: 767px) {
@@ -136,14 +165,35 @@ span.housing_services-title {
 	}
 
 	 li.bottom_nav_items > a {
-		color: #000000 !important;
+		color: #052236 !important;
 		border-bottom: 1px solid #ffffff !important;
+	}
+
+	.navbar-menu-image svg {
+		color: #003157;
+		height: 18px;
+		width: 18px;
+	  fill: currentColor;
+		stroke: currentColor;
+	}
+
+	li.bottom_nav_items > a > .navbar-menu-image svg {
+		color: #778791;
+		height: 18px;
+		width: 18px;
+	  fill: currentColor;
+		stroke: currentColor;
 	}
 
 	.navbar-nav {
 		margin: 7px -15px 0 -15px;
 	}
+
+	.navbar-menu-image {
+	    margin-right: 6px;
+	}
 }
+
 
 	/* For really small device e.g. iPhone 5 */
 	@media screen and (max-width: 320px) {
@@ -151,6 +201,8 @@ span.housing_services-title {
 				font-size: 18px;
 			}
 }
+
+
 
 /*.quick-escape_wrapper button {
     position: fixed;
@@ -315,6 +367,9 @@ DASHBOARD OPTION A
 .services_buttons a svg {
 	height: 60px;
 	width: 60px;
+	color: #003660;
+	fill: currentColor;
+	stroke: currentColor;
 }
 
 /* Recommended Links */
