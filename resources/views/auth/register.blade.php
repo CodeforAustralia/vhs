@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="welcome-banner">
-                        <h4>Login</h4>
+                        <h4>Register</h4>
                     </div></div>
                     <div class="panel-body">
                         <form class="form-horizontal" method="POST" action="{{ route('register') }}">

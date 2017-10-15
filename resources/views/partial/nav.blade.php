@@ -16,7 +16,18 @@
     @if (Auth::guest())
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
+        @if (Request::is('login'))
+          <li><a href="{{ route('register') }}">Register</a></li>
+          <li><a href="{{ route('password.request') }}">Reset&nbsp;Password</a></li>
+        @endif
+        @if (Request::is('register'))
+        <li><a href="{{ route('login') }}">Login</a></li>
+          <li><a href="{{ route('password.request') }}">Reset&nbsp;Password</a></li>
+        @endif
+        @if (Request::is('password/reset'))
+        <li><a href="{{ route('login') }}">Login</a></li>
         <li><a href="{{ route('register') }}">Register</a></li>
+        @endif
       </ul>
     </div>
     @else
@@ -35,7 +46,7 @@
             <li>
               @if ( Auth::user()->usertype == '1' )
               <a href="/accounts">
-                <div class="navbar-menu-image">{!! file_get_contents(public_path('images/ico-start-page.svg')) !!}</div>&nbsp;User Accounts
+                <div class="navbar-menu-image">{!! file_get_contents(public_path('images/ico-profile.svg')) !!}</div>&nbsp;User Accounts
               </a>
               @else
               <a href="/accounts/{{ Auth::user()->id }}">
