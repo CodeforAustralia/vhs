@@ -26,7 +26,9 @@ Route::get('/', 'DashboardController@index')->name('dashboard');
 Route::group(array('after' => 'auth'), function() {
 	Route::get('/notification/{id}', 'NotificationController@index');
 });
-
+Route::get('/info', function () {
+	return view('pages/testInfo');
+});
 
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
