@@ -60,3 +60,6 @@ The notification will be sent to the logged in user.
     <li>Teresa Villanueva</li>
     <li>Rachelle Salvadora</li>
 </ul>
+
+##
+Test Push
