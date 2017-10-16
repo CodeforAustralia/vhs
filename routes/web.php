@@ -28,6 +28,7 @@ Route::group(array('after' => 'auth'), function() {
 });
 
 
+
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/pdf', 'PdfController@index')->name('pdf');
 Route::get('/letters', 'PdfController@allFiles')->name('allFiles');
@@ -50,7 +51,12 @@ Route::get('letter/{id}', 'LettersListController@show');
 Route::get('actual-letter/{id}', 'ActualLetterController@index');
 Route::get('letter-pdfjs/{id}', 'ActualLetterController@pdfjs');
 
+//search function
+Route::post('/search', 'AccountDetailsController@search')->name('search');
+
+// To generate data
 Route::get('/database', 'GenerateController@index')->name('database');
 
 // Option A
 Route::get('/inbox', 'InboxController@index')->name('inbox.index');
+Route::get('/inbox/{id}', 'InboxController@getAllLetters')->name('inbox.index');

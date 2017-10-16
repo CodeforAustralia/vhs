@@ -61,6 +61,20 @@ class AccountDetailsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+     public function search(Request $request)
+     {
+      $q = $request->input( 'q' );
+      $user = User::where('firstName','LIKE','%'.$q.'%')->orWhere('email','LIKE','%'.$q.'%')->get();
+      if(count($user) > 0)
+        return view('pages/account/search')->withDetails($user)->withQuery ( $q );
+    else return view ('pages/account/search')->withMessage('No Details found. Try to search again !')->withQuery ( $q );
+}
+
+     /**
+     * Show the Account Edit Page
+     *
+     * @return \Illuminate\Http\Response
+     */
      public function edit($id)
      {
         $AccountDetails = AccountDetails::where('id', $id)->get();
@@ -98,7 +112,7 @@ class AccountDetailsController extends Controller
         $updateUser->reference_id = $reference_id;
 
         if($password == '') {
-            
+
         } else {
                     // if password is not empty
             if($password != $password_confirmation) {

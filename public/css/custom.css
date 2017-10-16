@@ -68,7 +68,7 @@ span.housing_services-title {
 .services_heading_right h3 a,
 .services_heading_right h3 a:hover,
 .services_heading_right h3 a:visited {
-	color: #fff;
+    color: #232323;
 }
 
 .allow-left-margin {
@@ -648,7 +648,7 @@ Footer
 .footer-wrapper {
 	margin: 0 auto;
 	float: none;
-	padding-left: 0px;
+	padding-left: 15px;
 }
 
 @media screen and (max-width: 991px) {
