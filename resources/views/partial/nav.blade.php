@@ -110,3 +110,4 @@
     @endif
   </div>
 </nav>
+<div id="transparent-overlay"></div>

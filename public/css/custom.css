@@ -25,6 +25,18 @@ body {
 	padding-top: 60px;
 }
 
+.navbar-toggle .button-label {
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+    line-height: 14px;
+    padding-right: 10px;
+}
+.button-bars {
+    display: inline-block;
+    float: left;
+}
+
 /* Navbar menu items */
 .navbar-inverse .navbar-nav > li >a, .navbar-inverse .navbar-text {
     color: #fff;
@@ -74,6 +86,11 @@ span.housing_services-title {
 .allow-left-margin {
 	margin-left: 7px;
 	margin-right: auto;
+	background-color: orange;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: orange;
 }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .pre-scrollable {
@@ -100,6 +117,19 @@ ul.dropdown-menu > li > a > .navbar-menu-image svg {
 	width: 18px;
   fill: currentColor;
 	stroke: currentColor;
+}
+
+#transparent-overlay {
+        display: none;
+}
+
+.navbar-collapse.collapsing {
+  -webkit-transition: height 0.01s;
+  -moz-transition: height 0.01s;
+  -ms-transition: height 0.01s;
+  -o-transition: height 0.01s;
+  transition: height 0.01s;
+
 }
 
 @media (min-width: 768px) {
@@ -192,10 +222,25 @@ ul.dropdown-menu > li > a > .navbar-menu-image svg {
 	.navbar-menu-image {
 	    margin-right: 6px;
 	}
+
+	#transparent-overlay {
+			display: none;
+			background-color: #000;
+			opacity: 0.6 !important;
+			filter: alpha(opacity=60); /* For IE8 and earlier */
+			position:absolute;
+	 		top:0;
+	 		bottom:0;
+	 		left:0;
+	 		right:0;
+	 		width: 100%;
+	 		margin: 0;
+			z-index: 1029;
+	}
 }
 
 
-	/* For really small device e.g. iPhone 5 */
+	/* For really small device e.g. iPhone 4 & 5 */
 	@media screen and (max-width: 320px) {
 			.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 				font-size: 18px;
