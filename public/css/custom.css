@@ -72,11 +72,15 @@ span.housing_services-title {
 }
 
 .allow-left-margin {
-	margin-left: 7px;
+	margin-left: 8px;
 	margin-right: auto;
-	line-height: 7px;
+	line-height: 8px;
 	padding: 3px 10px !important;
 	border: none;
+}
+
+.navbar-toggle .icon-bar {
+	width: auto;
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
