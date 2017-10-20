@@ -7,6 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
+        <span class="menu-text">MENU</span>
       </button>
       <!-- Branding -->
       <a class="navbar-brand" href="{{ url('/dashboard') }} ">
@@ -94,7 +95,6 @@
           </a>
         </li>
         <!-- Log out -->
-
         <li class="bottom_nav_items">
             <a href="{{ route('logout') }}"
             onclick="event.preventDefault();

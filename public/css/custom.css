@@ -74,11 +74,13 @@ span.housing_services-title {
 .allow-left-margin {
 	margin-left: 7px;
 	margin-right: auto;
-	background-color: orange;
+	line-height: 8px;
+	padding: 3px 10px !important;
+	border: none;
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-    background-color: orange;
+    background-color: #04446C;
 }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .pre-scrollable {
@@ -138,6 +140,14 @@ ul.dropdown-menu > li > a > .navbar-menu-image svg {
 		background-color: #0063ae;
 		border-color: #04446c;
 		margin-bottom: 0px;
+	}
+
+	.menu-text {
+		font-size: 8px;
+		font-weight: bold;
+		line-height: 8px;
+		color: #fff;
+		vertical-align: text-bottom;
 	}
 
   .nav > li > a.dropdown-toggle {
