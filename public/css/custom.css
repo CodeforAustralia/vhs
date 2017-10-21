@@ -88,9 +88,11 @@ span.housing_services-title {
     background-color: #04446C;
 }
 
+/*
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .pre-scrollable {
 	max-height: 680px;
 }
+*/
 
 .navbar-menu-image {
 		display: inline;
@@ -127,25 +129,36 @@ ul.dropdown-menu > li > a > .navbar-menu-image svg {
 
 }
 
-/* Contain the navigation bar to no more than 780 pixels wide on a desktop
-or a  max screen size for tablet devices smaller than that width */
-@media (min-width: 768px) {
+/* Contain the navigation bar to no more than 780 pixels wide on a desktop */
+@media (min-width: 768px) and (max-width: 779px) {
     .navbar .container{
-        max-width: 750px;
+        max-width: 740px;
     }
 
-		.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-text {
-		    font-size: 18px;
+		.navbar-right {
+    	margin-right: 0;
+		}
+
+		.navbar-inverse .navbar-nav > li >a, .navbar-inverse .navbar-text {
+		    font-size: 16px;
 				font-family: "HelveticaNeue-CondensedBold", "Roboto Condensed", Arial, sans-serif;
 		    text-transform: uppercase;
+		    padding: 16px 14px 10px 14px;
 		}
 }
 
 @media (min-width: 780px) {
-		.navbar .container{
-		    max-width: 780px;
-		}
+	.navbar .container{
+			max-width: 780px;
+	}
+
+	.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-text {
+		  font-size: 18px;
+			font-family: "HelveticaNeue-CondensedBold", "Roboto Condensed", Arial, sans-serif;
+		  text-transform: uppercase;
+	}
 }
+
 
 /* Mobile devices */
 @media only screen and (max-width: 767px) {
@@ -263,24 +276,26 @@ or a  max screen size for tablet devices smaller than that width */
 QUICK ESCAPE
 *************************/
 
-#quick-escape {
-	display: block;
-	float: right;
-	height: 50px;
-	background-color: #db4437;
-	font-size: 16px;
-	line-height: 16px;
-	text-align: center;
-	color: white;
-	font-weight: bold;
-
-	vertical-align: middle;
-	border: 1px solid #db4639;
-	padding: 16px;
-	margin: 0;
-	position: relative;
-	top: -60px;
-	z-index: 2000;
+@media only screen and (min-width: 1200px) {
+	#quick-escape {
+		display: block;
+		float: right;
+		height: 50px;
+		background-color: #db4437;
+		font-size: 16px;
+		line-height: 16px;
+		text-align: center;
+		color: white;
+		font-weight: bold;
+		vertical-align: middle;
+		border: 1px solid #db4639;
+		padding: 16px;
+		margin: 0;
+		position: fixed;
+		top: 0;
+		z-index: 2000;
+		right: 0;
+	}
 }
 
 @media only screen and (max-width: 1199px) {
@@ -302,21 +317,22 @@ QUICK ESCAPE
 		display: block;
 		top: auto;
 		float: right;
-		height: 36px;
-		width: 36px;
-		background-color: #db4437;
-		font-size: 8px;
-		line-height: 8px;
-		text-align: center;
-		color: white;
+		height: 50px;
+		width: 50px;
+		font-family: "HelveticaNeue-CondensedBold", "Roboto Condensed", Arial, sans-serif;
 		font-weight: bold;
+		font-size: 12px;
+		line-height: 12px;
+		text-align: center;
 		vertical-align: middle;
+		color: white;
+		background-color: #db4437;
 		border: 1px solid #db4639;
-		padding: 9px 2px;
-		-webkit-box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.5);
-		-moz-box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.5);
-		box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.5);
-		margin: 16px;
+		padding: 12px 2px;
+		-webkit-box-shadow: 0 2px 8px 0 rgba(0,0,0,0.4);
+		-moz-box-shadow: 0 2px 8px 0 rgba(0,0,0,0.4);
+		box-shadow: 0 2px 8px 0 rgba(0,0,0,0.4);
+		margin: 30px;
 	}
 }
 
