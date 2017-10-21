@@ -1,6 +1,5 @@
-/* Quick Escape
-- reminiscent of the 'Hide Page' button on http://www.vic.gov.au/familyviolence/recommendations.html */
-$('.btn-danger').on('click',function(e){window.location.href='https://www.google.com.au/';});
+// Quick Escape
+//$('#quick-escape').on('click',function(e){window.location.href='/escape';});
 
 /* Toggle service panels to show all letters */
 $('.show-more').on('click',function(e){

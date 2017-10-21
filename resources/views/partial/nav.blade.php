@@ -110,4 +110,6 @@
     @endif
   </div>
 </nav>
+
+<div id="quick-escape-wrapper"><a href="javascript:window.location.href='/escape';"><div id="quick-escape">Quick Escape</div></a></div>
 <div id="transparent-overlay"></div>

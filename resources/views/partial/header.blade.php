@@ -1,3 +1,10 @@
+<?php
+/* HTTP header with no cache */
+header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1
+header("Pragma: no-cache"); // HTTP 1.0
+header("Expires: 0"); // Proxies
+?>
+
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
@@ -16,9 +23,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Cache Control -->
-  <meta http-equiv="Cache-Control" content="private, no-store, max-age=0, no-cache, must-revalidate, post-check=0, pre-check=0" />
+  <meta http-equiv="Cache-Control" content="Cache-Control: no-cache, max-age=0, must-revalidate, no-store" />
   <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="Expires" content="Fri, 01 Jan 1980 00:00:00 GMT" />
 
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">

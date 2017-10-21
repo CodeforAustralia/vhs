@@ -63,6 +63,7 @@ span.housing_services-title {
 	background-color: #04446c;
 	border-color: #04446c;
 	margin-bottom: 0px;
+	border-bottom: none;
 }
 
 .services_heading_right h3 a,
@@ -75,7 +76,7 @@ span.housing_services-title {
 	margin-left: 8px;
 	margin-right: auto;
 	line-height: 8px;
-	padding: 3px 10px !important;
+	padding: 5px 10px 1px 10px !important;
 	border: none;
 }
 
@@ -99,8 +100,8 @@ span.housing_services-title {
 
 .navbar-menu-image svg {
 	color: #ffffff;
-	height: 18px;
-	width: 18px;
+	height: 16px;
+	width: 16px;
   fill: currentColor;
 	stroke: currentColor;
 }
@@ -126,18 +127,27 @@ ul.dropdown-menu > li > a > .navbar-menu-image svg {
 
 }
 
+/* Contain the navigation bar to no more than 780 pixels wide on a desktop
+or a  max screen size for tablet devices smaller than that width */
 @media (min-width: 768px) {
     .navbar .container{
-        max-width: 780px;
+        max-width: 750px;
     }
 
 		.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-text {
-    font-size: 18px;
-		font-family: "HelveticaNeue-CondensedBold", "Roboto Condensed", Arial, sans-serif;
-    text-transform: uppercase;
-	}
+		    font-size: 18px;
+				font-family: "HelveticaNeue-CondensedBold", "Roboto Condensed", Arial, sans-serif;
+		    text-transform: uppercase;
+		}
 }
 
+@media (min-width: 780px) {
+		.navbar .container{
+		    max-width: 780px;
+		}
+}
+
+/* Mobile devices */
 @media only screen and (max-width: 767px) {
 
 	#navbar {
@@ -242,19 +252,74 @@ ul.dropdown-menu > li > a > .navbar-menu-image svg {
 }
 
 
-	/* For really small device e.g. iPhone 4 & 5 */
+	/* For really small device */
 	@media screen and (max-width: 320px) {
 			.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 				font-size: 18px;
 			}
 }
 
+/************************
+QUICK ESCAPE
+*************************/
 
+#quick-escape {
+	display: block;
+	float: right;
+	height: 50px;
+	background-color: #db4437;
+	font-size: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
 
-/*.quick-escape_wrapper button {
-    position: fixed;
-    right: 0;
-    }*/
+	vertical-align: middle;
+	border: 1px solid #db4639;
+	padding: 16px;
+	margin: 0;
+	position: relative;
+	top: -60px;
+	z-index: 2000;
+}
+
+@media only screen and (max-width: 1199px) {
+	#quick-escape-wrapper {
+		position: fixed;
+		bottom: 0;
+		max-width: 100%;
+		width: 1002px;
+		margin: 0 auto;
+		padding: 0;
+		z-index: 2000;
+	}
+
+	#quick-escape {
+		background-size: 36px 36px;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		display: block;
+		top: auto;
+		float: right;
+		height: 36px;
+		width: 36px;
+		background-color: #db4437;
+		font-size: 8px;
+		line-height: 8px;
+		text-align: center;
+		color: white;
+		font-weight: bold;
+		vertical-align: middle;
+		border: 1px solid #db4639;
+		padding: 9px 2px;
+		-webkit-box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.5);
+		-moz-box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.5);
+		box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.5);
+		margin: 16px;
+	}
+}
+
 /************************
 DASHBOARD
 *************************/
@@ -718,7 +783,7 @@ Footer
 				font-size:14px;
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.letter-date {
 		padding-top: 6px;
 	}
