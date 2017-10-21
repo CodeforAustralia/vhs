@@ -16,6 +16,12 @@ class InboxController extends Controller
      */
     public function index() {
     	$user = Auth::user();
+
+// If no current user logged in
+      if ( empty($user)) {
+        return redirect()->route('login');
+      }
+
     	$user_id = $user->id;;
     	$letter = Letters::first();
     	$user_services = UserService::where('user_id',$user_id)->get();
