@@ -6,19 +6,18 @@
 <div class="container-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 welcome_banner-wrapper">
-
+      <div class="col-md-8 welcome_banner-wrapper">
         <div class="welcome-banner">
           <h3>{{ $message }} {{ Auth::user()->firstName }}</h3>
         </div>
         <div class="dashboard_notifications">
           @if ($total_unread == 0)
-            <p>You have <strong>no new letters</strong>.</p>
+            You have <strong>no new letters</strong>.
           @else
             @if ($total_unread == 1)
-              <p>You have <strong>{{$total_unread}} new letter</strong>.</p>
+              You have <strong>{{$total_unread}} new letter</strong>.
             @else
-              <p>You have <strong>{{$total_unread}} new letters</strong>.</p>
+              You have <strong>{{$total_unread}} new letters</strong>.
             @endif
           @endif
         </div>
@@ -26,6 +25,7 @@
     </div>
   </div>
 </div>
+
 @if ($user_testType == 'A')
 @include('pages.dashboard.my_servicesOptions')
 @include('pages.dashboard.recommended_buttons')
@@ -35,8 +35,5 @@
 @include('pages.dashboard.recommendation_buttons')
 @include('pages.dashboard.recommended_links')
 @endif
-
-
-
 
 @endsection
