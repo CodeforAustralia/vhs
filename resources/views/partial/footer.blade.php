@@ -48,7 +48,7 @@
 							<p>To be authorised by: Department of Health and Human Services</p>
 						</div>
 						<div class="col-md-4">
-							<p class="pull-right"><a href="#"><img src="{{ asset('images/logo-vicstategov.png') }}"/></a></p>
+							<p class="vic-gov_footer_logo"><a href="#"><img src="{{ asset('images/logo-vicstategov.png') }}"/></a></p>
 						</div>
 					</footer>
 				</div>
