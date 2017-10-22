@@ -14,8 +14,9 @@ footer {
 }
 footer p {
 	color: #c0dbf4;
-	margin: 0px;
+	margin: 0 0 0 -15px;
 	font-size: 16px;
+
 }
 /************************
 NAVIGATION
