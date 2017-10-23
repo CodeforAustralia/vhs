@@ -1,8 +1,19 @@
 <?php
 /* HTTP header with no cache */
-header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1
-header("Pragma: no-cache"); // HTTP 1.0
-header("Expires: 0"); // Proxies
+
+// A really far back date...
+header('Expires: Tue, 01 Jan 1980 00:00:00 GMT');
+header("Expires: 0");
+
+// Dynamic Modified date
+header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT');
+
+// HTTP 1.0 (i think)
+header('Pragma: no-cache');
+
+// HTTP 1.1
+header('Cache-Control: no-store, no-cache, must-revalidate');
+header('Cache-Control: post-check=0, pre-check=0', false);
 ?>
 
 <!DOCTYPE html>
