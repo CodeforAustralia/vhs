@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="container">
-  <h1>Wi-fi Access</h1> SSID: TP4G_032B0A
+  <h1>Wi-fi Access</h1> SSID: TPW4G_032B0A
   <br/> Password: JDR48Q2GY3
 
   <h1>Prototypes</h1>
