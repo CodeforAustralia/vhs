@@ -725,7 +725,7 @@ LETTER
 
 
 #rippleFullScreen, #rippleDownload, #ripplePrint {
-	margin: 30px 10px;
+	margin: 20px 10px 30px 10px;
 	width: 180px;
 }
 
