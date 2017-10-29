@@ -4,7 +4,7 @@
 
 @if ($include_links)
 <a href="/correspondence/{{$user_service->reference_id}}">
-    @endif
+@endif
 
     <div class="panel panel-primary">
         <div class="panel-heading">
@@ -64,7 +64,8 @@
             </div>
         </div>
     </div>
-    @if ($include_links)
+
+@if ($include_links)
 </a>
 @endif
 

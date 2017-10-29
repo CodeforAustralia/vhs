@@ -1,35 +1,4 @@
-// Quick Escape
-//$('#quick-escape').on('click',function(e){window.location.href='/escape';});
-
-/* Toggle service panels to show all letters */
-$('.show-more').on('click',function(e){
-  current_text = $(this).text();
-  if (current_text == "Show More") {
-    $(this).parent().find(".row").show();
-    $(this).parent().find(".row").first().css("padding-bottom","0");
-    current_text = "Show Less";
-  } else {
-    $(this).parent().find(".row").hide();
-    $(this).parent().find(".row").first().show();
-    $(this).parent().find(".row").first().css("padding","30px 0px");
-    current_text = "Show More";
-  }
-  $(this).text(current_text);
-});
-
-// Trigger first click to collapse all service panels
-$( ".show-more" ).trigger( "click" );
-
-// Ripple Download and Print button events to the iframe
-
-$('#rippleZoomIn').on('click',function(e){
-    $('#letterIframe').contents().find('#zoomIn').trigger( "click" );
-});
-
-$('#rippleZoomOut').on('click',function(e){
-    $('#letterIframe').contents().find('#zoomOut').trigger( "click" );
-});
-
+// Ripple Download, Print and Expand button events to the iframe
 $('#rippleDownload').on('click',function(e){
     $('#letterIframe').contents().find('#download').trigger( "click" );
 });
@@ -38,7 +7,11 @@ $('#ripplePrint').on('click',function(e){
     $('#letterIframe').contents().find('#print').trigger( "click" );
 });
 
-// Add some extra functionality to navbar
+$('#rippleFullScreen').on('click',function(e){
+    $('#letterIframe').contents().find('#presentationMode').trigger( "click" );
+});
+
+// Add some extra styling for navbar
 $('.navbar-toggle').click(function(){
     documentHeight = $(document).height();
     $( '#transparent-overlay').css("height",documentHeight);
@@ -53,3 +26,15 @@ $('.navbar-toggle').click(function(){
       $( '.navbar-inverse').css("-moz-box-shadow","none");
     }
 });
+
+/* Functions */
+
+// Make wrapper around the iframe (that contains the rendered PDF document)
+// the same height as the rendered document
+function fix_heights_on_pdf2html() {
+  viewerWidth = $('#viewer').width();
+// condition ? value-if-true : value-if-false
+  ( viewerWidth > 767) ? bottomOffset = 30 : bottomOffset = 10;
+  heightShouldBe = $('#viewer').height() + bottomOffset;
+  parent.$('body').contents().find('.pdf2html-wrapper').height(heightShouldBe);
+}

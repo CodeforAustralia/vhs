@@ -832,7 +832,7 @@ document.webL10n = (function(window, document, undefined) {
       if (Object.keys(gL10nData).length > 0) {
         console.warn('#' + key + ' is undefined.');
       }
-      // === patch end === 
+      // === patch end ===
       if (!fallback) {
         return null;
       }
