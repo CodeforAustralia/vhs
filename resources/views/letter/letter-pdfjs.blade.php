@@ -7,8 +7,6 @@
     <script src="{{ asset('js/pdfjs/pdf.js-viewer/pdf.js') }}"></script>
     <script>
       console.log('Starting pdf rendering');
-      var no_of_pages = {{ $letters[0]->pages }};
-
       document.addEventListener('pagerendered', function (evt) {
         console.log('Page renedring event fired');
         console.log(evt);
