@@ -19,10 +19,25 @@
   </div>
 </div>
 
+<!-- Loader
+<div class="container-wrapper tools-wrapper loading-wrapper">
+  <div class="container">
+    <div class="row">
+
+    </div>
+  </div>
+</div>
+-->
+
 <!-- Letter -->
 <div class="container-wrapper tools-wrapper no-padding with-top-margin">
   <div class="container">
     <div class="row">
+
+      <div class="loading">
+        <img src="{{ asset('images/loading.gif') }}"/>
+      </div>
+
       @foreach ($letters as $letter)
       <div class="embed-responsive pdf2html-wrapper">
         <iframe id="letterIframe" class="embed-responsive-item" src="/letter-pdfjs/{{$letter->id}}#zoom=page-width" allowfullscreen></iframe>

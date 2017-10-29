@@ -737,16 +737,27 @@ LETTER
 	padding-top: 30px !important;
 }
 
+.loading {
+	width: 100%;
+	height: auto;
+	padding: 120px;
+	text-align: center;
+}
+
+.pdfjs {
+	display: none;
+}
+
 @media only screen and (max-width: 767px) {
 	#rippleDownload, #ripplePrint {
     margin: 10px 10px 20px 10px;
     width: 42%;
 	}
-	/*
+
 	#rippleFullScreen {
 		display: none;
 	}
-	*/
+
 	.with-top-margin {
 		padding-top: 10px !important;
 	}

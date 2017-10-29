@@ -33,8 +33,9 @@ $('.navbar-toggle').click(function(){
 // the same height as the rendered document
 function fix_heights_on_pdf2html() {
   viewerWidth = $('#viewer').width();
-// condition ? value-if-true : value-if-false
-  ( viewerWidth > 767) ? bottomOffset = 30 : bottomOffset = 10;
+  ( viewerWidth > 767 ) ? bottomOffset = 30 : bottomOffset = 10;
   heightShouldBe = $('#viewer').height() + bottomOffset;
   parent.$('body').contents().find('.pdf2html-wrapper').height(heightShouldBe);
+  parent.$('body').contents().find('.loading-wrapper').hide();
+  parent.$('body').contents().find('.loading').hide();
 }
