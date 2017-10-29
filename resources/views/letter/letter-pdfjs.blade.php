@@ -13,6 +13,7 @@
         console.log('Page renedring event fired');
         console.log(evt);
         fix_heights_on_pdf2html();
+        console.log('fixed height');
       });
 
     </script>
