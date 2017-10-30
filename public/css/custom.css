@@ -21,6 +21,34 @@ footer p {
 .vic-gov_footer_logo {
 	padding: 20px 0px;
 }
+
+#service option {
+	padding: 3px;
+}
+
+#sessionStatus {
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	background-color: rgb(23, 136, 96, 0.8);
+	width: 100%;
+	padding: 10px;
+	margin: -10px auto auto auto;
+}
+
+.closeCrossDiv {
+	float: right;
+	margin-top: -4px !important;
+}
+
+.closeCrossDiv a {
+	border: 1px solid white;
+	padding: 3px 10px;
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
+
 /************************
 NAVIGATION
 *************************/

@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -8,7 +7,9 @@ use Auth;
 use App\Models\UserService;
 use App\Models\Letters;
 use App\Models\LetterHistory;
-
+use DB;
+use App\Quotation;
+use Session;
 
 class LettersListController extends Controller
 {
@@ -60,11 +61,29 @@ class LettersListController extends Controller
 // if we have made it this far, mark the letter as read
       $letter_history[0]->unread=false;
       $letter_history[0]->save();
-      
+
      return view('letter/letter')->with([
        'letters' => $letters
      ]);
 
    }
+  }
+
+  /**
+  *  function sendLetters
+  *
+  * @return Illuminate\Http\RedirectResponse
+  */
+  public function sendLetters(Request $request, $id)
+  {
+    /*
+    // Get the user to send letters to and the services they need
+    $user = DB::table('users')
+    ->where('id', $id)
+    ->get();
+    $service = $request->input('service');
+    */
+    Session::flash('status', 'Letters sent');
+    return redirect()->route('accounts.view', [$id]);
   }
  }

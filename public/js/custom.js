@@ -39,3 +39,7 @@ function fix_heights_on_pdf2html() {
   parent.$('body').contents().find('.loading-wrapper').hide();
   parent.$('body').contents().find('.loading').hide();
 }
+
+function hideObject( objectToHide ) {
+  $(objectToHide).hide();
+}
