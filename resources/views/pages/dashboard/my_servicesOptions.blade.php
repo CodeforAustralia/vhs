@@ -9,7 +9,7 @@
             <a href="/accounts" role="button" class="btn btn-primary need_housing_button">
               {!! file_get_contents(public_path('images/ico-profile.svg')) !!}
               <br/>
-              View Accounts</a>
+              User Accounts</a>
               @else
               <a href="/accounts/{{ Auth::user()->id }}" role="button" class="btn btn-primary need_housing_button">
                 {!! file_get_contents(public_path('images/ico-profile.svg')) !!}
