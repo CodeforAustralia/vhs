@@ -28,6 +28,7 @@
 </div>
 @endif
 
+<!-- Get session messages --> 
 @if (Session::has('status'))
 <div id="sessionStatus">
   {{Session::get('status')}}

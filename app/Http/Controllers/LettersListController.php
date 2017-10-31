@@ -76,14 +76,26 @@ class LettersListController extends Controller
   */
   public function sendLetters(Request $request, $id)
   {
-    /*
     // Get the user to send letters to and the services they need
     $user = DB::table('users')
     ->where('id', $id)
     ->get();
-    $service = $request->input('service');
-    */
-    Session::flash('status', 'Letters sent');
+    $reference_id = $request->input('service');
+    $user_services = UserService::where('user_id',$id)
+     ->where('reference_id',$reference_id)
+     ->get();
+//    if (empty($user_services)) {
+
+//    } else {
+//      $output = shell_exec('sh /home/ubuntu/testing-data/process_sample_letters.sh');
+      $output = exec("sh /home/ubuntu/testing-data/process_sample_letters.sh");
+
+//    }
+      if (empty($output)) {
+        $output='Letters sent! (not really)';
+      }
+
+    Session::flash('status', $output);
     return redirect()->route('accounts.view', [$id]);
   }
  }
