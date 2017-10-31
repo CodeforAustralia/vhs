@@ -5,6 +5,7 @@
 <div class="container-wrapper">
   <div class="container">
     <!-- Template summary -->
+    @if (!empty($letter->template->summary))
     <div class="row">
       <div class="col-md-8 welcome_banner-wrapper">
         <div class="welcome-banner">
@@ -12,6 +13,7 @@
         </div>
       </div>
     </div>
+    @endif
 
     <!-- Buttons -->
     <div class="row">
