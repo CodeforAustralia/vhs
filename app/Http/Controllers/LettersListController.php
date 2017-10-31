@@ -4,12 +4,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use Auth;
-use App\Models\UserService;
-use App\Models\Letters;
-use App\Models\LetterHistory;
 use DB;
 use App\Quotation;
 use Session;
+use App\Models\UserService;
+use App\Models\Letters;
+use App\Models\LetterHistory;
 
 class LettersListController extends Controller
 {
@@ -76,7 +76,7 @@ class LettersListController extends Controller
   */
   public function sendLetters(Request $request, $id)
   {
-    // Get the user to send letters to and the services they need
+    // Get the user (in order to send letters to) and the service (that they need)
     $user = DB::table('users')
     ->where('id', $id)
     ->get();
@@ -84,18 +84,32 @@ class LettersListController extends Controller
     $user_services = UserService::where('user_id',$id)
      ->where('reference_id',$reference_id)
      ->get();
-//    if (empty($user_services)) {
 
-//    } else {
-//      $output = shell_exec('sh /home/ubuntu/testing-data/process_sample_letters.sh');
-      $output = exec("sh /home/ubuntu/testing-data/process_sample_letters.sh");
+    // If user is not assigned to the service, then insert a record into the user_services table
+    // BTW: Assuming that the services themselves where already seeded by running ServicesTableSeeder
+    // e.g. php artisan db:seed --class=ServicesTableSeeder
+    $output = $reference_id;
 
-//    }
-      if (empty($output)) {
-        $output='Letters sent! (not really)';
-      }
+    if ( count($user_services) == 0) {
+      $user_service = new UserService;
+      $user_service->user_id = $id;
+      $user_service->reference_id = $reference_id;
+      $user_service->save();
+    }
 
-    Session::flash('status', $output);
+    $shellScript=env('CORRESPONDENCE_SIMULATE');
+    $output = shell_exec($shellScript);
+
+    if ($output == 'Letters Sent') {
+      $messageLevel = 'success';
+      $messageContent = $output;
+    } else {
+      $messageLevel = 'danger';
+      $messageContent = 'Something went wrong :(';
+    }
+
+    Session::flash('message.level', $messageLevel);
+    Session::flash('message.content', $messageContent);
     return redirect()->route('accounts.view', [$id]);
   }
  }

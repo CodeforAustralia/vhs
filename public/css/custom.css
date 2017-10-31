@@ -29,8 +29,6 @@ footer p {
 #sessionStatus {
 	font-size: 14px;
 	font-weight: bold;
-	color: white;
-	background-color: #43C094;
 	width: 100%;
 	padding: 10px;
 	margin: -10px auto auto auto;
@@ -42,13 +40,26 @@ footer p {
 }
 
 .closeCrossDiv a {
-	border: 1px solid white;
 	padding: 3px 10px;
-	text-decoration: none;
-	color: white;
 	font-size: 18px;
+	text-decoration: none;
 }
 
+#sessionStatus.alert.alert-danger .closeCrossDiv a {
+  color: #a94442;
+}
+
+#sessionStatus.alert.alert-success .closeCrossDiv a {
+  color: #3c763d;
+}
+
+#sessionStatus.alert.alert-warning .closeCrossDiv a {
+	color: #8a6d3b;
+}
+
+#sessionStatus.alert.alert-info .closeCrossDiv a {
+  color: #31708f;
+}
 /************************
 NAVIGATION
 *************************/

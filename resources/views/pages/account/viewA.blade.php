@@ -28,11 +28,11 @@
 </div>
 @endif
 
-<!-- Get session messages --> 
-@if (Session::has('status'))
-<div id="sessionStatus">
-  {{Session::get('status')}}
-  <div class="closeCrossDiv"><span class="cross"><a href="javascript: hideObject('#sessionStatus');">&times;</a></div>
+<!-- Get session messages -->
+@if (Session::has('message.content'))
+<div id="sessionStatus" class="alert alert-{{ Session::get('message.level') }}">
+  {{Session::get('message.content')}}
+  <div class="closeCrossDiv"><a href="javascript: hideObject('#sessionStatus');">&times;</a></div>
 </div>
 @endif
 
