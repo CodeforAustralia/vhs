@@ -100,7 +100,7 @@ class LettersListController extends Controller
     $shellScript=env('CORRESPONDENCE_SIMULATE');
     $output = shell_exec($shellScript);
 
-    if ($output == 'Letters Sent') {
+    if ($output == 'Letters Sent\n') {
       $messageLevel = 'success';
       $messageContent = $output;
     } else {
