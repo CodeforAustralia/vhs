@@ -3,7 +3,6 @@
     <div class="col-md-8">
 
       <select id="service" name="service" class="form-control">
-        <option value="-" selected>Please Select a Service</option>
         <option value="7123456789">Application for Housing (most complete) Ref. No: 7123456789</option>
         <option value="1923293137">Application for Housing - Ref. No: 1923293137</option>
         <option value="2357111317">Application for Housing - Ref. No: 2357111317</option>
