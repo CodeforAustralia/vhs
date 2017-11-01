@@ -97,7 +97,9 @@ class LettersListController extends Controller
       $user_service->save();
     }
 
-    $shellScript=env('CORRESPONDENCE_SIMULATE');
+
+
+    $shellScript=env('CORRESPONDENCE_SIMULATE').' -s \''.$reference_id.'\'';
     $output = exec($shellScript);
 
     if ($output == 'Letters Sent') {
