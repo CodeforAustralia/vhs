@@ -2,7 +2,7 @@
 <div class="container-wrapper recommended_buttons_tools-wrapper">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 recommended_links-wrapper">
+            <div class="col-md-8 col-sm-8 col-xs-12 recommended_links-wrapper">
                 <div class="recommended_buttons col-md-12 col-lg-12">
                   <a href="#" target="_blank" role="button" class="need_housing_button">
                     {!! file_get_contents(public_path('images/ico-urgenthousing.svg')) !!}

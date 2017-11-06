@@ -6,7 +6,7 @@
 <div class="container-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-md-8 welcome_banner-wrapper">
+      <div class="col-md-8 col-sm-8 col-xs-12 welcome_banner-wrapper">
         <div class="welcome-banner">
           <h3>{{ $message }} {{ Auth::user()->firstName }}</h3>
         </div>
@@ -15,9 +15,9 @@
             You have <strong>no new letters</strong>.
           @else
             @if ($total_unread == 1)
-              You have <strong>{{$total_unread}} new letter</strong>.
+              You have <a href="/inbox">{{$total_unread}} new letter</a>.
             @else
-              You have <strong>{{$total_unread}} new letters</strong>.
+              You have <a href="/inbox">{{$total_unread}} new letters</a>.
             @endif
           @endif
         </div>

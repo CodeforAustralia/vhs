@@ -1,14 +1,14 @@
 <?php
 /* HTTP header with no cache */
 
-// A really far back date...
+// Expires some time in the past
 header('Expires: Tue, 01 Jan 1980 00:00:00 GMT');
 header("Expires: 0");
 
 // Dynamic Modified date
 header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT');
 
-// HTTP 1.0 (i think)
+// HTTP 1.0
 header('Pragma: no-cache');
 
 // HTTP 1.1

@@ -163,6 +163,7 @@ nav div.container-fluid {
 }
 .navbar-toggle {
 		display: block;
+    padding: 8.5px 10px;
 }
 .navbar-collapse {
 		border-top: 1px solid transparent;
@@ -210,6 +211,7 @@ nav div.container-fluid {
 .navbar-toggle .top-bar {
     transform: translateX(3px) rotate(135deg);
     transform-origin: 42% 140%;
+		height: 3px;
 }
 
 .navbar-toggle .middle-bar {
@@ -261,7 +263,6 @@ ul.dropdown-menu > li > a > .navbar-menu-image svg {
 QUICK ESCAPE
 *************************/
 
-@media only screen and (min-width: 1200px) {
 	#quick-escape {
 		display: block;
 		float: right;
@@ -281,11 +282,27 @@ QUICK ESCAPE
 		z-index: 2000;
 		right: 0;
 	}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+	#quick-escape {
+		font-size: 16px;
+	}
+
+	.navbar-inverse .navbar-brand {
+    font-size: 18px;
+	}
+
+	.navbar-brand {
+    transform: none;
+    position: static;
+	}
+
 }
 
-
-@media only screen and (max-width: 1199px) {
 /*
+@media only screen and (max-width: 1199px) {
+
 	#quick-escape-wrapper {
 		position: fixed;
 		bottom: 0;
@@ -321,9 +338,10 @@ QUICK ESCAPE
 		box-shadow: 0 2px 8px 0 rgba(0,0,0,0.4);
 		margin: 30px;
 	}
-	*/
+
 
 }
+	*/
 
 /************************
 DASHBOARD
@@ -340,13 +358,16 @@ DASHBOARD
 	font-weight: normal;
 	font-size: 22px;
 }
+.container-wrapper {
+	padding: 40px 0;
+}
 .container-wrapper.tools-wrapper {
 	background-color: #F3EEE9;
-	padding: 50px 0px;
+	padding: 50px 0;
 }
 .container-wrapper.services-wrapper {
 	background-color: #faf8f7;
-	padding: 16px 0 30px 0;
+	padding: 36px 0 50px 0;
 }
 
 .container-wrapper.tools-wrapper.no-padding {
@@ -485,6 +506,18 @@ a span.external-link svg {
 	text-align: center;
 }
 
+.dashboard_notifications {
+	color: #000000;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.dashboard_notifications a {
+	color: #0063ae;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
 .ho-header {
 	margin-top: 20px;
 	font-size: 18px;
@@ -567,28 +600,9 @@ a span.external-link svg {
 	padding-right: 10px;
 }
 
-@media screen and (max-width: 991px) {
-	.services_buttons:nth-child(2n+1) {
-		padding-left: 0 !important;
-		padding-right: 10px !important;
-	}
+/* Dashboard Tiles */
+/* Desktop */
 
-	.services_buttons:nth-child(2n+2) {
-		padding-left: 10px !important;
-		padding-right: 0 !important;
-	}
-
-	.services_buttons a {
-    	width: 100%;
-    	padding: 18px 15px;
-	}
-
-	.container-wrapper.services-wrapper {
-	    padding: 0 0 30px 0;
-	}
-}
-
-@media screen and (min-width: 992px) {
 	.services_buttons:nth-child(3n+1) {
 		padding-left: 0px !important;
 		padding-right: 7px !important;
@@ -603,14 +617,57 @@ a span.external-link svg {
 		padding-left: 7px !important;
 		padding-right: 0 !important;
 	}
+
+/* Tablet */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.services_buttons:nth-child(3n+1) {
+		padding-left: 0px !important;
+		padding-right: 7px !important;
+	}
+
+	.services_buttons:nth-child(3n+2) {
+		padding-left: 7px !important;
+		padding-right: 7px !important;
+	}
+
+	.services_buttons:nth-child(3n+3) {
+		padding-left: 7px !important;
+		padding-right: 0 !important;
+	}
+
 }
+
+
+	/* Mobile Phone */
+	@media screen and (max-width: 767px) {
+		.services_buttons:nth-child(2n+1) {
+			padding-left: 0 !important;
+			padding-right: 10px !important;
+		}
+
+		.services_buttons:nth-child(2n+2) {
+			padding-left: 10px !important;
+			padding-right: 0 !important;
+		}
+
+		.services_buttons a {
+	    	width: 100%;
+	    	padding: 18px 15px;
+		}
+
+		.container-wrapper.services-wrapper {
+		    padding: 0 0 30px 0;
+		}
+	}
+
+
+/* ************************************* */
+
 .services_buttons a svg {
 	height: 38px;
 	width: 38px;
-/*	color: #003660;
-	fill: currentColor;
-	stroke: currentColor;
-*/
 }
 
 /* Recommended Links */
@@ -620,13 +677,18 @@ a span.external-link svg {
 .quicklinks_half {
 	padding: 20px;
 }
+
 .quick_links-wrapper {
+	padding: 50px 0px;
+	color: #fff;
 	background-color: #003455;
 }
-.quick_links-wrapper {
-	padding: 30px 0px;
-	color: #fff;
+
+.very-last-row {
+	background-color: #000;
+	padding-bottom: 30px;
 }
+
 .quicklinks_half ul {
 	list-style: none;
 	padding-left: 0;
@@ -640,6 +702,14 @@ a span.external-link svg {
 	padding: 10px 0px;
 }
 
+.nrs {
+	width: 100px;
+}
+
+.nrs svg {
+	fill: #e5e1de;
+}
+
 .footer-text {
 	font-size: 16px;
   line-height: 30px;
@@ -648,6 +718,12 @@ a span.external-link svg {
 
 .footer-image-marker {
 	margin-bottom: 5px;
+}
+
+#nrs-div .footer-image-marker {
+	 float: left;
+	 margin-right: 20px;
+	 margin-bottom: 40px;
 }
 
 .flag-0, .flag-1 {
@@ -662,7 +738,7 @@ a span.external-link svg {
 
 .logo-vichs {
 	width: 215px;
-	margin-top: 36px;
+	margin-top: -20px;
 }
 
 .logo-vichs svg {
@@ -770,6 +846,37 @@ a span.external-link svg {
 	float: none;
 }
 
+/* Tablet */
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.footer-text {
+	    font-size: 12px;
+	    line-height: 22px;
+	}
+
+	#nrs-div {
+		margin-top: 40px;
+	}
+
+	#nrs-div .footer-image-marker {
+    margin-bottom: 0;
+	}
+
+	.logo-vichs {
+    margin-top: -10px;
+	}
+
+	#copyright-notice {
+		display: none;
+	}
+
+	.quick_links-wrapper {
+	    padding: 50px 0px 30px 0;
+	}
+}
+
+
+
 /************************
 DASHBOARD - mail icons
 *************************/
@@ -857,7 +964,7 @@ LETTER
 .pdfjs {
 	display: none;
 }
-
+/*
 @media only screen and (max-width: 767px) {
 	#rippleDownload, #ripplePrint {
     margin: 10px 10px 20px 10px;
@@ -875,6 +982,7 @@ LETTER
 		text-align: center;
 	}
 }
+*/
 /************************
 Recommended Links
 *************************/
@@ -983,6 +1091,7 @@ Footer
 	padding-left: 15px;
 }
 
+/*
 @media screen and (max-width: 991px) {
 	.services_buttons {
 		padding-top: 20px 20px;
@@ -1003,6 +1112,8 @@ Footer
 				font-size:14px;
 	}
 }
+*/
+/*
 @media screen and (max-width: 767px) {
 	.letter-date {
 		padding-top: 6px;
@@ -1070,9 +1181,11 @@ Footer
 	.inbox_toolbox {
 			padding: 12px;
 	}
-}
+} */
+/*
 @media screen and (min-width: 960px) {
 	.col-md-6.col-xs-12.col-lg-6.tool-box:nth-child(2) {
 		margin-right: -10px;
 	}
 }
+*/

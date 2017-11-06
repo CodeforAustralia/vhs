@@ -15,10 +15,10 @@
 						The department acknowledges Aboriginal and Torres Strait Islander people as the Traditional Custodians of the land and acknowledges and pays respect to their Elders, past and present.
 					</div>
 				</div>
-				<div class="col-md-5">
-					<div class="footer-image-marker" style="float: left; margin-right: 20px; margin-bottom: 40px;">
-						<div style="width: 100px;">
-							<img src="{{ asset('images/nrs-logo.png') }}" alt="National Relay Service"/>
+				<div id="nrs-div" class="col-md-5">
+					<div class="footer-image-marker">
+						<div class="nrs">
+							{!! file_get_contents(public_path('images/nrs-logo.svg')) !!}
 						</div>
 					</div>
 					<div class="footer-text" style="margin-top: 6px;">
@@ -27,26 +27,30 @@
 				</div>
 			</div>
 		</div><!-- /.row -->
-			<div class="row">
-				<div class="col-md-10 footer-wrapper">
-					<div class="col-md-7">
-						<div class="footer-text" style="margin-top: 50px;">
-							Department of Health and Human Services,  <br/>State Government of Victoria, Australia &copy; <?php echo date("Y"); ?>
-						</div>
-					</div>
+	</div> <!-- /.container -->
+</div> <!-- /.container-wrapper -->
 
-						<div class="col-md-5">
-							<div class="footer-image-marker">
-								<div class="logo-vichs">
-									{!! file_get_contents(public_path('images/logo-vichhs.svg')) !!}
-								</div>
+<div class="container-wrapper quick_links-wrapper very-last-row">
+	<div class="container">
+				<div class="row">
+					<div class="col-md-10 footer-wrapper">
+						<div id="copyright-notice" class="col-md-7">
+							<div class="footer-text">
+								Department of Health and Human Services,  <br/>State Government of Victoria, Australia &copy; <?php echo date("Y"); ?>
 							</div>
 						</div>
 
-				</div>
-			</div> <!-- /.row -->
-	</div> <!-- /.container -->
-</div> <!-- /.container-wrapper -->
+							<div class="col-md-5">
+								<div class="footer-image-marker">
+									<div class="logo-vichs">
+										{!! file_get_contents(public_path('images/logo-vichhs.svg')) !!}
+									</div>
+								</div>
+							</div>
+					</div>
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</div> <!-- /.container-wrapper -->
 
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
