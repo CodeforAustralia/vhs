@@ -12,10 +12,21 @@ $('#rippleFullScreen').on('click',function(e){
 });
 
 // Add some extra styling for navbar
+$(document).ready(function(){
+  $('.navbar-toggle').click(function(){
+    /* show white overlay */
+    documentHeight = $(document).height();
+    $( '#transparent-overlay').css("height",documentHeight);
+    $( '#transparent-overlay').toggle();
+  });
+});
+
+/*
 $('.navbar-toggle').click(function(){
     documentHeight = $(document).height();
     $( '#transparent-overlay').css("height",documentHeight);
     $( '#transparent-overlay').toggle();
+
     if ($( '#transparent-overlay' ).is(":visible")) {
       $( '.navbar-inverse').css("box-shadow","0px 10px 25px 5px rgba(0,0,0,0.65)");
       $( '.navbar-inverse').css("-webkit-box-shadow","0px 10px 25px 5px rgba(0,0,0,0.65)");
@@ -26,6 +37,8 @@ $('.navbar-toggle').click(function(){
       $( '.navbar-inverse').css("-moz-box-shadow","none");
     }
 });
+*/
+
 
 /* Functions */
 

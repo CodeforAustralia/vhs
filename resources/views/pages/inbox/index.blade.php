@@ -7,10 +7,10 @@
       <div class="col-md-8 welcome_banner-wrapper">
         <div class="welcome-banner">
           @if (count($user_services) > 0)
-            <h3>Inbox</h3>
+            <h3>Letters</h3>
           @else
             <h3>No Services Assigned</h3>
-            <p>&nbsp;</p> 
+            <p>&nbsp;</p>
           @endif
         </div>
       </div>

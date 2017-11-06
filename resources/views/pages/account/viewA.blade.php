@@ -1,4 +1,3 @@
-
 @if ( Auth::user()->usertype == '1' )<!-- Modal -->
 <div id="modalWindow" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -51,8 +50,11 @@
 							@else
 							<h3>{{ $AccountDetails[0]->firstName }} {{ $AccountDetails[0]->lastName }}</h3>
 							<p>
-								@if($AccountDetails[0]->last_login_at == NULL) {{ 'This user has never logged in before' }} @else {{$lastLoginAt = Request::get($AccountDetails[0]->last_login_at) }}{{ 'Last login '. date("F jS, Y h:i:s A", strtotime($lastLoginAt)) }} @endif
-
+								@if($AccountDetails[0]->last_login_at == NULL)
+                  {{ 'This user has never logged in before' }}
+                @else
+                  {{$lastLoginAt = Request::get($AccountDetails[0]->last_login_at) }}{{ 'Last login '. date("F jS, Y h:i:s A", strtotime($lastLoginAt)) }}
+                @endif
 							</p>
 							@endif
 

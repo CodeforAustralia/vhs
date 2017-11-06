@@ -26,14 +26,8 @@
   </div>
 </div>
 
-@if ($user_testType == 'A')
 @include('pages.dashboard.my_servicesOptions')
 @include('pages.dashboard.recommended_buttons')
-@include('pages.dashboard.enquiry_number')
-@else
-@include('pages.dashboard.my_services')
-@include('pages.dashboard.recommendation_buttons')
-@include('pages.dashboard.recommended_links')
-@endif
+@include('pages.dashboard.housing_office')
 
 @endsection

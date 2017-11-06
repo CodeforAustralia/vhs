@@ -47,8 +47,8 @@
 /*
     .pdfjs .pdfViewer .page {
       margin: 1px auto -8px auto;
-      border: 1px solid #04446c !important;
-      border-bottom: 3px solid #04446c !important;
+      border: 1px solid #0063ae !important;
+      border-bottom: 3px solid #0063ae !important;
       background-clip: content-box;
       border-image: none;
       width: 100%;
