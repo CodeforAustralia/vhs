@@ -325,14 +325,14 @@ QUICK ESCAPE
 	}
 
 	.navbar-nav > li > a {
-    padding: 9px 30px;
-    font-size: 16px;
+    padding: 12px 30px;
+    font-size: 17px;
     line-height: 1.6em;
 	}
 
 	.navbar-menu-image {
-	    top: 4px;
-	    padding-right: 14px;
+	    top: 5px;
+	    padding-right: 12px;
 	}
 
 	.navbar-menu-image svg {
