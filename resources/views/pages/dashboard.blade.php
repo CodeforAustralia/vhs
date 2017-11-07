@@ -3,6 +3,8 @@
 @section('title', 'Home')
 
 @section('content')
+
+<!-- Welcome Banner -->
 <div class="container-wrapper">
   <div class="container">
     <div class="row">

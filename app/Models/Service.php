@@ -26,6 +26,10 @@ class Service extends Model
          ->where('reference_id', $this->reference_id)
          ->where('unread', true)
          ->get();
-    return count($letter_history);
+    if (empty($letter_history)) {
+      return 0
+    } else {
+      return count($letter_history);
+    }
   }
 }

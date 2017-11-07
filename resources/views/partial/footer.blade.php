@@ -1,3 +1,4 @@
+<!-- Footer -->
 <div class="container-wrapper quick_links-wrapper">
 	<div class="container">
 		<div class="row">
