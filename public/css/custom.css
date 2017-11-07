@@ -284,7 +284,7 @@ QUICK ESCAPE
 	}
 
 /* Tablet */
-@media (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
 	#quick-escape {
 		font-size: 16px;
 	}
@@ -293,11 +293,60 @@ QUICK ESCAPE
     font-size: 18px;
 	}
 
+	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: -25px;
+    transform: none;
+    left: 0;
+    position: static;
+	}
+
 	.navbar-brand {
     transform: none;
     position: static;
 	}
+}
 
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+	#quick-escape {
+    font-size: 13px;
+		word-wrap: break-word;
+		width: 60px;
+		text-align: right;
+		padding-left: 12px;
+		padding-right: 12px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+
+	.navbar-nav {
+	    margin: 0 -15px;
+	}
+
+	.navbar-nav > li > a {
+    padding: 9px 30px;
+    font-size: 16px;
+    line-height: 1.6em;
+	}
+
+	.navbar-menu-image {
+	    top: 4px;
+	    padding-right: 14px;
+	}
+
+	.navbar-menu-image svg {
+    height: 20px;
+    width: 20px;
+	}
+
+	#navbar {
+    width: auto;
+  }
+
+	.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .pre-scrollable {
+    max-height: none;
+	}
 }
 
 /*
@@ -374,9 +423,12 @@ DASHBOARD
 	padding: 0;
 }
 
+/*
 .quick-escape_wrapper {
 	text-align: right;
 }
+
+
 .btn-danger {
 	color: #fff;
 	background-color: #ae0000;
@@ -387,6 +439,16 @@ DASHBOARD
 	padding: 8px;
 	width: 130px;
 	line-height: 1;
+}
+*/
+
+
+.last-login {
+	opacity: 0.5;
+  font-size: 13px;
+  line-height: 1.54em;
+  color: #232323;
+	padding-bottom: 11px;
 }
 .tool-box {
 	box-shadow: 1px 2px 3px grey;
@@ -619,9 +681,7 @@ a span.external-link svg {
 	}
 
 /* Tablet */
-
-@media (min-width: 768px) and (max-width: 991px) {
-
+@media screen and (max-width: 991px) {
 	.services_buttons:nth-child(3n+1) {
 		padding-left: 0px !important;
 		padding-right: 7px !important;
@@ -642,13 +702,17 @@ a span.external-link svg {
 
 	/* Mobile Phone */
 	@media screen and (max-width: 767px) {
+
+		.services_buttons {
+    	padding-top: 10px;
+		}
 		.services_buttons:nth-child(2n+1) {
 			padding-left: 0 !important;
-			padding-right: 10px !important;
+			padding-right: 5px !important;
 		}
 
 		.services_buttons:nth-child(2n+2) {
-			padding-left: 10px !important;
+			padding-left: 5px !important;
 			padding-right: 0 !important;
 		}
 
@@ -659,6 +723,20 @@ a span.external-link svg {
 
 		.container-wrapper.services-wrapper {
 		    padding: 0 0 30px 0;
+		}
+
+		.welcome-banner h3 {
+    	font-size: 20px;
+			line-height: 26px;
+		}
+
+		.container-wrapper {
+	    padding: 10px 0 24px 0;
+		}
+
+		.recommended_buttons a span {
+    margin-left: 0;
+    font-size: 14px;
 		}
 	}
 
@@ -702,12 +780,26 @@ a span.external-link svg {
 	padding: 10px 0px;
 }
 
-.nrs {
+.nrs-logo {
 	width: 100px;
 }
 
-.nrs svg {
+.nrs-logo svg {
 	fill: #e5e1de;
+}
+
+#nrs-text-div .footer-text {
+  margin-left: -10px;
+  margin-right: -32px;
+}
+
+/* For really large desktop screen */
+
+@media screen and (min-width: 1200px) {
+	#nrs-text-div .footer-text {
+		margin-left: -30px;
+		margin-right: -32px;
+	}
 }
 
 .footer-text {
@@ -847,18 +939,17 @@ a span.external-link svg {
 }
 
 /* Tablet */
-
-@media (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
 	.footer-text {
 	    font-size: 12px;
 	    line-height: 22px;
 	}
 
-	#nrs-div {
+	#nrs-logo-div {
 		margin-top: 40px;
 	}
 
-	#nrs-div .footer-image-marker {
+	#nrs-logo-div .footer-image-marker {
     margin-bottom: 0;
 	}
 
@@ -873,6 +964,18 @@ a span.external-link svg {
 	.quick_links-wrapper {
 	    padding: 50px 0px 30px 0;
 	}
+
+	#nrs-text-div .footer-text {
+	    margin-left: 0;
+	    margin-right: -40px;
+	    margin-top: 32px;
+	}
+
+	a span.external-link svg {
+    width: 11px;
+    height: 12px;
+	}
+
 }
 
 
@@ -1089,6 +1192,23 @@ Footer
 	margin: 0 auto;
 	float: none;
 	padding-left: 15px;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+	.services_toolbox {
+    margin: 30px auto;
+    float: none;
+	}
+
+	.nrs-logo {
+     width: 60px;
+ 	}
+
+	#nrs-text-div .footer-text {
+	    margin-left: 0;
+	    margin-right: -3px;
+	}
 }
 
 /*

@@ -10,6 +10,13 @@
         <div class="welcome-banner">
           <h3>{{ $message }} {{ Auth::user()->firstName }}</h3>
         </div>
+        <div class="last-login">
+          @if (empty(Auth::user()->last_logged_in))
+            You have not logged in before.
+          @else
+            Last login: {{ \Carbon\Carbon::parse(Auth::user()->last_logged_in)->format('h:i a j M Y') }}.
+          @endif
+        </div>
         <div class="dashboard_notifications">
           @if ($total_unread == 0)
             You have <strong>no new letters</strong>.

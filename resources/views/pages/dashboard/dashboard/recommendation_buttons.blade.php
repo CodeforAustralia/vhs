@@ -2,7 +2,7 @@
 <div class="container-wrapper recommendation_links-wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="recommendation_buttons-wrapper col-md-8 ">
+			<div class="col-md-8 col-sm-8 col-xs-12 recommendation_buttons-wrapper ">
 				<div class="recommendation_buttons col-md-12 col-lg-6">
 					<a href="#" target="_blank" role="button" class="btn btn-primary need_housing_button">Need urgent housing?</a>
 				</div>
