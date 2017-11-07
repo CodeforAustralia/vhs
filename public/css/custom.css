@@ -89,6 +89,10 @@ body {
 		z-index: 1029;
 }
 
+.services_heading_right h3 a {
+    color: #000 !important;
+}
+
 nav div.container-fluid {
 	padding-left: 0;
 	padding-right: 0;
