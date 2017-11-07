@@ -6,6 +6,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Auth;
 use DateTime;
+use DateTimeZone;
 
 class AuthLoginListener implements ShouldQueue
 {
@@ -29,7 +30,7 @@ class AuthLoginListener implements ShouldQueue
     {
       $user = Auth::user();
       $user->last_logged_in = $user->currently_logged_in;
-      $user->currently_logged_in = new DateTime;
+      $user->currently_logged_in = new DateTime("now", new DateTimeZone('Australia/Melbourne'));
       $user->save();
     }
 }

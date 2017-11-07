@@ -14,7 +14,7 @@
           @if (empty(Auth::user()->last_logged_in))
             You have not logged in before.
           @else
-            Last login: {{ \Carbon\Carbon::parse(Auth::user()->last_logged_in)->format('h:i a j M Y') }}.
+            Last login: {{ \Carbon\Carbon::parse(Auth::user()->last_logged_in)->format('g:i a j M Y') }}.
           @endif
         </div>
         <div class="dashboard_notifications">
