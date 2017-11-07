@@ -27,7 +27,7 @@ class Service extends Model
          ->where('unread', true)
          ->get();
     if (empty($letter_history)) {
-      return 0
+      return 0;
     } else {
       return count($letter_history);
     }
