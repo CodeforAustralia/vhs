@@ -1068,10 +1068,14 @@ LETTER
 .loading {
 	width: 100%;
 	height: auto;
-	padding: 120px;
+	padding: 0px;
 	text-align: center;
 }
-
+.edit-button-wrapper {
+    margin: 0 auto;
+    float: none;
+    padding: 0px 20px;
+}
 .pdfjs {
 	display: none;
 }

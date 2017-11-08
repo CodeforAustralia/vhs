@@ -153,7 +153,7 @@
 <div class="edit_profile-wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-8 col-md-8 col-xs-12 edit-button-wrapper">
+			<div class="col-sm-12 col-md-8 col-xs-12 edit-button-wrapper">
 				<button type="button" class="btn btn-primary"><a class="panel-heading_link edit_button" href="/accounts/edit/{{ $AccountDetails[0]->id }}"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Profile</a></button>
 			</div>
 		</div>
@@ -163,7 +163,7 @@
 <div class="container-wrapper services-wrapper">
 	<div class="container">
 		<div class="row odd-row">
-			<div class="col-md-8  col-sm-8  col-xs-12 recommendation_buttons-wrapper">
+			<div class="col-md-8  col-sm-12  col-xs-12 recommendation_buttons-wrapper">
 				<div class="container indent-content">
 					<div class="col-md-12">
 						<div class="ho-header">My Housing Office</div>
