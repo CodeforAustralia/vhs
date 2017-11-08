@@ -38,7 +38,7 @@
     <div class="row">
       <!-- Loader -->
       <div class="loading">
-        <img src="{{ asset('images/loading.gif') }}"/>
+        <img src="{{ asset('images/loading.gif') }}" alt="Rendering Document..."/>
       </div>
       <!-- Letter -->
 <!--      <div class="col-md-8 welcome_banner-wrapper"> -->
