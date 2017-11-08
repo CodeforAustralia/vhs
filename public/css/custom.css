@@ -1070,6 +1070,23 @@ LETTER
     fill: #ffffff;
 }
 
+.btn-vhs_wrapper a {
+	text-align: left;
+    -webkit-box-shadow: 1px 3px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 3px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 3px 1px 0 rgba(0, 23, 41, 0.2);
+}
+
+.btn-vhs_wrapper a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.btn-vhs_wrapper a:last-child {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
 .edit_profile-wrapper a {
     color: #fff;
 }
