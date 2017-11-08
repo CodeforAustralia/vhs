@@ -1,75 +1,73 @@
 
 /* Tablet */
-@media screen and (min-width: 767px) and (max-width: 991px) {
-	#quick-escape {
-		font-size: 16px;
-	}
 
-	.navbar-inverse .navbar-brand {
-		font-size: 18px;
-	}
+#quick-escape {
+	font-size: 16px;
+}
 
-	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-		margin-left: -25px;
-		transform: none;
-		left: 0;
-		position: static;
-	}
+.navbar-inverse .navbar-brand {
+	font-size: 18px;
+}
 
-	.navbar-brand {
-		transform: none;
-		position: static;
-	}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+	margin-left: -25px;
+	transform: none;
+	left: 0;
+	position: static;
+}
 
-	.services_buttons:nth-child(3n+1) {
-		padding-left: 0px !important;
-		padding-right: 7px !important;
-	}
+.navbar-brand {
+	transform: none;
+	position: static;
+}
 
-	.services_buttons:nth-child(3n+2) {
-		padding-left: 7px !important;
-		padding-right: 7px !important;
-	}
+.services_buttons:nth-child(3n+1) {
+	padding-left: 0px !important;
+	padding-right: 7px !important;
+}
 
-	.services_buttons:nth-child(3n+3) {
-		padding-left: 7px !important;
-		padding-right: 0 !important;
-	}
+.services_buttons:nth-child(3n+2) {
+	padding-left: 7px !important;
+	padding-right: 7px !important;
+}
 
-	.footer-text {
-		font-size: 12px;
-		line-height: 22px;
-	}
+.services_buttons:nth-child(3n+3) {
+	padding-left: 7px !important;
+	padding-right: 0 !important;
+}
 
-	#nrs-logo-div {
-		margin-top: 40px;
-	}
+.footer-text {
+	font-size: 12px;
+	line-height: 22px;
+}
 
-	#nrs-logo-div .footer-image-marker {
-		margin-bottom: 0;
-	}
+#nrs-logo-div {
+	margin-top: 40px;
+}
 
-	.logo-vichs {
-		margin-top: -10px;
-	}
+#nrs-logo-div .footer-image-marker {
+	margin-bottom: 0;
+}
 
-	#copyright-notice {
-		display: none;
-	}
+.logo-vichs {
+	margin-top: -10px;
+}
 
-	.quick_links-wrapper {
-		padding: 50px 0px 30px 0;
-	}
+#copyright-notice {
+	display: none;
+}
 
-	#nrs-text-div .footer-text {
-		margin-left: 0;
-		margin-right: -40px;
-		margin-top: 32px;
-	}
+.quick_links-wrapper {
+	padding: 50px 0px 30px 0;
+}
 
-	a span.external-link svg {
-		width: 11px;
-		height: 12px;
-	}
+#nrs-text-div .footer-text {
+	margin-left: 0;
+	margin-right: -40px;
+	margin-top: 32px;
+}
 
+a span.external-link svg {
+	width: 11px;
+	height: 12px;
 }

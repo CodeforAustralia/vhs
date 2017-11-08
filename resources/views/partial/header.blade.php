@@ -61,7 +61,7 @@ header('Cache-Control: post-check=0, pre-check=0', false);
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/mobile.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/tablet.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/mobile.css') }}" rel="stylesheet" media="screen and (max-device-width: 767px)" />
+    <link href="{{ asset('css/tablet.css') }}" rel="stylesheet" media="screen and (min-width: 767px) and (max-width: 991px)" />
 
   </head>
