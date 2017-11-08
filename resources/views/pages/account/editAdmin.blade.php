@@ -1,4 +1,5 @@
 <form class="form-horizontal" method="POST" action="{{ route('accounts.updatebyadmin', $AccountDetails[0]->id) }}">
+
 						{{ csrf_field() }}
 
 						<div class="form-group{{ $errors->has('fistName') ? ' has-error' : '' }}">
