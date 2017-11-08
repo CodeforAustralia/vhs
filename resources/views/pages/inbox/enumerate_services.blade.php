@@ -1,6 +1,7 @@
 <!-- Enumerate Services -->
 @foreach ($user_services as $user_service)
 
+@if (!empty($user_service->service))
 
 @if ($include_links)
 <a href="/correspondence/{{$user_service->reference_id}}">
@@ -17,7 +18,6 @@
             </div>
             <div class="col-xs-4 services_heading_right">
                 <div class="toolbox-banner mail_icon-link">
-                  @if (!empty($user_service->service))
                     <?php $no_of_letters = $user_service->service->numberUnread();
 
                     $unread_letters_class = '';
@@ -45,6 +45,7 @@
                         break;
                     }
                     ?>
+
                     <p>
                         <span class="fa-stack fa-2x">
                             @if ($no_of_letters > 0)
@@ -60,13 +61,14 @@
                             @endif
                         </span>
                     </p>
-                    @endif
                 </div>
             </div>
         </div>
     </div>
     @if ($include_links)
 </a>
+@endif
+
 @endif
 
 @endforeach
