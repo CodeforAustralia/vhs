@@ -53,7 +53,11 @@ class DashboardController extends Controller
 // get the total number of unread letters (for all services assigned to user)
     $total_unread = 0;
     foreach ($user_services as &$user_service) {
-      $unreadForService = $user_service->service->numberUnread();
+      if (empty($user_service) || empty($user_service->service)) {
+          $unreadForService = 0;
+      } else {
+        $unreadForService = $user_service->service->numberUnread();
+      }
       $total_unread = $total_unread + $unreadForService;
     }
 
