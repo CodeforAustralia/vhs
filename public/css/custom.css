@@ -1035,6 +1035,9 @@ LETTER
 	vertical-align: middle;
 }
 
+.edit_profile-wrapper a {
+    color: #fff;
+}
 
 #rippleFullScreen, #rippleDownload, #ripplePrint {
 	margin: 20px 10px 30px 10px;
@@ -1052,10 +1055,14 @@ LETTER
 .loading {
 	width: 100%;
 	height: auto;
-	padding: 120px;
+	padding: 0px;
 	text-align: center;
 }
-
+.edit-button-wrapper {
+    margin: 0 auto;
+    float: none;
+    padding: 0px 20px;
+}
 .pdfjs {
 	display: none;
 }

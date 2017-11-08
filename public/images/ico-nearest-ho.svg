@@ -1,3 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 16 25">
+  <title>Find nearest Housing Office</title>
     <path fill-rule="evenodd" d="M8 25C2.667 16.77 0 11.154 0 8.152 0 3.65 3.582 0 8 0s8 3.65 8 8.152C16 11.154 13.333 16.77 8 25zm0-15a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
 </svg>

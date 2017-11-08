@@ -119,3 +119,11 @@
 		border-radius: 0px;
 	}
 }
+
+@media screen and (max-width: 468px) {
+	.edit-button-wrapper {
+		margin: 0 auto;
+		float: none;
+		padding: 0px;
+	}
+}
