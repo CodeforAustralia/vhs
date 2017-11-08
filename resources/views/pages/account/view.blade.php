@@ -133,41 +133,6 @@
 									<br/>
 									<span style="font-size: 24px">**********************</span>
 								</p>
-								<button type="button" class="btn btn-primary"><a class="panel-heading_link edit_button" href="/accounts/edit/{{ $AccountDetails[0]->id }}"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Profile</a></button>
-								<!-- My Housing Office -->
-								<div class="container-wrapper services-wrapper">
-									<div class="container">
-										<div class="row odd-row">
-										<div class="col-md-10  col-sm-10  col-xs-12 recommendation_buttons-wrapper">
-												<div class="container indent-content">
-													<div class="col-md-12">
-														<div class="ho-header">My Housing Office</div>
-													</div>
-												</div>
-												<div class="col-md-5 col-sm-7 ho-office-wrapper">
-													<div class="ho-image-marker">
-														<i class="fa fa-map-marker fa-2x"></i>
-													</div>
-													<div class="ho-text">
-														Fitzroy Office
-														<br/>145 Smith St, Fitzroy VIC 3065
-													</div>
-												</div>
-												<div class="col-md-5 col-sm-5 ho-office-wrapper">
-													<div class="ho-image-marker">
-														<i class="fa fa-phone fa-2x"></i>
-													</div>
-													<div class="ho-text">
-														<a href="#">
-															1300&nbsp;360&nbsp;408
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
 							</div>
 							<div id="currentSituation" class="tab-pane fade">
 								<h4>Menu 1</h4>
@@ -177,6 +142,7 @@
 								<h4>Menu 2</h4>
 								<p>Some content in menu 2.</p>
 							</div>
+
 						</div>
 					</div>
 				</div>
@@ -184,6 +150,47 @@
 		</div>
 	</div>
 </div>
-
+<div class="edit_profile-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-10 col-xs-12 ">
+				<button type="button" class="btn btn-primary"><a class="panel-heading_link edit_button" href="/accounts/edit/{{ $AccountDetails[0]->id }}"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Profile</a></button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- My Housing Office -->
+<div class="container-wrapper services-wrapper">
+	<div class="container">
+		<div class="row odd-row">
+			<div class="col-md-10  col-sm-10  col-xs-12 recommendation_buttons-wrapper">
+				<div class="container indent-content">
+					<div class="col-md-12">
+						<div class="ho-header">My Housing Office</div>
+					</div>
+				</div>
+				<div class="col-md-5 col-sm-7 ho-office-wrapper">
+					<div class="ho-image-marker">
+						<i class="fa fa-map-marker fa-2x"></i>
+					</div>
+					<div class="ho-text">
+						Fitzroy Office
+						<br/>145 Smith St, Fitzroy VIC 3065
+					</div>
+				</div>
+				<div class="col-md-5 col-sm-5 ho-office-wrapper">
+					<div class="ho-image-marker">
+						<i class="fa fa-phone fa-2x"></i>
+					</div>
+					<div class="ho-text">
+						<a href="#">
+							1300&nbsp;360&nbsp;408
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 @endsection
