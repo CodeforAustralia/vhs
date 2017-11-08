@@ -17,7 +17,7 @@
 
     <!-- Buttons -->
     <div class="row">
-      <div class="col-md-8 welcome_banner-wrapper">
+      <div class="col-md-8 welcome_banner-wrapper btn-vhs_wrapper">
         <a id="rippleDownload" class="btn btn-vhs" href="#navigation-main" aria-label="Download">
           {!! file_get_contents(public_path('images/download.svg')) !!}</i>&nbsp;&nbsp;Download
         </a>
