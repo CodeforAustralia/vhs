@@ -425,9 +425,23 @@ DASHBOARD
 	background-color: #faf8f7;
 	padding: 36px 0 50px 0;
 }
-.ho-info-viewAccount {
-	background-color: #fff;
-	padding: 36px 0 50px 0;
+
+.placeholder-banner {
+    padding: 15px 0px;
+}
+
+.edit_profile-wrapper {
+    padding: 20px 0px;
+}
+
+.placeholder-banner h4 {
+    color: #232323;
+    font-weight: 600;
+}
+
+.placeholder-banner button a {
+    color: #ffffff;
+    font-weight: 600;
 }
 
 .container-wrapper.tools-wrapper.no-padding {

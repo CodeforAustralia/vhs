@@ -30,6 +30,10 @@ Route::get('/info', function () {
 	return view('pages/testInfo');
 });
 
+Route::get('/placeholder', function () {
+	return view('pages/placeholder');
+});
+
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/pdf', 'PdfController@index')->name('pdf');

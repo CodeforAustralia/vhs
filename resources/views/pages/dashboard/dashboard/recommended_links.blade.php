@@ -8,9 +8,9 @@
                 </div>
                 <div class="recommended_links-text">
                     <ul>
-                        <li>Need an interpreter? <a href="#">Find an interpreter service</a></li>
+                        <li>Need an interpreter? <a href="/placeholder">Find an interpreter service</a></li>
                         <li><a href="#">National Relay Services</a></li>
-                        <li>Looking into private rental? <a href="#">Learn more about VHS Bonding Assistance.</a></li>
+                        <li>Looking into private rental? <a href="/placeholder">Learn more about VHS Bonding Assistance.</a></li>
                     </ul>
                 </div>
             </div>

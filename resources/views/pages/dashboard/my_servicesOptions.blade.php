@@ -11,7 +11,7 @@
            </a>
          </div>
          <div id="letters-1" class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
-           <a href="#" role="button" class="btn btn-primary need_housing_button">
+           <a href="/placeholder" role="button" class="btn btn-primary need_housing_button">
              <svg></svg>
              <br/>
              &nbsp;
@@ -35,21 +35,21 @@
               </a>
             </div>
           <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
-            <a href="#" role="button" class="btn btn-primary need_housing_button">
+            <a href="/placeholder" role="button" class="btn btn-primary need_housing_button">
               {!! file_get_contents(public_path('images/ico-payment.svg')) !!}
               <br/>
               Payments
             </a>
           </div>
           <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
-            <a href="#" role="button" class="btn btn-primary need_housing_button">
+            <a href="/placeholder" role="button" class="btn btn-primary need_housing_button">
               {!! file_get_contents(public_path('images/ico-services.svg')) !!}
               <br/>
               Services
             </a>
           </div>
           <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
-            <a href="#" role="button" class="btn btn-primary need_housing_button">
+            <a href="/placeholder" role="button" class="btn btn-primary need_housing_button">
               {!! file_get_contents(public_path('images/ico-appointments.svg')) !!}
               <br/>
               Meetings

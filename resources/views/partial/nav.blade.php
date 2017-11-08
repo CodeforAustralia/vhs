@@ -61,25 +61,25 @@
           </li>
           <!-- Payments -->
           <li>
-            <a href="#">
+            <a href="/placeholder">
               <div class="navbar-menu-image">{!! file_get_contents(public_path('images/ico-payment.svg')) !!}</div>&nbsp;Payments
             </a>
           </li>
           <!-- Services -->
           <li>
-            <a href="#">
+            <a href="/placeholder">
               <div class="navbar-menu-image">{!! file_get_contents(public_path('images/ico-services.svg')) !!}</div>&nbsp;Services
             </a>
           </li>
           <!-- Meetings -->
           <li>
-            <a href="#">
+            <a href="/placeholder">
               <div class="navbar-menu-image">{!! file_get_contents(public_path('images/ico-appointments.svg')) !!}</div>&nbsp;Meetings
             </a>
           </li>
           <!-- Help -->
           <li>
-            <a href="#">
+            <a href="/placeholder">
               <div class="navbar-menu-image">{!! file_get_contents(public_path('images/ico-help.svg')) !!}</div>&nbsp;Help
             </a>
           </li>
