@@ -60,7 +60,7 @@
                             @endif
                         </span>
                     </p>
-                    @end
+                    @endif
                 </div>
             </div>
         </div>
