@@ -290,29 +290,6 @@ QUICK ESCAPE
 		right: 0;
 	}
 
-/* Tablet */
-@media screen and (max-width: 991px) {
-	#quick-escape {
-		font-size: 16px;
-	}
-
-	.navbar-inverse .navbar-brand {
-    font-size: 18px;
-	}
-
-	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-    margin-left: -25px;
-    transform: none;
-    left: 0;
-    position: static;
-	}
-
-	.navbar-brand {
-    transform: none;
-    position: static;
-	}
-}
-
 /* Mobile */
 
 @media screen and (max-width: 767px) {
@@ -988,7 +965,7 @@ a span.external-link svg {
 	}
 
 	.quick_links-wrapper {
-	    padding: 50px 0px 30px 0;
+	    padding: 50px 0px 30px 0 !important;
 	}
 
 	#nrs-text-div .footer-text {
@@ -1121,7 +1098,7 @@ LETTER
 	font-size: 26px;
 	margin-top: 10px !important;
 }
- 
+
 /*
 @media only screen and (max-width: 767px) {
 	#rippleDownload, #ripplePrint {
