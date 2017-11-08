@@ -1059,8 +1059,8 @@ LETTER
 }
 
 .btn-vhs.active, .btn-vhs:active, .btn-vhs:hover, .open > .btn-vhs.dropdown-toggle {
-	color: #000000;
-	background-color: #c0bfbd;
+	background-color: #0363ab;
+    color: #ffffff;
 }
 
 .btn-vhs svg {
