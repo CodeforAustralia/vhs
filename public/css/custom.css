@@ -152,6 +152,16 @@ nav div.container-fluid {
 	border: none;
 }
 
+/*
+.navbar-collapse.collapsing {
+  -webkit-transition: height 0.01s;
+  -moz-transition: height 0.01s;
+  -ms-transition: height 0.01s;
+  -o-transition: height 0.01s;
+  transition: height 0.01s;
+
+}
+*/
 .navbar-header {
 		float: none;
 }
@@ -196,6 +206,7 @@ nav div.container-fluid {
 }
 
 /* Affect the bar animation */
+
 .navbar-toggle .icon-bar {
     width: 22px;
     transition: all 0.3s;
@@ -972,6 +983,8 @@ a span.external-link svg {
 
 }
 
+
+
 /************************
 DASHBOARD - mail icons
 *************************/
@@ -1066,7 +1079,30 @@ LETTER
 .pdfjs {
 	display: none;
 }
+.password_checkbox {
+	font-size: 26px;
+	margin-top: 10px !important;
+}
+ 
+/*
+@media only screen and (max-width: 767px) {
+	#rippleDownload, #ripplePrint {
+    margin: 10px 10px 20px 10px;
+    width: 42%;
+	}
 
+	#rippleFullScreen {
+		display: none;
+	}
+
+	.with-top-margin {
+		padding-top: 10px !important;
+	}
+	.centered-on-mobile {
+		text-align: center;
+	}
+}
+*/
 /************************
 Recommended Links
 *************************/
@@ -1209,3 +1245,102 @@ Footer
 	}
 
 }
+
+/*
+@media screen and (max-width: 991px) {
+	.services_buttons {
+		padding-top: 20px 20px;
+	}
+	.services_buttons:nth-child(1n) {
+		padding-left: 0px;
+	}
+	.services_buttons:nth-child(2n) {
+		padding-right: 0px;
+	}
+	.services_buttons {
+		padding-right: 20px;
+	}
+	.mark-as-unread {
+				padding-top: 6px;
+				color: #0d293c;
+				font-weight: 400;
+				font-size:14px;
+	}
+}
+*/
+/*
+@media screen and (max-width: 767px) {
+	.letter-date {
+		padding-top: 6px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.recommended_buttons a {
+		text-align: left;
+	}
+	.recommended_buttons a span {
+		font-size: 16px;
+	}
+	.recommended_buttons a svg {
+		width: 40px;
+	}
+
+	br.show-sm-down {
+		display: block;
+	}
+
+	.services_buttons a {
+		font-size: 14px;
+	}
+	.tool-box_half.col-xs-12:nth-child(1) {
+		margin: 0px;
+		margin-bottom: 10px;
+	}
+	.tool-box_half.col-xs-12:nth-child(2) {
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+	.tool-box:nth-child(2) {
+		margin-right: 4px;
+	}
+	.toolbox_half-row {
+		display: inline-block;
+		margin: 0px;
+		width: 100%;
+	}
+	.toolbox_half-row {
+		display: inline-block;
+	}
+	.toolbox-row {
+		margin: 0px;
+	}
+	.services_body_right {
+		padding-left: 0px;
+	}
+	.footer-wrapper {
+		margin: 0 auto;
+		float: none;
+		padding-left: 15px;
+	}
+	.panel-heading .services_heading_right h3 {
+		font-size: 28px;
+	}
+	.services_buttons {
+		padding:  10px 10px;
+	}
+
+	.services_buttons:nth-child(3) {
+		padding-right: 10px;
+	}
+
+	.inbox_toolbox {
+			padding: 12px;
+	}
+} */
+/*
+@media screen and (min-width: 960px) {
+	.col-md-6.col-xs-12.col-lg-6.tool-box:nth-child(2) {
+		margin-right: -10px;
+	}
+}
+*/

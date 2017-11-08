@@ -41,10 +41,16 @@
 								@endif
 							</div>
 						</div>
-						
+
+						<div class="form-group{{ $errors->has('mobile') ? ' has-error' : '' }}">
+							<label for="mobile" class="col-md-4 col-sm-4 col-xs-8 control-label">Change Password:</label>
+							<div class="col-md-6 col-sm-6 col-xs-4 ">	
+								<input type="checkbox" name="password_checkbox" value="password_checkbox" class="password_checkbox"> <br>
+							</div>
+						</div>
 
 						<div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-							<label for="current_password" class="col-sm-4 control-label">Current Password</label>
+							<label for="current_password" class="col-sm-4 control-label">Current Password:</label>
 							<div class="col-sm-6">
 								<input type="hidden" name="_token" value="{{ csrf_token() }}"> 
 								<input type="password" class="form-control" id="current_password" name="current_password" placeholder="Password">
@@ -53,14 +59,14 @@
 						</div>
 
 						<div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-							<label for="password" class="col-sm-4 control-label">New Password</label>
+							<label for="password" class="col-sm-4 control-label">New Password:</label>
 							<div class="col-sm-6">
 								<input type="password" class="form-control" id="password" name="password" placeholder="Password">
 							</div>
 						</div>
 
 						<div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-							<label for="password_confirmation" class="col-sm-4 control-label">Re-enter Password</label>
+							<label for="password_confirmation" class="col-sm-4 control-label">Re-enter Password:</label>
 							<div class="col-sm-6">
 								<input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Re-enter Password">
 							</div>
