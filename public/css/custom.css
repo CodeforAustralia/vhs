@@ -597,7 +597,9 @@ a span.external-link svg {
 .ho-text-wrapper {
 	margin: 20px 0 20px -15px;
 }
-
+.ho-office-wrapper {
+    margin: 20px 0 0px -15px;
+}
 .ho-text {
 	color: #232323;
 	font-size: 13px;
