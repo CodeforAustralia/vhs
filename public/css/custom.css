@@ -1052,10 +1052,10 @@ LETTER
 }
 
 .btn-vhs {
-	font-size: 16px;
-	background-color: #e3e1df;
-	color: #000000;
-	border-radius: 0;
+    font-size: 16px;
+    background-color: #0363ab;
+    color: #ffffff;
+    border-radius: 0;
 }
 
 .btn-vhs.active, .btn-vhs:active, .btn-vhs:hover, .open > .btn-vhs.dropdown-toggle {
@@ -1064,9 +1064,10 @@ LETTER
 }
 
 .btn-vhs svg {
-	height: 16px;
-	width: 16px;
-	vertical-align: middle;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    fill: #ffffff;
 }
 
 .edit_profile-wrapper a {
@@ -1074,7 +1075,6 @@ LETTER
 }
 
 #rippleFullScreen, #rippleDownload, #ripplePrint {
-	margin: 20px 10px 30px 10px;
 	width: 180px;
 }
 
