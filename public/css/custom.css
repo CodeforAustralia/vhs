@@ -542,7 +542,8 @@ DASHBOARD OPTION A
 	margin-left: 10px;
 	text-decoration: underline;
 	color: #0063ae;
-	font-size: 16px;
+	font-size: 18px;
+	line-height: 30px;
 }
 
 .recommended_buttons a span.external-link {
@@ -586,8 +587,10 @@ a span.external-link svg {
 
 .ho-header {
 	margin-top: 20px;
+	margin-left: -15px;ho-text-wrapper
 	font-size: 18px;
 	color: #000;
+	font-size: 18px;
 }
 
 .ho-text-wrapper {
@@ -610,10 +613,6 @@ a span.external-link svg {
 	float: left;
 	color: #0062aa;
 	font-size: 16px;
-}
-
-.indent-content {
-	margin: auto -30px;
 }
 
 .services_buttons a {
@@ -740,7 +739,9 @@ a span.external-link svg {
 
 		.recommended_buttons a span {
     margin-left: 0;
-    font-size: 14px;
+		font-size: 16px;
+		line-height: 30px;
+
 		}
 	}
 
@@ -1132,12 +1133,10 @@ Recommended Links
 Recommended buttons
 *************************/
 .recommended_buttons {
-/*	padding: 10px 10px; */
-	margin: 10px -10px 10px -26px;
+	margin: 20px 15px;
 }
 .recommended_buttons a {
 	width: 100%;
-	padding: 20px 25px;
 	font-size: 18px;
 	letter-spacing: 1px;
 	border: 0px;
@@ -1205,6 +1204,14 @@ Footer
     float: none;
 	}
 
+	.ho-header {
+		margin-left: 20px;
+	}
+
+	.ho-text-wrapper {
+    margin: 30px 0 20px 20px;
+	}
+
 	.nrs-logo {
      width: 60px;
  	}
@@ -1213,6 +1220,18 @@ Footer
 	    margin-left: 0;
 	    margin-right: -3px;
 	}
+
+	.recommended_buttons {
+	    padding: 0;
+	    margin: 8px 0;
+	}
+
+	.recommended_buttons a {
+	    width: auto;
+	    padding: 0;
+			padding-left: 15px !important;
+	}
+
 }
 
 /*
