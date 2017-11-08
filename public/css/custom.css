@@ -712,7 +712,9 @@ a span.external-link svg {
 
 	/* Mobile Phone */
 	@media screen and (max-width: 767px) {
-
+		.edit_profile-wrapper .container {
+    padding: 0px;
+}
 		.services_buttons {
     	padding-top: 10px;
 		}
