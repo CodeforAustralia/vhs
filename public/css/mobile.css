@@ -1,6 +1,5 @@
 
 /* Mobile */
-
 .edit_profile-wrapper .container {
 	padding: 0px;
 }
@@ -94,4 +93,8 @@
 #nrs-text-div .footer-text {
 	margin-left: 0;
 	margin-right: -3px;
+}
+.edit_profile-wrapper button {
+    width: 100%;
+    border-radius: 0px;
 }
