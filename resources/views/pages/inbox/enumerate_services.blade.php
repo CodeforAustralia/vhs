@@ -17,6 +17,7 @@
             </div>
             <div class="col-xs-4 services_heading_right">
                 <div class="toolbox-banner mail_icon-link">
+                  @if (!empty($user_service->service))
                     <?php $no_of_letters = $user_service->service->numberUnread();
 
                     $unread_letters_class = '';
@@ -44,7 +45,6 @@
                         break;
                     }
                     ?>
-
                     <p>
                         <span class="fa-stack fa-2x">
                             @if ($no_of_letters > 0)
@@ -60,6 +60,7 @@
                             @endif
                         </span>
                     </p>
+                    @end
                 </div>
             </div>
         </div>
