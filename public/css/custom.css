@@ -425,6 +425,10 @@ DASHBOARD
 	background-color: #faf8f7;
 	padding: 36px 0 50px 0;
 }
+.ho-info-viewAccount {
+	background-color: #fff;
+	padding: 36px 0 50px 0;
+}
 
 .container-wrapper.tools-wrapper.no-padding {
 	padding: 0;
