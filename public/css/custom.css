@@ -93,6 +93,10 @@ body {
     color: #000 !important;
 }
 
+.edit_button {
+	color: #fff !important;
+}
+
 nav div.container-fluid {
 	padding-left: 0;
 	padding-right: 0;
