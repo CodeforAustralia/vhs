@@ -8,12 +8,14 @@
   <br/> Password: JDR48Q2GY3
 
   <h1>Prototypes</h1>
-  <a href="https://invis.io/MCDW9MXT4" target="_blank">Option A</a>
-  <br/>
-  <a href="https://invis.io/RVDW9N6UE" target="_blank">Option B</a>
+    <a href="https://invis.io/9EE7Q9DKC" target="_blank">Mobile</a>
+    <a href="https://invis.io/TQE7QF725" target="_blank">Tablet</a>
+    <a href="https://invis.io/QXE7QMJKV" target="_blank">Desktop</a>
 
   <h1>System being Developed</h1>
   <a href="https://vhstesting.com" target="_blank">https://vhstesting.com</a>
+
+<!--
   <br/> Login with the email given to you on a slip of paper
   <br> This will be one of:-
   <ul style="list-style-type: square;">
@@ -22,6 +24,13 @@
     <li><span class="grey">daleskiles@gmail.com</span></li>
   </ul>
   Password: <span class="grey">8@C3U!</span>
+-->
+<br/>&nbsp;
+<br/>Login with:
+<ul style="list-style-type: square;">
+  <li><span class="grey">user name: test@gmail.com</span></li>
+  <li><span class="grey">password: test</span></li>
+</ul>
 
   <h1>Code for Australia Team</h1>
   <ul style="list-style-type: square;">
@@ -31,7 +40,10 @@
   </ul>
   <div style="margin-top: 30px;">
     <div float:left>
+<!--
       <h3>Thanks for taking part in testing Victorian Housing Services!</h3>
+-->
+      <h3>Thanks for taking the time to check out the Housing Services Victoria MVP</h3>
     </div>
     <div float:right>
       <img src="https://lh4.googleusercontent.com/-aGGlZgLfpww/VwbEmpJ2OsI/AAAAAAAAABA/V1Wmm0P2JBsUMihZA-14kZB4dTqUUEzaACJkC/w160-h160-k-no/">

@@ -19,13 +19,13 @@
     <div class="row">
       <div class="col-md-8 welcome_banner-wrapper btn-vhs_wrapper">
         <a id="rippleDownload" class="btn btn-vhs" href="#navigation-main" aria-label="Download">
-          {!! file_get_contents(public_path('images/download.svg')) !!}</i>&nbsp;&nbsp;Download
+          {!! file_get_contents(public_path('images/ico-download.svg')) !!}</i>&nbsp;&nbsp;Download
         </a>
         <a id="ripplePrint" class="btn btn-vhs" href="#navigation-main" aria-label="Print">
-          {!! file_get_contents(public_path('images/print.svg')) !!}</i>&nbsp;&nbsp;Print
+          {!! file_get_contents(public_path('images/ico-print.svg')) !!}</i>&nbsp;&nbsp;Print
         </a>
         <a id="rippleFullScreen" class="btn btn-vhs" href="#navigation-main" aria-label="Full Screen">
-          {!! file_get_contents(public_path('images/full-screen.svg')) !!}</i>&nbsp;&nbsp;Full Screen
+          {!! file_get_contents(public_path('images/ico-fullscreen.svg')) !!}</i>&nbsp;&nbsp;Full Screen
         </a>
       </div>
     </div>
