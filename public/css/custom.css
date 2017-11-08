@@ -162,6 +162,9 @@ nav div.container-fluid {
 
 }
 */
+#password_hide {
+    display: none;
+}
 .navbar-header {
 		float: none;
 }

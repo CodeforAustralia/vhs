@@ -56,3 +56,13 @@ function fix_heights_on_pdf2html() {
 function hideObject( objectToHide ) {
   $(objectToHide).hide();
 }
+
+$(document).ready(function () {
+    $('#password_checkbox').change(function () {
+        if (!this.checked) 
+        //  ^
+           $('#password_hide').fadeOut('slow');
+        else 
+            $('#password_hide').fadeIn('slow');
+    });
+});
