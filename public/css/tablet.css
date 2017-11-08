@@ -1,6 +1,7 @@
 
 /* Tablet */
 
+@media screen and (min-width: 767px) and (max-width: 991px) {
 #quick-escape {
 	font-size: 16px;
 }
@@ -37,6 +38,96 @@
 }
 
 .footer-text {
+	font-size: 12px;
+	line-height: 22px;
+}
+
+#nrs-logo-div {
+	margin-top: 40px;
+}
+
+#nrs-logo-div .footer-image-marker {
+	margin-bottom: 0;
+}
+
+.logo-vichs {
+	margin-top: -10px;
+}
+
+#copyright-notice {
+	display: none;
+}
+
+.quick_links-wrapper {
+	padding: 50px 0px 30px 0;
+}
+
+#nrs-text-div .footer-text {
+	margin-left: 0;
+	margin-right: -40px;
+	margin-top: 32px;
+}
+
+a span.external-link svg {
+	width: 11px;
+	height: 12px;
+}
+.footer-text {
+	font-size: 12px;
+	line-height: 22px;
+}
+
+#nrs-logo-div {
+	margin-top: 40px;
+}
+
+#nrs-logo-div .footer-image-marker {
+	margin-bottom: 0;
+}
+
+.logo-vichs {
+	margin-top: -10px;
+}
+
+#copyright-notice {
+	display: none;
+}
+
+.quick_links-wrapper {
+	padding: 50px 0px 30px 0;
+}
+
+#nrs-text-div .footer-text {
+	margin-left: 0;
+	margin-right: -40px;
+	margin-top: 32px;
+}
+
+a span.external-link svg {
+	width: 11px;
+	height: 12px;
+}
+#quick-escape {
+	font-size: 16px;
+}
+
+.navbar-inverse .navbar-brand {
+	font-size: 18px;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+	margin-left: -25px;
+	transform: none;
+	left: 0;
+	position: static;
+}
+
+.navbar-brand {
+	transform: none;
+	position: static;
+}
+.footer-text
+{
 	font-size: 12px;
 	line-height: 22px;
 }
