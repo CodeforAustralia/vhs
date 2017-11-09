@@ -32,6 +32,10 @@
 				<div class="panel-body">
 					<!-- Add client ID -->
 					@if ( Auth::user()->usertype == '1' )
+					
+					@if(Session::has('message'))
+					<p class="alert alert-danger">{{ Session::get('message') }}</p>
+					@endif
 					<!-- IF ADMIN USER -->
 					@include('pages.account.editAdmin')
 					@else

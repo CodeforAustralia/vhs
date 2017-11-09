@@ -77,10 +77,8 @@
 									@if ( Auth::user()->usertype == '1' )
 									<p><a class="panel-heading_link" href="/notification/{{ $AccountDetails[0]->id }}">Send Notification</a></p>
 									<p><a class="panel-heading_link" href="#modalWindow" data-toggle="modal" data-target="#modalWindow">Send Sample Letters</a></p>
+									<p><a href="/accounts">All Accounts</a></p>
 									@endif
-								</div>
-								<div class="toolbox-banner mail_icon-link">
-									<a href="/accounts">All Accounts</a>
 								</div>
 							</div>
 						<!-- <div class="col-md-2 services_heading_right">
