@@ -59,10 +59,10 @@ function hideObject( objectToHide ) {
 
 $(document).ready(function () {
     $('#password_checkbox').change(function () {
-        if (!this.checked) 
+        if (!this.checked)
         //  ^
            $('#password_hide').fadeOut('slow');
-        else 
+        else
             $('#password_hide').fadeIn('slow');
     });
 });

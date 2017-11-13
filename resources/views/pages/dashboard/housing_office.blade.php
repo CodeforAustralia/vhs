@@ -24,7 +24,7 @@
                 <i class="fa fa-phone fa-2x"></i>
               </div>
               <div class="ho-text">
-                <a href="#">1300&nbsp;360&nbsp;408</a>
+                <a class="phone" href="tel:1300360408">1300&nbsp;360&nbsp;408</a>
               </div>
             </div>
           </div>

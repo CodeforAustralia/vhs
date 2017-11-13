@@ -1,7 +1,6 @@
-
 /* Tablet */
+@media screen and (max-width: 991px) {
 
-@media screen and (min-width: 767px) and (max-width: 991px) {
 #quick-escape {
 	font-size: 16px;
 }
@@ -10,15 +9,15 @@
 	font-size: 18px;
 }
 
-.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-	margin-left: -25px;
+.navbar-brand {
 	transform: none;
-	left: 0;
 	position: static;
 }
 
-.navbar-brand {
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+	margin-left: -15px;
 	transform: none;
+	left: 0;
 	position: static;
 }
 
@@ -37,66 +36,31 @@
 	padding-right: 0 !important;
 }
 
+#nrs-logo-div {
+	margin-top: 40px;
+}
+
+#nrs-logo-div .footer-image-marker {
+	margin-bottom: 0;
+}
+
+.logo-vichs {
+	margin-top: -10px;
+}
+
+#copyright-notice {
+	display: none;
+}
+
+.quick_links-wrapper {
+	padding: 50px 0px 30px 0 !important;
+}
+
 .footer-text {
 	font-size: 12px;
 	line-height: 22px;
 }
 
-#nrs-logo-div {
-	margin-top: 40px;
-}
-
-#nrs-logo-div .footer-image-marker {
-	margin-bottom: 0;
-}
-
-.logo-vichs {
-	margin-top: -10px;
-}
-
-#copyright-notice {
-	display: none;
-}
-
-.quick_links-wrapper {
-	padding: 50px 0px 30px 0;
-}
-
-#nrs-text-div .footer-text {
-	margin-left: 0;
-	margin-right: -40px;
-	margin-top: 32px;
-}
-
-a span.external-link svg {
-	width: 11px;
-	height: 12px;
-}
-.footer-text {
-	font-size: 12px;
-	line-height: 22px;
-}
-
-#nrs-logo-div {
-	margin-top: 40px;
-}
-
-#nrs-logo-div .footer-image-marker {
-	margin-bottom: 0;
-}
-
-.logo-vichs {
-	margin-top: -10px;
-}
-
-#copyright-notice {
-	display: none;
-}
-
-.quick_links-wrapper {
-	padding: 50px 0px 30px 0;
-}
-
 #nrs-text-div .footer-text {
 	margin-left: 0;
 	margin-right: -40px;
@@ -108,58 +72,18 @@ a span.external-link svg {
 	height: 12px;
 }
 
-#quick-escape {
-	font-size: 16px;
+.btn-vhs_wrapper a {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-.navbar-inverse .navbar-brand {
-	font-size: 18px;
+.btn-vhs_wrapper a:first-child {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+	border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 
-.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-	margin-left: -15px;
-	transform: none;
-	left: 0;
-	position: static;
-}
-
-.navbar-brand {
-	transform: none;
-	position: static;
-}
-.footer-text
-{
-	font-size: 12px;
-	line-height: 22px;
-}
-
-#nrs-logo-div {
-	margin-top: 40px;
-}
-
-#nrs-logo-div .footer-image-marker {
-	margin-bottom: 0;
-}
-
-.logo-vichs {
-	margin-top: -10px;
-}
-
-#copyright-notice {
+.btn-vhs_wrapper a:last-child {
 	display: none;
-}
-
-.quick_links-wrapper {
-	padding: 50px 0px 30px 0;
-}
-
-#nrs-text-div .footer-text {
-	margin-left: 0;
-	margin-right: -40px;
-	margin-top: 32px;
-}
-
-a span.external-link svg {
-	width: 11px;
-	height: 12px;
 }

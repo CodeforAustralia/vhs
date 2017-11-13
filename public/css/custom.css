@@ -246,6 +246,7 @@ nav div.container-fluid {
 	height: 24px;
 	width: 24px;
   fill: currentColor;
+	overflow: visible;
 }
 
 ul.dropdown-menu > li > a > .navbar-menu-image svg {
@@ -330,6 +331,7 @@ DASHBOARD
 .container-wrapper.tools-wrapper.no-padding {
 	padding: 0;
 }
+
 
 /*
 .quick-escape_wrapper {
@@ -641,15 +643,6 @@ a span.external-link svg {
   margin-right: -32px;
 }
 
-/* For really large desktop screen */
-
-@media screen and (min-width: 1200px) {
-	#nrs-text-div .footer-text {
-		margin-left: -30px;
-		margin-right: -32px;
-	}
-}
-
 .footer-text {
 	font-size: 16px;
   line-height: 30px;
@@ -886,7 +879,7 @@ LETTER
 .loading {
 	width: 100%;
 	height: auto;
-	padding: 0px;
+	padding: 60px 40px;
 	text-align: center;
 }
 .edit-button-wrapper {
@@ -1006,4 +999,9 @@ Footer
 	margin: 0 auto;
 	float: none;
 	padding-left: 15px;
+}
+
+
+.footer-link, .footer-link:hover, .footer-link:active, .footer-link:focus {
+	color: #ffffff;
 }

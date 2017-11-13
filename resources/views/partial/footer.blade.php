@@ -26,7 +26,7 @@
 				<div id="nrs-text-div" class="col-md-3 col-sm-3 col-xs-9">
 					<div class="footer-text">
 						Deaf, hearing or speech impaired? Contact the National Relay Service:
-						Call <a href="#" style="color: #ffffff; text-decoration: underline;">1800&nbsp;555&nbsp;660</a>
+						Call <a href="tel:1800555660" class="footer-link phone">1800&nbsp;555&nbsp;660</a>
 						or visit <a href="http://www.relayservice.com.au" target="_blank" style="color: #ffffff; text-decoration: underline;">www.relayservice.com.au&nbsp;
 						<span class="external-link">{!! file_get_contents(public_path('images/ico-external-link.svg')) !!}</span></a>
 					</div>

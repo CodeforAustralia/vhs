@@ -1,6 +1,6 @@
-
 /* Mobile */
 @media screen and (max-width: 767px) {
+
 	#quick-escape {
 		font-size: 16px;
 	}
@@ -23,7 +23,7 @@
 	.edit_profile-wrapper .container {
 		padding: 0px;
 	}
-	
+
 	#quick-escape {
 		font-size: 13px;
 		word-wrap: break-word;
@@ -122,7 +122,6 @@
 }
 
 @media screen and (max-width: 468px) {
-
 	.edit-button-wrapper {
 		margin: 0 auto;
 		float: none;
