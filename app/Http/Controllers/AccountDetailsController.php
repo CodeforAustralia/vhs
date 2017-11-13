@@ -117,7 +117,8 @@ class AccountDetailsController extends Controller
                     // if password is not empty
             if($password != $password_confirmation) {
                         // if password field is not the same as password_confirmation
-                Session::flash('message', 'New password didn\'n match.');
+                Session::flash('message.level', 'danger');
+                Session::flash('message.content', 'New password didn\'n match.');
                 return redirect()->route('accounts.edit', ['id' => $id]);
             } else {
                         // change password
@@ -129,14 +130,16 @@ class AccountDetailsController extends Controller
         $updateUser->save();
 
         if (!$updateUser) {
-            Session::flash('message', 'There was a problem submitting your form! Please try again!');
-            return redirect()->route('accounts.edit', ['id' => $id]);
-        }
-        else {
-            Session::flash('message', 'You\'ve successfully completed your submission!');
-            return redirect()->route('accounts.view', ['id' => $id]);
-        }
+           Session::flash('message.level', 'danger');
+           Session::flash('message.content', 'There was a problem submitting your form! Please try again!');
+           return redirect()->route('accounts.edit', ['id' => $id]);
+       }
+       else {
+        Session::flash('message.level', 'success');
+        Session::flash('message.content', 'You\'ve successfully completed your submission!');
+        return redirect()->route('accounts.view', ['id' => $id]);
     }
+}
 
      /**
      * Update function
@@ -167,13 +170,15 @@ class AccountDetailsController extends Controller
                 // if current password is the same as the database
                 if($password == '') {
                     // if password field is empty
-                    Session::flash('message', 'Please enter new password.');
+                    Session::flash('message.level', 'danger');
+                    Session::flash('message.content', 'Please enter new password.');
                     return redirect()->route('accounts.edit', ['id' => $id]);
                 } else {
                     // if password is not empty
                     if($password != $password_confirmation) {
                         // if password field is not the same as password_confirmation
-                        Session::flash('message', 'New password didn\'n match.');
+                        Session::flash('message.level', 'danger');
+                        Session::flash('message.content', 'New password didn\'n match.');
                         return redirect()->route('accounts.edit', ['id' => $id]);
                     } else {
                         // change password
@@ -181,7 +186,8 @@ class AccountDetailsController extends Controller
                     }
                 } 
             } else {
-                Session::flash('message', 'Incorrect current password.');
+                Session::flash('message.level', 'danger');
+                Session::flash('message.content', 'Incorrect current password.');
                 return redirect()->route('accounts.edit', ['id' => $id]);
             }
 
@@ -192,11 +198,13 @@ class AccountDetailsController extends Controller
         $updateUser->save();
 
         if (!$updateUser) {
-            Session::flash('message', 'There was a problem submitting your form! Please try again!');
+            Session::flash('message.level', 'danger');
+            Session::flash('message.content', 'There was a problem submitting your form! Please try again!');
             return redirect()->route('accounts.edit', ['id' => $id]);
         }
         else {
-            Session::flash('message', 'You\'ve successfully completed your submission!');
+            Session::flash('message.level', 'success');
+            Session::flash('message.content', 'You\'ve successfully completed your submission!');
             return redirect()->route('accounts.view', ['id' => $id]);
         }
     }
