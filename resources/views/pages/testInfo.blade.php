@@ -8,29 +8,28 @@
   <br/> Password: JDR48Q2GY3
 
   <h1>Prototypes</h1>
-    <a href="https://invis.io/9EE7Q9DKC" target="_blank">Mobile</a>
-    <a href="https://invis.io/TQE7QF725" target="_blank">Tablet</a>
-    <a href="https://invis.io/QXE7QMJKV" target="_blank">Desktop</a>
+    <a href="https://invis.io/9EE7Q9DKC" target="_blank">Mobile</a><br/>
+    <a href="https://invis.io/TQE7QF725" target="_blank">Tablet</a><br/>
+    <a href="https://invis.io/QXE7QMJKV" target="_blank">Desktop</a><br/>
 
   <h1>System being Developed</h1>
   <a href="https://vhstesting.com" target="_blank">https://vhstesting.com</a>
 
-<!--
-  <br/> Login with the email given to you on a slip of paper
-  <br> This will be one of:-
+
+  <br/>&nbsp;
+  <br/>Login with:
   <ul style="list-style-type: square;">
     <li><span class="grey">samanderson@gmail.com</span></li>
     <li><span class="grey">alexsmith@gmail.com</span></li>
     <li><span class="grey">daleskiles@gmail.com</span></li>
+    <li><span class="grey">andywaters@gmail.com</span></li>
+    <li><span class="grey">juleswilliams@gmail.com</span></li>
   </ul>
-  Password: <span class="grey">8@C3U!</span>
--->
-<br/>&nbsp;
-<br/>Login with:
-<ul style="list-style-type: square;">
-  <li><span class="grey">user name: test@gmail.com</span></li>
-  <li><span class="grey">password: test</span></li>
-</ul>
+  Password: <span class="grey">8@C3U!</span><br/>
+  &nbsp;<br/>
+  <span>N.B. The test users are all set up as applicants on the VHR register withan application for housing and a bond application, except for
+  Andy Waters (andywaters@gmail.com) and  Jules Williams (juleswilliams@gmail.com) who are existing Public Housing tenants.</span>
+
 
   <h1>Code for Australia Team</h1>
   <ul style="list-style-type: square;">
