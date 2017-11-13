@@ -149,7 +149,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 col-md-8 col-lg-6 col-xs-12 edit-button-wrapper">
-				<button type="button" class="btn btn-primary"><a class="panel-heading_link edit_button" href="/accounts/edit/{{ $AccountDetails[0]->id }}"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Profile</a></button>
+				<a class="panel-heading_link edit_button" href="/accounts/edit/{{ $AccountDetails[0]->id }}"><button type="button" class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Profile</button></a>
 			</div>
 		</div>
 	</div>
