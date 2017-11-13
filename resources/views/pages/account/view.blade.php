@@ -72,7 +72,6 @@
 								@endif
 							</p>
 							@endif
-
 						</div>
 						<div class="col-md-3 services_heading_right">
 							<div class="toolbox-banner mail_icon-link">
@@ -95,11 +94,11 @@
 					</div>
 				</div>
 				<div class="panel-body">
+
 					<div class="col-md-2">
 
 					</div>
 					<div class="col-md-7 services_heading_right">
-
 						<h4>Contact Details</h4>
 						<div class="col-md-6 contact-address-details">
 							<p>{{ $UserAddress[0]->address_1 }} <br class="show-sm-down"/>{{ $UserAddress[0]->suburb_town }} VIC {{ $UserAddress[0]->postcode }}</p>

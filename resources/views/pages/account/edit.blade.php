@@ -4,6 +4,12 @@
 
 @section('content')
 
+@if (Session::has('message.content'))
+<div id="sessionStatus" class="alert alert-{{ Session::get('message.level') }}">
+	<strong>Something went wrong.</strong> {{ Session::get('message.content') }}
+	<div class="closeCrossDiv"><a href="javascript: hideObject('#sessionStatus');">&times;</a></div>
+</div>
+@endif
 <div class="container">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
@@ -33,9 +39,6 @@
 					<!-- Add client ID -->
 					@if ( Auth::user()->usertype == '1' )
 					
-					@if(Session::has('message'))
-					<p class="alert alert-danger">{{ Session::get('message') }}</p>
-					@endif
 					<!-- IF ADMIN USER -->
 					@include('pages.account.editAdmin')
 					@else
