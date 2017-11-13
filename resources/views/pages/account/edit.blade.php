@@ -4,19 +4,20 @@
 
 @section('content')
 
+<!-- Get session messages -->
 @if (Session::has('message.content'))
 <div id="sessionStatus" class="alert alert-{{ Session::get('message.level') }}">
 	<strong>Something went wrong.</strong> {{ Session::get('message.content') }}
 	<div class="closeCrossDiv"><a href="javascript: hideObject('#sessionStatus');">&times;</a></div>
 </div>
 @endif
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 					<div class="col-md-2">
-
 					</div>
 					<div class="col-md-7 services_heading_right">
 						@if ( Auth::user()->usertype == '1' )
