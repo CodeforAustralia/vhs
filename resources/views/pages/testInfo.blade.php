@@ -27,7 +27,7 @@
   </ul>
   Password: <span class="grey">8@C3U!</span><br/>
   &nbsp;<br/>
-  <span>N.B. The test users are all set up as applicants on the VHR register withan application for housing and a bond application, except for
+  <span>N.B. The test users are all set up as applicants on the VHR register with an application for housing and a bond application, except for
   Andy Waters (andywaters@gmail.com) and  Jules Williams (juleswilliams@gmail.com) who are existing Public Housing tenants.</span>
 
 
