@@ -1005,3 +1005,60 @@ Footer
 .footer-link, .footer-link:hover, .footer-link:active, .footer-link:focus {
 	color: #ffffff;
 }
+
+
+/* Dashboard */
+
+.tile-message {
+	opacity: 0.8;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.38em;
+	white-space: normal;
+	margin: 6px 35px 0 -75px;
+}
+
+#letters-0 .need_housing_button,
+#letters-1 .need_housing_button {
+	height: 124px;
+}
+
+.tile-number-unread {
+  width: 22px;
+  height: 22px;
+  background-color: #eb8d00;
+  border: solid 1px #0063ae;
+  font-size: 11.5px;
+  font-weight: bold;
+  line-height: 1.2em;
+	position: relative;
+	top: -24px;
+	left: -18px;
+  border-radius:50%;
+	padding: 4px 7px;
+	display: inline-block;
+	text-align: center;;
+	letter-spacing: initial;
+}
+
+.lots {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: -28px;
+	left: -20px;
+	border-radius: 50%;
+	padding: 8px 1px;
+}
+
+.tile-new {
+ 	width: 260px;
+ 	height: 128px;
+ 	background-color: #ffffff;
+ 	box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.6);
+ 	color: black;
+	font-size: 13px;
+ 	position: relative;
+ 	top: -40px;
+ 	left: -80px;
+}

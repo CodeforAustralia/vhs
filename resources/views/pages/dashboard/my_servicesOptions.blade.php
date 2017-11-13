@@ -6,19 +6,32 @@
           <div id="letters-0" class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
             <a href="/inbox" role="button" class="btn btn-primary need_housing_button">
              {!! file_get_contents(public_path('images/ico-inbox.svg')) !!}
+             @if ($total_unread > 0 &&  $total_unread < 10)
+                <div class="tile-number-unread">{{$total_unread}}</div>
+             @endif
+             @if ($total_unread == 10)
+                <div class="tile-number-unread lots">{{$total_unread}}</div>
+             @endif
+             @if ($total_unread > 10)
+                <div class="tile-number-unread lots">10+</div>
+             @endif
              <br/>
              Letters
            </a>
          </div>
          <div id="letters-1" class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
-           <a href="/placeholder" role="button" class="btn btn-primary need_housing_button">
-             <svg></svg>
-             <br/>
-             &nbsp;
 <!--
-             <span style="background-color: #fff; border:1px solid grey; position: relative; display: inline-block; top: -90px; left: -50px; color: black;">New<br/>Date</span>
--->
+           <a href="/inbox" role="button" class="btn btn-primary need_housing_button">
+             @if ($total_unread == 0)
+             <div class="tile-message">You are up to date, you've read all your letters.</div>
+             @else
+             <div class="tile-new">{{$latest_unread->summary}}</div>
+             @endif
            </a>
+-->
+<a href="/inbox" role="button" class="btn btn-primary need_housing_button">
+
+</a>
          </div>
          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
             @if ( Auth::user()->usertype == '1' )

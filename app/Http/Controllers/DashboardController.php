@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Carbon\Carbon;
 use Auth;
 use App\Models\UserService;
+use DB;
 
 
 class DashboardController extends Controller
@@ -45,9 +46,8 @@ class DashboardController extends Controller
      }
 
 // get the services for the logged-in user
-     $user_id = Auth::user()->id;
-     $user_testType = Auth::user()->test_type;
-     $user_services = UserService::where('user_id',$user_id)->get();
+    $user_id = Auth::user()->id;
+    $user_services = UserService::where('user_id',$user_id)->get();
 
 
 // get the total number of unread letters (for all services assigned to user)
@@ -61,11 +61,23 @@ class DashboardController extends Controller
       $total_unread = $total_unread + $unreadForService;
     }
 
+// get the latest unread letters
+    $latest_unread =  DB::table('letters')
+            ->join('letter_history', function ($join) use ($user_id){
+                $join->on('letters.uuid', '=', 'letter_history.letter_uuid')
+                ->where('letter_history.user_id', '=', $user_id)
+                ->where('letter_history.unread', '=', 1);
+            })
+            ->join('templates', 'letters.template_id', '=', 'templates.template_id')
+            ->select('letters.letter_date', 'templates.summary', 'templates.action_needed')
+            ->orderBy('letter_date', 'desc')
+            ->first();
+
      return view('pages/dashboard')->with([
       'message' => $message,
       'user_services' => $user_services,
       'total_unread' => $total_unread,
-      'user_testType' => $user_testType,
+      'latest_unread' => $latest_unread,
       'include_links' => true   // include links on summary of services and new letters
       ]);
    }
