@@ -35,7 +35,6 @@ footer p {
 	font-weight: bold;
 	width: 100%;
 	padding: 10px;
-	margin: -10px auto auto auto;
 }
 
 .closeCrossDiv {
@@ -1061,4 +1060,46 @@ Footer
  	position: relative;
  	top: -40px;
  	left: -80px;
+	letter-spacing: unset;
+	padding: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.38em;
+  text-align: left;
+  color: #232323;
+	white-space: normal;
+}
+
+.tile-new-header {
+  font-size: 15.6px;
+  font-style: italic;
+  line-height: 1.38em;
+  text-align: left;
+  color: #0063ae;
+	font-weight: normal;
+}
+
+.tile-new-date {
+  opacity: 0.8;
+  font-size: 15.6px;
+  line-height: 1.38em;
+  text-align: left;
+  color: #232323;
+	font-weight: normal;
+}
+
+.tile-new-summary {
+	color: black;
+	text-decoration: none;
+}
+
+.tile-new-link {
+	text-decoration: underline;
+}
+
+.tile-new-direct {
+	color: #eb8d00;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none !important;
 }

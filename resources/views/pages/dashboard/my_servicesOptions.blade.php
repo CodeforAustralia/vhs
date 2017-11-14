@@ -20,18 +20,22 @@
            </a>
          </div>
          <div id="letters-1" class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
-<!--
            <a href="/inbox" role="button" class="btn btn-primary need_housing_button">
+<!--
              @if ($total_unread == 0)
              <div class="tile-message">You are up to date, you've read all your letters.</div>
              @else
-             <div class="tile-new">{{$latest_unread->summary}}</div>
+             <div class="tile-new">
+               <div class="tile-new-header">New</div>
+               <div class="tile-new-date">25 Oct 17</div>
+               <div class="tile-new-summary">
+                 <span class="tile-new-link">{{$latest_unread->summary}}</span>
+                 <span class="tile-new-direct">&nbsp;&gt;</span>
+              </div>
+             </div>
              @endif
+-->             
            </a>
--->
-<a href="/inbox" role="button" class="btn btn-primary need_housing_button">
-
-</a>
          </div>
          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
             @if ( Auth::user()->usertype == '1' )
@@ -65,7 +69,7 @@
             <a href="/placeholder" role="button" class="btn btn-primary need_housing_button">
               {!! file_get_contents(public_path('images/ico-appointments.svg')) !!}
               <br/>
-              Meetings
+              Appointments
             </a>
           </div>
         </div>

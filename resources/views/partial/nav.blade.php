@@ -71,10 +71,10 @@
               <div class="navbar-menu-image">{!! file_get_contents(public_path('images/ico-services.svg')) !!}</div>&nbsp;Services
             </a>
           </li>
-          <!-- Meetings -->
+          <!-- Appointments -->
           <li>
             <a href="/placeholder">
-              <div class="navbar-menu-image">{!! file_get_contents(public_path('images/ico-appointments.svg')) !!}</div>&nbsp;Meetings
+              <div class="navbar-menu-image">{!! file_get_contents(public_path('images/ico-appointments.svg')) !!}</div>&nbsp;Appointments
             </a>
           </li>
           <!-- Help -->
