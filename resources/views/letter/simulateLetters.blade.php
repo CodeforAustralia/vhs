@@ -10,6 +10,8 @@
         <option value="1235255457">Tenanacy (outstanding debt) - Ref. No: 1235255457</option>
         <option value="1215000628">Tenancy (Six-monthly payment adjustment) - Ref. No: 1215000628</option>
         <option value="1103013">Bond (additional documentation) - Ref. No: 1103013</option>
+        <option value="demo-1">Demo - Part 1</option>
+        <option value="demo-2">Demo - Part 2</option>
       </select>
 
       @if ($errors->has('service'))
