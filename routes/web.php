@@ -70,5 +70,4 @@ Route::post('/search', 'AccountDetailsController@search')->name('search');
 Route::get('/database', 'GenerateController@index')->name('database');
 
 // Option A
-Route::get('/inbox', 'InboxController@index')->name('inbox.index');
-Route::get('/inbox/{id}', 'InboxController@getAllLetters')->name('inbox.index');
+Route::get('/inbox', 'InboxController@getAllLetters')->name('inbox.index');
