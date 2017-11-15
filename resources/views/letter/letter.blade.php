@@ -1,6 +1,7 @@
 @extends('layouts.app') @section('title', 'Home') @section('content')
 @foreach ($letters as $letter)
 
+
 <div class="container-wrapper">
   <div class="container">
     <!-- Template summary -->
