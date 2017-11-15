@@ -1,7 +1,6 @@
 @extends('layouts.app') @section('title', 'Home') @section('content')
 @foreach ($letters as $letter)
 
-
 <div class="container-wrapper">
   <div class="container">
     <!-- Template summary -->
@@ -44,12 +43,10 @@
   <div class="container">
     <div class="row">
       <!-- Letter (in iframe)-->
-        @foreach ($letters as $letter)
         <?php $iFrameHeightPadding = $letter->pages * 141.42; ?>
         <div class="embed-responsive" style="width: 100%; padding-bottom: {{$iFrameHeightPadding}}%;">
           <iframe id="letterIframe" class="embed-responsive-item" src="/letter-pdfjs/{{$letter->id}}#zoom=page-width" allowfullscreen></iframe>
         </div>
-        @endforeach
     </div>
   </div>
 </div>
