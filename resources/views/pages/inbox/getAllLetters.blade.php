@@ -8,7 +8,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-primary">
+            <div class="panel inbox_panel-primary">
                 <div class="panel-heading">
                     <div class="col-md-10 services_heading_right">
                         <h3>Your Housing Letters</h3>
