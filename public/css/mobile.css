@@ -165,6 +165,15 @@
 	.lots {
     padding: 4px 0 !important;
 	}
+
+	.phone,
+	.phone:focus,
+	.phone:hover,
+	.phone:active {
+		text-decoration: underline !important;
+		cursor: pointer;
+	}
+
 }
 
 /* For really small screens */

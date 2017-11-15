@@ -1148,3 +1148,11 @@ Footer
 	text-decoration: none !important;
 	vertical-align: bottom;
 }
+
+.phone,
+.phone:focus,
+.phone:hover,
+.phone:active {
+	text-decoration: none;
+	cursor: default;
+}
