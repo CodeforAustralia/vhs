@@ -7,6 +7,7 @@ use Auth;
 use DB;
 use App\Quotation;
 use Session;
+use App\Models\Service;
 use App\Models\UserService;
 use App\Models\Letters;
 use App\Models\LetterHistory;
@@ -62,8 +63,12 @@ class LettersListController extends Controller
       $letter_history[0]->unread=false;
       $letter_history[0]->save();
 
-     return view('letter/letter')->with([
-       'letters' => $letters
+// Now get the service itself
+      $service = Service::where('reference_id', $letter_history[0]->reference_id)->first();
+
+      return view('letter/letter')->with([
+       'letters' => $letters,
+       'service' => $service
      ]);
 
    }

@@ -7,13 +7,17 @@
     <script src="{{ asset('js/pdfjs/pdf.js-viewer/pdf.js') }}"></script>
     <script>
       console.log('Starting pdf rendering');
+      $('#letterIframe').load(function() {
+        console.log('loaded the iframe');
+      });
+/*
       document.addEventListener('pagerendered', function (evt) {
         console.log('Page renedring event fired');
         console.log(evt);
         fix_heights_on_pdf2html();
         console.log('fixed height');
       });
-
+*/
     </script>
     <link rel="stylesheet" href="{{ asset('js/pdfjs/pdf.js-viewer/viewer.css') }}">
     <style>
@@ -35,8 +39,14 @@
 
 /* Make a grey background */
     .pdfjs #outerContainer {
-      background-color: #f3eee9;
+      background-color: #faf8f7;
     }
+
+/* Outline page */
+.pdfjs .pdfViewer .page {
+    border: 1px solid #003b68;
+}
+
 
 /*
     #viewer, #outerContainer #mainContainer #viewerContainer {
@@ -64,7 +74,7 @@
     </div>
 
     <script>
-      PDFJS.disableWorker = true;
+/*      PDFJS.disableWorker = true; */
       PDFJS.webViewerLoad('/actual-letter/{{ $letters[0]->id }}#zoom=page-width');
     </script>
   </body>

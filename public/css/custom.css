@@ -291,6 +291,8 @@ DASHBOARD
 .welcome-banner h3 {
 	color: #232323;
 	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
 }
 .toolbox-banner h3 {
 	color: #0263aa;
@@ -776,6 +778,7 @@ a span.external-link svg {
 .welcome_banner-wrapper {
 	margin: 0 auto;
 	float: none;
+	margin-top: -15px;
 }
 
 /************************
@@ -823,16 +826,25 @@ LETTER
 	overflow: hidden;
 }
 
-.btn-vhs {
+.btn-vhs,
+.btn-vhs:focus
+.btn-vhs:hover,
+.btn-vhs:active {
     font-size: 16px;
     background-color: #0363ab;
     color: #ffffff;
     border-radius: 0;
+    border-color: #003b68;
 }
 
-.btn-vhs.active, .btn-vhs:active, .btn-vhs:hover, .open > .btn-vhs.dropdown-toggle {
-	background-color: #2d97e6;
+.btn-vhs.active, .btn-vhs:hover, .btn-vhs:focus, .open > .btn-vhs.dropdown-toggle {
+/*
+		background-color: #2d97e6;
     color: #ffffff;
+*/
+		background-color: #004e92;
+		border-color: #004e92;
+
 }
 
 .btn-vhs svg {
@@ -842,11 +854,21 @@ LETTER
     fill: #ffffff;
 }
 
+.btn-vhs_wrapper {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
 .btn-vhs_wrapper a {
 	text-align: left;
-    -webkit-box-shadow: 1px 3px 1px 0px rgba(0,0,0,0.75);
+/*  Softer shadow
+		-webkit-box-shadow: 1px 3px 1px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 3px 1px 0px rgba(0,0,0,0.75);
     box-shadow: 1px 3px 1px 0 rgba(0, 23, 41, 0.2);
+*/
+  	box-shadow: 0 3px 0 0 #003b68;
+		-webkit-box-shadow: 0px 3px 0px 0px rgba(0, 59, 104, 1);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(0, 59, 104, 1);
 }
 
 .btn-vhs_wrapper a:first-child {
@@ -864,7 +886,9 @@ LETTER
 }
 
 #rippleFullScreen, #rippleDownload, #ripplePrint {
-	width: 180px;
+	padding: 8px 30px;
+	min-width: 180px;
+	text-align: center;
 }
 
 #rippleDownload {
@@ -872,7 +896,8 @@ LETTER
 }
 
 .with-top-margin {
-	padding-top: 30px !important;
+	padding-top: 50px !important;
+	padding-bottom: 0 !important;
 }
 
 .loading {
@@ -989,17 +1014,14 @@ Recommendation buttons
 	width: 100%;
 	padding: 10px 0px;
 }
-
 /************************
 Footer
 *************************/
-
 .footer-wrapper {
 	margin: 0 auto;
 	float: none;
 	padding-left: 15px;
 }
-
 
 .footer-link, .footer-link:hover, .footer-link:active, .footer-link:focus {
 	color: #ffffff;
