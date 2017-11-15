@@ -49,7 +49,7 @@
 }
 
 .letter_list_wrapper {
-    display: inline-block;
+    display: flow-root;
 }
 
 .all_letter_list .col-md-1 {
