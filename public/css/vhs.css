@@ -1,19 +1,19 @@
 .contact-address-details {
-    padding: 0px;
+	padding: 0px;
 }
 
 .all_letter_list {
-    padding: 10px 10px;
-    border-top: 1px solid lightgrey;
-    color: #232323;
+	padding: 10px 10px;
+	border-top: 1px solid lightgrey;
+	color: #232323;
 }
 
 .all_letter_list:last-child {
-    box-shadow: 2px 2px 4px lightgrey;
+	box-shadow: 2px 2px 4px lightgrey;
 }
 
 .all_letter_list {
-    box-shadow: 2px 1px 2px 0px lightgrey;
+	box-shadow: 2px 1px 2px 0px lightgrey;
 }
 
 .letter_list_unread {
@@ -21,27 +21,27 @@
 }
 
 .letter_list_header {
-    padding: 20px 0px;
+	padding: 20px 0px;
 }
 
 .letter_list_header_right .dropdown button {
-    width: 100%;
-    text-align: right;
+	width: 100%;
+	text-align: right;
 }
 
 .letter_list_header_right {
-    padding: 20px 0px;
-    text-align: right;
+	padding: 20px 0px;
+	text-align: right;
 }
 
 .sort_by_icon {
-    font-size: 18px;
+	font-size: 18px;
 }
 
 .letter_list_header_right button {
-    background: #f5f1ef;
-    border: none;
-    border-radius: 0px;
+	background: #f5f1ef;
+	border: none;
+	border-radius: 0px;
 }
 
 .letter_list_header a {
@@ -49,24 +49,24 @@
 }
 
 .letter_list_wrapper {
-    display: inline-block;
+	display: flow-root;
 }
 
 .all_letter_list .col-md-1 {
-    text-align: right;
+	text-align: right;
 }
 
 .all_letter_list .col-md-2 {
-    text-align: right;
+	text-align: right;
 }
 
 .all_letter_list .col-md-1 i {
-    color: #e08a0f;
-    font-size: 24px;
+	color: #e08a0f;
+	font-size: 24px;
 }
 
 .all_letter_list a {
-    color: #232323;
+	color: #232323;
 }
 
 .sort_by_text {
@@ -74,8 +74,12 @@
 }
 
 .letter_list_wrapper .letter_list_header h4 {
-    font-size: 18px;
-    color: #0063ae;
-    font-weight: bold;
-    padding-top: 10px;
+	font-size: 18px;
+	color: #0063ae;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.inbox_panel-primary {
+	margin: 20px 0px;
 }

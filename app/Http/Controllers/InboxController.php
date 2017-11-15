@@ -63,6 +63,8 @@ class InboxController extends Controller
 
       $user_id = $user->id;
 
+      $letters = LetterHistory::where('user_id',$user_id)->get();
+
       $letter_unread = DB::table('letters')
       ->join('letter_history', function ($join) use ($user_id){
         $join->on('letters.uuid', '=', 'letter_history.letter_uuid')
@@ -92,6 +94,7 @@ class InboxController extends Controller
       // die;
 
       return view('pages/inbox/getAllLetters')->with([
+        'letters' => $letters,
         'letter_unread' => $letter_unread,
         'letter_read' => $letter_read
         ]);
