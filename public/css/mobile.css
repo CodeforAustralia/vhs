@@ -121,6 +121,11 @@
 		float: right
 	}
 
+
+	.tile-number-unread {
+		  padding: 3px 7px;
+	}
+
 	.tile-message {
 	    font-size: 13px;
 	    margin: 6px 35px 0 -35px;
@@ -152,8 +157,13 @@
     margin-left: 10px;
 	}
 
+	.summary-wrapper {
+    margin-left: -6px;
+    width: 140px;
+  }
+
 	.lots {
-    padding: 4px 0;
+    padding: 4px 0 !important;
 	}
 }
 
@@ -180,5 +190,20 @@
     position: relative;
 		top: -160px;
 		left: -46px;
+	}
+
+	.tile-action {
+		width: 16px;
+		height: 16px;
+	}
+
+	.tile-action svg {
+		width: 16px !important;
+		height: 16px !important;
+	}
+
+	.summary-wrapper {
+    margin-left: -6px;
+    width: 126px;
 	}
 }

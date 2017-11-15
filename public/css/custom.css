@@ -1047,7 +1047,7 @@ Footer
 	top: -28px;
 	left: -20px;
 	border-radius: 50%;
-	padding: 8px 4px;
+	padding: 8px 4px !important;
 }
 
 .lots {
@@ -1057,7 +1057,7 @@ Footer
 	top: -28px;
 	left: -20px;
 	border-radius: 50%;
-	padding: 5px 1px;
+	padding: 5px 1px !important;
 }
 
 .tile-new {
@@ -1113,10 +1113,28 @@ Footer
 	margin-left: 20px;
 }
 
+.tile-action {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.tile-action svg {
+	width: 20px !important;
+	height: 20px !important;
+}
+
 .tile-new-summary {
 	color: black;
 	text-decoration: none;
 	margin-left: 20px;
+}
+
+.summary-wrapper {
+	display: inline-block;
+	margin-left: -14px;
+	width: 210px;
 }
 
 .tile-new-link {

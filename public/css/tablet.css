@@ -102,6 +102,12 @@ a span.external-link svg {
     font-size: 13px;
 }
 
+.summary-wrapper {
+    display: inline-block;
+		margin-left: -16px;
+    width: 160px;
+}
+
 .btn-vhs_wrapper a {
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;

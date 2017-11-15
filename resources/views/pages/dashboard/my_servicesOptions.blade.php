@@ -34,6 +34,13 @@
 
              <div class="tile-new">
                <div class="tile-new-header">New</div>
+               @if (!empty($latest_unread->action_needed) && ($latest_unread->action_needed == 1))
+               <div class="tile-action">
+                   {!! file_get_contents(public_path('images/action-needed.svg')) !!}
+               </div>
+               <div class="summary-wrapper">
+               @endif
+
                @if (!empty($latest_unread->letter_date))
                <div class="tile-new-date">{{ \Carbon\Carbon::parse($latest_unread->letter_date)->format('j M Y') }}</div>
                @endif
@@ -42,7 +49,11 @@
                   <span class="tile-new-link">{{$latest_unread->summary}}</span><span class="tile-new-direct">&nbsp;&gt;</span>
                   @endif
                </div>
+               @if (!empty($latest_unread->action_needed) && ($latest_unread->action_needed == 1))
+              </div> <!--/summary-wrapper -->
+              @endif
               </div>
+
               @if ($total_unread > 1)
               <div class="tile-shadow"></div>
               @endif
