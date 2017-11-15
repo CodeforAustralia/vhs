@@ -72,6 +72,36 @@ a span.external-link svg {
 	height: 12px;
 }
 
+.tile-message {
+    margin: 6px 10px 0 -65px;
+}
+
+.tile-new {
+    width: 200px;
+		padding: 15px;
+    font-size: 13px;
+    position: relative;
+    top: -44px;
+    left: -58px;
+}
+
+.tile-shadow {
+	width: 200px;
+	padding: 15px;
+	font-size: 13px;
+	position: relative;
+	top: -168px;
+  left: -54px;
+}
+
+.tile-new-header {
+    font-size: 13px;
+}
+
+.tile-new-date {
+    font-size: 13px;
+}
+
 .btn-vhs_wrapper a {
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;

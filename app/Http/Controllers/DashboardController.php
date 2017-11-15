@@ -7,6 +7,7 @@ use Carbon\Carbon;
 use Auth;
 use App\Models\UserService;
 use DB;
+use App\Models\LetterHistory;
 
 
 class DashboardController extends Controller
@@ -50,16 +51,9 @@ class DashboardController extends Controller
     $user_services = UserService::where('user_id',$user_id)->get();
 
 
-// get the total number of unread letters (for all services assigned to user)
-    $total_unread = 0;
-    foreach ($user_services as &$user_service) {
-      if (empty($user_service) || empty($user_service->service)) {
-          $unreadForService = 0;
-      } else {
-        $unreadForService = $user_service->service->numberUnread();
-      }
-      $total_unread = $total_unread + $unreadForService;
-    }
+// get the total number of unread letters
+    $user_id = Auth::user()->id;
+    $total_unread = count(LetterHistory::where('user_id',$user_id)->where('unread','1')->get());
 
 // get the latest unread letters
     $latest_unread =  DB::table('letters')
@@ -69,7 +63,7 @@ class DashboardController extends Controller
                 ->where('letter_history.unread', '=', 1);
             })
             ->join('templates', 'letters.template_id', '=', 'templates.template_id')
-            ->select('letters.letter_date', 'templates.summary', 'templates.action_needed')
+            ->select('letters.id', 'letters.letter_date', 'templates.summary', 'templates.action_needed')
             ->orderBy('letter_date', 'desc')
             ->first();
 

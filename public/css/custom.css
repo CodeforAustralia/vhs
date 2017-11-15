@@ -1014,7 +1014,7 @@ Footer
   font-style: italic;
   line-height: 1.38em;
 	white-space: normal;
-	margin: 6px 35px 0 -75px;
+	margin: 6px 35px 0 -95px;
 }
 
 #letters-0 .need_housing_button,
@@ -1040,14 +1040,24 @@ Footer
 	letter-spacing: initial;
 }
 
-.lots {
+.too-much {
 	width: 30px;
 	height: 30px;
 	position: relative;
 	top: -28px;
 	left: -20px;
 	border-radius: 50%;
-	padding: 8px 1px;
+	padding: 8px 4px;
+}
+
+.lots {
+	width: 24px;
+	height: 24px;
+	position: relative;
+	top: -28px;
+	left: -20px;
+	border-radius: 50%;
+	padding: 5px 1px;
 }
 
 .tile-new {
@@ -1058,20 +1068,34 @@ Footer
  	color: black;
 	font-size: 13px;
  	position: relative;
- 	top: -40px;
- 	left: -80px;
+ 	top: -44px;
+ 	left: -70px;
 	letter-spacing: unset;
-	padding: 16px;
-  font-size: 16px;
+	padding: 15px;
+  font-size: 15px;
   font-weight: bold;
   line-height: 1.38em;
   text-align: left;
   color: #232323;
 	white-space: normal;
+	z-index: 2;
+}
+
+
+.tile-shadow {
+    width: 260px;
+    height: 128px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.6);
+    font-size: 13px;
+    position: relative;
+    top: -168px;
+    left: -66px;
+    z-index: 1;
 }
 
 .tile-new-header {
-  font-size: 15.6px;
+  font-size: 15px;
   font-style: italic;
   line-height: 1.38em;
   text-align: left;
@@ -1081,16 +1105,18 @@ Footer
 
 .tile-new-date {
   opacity: 0.8;
-  font-size: 15.6px;
+  font-size: 15px;
   line-height: 1.38em;
   text-align: left;
   color: #232323;
 	font-weight: normal;
+	margin-left: 20px;
 }
 
 .tile-new-summary {
 	color: black;
 	text-decoration: none;
+	margin-left: 20px;
 }
 
 .tile-new-link {
@@ -1102,4 +1128,5 @@ Footer
 	font-weight: bold;
 	font-size: 22px;
 	text-decoration: none !important;
+	vertical-align: bottom;
 }

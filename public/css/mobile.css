@@ -120,12 +120,65 @@
 	.password_checkbox {
 		float: right
 	}
+
+	.tile-message {
+	    font-size: 13px;
+	    margin: 6px 35px 0 -35px;
+	}
+
+	.tile-new {
+    width: 186px;
+    padding: 15px 10px;
+    font-size: 13px;
+    position: relative;
+    top: -36px;
+    left: -50px;
+		line-height: 1.3em;
+	}
+
+	.tile-shadow {
+		width: 186px;
+    padding: 10px;
+    position: relative;
+		top: -160px;
+		left: -46px;
+	}
+
+	.tile-new-date {
+		margin-left: 10px;
+	}
+
+	.tile-new-summary {
+    margin-left: 10px;
+	}
+
+	.lots {
+    padding: 4px 0;
+	}
 }
 
+/* For really small screens */
 @media screen and (max-width: 468px) {
 	.edit-button-wrapper {
 		margin: 0 auto;
 		float: none;
 		padding: 0px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.tile-new {
+    width: 166px;
+    position: relative;
+    top: -36px;
+    left: -50px;
+		line-height: 1.2em;
+	}
+
+	.tile-shadow {
+		width: 166px;
+    position: relative;
+		top: -160px;
+		left: -46px;
 	}
 }

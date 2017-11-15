@@ -3,40 +3,53 @@
     <div class="container">
       <div class="row odd-row">
         <div class="col-md-8 col-sm-10 col-xs-12 services_toolbox">
+          <!--Letters -->
           <div id="letters-0" class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
             <a href="/inbox" role="button" class="btn btn-primary need_housing_button">
              {!! file_get_contents(public_path('images/ico-inbox.svg')) !!}
              @if ($total_unread > 0 &&  $total_unread < 10)
                 <div class="tile-number-unread">{{$total_unread}}</div>
              @endif
-             @if ($total_unread == 10)
+             @if ($total_unread > 9 && $total_unread < 100)
                 <div class="tile-number-unread lots">{{$total_unread}}</div>
              @endif
-             @if ($total_unread > 10)
-                <div class="tile-number-unread lots">10+</div>
+             @if ($total_unread > 99)
+                <div class="tile-number-unread too-much">99+</div>
              @endif
              <br/>
              Letters
            </a>
          </div>
+         <!-- Letters (2nd tile) -->
          <div id="letters-1" class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
+         @if ($total_unread == 0 || empty($latest_unread))
            <a href="/inbox" role="button" class="btn btn-primary need_housing_button">
-<!--
-             @if ($total_unread == 0)
              <div class="tile-message">You are up to date, you've read all your letters.</div>
-             @else
+         @else
+                @if (!empty($latest_unread->id))
+          <a href="/letter/{{$latest_unread->id}}" role="button" class="btn btn-primary need_housing_button">
+                @else
+          <a href="/inbox" role="button" class="btn btn-primary need_housing_button">
+                @endif
+
              <div class="tile-new">
                <div class="tile-new-header">New</div>
-               <div class="tile-new-date">25 Oct 17</div>
+               @if (!empty($latest_unread->letter_date))
+               <div class="tile-new-date">{{ \Carbon\Carbon::parse($latest_unread->letter_date)->format('j M Y') }}</div>
+               @endif
                <div class="tile-new-summary">
-                 <span class="tile-new-link">{{$latest_unread->summary}}</span>
-                 <span class="tile-new-direct">&nbsp;&gt;</span>
+                  @if (!empty($latest_unread->summary))
+                  <span class="tile-new-link">{{$latest_unread->summary}}</span><span class="tile-new-direct">&nbsp;&gt;</span>
+                  @endif
+               </div>
               </div>
-             </div>
-             @endif
--->             
+              @if ($total_unread > 1)
+              <div class="tile-shadow"></div>
+              @endif
+         @endif
            </a>
          </div>
+         <!-- My Profile -->
          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
             @if ( Auth::user()->usertype == '1' )
             <a href="/accounts" role="button" class="btn btn-primary need_housing_button">
@@ -51,6 +64,7 @@
                 @endif
               </a>
             </div>
+          <!-- Payments -->
           <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
             <a href="/placeholder" role="button" class="btn btn-primary need_housing_button">
               {!! file_get_contents(public_path('images/ico-payment.svg')) !!}
@@ -58,6 +72,7 @@
               Payments
             </a>
           </div>
+          <!-- Services -->
           <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
             <a href="/placeholder" role="button" class="btn btn-primary need_housing_button">
               {!! file_get_contents(public_path('images/ico-services.svg')) !!}
@@ -65,6 +80,7 @@
               Services
             </a>
           </div>
+          <!-- Appointments -->
           <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
             <a href="/placeholder" role="button" class="btn btn-primary need_housing_button">
               {!! file_get_contents(public_path('images/ico-appointments.svg')) !!}
