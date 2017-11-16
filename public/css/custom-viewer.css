@@ -1,0 +1,25 @@
+/* This is to be used for modifying the pre-built PDFJS viewer styles */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #ffffff; !important;
+	overflow: hidden;
+}
+
+/* Hide pdf.js toolbar, solution came from https://support.mozilla.org/en-US/questions/1119523*/
+#outerContainer #mainContainer div.toolbar {
+	display: none !important; /* hide PDF viewer toolbar */
+}
+
+#outerContainer #mainContainer #viewerContainer {
+	top: 0 !important; /* move doc up into empty bar space */
+}
+
+/* Make the background grey  */
+.pdfjs #outerContainer {
+	background-color: #faf8f7;
+}

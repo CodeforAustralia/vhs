@@ -36,16 +36,18 @@
         </div>
       </div>
     </div>
-
   </div>
 </div>
 
 <div class="container-wrapper services-wrapper no-padding with-top-margin">
   <div class="container">
     <div class="row">
+      <!-- Loader -->
+      <div class="loading">
+        <img src="{{ asset('images/loading.gif') }}"/>
+      </div>
       <!-- Letter (in iframe)-->
-        <?php $iFrameHeightPadding = $letter->pages * 141.42; ?>
-        <div class="embed-responsive" style="width: 100%; padding-bottom: {{$iFrameHeightPadding}}%;">
+        <div id="letterIframeWrapper" class="embed-responsive">
           <iframe id="letterIframe" class="embed-responsive-item" src="/letter-pdfjs/{{$letter->id}}#zoom=page-width" allowfullscreen></iframe>
         </div>
     </div>
