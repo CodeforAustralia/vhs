@@ -37,9 +37,9 @@ function fix_heights_on_pdf2html() {
   viewerWidth = $('#viewer').width();
   ( viewerWidth > 767 ) ? bottomOffset = 30 : bottomOffset = 10;
   heightShouldBe = $('#viewer').height() + bottomOffset;
-  parent.$('body').contents().find('.pdf2html-wrapper').height(heightShouldBe);
-  parent.$('body').contents().find('.loading-wrapper').hide();
-  parent.$('body').contents().find('.loading').hide();
+  parent.$('body').contents().find('#letterIframeWrapper').height(heightShouldBe);
+//  parent.$('body').contents().find('.loading-wrapper').hide();
+//  parent.$('body').contents().find('.loading').hide();
 }
 
 function hideObject( objectToHide ) {

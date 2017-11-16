@@ -1,5 +1,5 @@
+<html>
 @if (count($letters)>0)
-<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,54 +20,15 @@
 //        fix_heights_on_pdf2html();
 //        console.log('fixed height');
       });
+      document.onreadystatechange = function () {
+        console.log('document.readyState = ' + document.readyState);
+        if (document.readyState === "complete") {
+          console.log('Document finished loading');
+        }
+      };
     </script>
     <link rel="stylesheet" href="{{ asset('js/pdfjs/pdf.js-viewer/viewer.css') }}">
-    <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-  	    background-color: #ffffff; !important;
-       }
-/* Hide pdf.js toolbar, solution came from https://support.mozilla.org/en-US/questions/1119523 */
-      #outerContainer #mainContainer div.toolbar {
-        display: none !important; /* hide PDF viewer toolbar */
-      }
-      #outerContainer #mainContainer #viewerContainer {
-        top: 0 !important; /* move doc up into empty bar space */
-      }
-
-/* Make a grey background */
-    .pdfjs #outerContainer {
-      background-color: #faf8f7;
-    }
-
-/* Outline page */
-.pdfjs .pdfViewer .page {
-    border: 1px solid #003b68;
-}
-
-
-/*
-    #viewer, #outerContainer #mainContainer #viewerContainer {
-      width: 929px;
-    }
-*/
-
-/*
-    .pdfjs .pdfViewer .page {
-      margin: 1px auto -8px auto;
-      border: 1px solid #0063ae !important;
-      border-bottom: 3px solid #0063ae !important;
-      background-clip: content-box;
-      border-image: none;
-      width: 100%;
-      margin: 0;
-    }
-*/
-    </style>
+    <link rel="stylesheet" href="{{ asset('css/custom-viewer.css') }}">
   </head>
 
   <body>
@@ -77,8 +38,19 @@
 
     <script>
 /*      PDFJS.disableWorker = true; */
-      PDFJS.webViewerLoad('/actual-letter/{{ $letters[0]->id }}#zoom=page-width');
+/*      PDFJS.webViewerLoad('/actual-letter/{{ $letters[0]->id }}#zoom=page-width'); */
+/*      PDFJS.webViewerLoad('/actual-letter/{{ $letters[0]->id }}#zoom=page-width').then(function () {
+
+          console.log('Promise worked!');
+});
+*/
+      window.PDFJS.webViewerLoad();
+      window.PDFViewerApplication.open('/actual-letter/{{ $letters[0]->id }}#zoom=page-width').then(function () {
+                console.log('Promise worked!');
+                fix_heights_on_pdf2html();
+                console.log('Fixed height');
+      });
     </script>
   </body>
-</html>
 @endif
+</html>
