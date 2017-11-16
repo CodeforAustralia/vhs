@@ -7,6 +7,7 @@ html, body {
 
 body {
 	background-color: #ffffff; !important;
+	overflow: hidden;
 }
 
 /* Hide pdf.js toolbar, solution came from https://support.mozilla.org/en-US/questions/1119523*/
@@ -18,25 +19,7 @@ body {
 	top: 0 !important; /* move doc up into empty bar space */
 }
 
-/* Make a grey background */
+/* Make the background grey  */
 .pdfjs #outerContainer {
 	background-color: #faf8f7;
 }
-
-/* Outline page */
-.pdfjs .pdfViewer .page {
-	border: 1px solid #003b68;
-	padding: 0;
-	margin: 0;
-}
-
-/* #viewer, #outerContainer #mainContainer #viewerContainer { width: 929px; } */
-/*
-.pdfjs .pdfViewer .page {
-	margin: 1px auto -8px auto;
-	border: 1px solid #0063ae !important;
-	border-bottom: 3px solid #0063ae !important;
-	background-clip: content-box;
-	border-image: none;
-	width: 100%; margin: 0; }
-*/
