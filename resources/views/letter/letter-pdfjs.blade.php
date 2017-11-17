@@ -30,7 +30,7 @@
       <?php  include 'js/pdfjs/pdf.js-viewer/viewer.html'; ?>
     </div>
     <script>
-      PDFJS.webViewerLoad('/actual-letter/{{ $letters[0]->id }}#zoom=page-width');
+      PDFJS.webViewerLoad('/actual-letter/{{ $letters[0]->id }}');
     </script>
   </body>
 @endif

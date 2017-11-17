@@ -24,13 +24,13 @@
     <div class="row">
       <div class="col-md-8 welcome_banner-wrapper btn-vhs_wrapper">
         <div class="btn-group" role="group" aria-label="...">
-        <a id="rippleDownload" class="btn btn-primary btn-vhs" href="#navigation-main" aria-label="Download">
+        <a id="rippleDownload" class="btn btn-primary btn-vhs" href="" aria-label="Download">
           {!! file_get_contents(public_path('images/ico-download.svg')) !!}</i>&nbsp;&nbsp;Download&nbsp;PDF
         </a>
-        <a id="ripplePrint" class="btn btn-primary btn-vhs" href="#navigation-main" aria-label="Print">
+        <a id="ripplePrint" class="btn btn-primary btn-vhs" href="" aria-label="Print">
           {!! file_get_contents(public_path('images/ico-print.svg')) !!}</i>&nbsp;&nbsp;Print
         </a>
-        <a id="rippleFullScreen" class="btn btn-primary btn-vhs" href="#navigation-main" aria-label="Full Screen">
+        <a id="rippleFullScreen" class="btn btn-primary btn-vhs" href="" aria-label="Full Screen">
           {!! file_get_contents(public_path('images/ico-fullscreen.svg')) !!}</i>&nbsp;&nbsp;Full Screen
         </a>
         </div>
@@ -44,11 +44,11 @@
     <div class="row">
       <!-- Loader -->
       <div class="loading">
-        <img src="{{ asset('images/loading.gif') }}"/>
+        <img src="{{ asset('images/rendering.gif') }}"/>
       </div>
       <!-- Letter (in iframe)-->
         <div id="letterIframeWrapper" class="embed-responsive">
-          <iframe id="letterIframe" class="embed-responsive-item" src="/letter-pdfjs/{{$letter->id}}#zoom=page-width" allowfullscreen></iframe>
+          <iframe id="letterIframe" class="embed-responsive-item" src="/letter-pdfjs/{{$letter->id}}" allowfullscreen></iframe>
         </div>
     </div>
   </div>
