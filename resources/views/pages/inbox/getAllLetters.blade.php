@@ -40,25 +40,24 @@
                               </button>
                               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                 <li>
-                                    <li><a href="#">Option not available yet</a></li>
-                                        <!-- <li><a href="#">Select by date</a></li>
-                                        <li><a href="#">Sort by date</a></li> -->
+                                    <!-- <li><a href="#">Option not available yet</a></li> -->
+                                        <li><a href="/sortbyservices">Sort by services</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            @foreach($letter_unread as $letter_unread) 
-                            @if ($letter_unread->unread == '1')
+                            @foreach($letter_unread as $letter) 
+                            @if ($letter->unread == '1')
                             <div class="col-md-12 all_letter_list">
-                             <a href="/letter/{{ $letter_unread->id }}" class="letter_list_unread">
+                             <a href="/letter/{{ $letter->id }}" class="letter_list_unread">
                                  <div class="col-md-3">
-                                    {{ $letter_unread->type }} -
-                                    {{ $letter_unread->description }}
+                                    {{ $letter->type }} -
+                                    {{ $letter->description }}
                                 </div>
                                 <div class="col-md-6">
-                                    {{ $letter_unread->summary }}
+                                    {{ $letter->summary }}
                                 </div>
                                 <div class="col-md-2">
-                                    {{ date("j M", strtotime($letter_unread->letter_date)) }}
+                                    {{ date("j M", strtotime($letter->letter_date)) }}
                                 </div>
                                 <div class="col-md-1">
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -66,25 +65,26 @@
                             </a>
                         </div>
                         @endif
+
                         @endforeach
                         </div>
                         <div class="letter_list_wrapper">
                             <div class="letter_list_header">
                                 <h4>Read mail</h4>
                             </div>
-                            @foreach($letter_read as $letter_read) 
-                            @if ($letter_read->unread == '0')
+                            @foreach($letter_read as $letter) 
+                            @if ($letter->unread == '0')
                             <div class="col-md-12 all_letter_list">
-                                <a href="/letter/{{ $letter_read->id }}">
+                                <a href="/letter/{{ $letter->id }}">
                                     <div class="col-md-3">
-                                        {{ $letter_read->type }} -
-                                        {{ $letter_read->description }}
+                                        {{ $letter->type }} -
+                                        {{ $letter->description }}
                                     </div>
                                     <div class="col-md-6">
-                                        {{ $letter_read->summary }}
+                                        {{ $letter->summary }}
                                     </div>
                                     <div class="col-md-2">
-                                        {{ date("j M", strtotime($letter_read->letter_date)) }}
+                                        {{ date("j M", strtotime($letter->letter_date)) }}
                                     </div>
                                     <div class="col-md-1">
                                         <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -93,6 +93,7 @@
                             </div>
                             @endif
                             @endforeach
+                            {{ $letter_read->links() }}
                         </div>
                         @endif
                     </div>

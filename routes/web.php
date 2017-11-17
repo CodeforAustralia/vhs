@@ -66,6 +66,9 @@ Route::get('escape', function () {
 //search function
 Route::post('/search', 'AccountDetailsController@search')->name('search');
 
+//sort function
+Route::get('/sortbyservices', 'InboxController@sortbyservices')->name('sortbyservices');
+
 // To generate data
 Route::get('/database', 'GenerateController@index')->name('database');
 
