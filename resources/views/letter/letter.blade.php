@@ -24,13 +24,13 @@
     <div class="row">
       <div class="col-md-8 welcome_banner-wrapper btn-vhs_wrapper">
         <div class="btn-group" role="group">
-          <a href="" id= "rippleDownload" class="btn btn-primary btn-vhs" href="" aria-label="Download">
+          <a href="javascript: return false;" id= "rippleDownload" class="btn btn-primary btn-vhs" href="" aria-label="Download">
               {!! file_get_contents(public_path('images/ico-download.svg')) !!}</i>&nbsp;&nbsp;Download&nbsp;PDF
           </a>
-          <a href="" id="ripplePrint" class="btn btn-primary btn-vhs" href="" aria-label="Print">
+          <a href="javascript: return false;" id="ripplePrint" class="btn btn-primary btn-vhs" href="" aria-label="Print">
               {!! file_get_contents(public_path('images/ico-print.svg')) !!}</i>&nbsp;&nbsp;Print
           </a>
-          <a href="" id="rippleFullScreen" class="btn btn-primary btn-vhs" href="" aria-label="Full Screen">
+          <a href="javascript: return false;" id="rippleFullScreen" class="btn btn-primary btn-vhs" href="" aria-label="Full Screen">
               {!! file_get_contents(public_path('images/ico-fullscreen.svg')) !!}</i>&nbsp;&nbsp;Full Screen
           </a>
         </div>
@@ -48,6 +48,7 @@
       </div>
       <!-- Letter (in iframe)-->
       <div id="letterIframeWrapper" class="embed-responsive">
+<!--        <iframe id="letterIframe" class="embed-responsive-item" src="/letter-pdfjs/{{$letter->id}}" allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe> -->
         <iframe id="letterIframe" class="embed-responsive-item" src="/letter-pdfjs/{{$letter->id}}" allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>
       </div>
     </div>
