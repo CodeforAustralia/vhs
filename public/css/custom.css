@@ -915,6 +915,22 @@ LETTER
     border-top-right-radius: 5px;
 }
 
+/* For now */
+
+#rippleFullScreen {
+	display: none;
+}
+
+#ripplePrint {
+	margin-left: 20px;
+}
+
+#rippleDownload {
+	border-radius: 0 !important;
+}
+
+
+
 .password_checkbox {
 	font-size: 26px;
 	margin-top: 10px !important;
