@@ -64,7 +64,7 @@ $( '#letters-1 a' ).hover(
 // the same height as the rendered document
 function fix_heights_on_pdf2html() {
   viewerWidth = $('#viewer').width();
-  ( viewerWidth >= 768 ) ? bottomOffset = 41 : bottomOffset = 10; // (41px for margin + 9 padding for page border = 50)
+  ( viewerWidth >= 750 ) ? bottomOffset = 41 : bottomOffset = 10; // (41px for margin + 9 padding for page border = 50)
   heightShouldBe = $('#viewer').height() + bottomOffset;
   parent.$('body').contents().find('#letterIframeWrapper').height(heightShouldBe);
   parent.$('body').contents().find('.loading').hide();

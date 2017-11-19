@@ -866,11 +866,24 @@ LETTER
 		padding: 8px 30px;
 		min-width: 180px;
 		text-align: center;
+		box-shadow: none;
 }
 
-.btn-vhs.active, .btn-vhs:hover, .btn-vhs:focus, .open > .btn-vhs.dropdown-toggle {
+.btn-vhs.active,
+.btn-vhs:hover,
+.btn-vhs:focus,
+.btn-vhs.active:focus,
+.btn-vhs.active:hover,
+.btn-vhs.focus:active,
+.btn-vhs.focus:hover,
+.btn-vhs:active:focus,
+.btn-vhs:active:hover
+ {
 		background-color: #004e92;
-		border-color: #004e92
+		border-color: #004e92;
+	  box-shadow: 0 3px 0 0 #003b68;
+		-webkit-box-shadow: 0px 3px 0px 0px rgba(0, 59, 104, 1);
+	  -moz-box-shadow: 0px 3px 0px 0px rgba(0, 59, 104, 1);
 }
 
 .btn-vhs svg {
