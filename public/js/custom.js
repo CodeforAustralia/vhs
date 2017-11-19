@@ -1,14 +1,17 @@
 // Ripple Download, Print and Expand button events to the iframe
 $('#rippleDownload').on('click',function(e){
-    $('#letterIframe').contents().find('#download').trigger( "click" );
+  $('#letterIframe').contents().find('#download').trigger( "click" );
+    e.preventDefault();
 });
 
 $('#ripplePrint').on('click',function(e){
-    $('#letterIframe').contents().find('#print').trigger( "click" );
+  $('#letterIframe').contents().find('#print').trigger( "click" );
+    e.preventDefault();
 });
 
 $('#rippleFullScreen').on('click',function(e){
-    $('#letterIframe').contents().find('#presentationMode').trigger( "click" );
+  $('#letterIframe').contents().find('#presentationMode').trigger( "click" );
+    e.preventDefault();
 });
 
 // Disable folowing phone link on tablet and desktop
