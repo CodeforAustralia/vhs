@@ -866,7 +866,7 @@ LETTER
 		padding: 8px 30px;
 		min-width: 180px;
 		text-align: center;
-		box-shadow: none;
+		box-shadow: none;ma
 }
 
 .btn-vhs.active,
@@ -914,6 +914,22 @@ LETTER
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
+
+/* For now */
+
+#rippleFullScreen {
+	display: none;
+}
+
+#ripplePrint {
+	margin-left: 20px;
+}
+
+#rippleDownload {
+	border-radius: 0 !important;
+}
+
+
 
 .password_checkbox {
 	font-size: 26px;
