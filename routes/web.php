@@ -67,7 +67,10 @@ Route::get('escape', function () {
 Route::post('/search', 'AccountDetailsController@search')->name('search');
 
 //sort function
+Route::get('/sortbydate', 'InboxController@sortbydate')->name('sortbydate');
 Route::get('/sortbyservices', 'InboxController@sortbyservices')->name('sortbyservices');
+Route::get('/showunread', 'InboxController@showunread')->name('showunread');
+Route::get('/showread', 'InboxController@showread')->name('showread');
 
 // To generate data
 Route::get('/database', 'GenerateController@index')->name('database');

@@ -30,7 +30,7 @@
                     <div class="col-md-12 services_heading_right">
                         <div class="letter_list_wrapper">
                             <div class="letter_list_header col-md-9">
-                                <h4>Unread mail</h4>
+                                <h4>{{ Session::get('message.title') }}</h4>
                             </div>
                             <div class="letter_list_header_right col-md-3">
                              <div class="dropdown">
@@ -41,75 +41,85 @@
                               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                 <li>
                                     <!-- <li><a href="#">Option not available yet</a></li> -->
-                                        <li><a href="/sortbyservices">Sort by services</a></li>
-                                    </ul>
-                                </div>
+                                    <li><a href="/inbox">Default</a></li>
+                                    <li><a href="/sortbydate">Sort by date</a></li>
+                                    <li><a href="/sortbyservices">Sort by services</a></li>
+                                    <li><a href="/showunread">Show only unread letters</a></li>
+                                    <li><a href="/showread">Show only read letters</a></li>
+                                </ul>
                             </div>
-                            @foreach($letter_unread as $letter) 
-                            @if ($letter->unread == '1')
-                            <div class="col-md-12 all_letter_list">
-                             <a href="/letter/{{ $letter->id }}" class="letter_list_unread">
-                                 <div class="col-md-3">
-                                    {{ $letter->type }} -
-                                    {{ $letter->description }}
-                                </div>
-                                <div class="col-md-6">
-                                    {{ $letter->summary }}
-                                </div>
-                                <div class="col-md-2">
-                                    {{ date("j M", strtotime($letter->letter_date)) }}
-                                </div>
-                                <div class="col-md-1">
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                </div>
-                            </a>
                         </div>
-                        @endif
-
-                        @endforeach
-                        </div>
-                        <div class="letter_list_wrapper">
-                            <div class="letter_list_header">
-                                <h4>Read mail</h4>
+                        @foreach($all_letters as $letter) 
+                        @if ($letter->unread == '1')
+                        <div class="col-md-12 all_letter_list">
+                         <a href="/letter/{{ $letter->id }}" class="letter_list_unread">
+                             <div class="col-md-3">
+                                {{ $letter->type }} -
+                                {{ $letter->description }}
                             </div>
-                            @foreach($letter_read as $letter) 
-                            @if ($letter->unread == '0')
-                            <div class="col-md-12 all_letter_list">
-                                <a href="/letter/{{ $letter->id }}">
-                                    <div class="col-md-3">
-                                        {{ $letter->type }} -
-                                        {{ $letter->description }}
-                                    </div>
-                                    <div class="col-md-6">
-                                        {{ $letter->summary }}
-                                    </div>
-                                    <div class="col-md-2">
-                                        {{ date("j M", strtotime($letter->letter_date)) }}
-                                    </div>
-                                    <div class="col-md-1">
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                    </div>
-                                </a>
+                            <div class="col-md-6">
+                                {{ $letter->summary }}
                             </div>
-                            @endif
-                            @endforeach
-                            {{ $letter_read->links() }}
-                        </div>
-                        @endif
+                            <div class="col-md-2">
+                                {{ date("j M", strtotime($letter->letter_date)) }}
+                            </div>
+                            <div class="col-md-1">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                        </a>
                     </div>
-
-                    <div class="col-md-2 services_heading_right">
-                        <div class="toolbox-banner mail_icon-link">
+                    @elseif ($letter->unread == '0')
+                    <div class="col-md-12 all_letter_list">
+                     <a href="/letter/{{ $letter->id }}">
+                         <div class="col-md-3">
+                            {{ $letter->type }} -
+                            {{ $letter->description }}
                         </div>
-                    </div>
-                    <div class="col-md-1 services_heading_right">
-                        <div class="toolbox-banner mail_icon-link">
+                        <div class="col-md-6">
+                            {{ $letter->summary }}
                         </div>
-                    </div>
+                        <div class="col-md-2">
+                            {{ date("j M", strtotime($letter->letter_date)) }}
+                        </div>
+                        <div class="col-md-1">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                    </a>
                 </div>
+                @endif
+                @endforeach
+
+            </div>
+            <div class="col-md-12 load_more_button">
+            <a href="#">
+                <button  id="loadMore" class="btn btn-primary">
+                    Load More
+                </button>
+                </a>
+            </div>
+
+            <p class="totop"> 
+                <a href="#top">Back to top</a> 
+            </p>
+            @endif
+
+
+
+
+        </div>
+
+        <div class="col-md-2 services_heading_right">
+            <div class="toolbox-banner mail_icon-link">
+            </div>
+        </div>
+        <div class="col-md-1 services_heading_right">
+            <div class="toolbox-banner mail_icon-link">
             </div>
         </div>
     </div>
+</div>
+</div>
+</div>
 </div>
 
 @include('pages.account.hoInfo');

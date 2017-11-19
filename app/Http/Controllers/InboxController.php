@@ -8,6 +8,7 @@ use App\Models\Letters;
 use App\Models\LetterHistory;
 use App\Models\UserService;
 use DB;
+use Session;
 use Illuminate\Support\Facades\Hash;
 
 
@@ -67,7 +68,49 @@ class InboxController extends Controller
 
       $letters = LetterHistory::where('user_id',$user_id)->get();
 
-      $letter_unread = DB::table('letters')
+      $all_letters = DB::table('letters')
+      ->join('letter_history', function ($join) use ($user_id){
+        $join->on('letters.uuid', '=', 'letter_history.letter_uuid')
+        ->where('letter_history.user_id', '=', $user_id);
+      })
+      ->join('templates', 'letters.template_id', '=', 'templates.template_id')
+      ->join('services', 'letter_history.reference_id', '=', 'services.reference_id')
+      ->select('letters.letter_date','letters.id', 'letter_history.reference_id', 'letter_history.unread', 'templates.summary', 'templates.action_needed', 'services.type', 'services.description')
+      ->orderBy('reference_id', 'desc')
+      ->get();
+
+      Session::flash('message.title', 'Sort by services');
+      Session::flash('message.class', 'sort-by-letters');
+
+      // var_dump('<pre>');
+      // var_dump($letter_read);
+      // die;
+
+      return view('pages/inbox/getAllLetters')->with([
+        'letters' => $letters,
+        'all_letters' => $all_letters
+        ]);
+
+    }
+
+    /**
+     * show all unread letters.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showunread() {
+      $user = Auth::user();
+
+      // If no current user logged in
+      if ( empty($user)) {
+        return redirect()->route('login');
+      }
+
+      $user_id = $user->id;
+
+      $letters = LetterHistory::where('user_id',$user_id)->get();
+
+      $all_letters = DB::table('letters')
       ->join('letter_history', function ($join) use ($user_id){
         $join->on('letters.uuid', '=', 'letter_history.letter_uuid')
         ->where('letter_history.user_id', '=', $user_id)
@@ -76,29 +119,106 @@ class InboxController extends Controller
       ->join('templates', 'letters.template_id', '=', 'templates.template_id')
       ->join('services', 'letter_history.reference_id', '=', 'services.reference_id')
       ->select('letters.letter_date','letters.id', 'letter_history.reference_id', 'letter_history.unread', 'templates.summary', 'templates.action_needed', 'services.type', 'services.description')
-      ->orderBy('reference_id', 'desc')
-      ->paginate(5);
+      ->orderBy('letter_date', 'desc')
+      ->get();
 
-      $letter_read = DB::table('letters')
+      Session::flash('message.title', 'Unread Letters');
+      Session::flash('message.class', 'unread-letters');
+
+      // var_dump('<pre>');
+      // var_dump($letter_read);
+      // die;
+
+      return view('pages/inbox/getAllLetters')->with([
+        'letters' => $letters,
+        'all_letters' => $all_letters
+        ]);
+
+    }
+
+    /**
+     * show all read letters.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showread() {
+      $user = Auth::user();
+
+      // If no current user logged in
+      if ( empty($user)) {
+        return redirect()->route('login');
+      }
+
+      $user_id = $user->id;
+
+      $letters = LetterHistory::where('user_id',$user_id)->get();
+
+      $all_letters = DB::table('letters')
       ->join('letter_history', function ($join) use ($user_id){
         $join->on('letters.uuid', '=', 'letter_history.letter_uuid')
         ->where('letter_history.user_id', '=', $user_id)
         ->where('letter_history.unread', '=', 0);
       })
-      ->join('services', 'letter_history.reference_id', '=', 'services.reference_id')
       ->join('templates', 'letters.template_id', '=', 'templates.template_id')
+      ->join('services', 'letter_history.reference_id', '=', 'services.reference_id')
       ->select('letters.letter_date','letters.id', 'letter_history.reference_id', 'letter_history.unread', 'templates.summary', 'templates.action_needed', 'services.type', 'services.description')
-      ->orderBy('reference_id', 'desc')
-      ->paginate(5);
+      ->orderBy('letter_date', 'desc')
+      ->get();
+
+      Session::flash('message.title', 'Read Letters');
+      Session::flash('message.class', 'read-letters');
+
+      // var_dump('<pre>');
+      // var_dump($letter_read);
+      // die;
 
       return view('pages/inbox/getAllLetters')->with([
         'letters' => $letters,
-        'letter_unread' => $letter_unread,
-        'letter_read' => $letter_read
+        'all_letters' => $all_letters
         ]);
 
     }
     
+    /**
+     * sort by date.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function sortbydate() {
+      $user = Auth::user();
+
+      // If no current user logged in
+      if ( empty($user)) {
+        return redirect()->route('login');
+      }
+
+      $user_id = $user->id;
+
+      $letters = LetterHistory::where('user_id',$user_id)->get();
+
+      $all_letters = DB::table('letters')
+      ->join('letter_history', function ($join) use ($user_id){
+        $join->on('letters.uuid', '=', 'letter_history.letter_uuid')
+        ->where('letter_history.user_id', '=', $user_id);
+      })
+      ->join('templates', 'letters.template_id', '=', 'templates.template_id')
+      ->join('services', 'letter_history.reference_id', '=', 'services.reference_id')
+      ->select('letters.letter_date','letters.id', 'letter_history.reference_id', 'letter_history.unread', 'templates.summary', 'templates.action_needed', 'services.type', 'services.description')
+      ->orderBy('letter_date', 'desc')
+      ->get();
+
+      Session::flash('message.title', 'Sort by date');
+      Session::flash('message.class', 'sort-by-date');
+
+      // var_dump('<pre>');
+      // var_dump($letter_read);
+      // die;
+
+      return view('pages/inbox/getAllLetters')->with([
+        'letters' => $letters,
+        'all_letters' => $all_letters
+        ]);
+    }
     
     /**
      * Show All letters.
@@ -117,29 +237,21 @@ class InboxController extends Controller
 
       $letters = LetterHistory::where('user_id',$user_id)->get();
 
-      $letter_unread = DB::table('letters')
+      $all_letters = DB::table('letters')
       ->join('letter_history', function ($join) use ($user_id){
         $join->on('letters.uuid', '=', 'letter_history.letter_uuid')
-        ->where('letter_history.user_id', '=', $user_id)
-        ->where('letter_history.unread', '=', 1);
+        ->where('letter_history.user_id', '=', $user_id);
       })
       ->join('templates', 'letters.template_id', '=', 'templates.template_id')
       ->join('services', 'letter_history.reference_id', '=', 'services.reference_id')
       ->select('letters.letter_date','letters.id', 'letter_history.reference_id', 'letter_history.unread', 'templates.summary', 'templates.action_needed', 'services.type', 'services.description')
-      ->orderBy('letter_date', 'desc')
-      ->paginate(5);
+      ->orderBy('unread', 'desc')
+      ->get();
 
-      $letter_read = DB::table('letters')
-      ->join('letter_history', function ($join) use ($user_id){
-        $join->on('letters.uuid', '=', 'letter_history.letter_uuid')
-        ->where('letter_history.user_id', '=', $user_id)
-        ->where('letter_history.unread', '=', 0);
-      })
-      ->join('services', 'letter_history.reference_id', '=', 'services.reference_id')
-      ->join('templates', 'letters.template_id', '=', 'templates.template_id')
-      ->select('letters.letter_date','letters.id', 'letter_history.reference_id', 'letter_history.unread', 'templates.summary', 'templates.action_needed', 'services.type', 'services.description')
-      ->orderBy('letter_date', 'desc')
-      ->paginate(5);
+      //number of rows
+
+      Session::flash('message.title', 'All Letters');
+      Session::flash('message.class', 'all-letters');
 
       // var_dump('<pre>');
       // var_dump($letter_read);
@@ -147,8 +259,7 @@ class InboxController extends Controller
 
       return view('pages/inbox/getAllLetters')->with([
         'letters' => $letters,
-        'letter_unread' => $letter_unread,
-        'letter_read' => $letter_read
+        'all_letters' => $all_letters
         ]);
     }
   }
