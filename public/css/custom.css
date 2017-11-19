@@ -834,77 +834,8 @@ LETTER
 	text-align: center;
 }
 
-.btn-vhs,
-.btn-vhs:focus
-.btn-vhs:hover,
-.btn-vhs:active {
-    font-size: 16px;
-    background-color: #0363ab;
-    color: #ffffff;
-    border-radius: 0;
-    border-color: #003b68;
-}
-
-.btn-vhs.active, .btn-vhs:hover, .btn-vhs:focus, .open > .btn-vhs.dropdown-toggle {
-/*
-		background-color: #2d97e6;
-    color: #ffffff;
-*/
-		background-color: #004e92;
-		border-color: #004e92;
-
-}
-
-.btn-vhs svg {
-    height: 16px;
-    width: 16px;
-    vertical-align: middle;
-    fill: #ffffff;
-}
-
-.btn-vhs_wrapper {
-	margin-top: 30px;
-	margin-bottom: 10px;
-}
-
-.btn-vhs_wrapper a {
-	text-align: left;
-/*  Softer shadow
-		-webkit-box-shadow: 1px 3px 1px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 3px 1px 0px rgba(0,0,0,0.75);
-    box-shadow: 1px 3px 1px 0 rgba(0, 23, 41, 0.2);
-*/
-  	box-shadow: 0 3px 0 0 #003b68;
-		-webkit-box-shadow: 0px 3px 0px 0px rgba(0, 59, 104, 1);
-    -moz-box-shadow: 0px 3px 0px 0px rgba(0, 59, 104, 1);
-}
-
-.btn-vhs_wrapper a:first-child {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.btn-vhs_wrapper a:last-child {
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.edit_profile-wrapper a {
-    color: #fff;
-}
-
-#rippleFullScreen, #rippleDownload, #ripplePrint {
-	padding: 8px 30px;
-	min-width: 180px;
-	text-align: center;
-}
-
-#rippleDownload {
-	margin-left: 0;
-}
-
-.with-top-margin {
-	padding-top: 50px !important;
+.letter-wrapper {
+	padding-top: 41px !important;
 	padding-bottom: 0 !important;
 }
 
@@ -922,6 +853,55 @@ LETTER
 .pdfjs {
 	display: none;
 }
+
+.btn-vhs,
+.btn-vhs:focus
+.btn-vhs:hover,
+.btn-vhs:active {
+    font-size: 16px;
+    background-color: #0363ab;
+    color: #ffffff;
+    border-radius: 0;
+    border-color: #003b68;
+		padding: 8px 30px;
+		min-width: 180px;
+		text-align: center;
+}
+
+.btn-vhs.active, .btn-vhs:hover, .btn-vhs:focus, .open > .btn-vhs.dropdown-toggle {
+		background-color: #004e92;
+		border-color: #004e92
+}
+
+.btn-vhs svg {
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    fill: #ffffff;
+}
+
+.btn-vhs_wrapper {
+	margin-top: 40px !important;
+	margin-bottom: 10px !important;
+}
+
+.btn-vhs_wrapper a {
+	text-align: center;
+  box-shadow: 0 3px 0 0 #003b68;
+	-webkit-box-shadow: 0px 3px 0px 0px rgba(0, 59, 104, 1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(0, 59, 104, 1);
+}
+
+.btn-vhs_wrapper .btn-group a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.btn-vhs_wrapper .btn-group a:last-child {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
 .password_checkbox {
 	font-size: 26px;
 	margin-top: 10px !important;
@@ -1068,6 +1048,7 @@ Footer
 	display: inline-block;
 	text-align: center;;
 	letter-spacing: initial;
+	vertical-align: middle;
 }
 
 .too-much {
@@ -1078,6 +1059,7 @@ Footer
 	left: -20px;
 	border-radius: 50%;
 	padding: 8px 4px !important;
+	vertical-align: middle;
 }
 
 .lots {
@@ -1087,7 +1069,14 @@ Footer
 	top: -28px;
 	left: -20px;
 	border-radius: 50%;
-	padding: 5px 1px !important;
+	padding: 4px 1px !important;
+	vertical-align: middle;
+}
+
+.ref_no {
+  color: #000;
+	font-size: 20px;
+	line-height: 30px;
 }
 
 .tile-new {
@@ -1185,4 +1174,57 @@ Footer
 .phone:active {
 	text-decoration: none;
 	cursor: default;
+}
+
+/* Interpreting page segment */
+
+.interpreting-wrapper {
+	padding: 50px 0 0 0;
+}
+
+.interpreting {
+    margin: 0 auto;
+    float: none;
+}
+
+.interpreting-text {
+    color: #ffffff;
+    border-radius: 6px;
+    background-color: #06b6be;
+    text-align: center;
+    font-size: 18px;
+  	padding: 18px 50px;
+    position: relative;
+    display: inline-block;
+    top: -60px;
+    left: 90px;
+}
+
+.interpreting-text a {
+  color: #ffffff;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.sandwich-filler {
+    border-radius: 6px;
+    background-color: #ffffff;
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: -100px;
+    width: 80px;
+    height: 60px;
+}
+
+.speech-bubble {
+	display: inline-block;
+	position: relative;
+}
+
+.speech-bubble svg {
+	width: 180px;
+	color: #f3ce66;
+	stroke: #f3ce66;
+	fill: #f3ce66;
 }

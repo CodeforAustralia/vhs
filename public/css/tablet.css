@@ -108,18 +108,14 @@ a span.external-link svg {
     width: 160px;
 }
 
-.btn-vhs_wrapper a {
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.btn-vhs_wrapper a:first-child {
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-	border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.btn-vhs_wrapper a:last-child {
+#rippleFullScreen {
 	display: none;
+}
+
+#ripplePrint {
+	margin-left: 20px;
+}
+
+#rippleDownload {
+	border-radius: 0 !important;
 }

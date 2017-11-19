@@ -29,13 +29,42 @@ $(document).ready(function(){
   });
 });
 
+// Make sure first 2 tiles on first page have the same hover effect
+$( '#letters-0 a' ).hover(
+  function() {
+    $('#letters-0 a').css("background-color", "#005199");
+    $('#letters-0 a').css("border-color", "#005199");
+    $('#letters-1 a').css("background-color", "#005199");
+    $('#letters-1 a').css("border-color", "#005199");
+  }, function() {
+    $('#letters-0 a').css("background-color", "#0062aa");
+    $('#letters-0 a').css("border", "none");
+    $('#letters-1 a').css("background-color", "#0062aa");
+    $('#letters-1 a').css("border", "none");
+  }
+);
+
+$( '#letters-1 a' ).hover(
+  function() {
+    $('#letters-0 a').css("background-color", "#005199");
+    $('#letters-0 a').css("border-color", "#005199");
+    $('#letters-1 a').css("background-color", "#005199");
+    $('#letters-1 a').css("border-color", "#005199");
+  }, function() {
+    $('#letters-0 a').css("background-color", "#0062aa");
+    $('#letters-0 a').css("border", "none");
+    $('#letters-1 a').css("background-color", "#0062aa");
+    $('#letters-1 a').css("border", "none");
+  }
+);
+
 /* Functions */
 
 // Make wrapper around the iframe (that contains the rendered PDF document)
 // the same height as the rendered document
 function fix_heights_on_pdf2html() {
   viewerWidth = $('#viewer').width();
-  ( viewerWidth > 767 ) ? bottomOffset = 50 : bottomOffset = 10;
+  ( viewerWidth >= 768 ) ? bottomOffset = 41 : bottomOffset = 10; // (41px for margin + 9 padding for page border = 50)
   heightShouldBe = $('#viewer').height() + bottomOffset;
   parent.$('body').contents().find('#letterIframeWrapper').height(heightShouldBe);
   parent.$('body').contents().find('.loading').hide();
