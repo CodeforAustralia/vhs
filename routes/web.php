@@ -57,6 +57,7 @@ Route::get('correspondence/{reference_id}', 'LettersListController@index');
 Route::get('letter/{id}', 'LettersListController@show');
 Route::get('letter-accessible/{id}', 'ActualLetterController@showAccessible');
 Route::get('actual-letter/{id}', 'ActualLetterController@index');
+Route::get('to-download/{id}', 'ActualLetterController@showToDownload');
 Route::get('letter-pdfjs/{id}', 'ActualLetterController@pdfjs');
 
 // Quick Escape

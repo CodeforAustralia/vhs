@@ -45,6 +45,7 @@ class LettersListController extends Controller
 
    public function show($id) {
 
+     $directory=env('CORRESPONDENCE_DIR');
      $letters = Letters::where('id', $id)->get();
 
      if (count($letters) > 0) {
@@ -65,8 +66,8 @@ class LettersListController extends Controller
 
 // Now get the service itself
       $service = Service::where('reference_id', $letter_history[0]->reference_id)->first();
-
       return view('letter/letter')->with([
+        'directory' => $directory,
        'letters' => $letters,
        'service' => $service
      ]);
