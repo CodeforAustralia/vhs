@@ -871,7 +871,7 @@ LETTER
 		padding: 8px 30px;
 		min-width: 180px;
 		text-align: center;
-		box-shadow: none;ma
+		box-shadow: none;
 }
 
 .btn-vhs.active,
@@ -904,6 +904,7 @@ LETTER
 }
 
 .btn-vhs_wrapper a {
+	border-radius: 5px;
 	text-align: center;
   box-shadow: 0 3px 0 0 #003b68;
 	-webkit-box-shadow: 0px 3px 0px 0px rgba(0, 59, 104, 1);
@@ -911,30 +912,14 @@ LETTER
 }
 
 .btn-vhs_wrapper .btn-group a:first-child {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .btn-vhs_wrapper .btn-group a:last-child {
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
 }
-
-/* For now */
-
-#rippleFullScreen {
-	display: none;
-}
-
-#ripplePrint {
-	margin-left: 20px;
-}
-
-#rippleDownload {
-	border-radius: 0 !important;
-}
-
-
 
 .password_checkbox {
 	font-size: 26px;
@@ -1261,4 +1246,22 @@ Footer
 	color: #f3ce66;
 	stroke: #f3ce66;
 	fill: #f3ce66;
+}
+
+.noSpace {
+	height: 0;
+	overflow: visible;
+}
+
+.backButton,
+.backButton:focus,
+.backButton:hover,
+.backButton:active {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0063ae;
+	text-decoration: none;
+	position: relative;
+	top: 0.44em;
+	line-height: 30px;
 }

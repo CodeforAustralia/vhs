@@ -4,10 +4,15 @@
 
 <div class="container-wrapper">
   <div class="container">
-    <!-- Template summary -->
     <div class="row">
+      <div class class="col-md-1 welcome_banner-wrapper">
+        <div class="noSpace">
+          <a class="backButton" href="">&lt;&nbsp;&nbsp;Back</a>
+        </div>
+      </div>
+      <!-- Template summary -->
       <div class="col-md-8 welcome_banner-wrapper">
-        <div class="welcome-banner letter-banner">
+      <div class="welcome-banner letter-banner">
           <h3>
           @if (!empty($service))
           {{$service->type}} - {{$service->description}}<br/>
@@ -25,7 +30,7 @@
     <div class="row">
       <div class="col-md-8 welcome_banner-wrapper btn-vhs_wrapper">
         <div class="btn-group" role="group">
-          <a href="/to-download/{{$letter->id}}" id ="rippleDownload2" class="btn btn-primary btn-vhs" href="" aria-label="Download">
+          <a href="/to-download/{{$letter->id}}" id ="rippleDownload" class="btn btn-primary btn-vhs" href="" aria-label="Download">
               {!! file_get_contents(public_path('images/ico-download.svg')) !!}</i>&nbsp;&nbsp;Download&nbsp;PDF
           </a>
           <a href="javascript: return false;" id="ripplePrint" class="btn btn-primary btn-vhs" href="" aria-label="Print">

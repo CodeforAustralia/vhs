@@ -1,18 +1,26 @@
-// Ripple Download, Print and Expand button events to the iframe
-$('#rippleDownload').on('click',function(e){
-  $('#letterIframe').contents().find('#download').trigger( "click" );
-//    e.preventDefault();
-});
-
+// Ripple Print and Expand button events to the iframe
 $('#ripplePrint').on('click',function(e){
   $('#letterIframe').contents().find('#print').trigger( "click" );
-//    e.preventDefault();
 });
 
 $('#rippleFullScreen').on('click',function(e){
   $('#letterIframe').contents().find('#presentationMode').trigger( "click" );
-//    e.preventDefault();
 });
+
+// Back button functionality
+$('.backButton').on('click',function(e){
+  window.history.back();
+  e.preventDefault();
+});
+
+//If IE do not give the option to go Full screen
+isIE = navigator.userAgent.indexOf('Trident') >= 0; // this is the same way of detecting the IE browser as in pdf.js
+if (isIE) {
+  $('#rippleFullScreen').css("display","none");
+  $('#ripplePrint').css("margin-left","20px");
+  $('#ripplePrint').css("border-radius","5px");
+  $('#rippleDownload').css("border-radius","5px");
+  }
 
 // Disable folowing phone link on tablet and desktop
 $('.phone').on('click',function(e){

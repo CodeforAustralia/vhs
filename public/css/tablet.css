@@ -116,6 +116,20 @@ a span.external-link svg {
 	margin-left: 20px;
 }
 
-#rippleDownload {
-	border-radius: 0 !important;
+#rippleDownload, #ripplePrint  {
+	border-radius: 5px !important;
+}
+
+.noSpace {
+    height: auto;
+}
+
+.backButton, .backButton:focus, .backButton:hover, .backButton:active {
+    font-size: 18px;
+    text-decoration: none;
+    position:	inherit;
+    top: 0;
+    line-height: 30px;
+    margin-left: 15px;
+}
 }

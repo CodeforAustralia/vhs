@@ -83,7 +83,11 @@
 	}
 
 	.container-wrapper.services-wrapper {
-		padding: 0 0 30px 0;
+		padding: 0 0 20px 0;
+	}
+
+	.letter-wrapper {
+	    padding-top: 20px !important;
 	}
 
 	.welcome-banner h3 {
@@ -162,6 +166,22 @@
     width: 140px;
   }
 
+
+		.tile-action {
+			width: 16px;
+			height: 16px;
+		}
+
+		.tile-action svg {
+			width: 16px !important;
+			height: 16px !important;
+		}
+
+		.summary-wrapper {
+	    margin-left: -6px;
+	    width: 126px;
+		}
+
 	.lots {
     padding: 4px 0 !important;
 	}
@@ -175,9 +195,28 @@
 	}
 
 	.letter-banner, .letter-banner h3, .letter-banner span {
-		font-size: 18px;
+		font-size: 16px;
     line-height: 26px;
 	}
+
+	.btn-vhs_wrapper {
+		    margin-top: 20px !important;
+		    margin-bottom: 0 !important;
+		}
+
+		.btn-vhs, .btn-vhs:focus .btn-vhs:hover, .btn-vhs:active {
+	    font-size: 14px;
+	    padding: 8px 20px;
+	    min-width: 100px;
+	}
+
+	#ripplePrint {
+	    margin-left: 10px;
+	}
+
+		.backButton, .backButton:focus, .backButton:hover, .backButton:active {
+	    font-size: 16px;
+		}
 
 }
 
@@ -204,20 +243,5 @@
     position: relative;
 		top: -160px;
 		left: -46px;
-	}
-
-	.tile-action {
-		width: 16px;
-		height: 16px;
-	}
-
-	.tile-action svg {
-		width: 16px !important;
-		height: 16px !important;
-	}
-
-	.summary-wrapper {
-    margin-left: -6px;
-    width: 126px;
 	}
 }
