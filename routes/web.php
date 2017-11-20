@@ -55,6 +55,7 @@ Route::get('correspondence', 'DashboardController@index')->name('dashboard');
 	// if no reference_id route to dashboard
 Route::get('correspondence/{reference_id}', 'LettersListController@index');
 Route::get('letter/{id}', 'LettersListController@show');
+Route::get('letter-accessible/{id}', 'ActualLetterController@showAccessible');
 Route::get('actual-letter/{id}', 'ActualLetterController@index');
 Route::get('letter-pdfjs/{id}', 'ActualLetterController@pdfjs');
 

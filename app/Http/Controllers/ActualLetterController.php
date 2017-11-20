@@ -41,4 +41,14 @@ class ActualLetterController extends Controller
         'letters' => $letters
         ]);
     }
+
+    public function showAccessible($id)
+    {
+
+      $letters = Letters::where('id', $id)->get();
+
+      return view('letter/letter-accessible')->with([
+        'letters' => $letters
+        ]);
+    }
  }
