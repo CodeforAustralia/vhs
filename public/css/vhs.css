@@ -83,3 +83,41 @@
 .inbox_panel-primary {
 	margin: 20px 0px;
 }
+
+/*LOAD MORE */
+
+
+.all_letter_list {
+    display:none;
+    padding: 10px;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 0 1px 1px #ccc;
+    margin-bottom: 5px;
+}
+.totop {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+.totop a {
+    display: none;
+}
+#loadMore {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border-style: solid;
+    border-color: #fff;
+    transition: all 600ms ease-in-out;
+    -webkit-transition: all 600ms ease-in-out;
+    -moz-transition: all 600ms ease-in-out;
+    -o-transition: all 600ms ease-in-out;
+    width: 200px;
+    font-size: 18px;
+}
+.col-md-12.load_more_button {
+    text-align: center;
+    padding: 20px;
+}
