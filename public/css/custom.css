@@ -1254,6 +1254,7 @@ Footer
 .panel-login {
     border-color: #faf8f7;
     border-radius: 0;
+		margin-bottom: 0;
 }
 
 .panel-login .panel-heading,
@@ -1274,7 +1275,7 @@ Footer
 }
 
 .panel-login .panel-body form {
-		margin: 0 40px 0 40px;
+	margin: 0 40px 40px 40px;
 }
 
 .panel-login .panel-body form label {
@@ -1324,8 +1325,17 @@ Footer
 }
 
 #login-btn {
+	border: none;
 	border-radius: 6px;
-	font-size: 16px;
-	padding: 8px 40px !important;
-	max-width: none;
+	font-size: 18px;
+	padding: 10px 40px !important;
+  min-width: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	/*
+	box-shadow: 0 3px 0 0 #003b68;
+	-webkit-box-shadow: 0px 3px 0px 0px rgba(0, 59, 104, 1);
+	-moz-box-shadow: 0px 3px 0px 0px rgba(0, 59, 104, 1);
+	*/
 }
