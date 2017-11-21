@@ -14,6 +14,9 @@
 
 <div class="container">
 	<div class="row">
+	 <div class="noSpace">
+              <a class="backButton" href="">&lt;&nbsp;&nbsp;Back</a>
+          </div>
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-primary">
 				<div class="panel-heading">

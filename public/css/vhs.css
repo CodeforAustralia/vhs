@@ -11,12 +11,21 @@
 .all_letter_list_unread:last-child {
 	box-shadow: 2px 2px 4px lightgrey !important;
 }
+
 .all_letter_list:last-child {
 	box-shadow: 2px 2px 4px lightgrey;
 }
 
+.all_letter_list:hover {
+	box-shadow: 0px 2px 8px darkgrey !important;
+}
+.all_letter_list:hover div {
+	text-decoration: underline !important;
+}
+
 .all_letter_list {
 	box-shadow: 2px 1px 2px 0px lightgrey;
+
 }
 
 .letter_list_unread {
@@ -122,4 +131,34 @@
 .col-md-12.load_more_button {
 	text-align: center;
 	padding: 20px;
+}
+
+@media screen and (max-width: 991px) {
+	.all_letter_list {
+		display: none;
+		padding: 10px;
+		border-width: 0 1px 1px 0;
+		border-style: solid;
+		border-color: #fff;
+		margin-bottom: 5px;
+		height: 85px;
+		overflow: hidden;
+		padding-right: 0px;
+	}
+	.hide-on-mobile {
+		display: none;
+	}
+	.all_letter_list .col-md-2 {
+    text-align: right;
+    float: right;
+    background-color: #fff;
+    height: 100px;
+    box-shadow: -15px 8px 20px #ffffff;
+    padding: 10px 10px;
+    margin-top: -53px;
+}
+
+	.all_letter_list > div:nth-child(2), .all_letter_list > div:nth-child(1) {
+    width: 1000px;
+}
 }
