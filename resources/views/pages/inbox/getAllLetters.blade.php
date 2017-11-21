@@ -76,17 +76,17 @@
                     @if($letter->unread == '1') 
                     <div class="col-md-12 all_letter_list all_letter_list_unread">
                      <a href="/letter/{{ $letter->id }}" class="letter_list_unread">
-                         <div class="col-md-3">
+                         <div class="col-md-3 col-xs-12">
                             {{ $letter->type }} -
                             {{ $letter->description }}
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-xs-12">
                             {{ $letter->summary }}
                         </div>
                         <div class="col-md-2">
                             {{ date("j M", strtotime($letter->letter_date)) }}
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-1 hide-on-mobile">
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </div>
                     </a>
@@ -108,17 +108,17 @@
                 @if ($letter->unread == '0')
                 <div class="col-md-12 all_letter_list">
                  <a href="/letter/{{ $letter->id }}">
-                     <div class="col-md-3">
+                     <div class="col-md-3 col-xs-12">
                         {{ $letter->type }} -
                         {{ $letter->description }}
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-xs-12">
                         {{ $letter->summary }}
                     </div>
                     <div class="col-md-2">
                         {{ date("j M", strtotime($letter->letter_date)) }}
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-1 hide-on-mobile">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </div>
                 </a>
