@@ -59,6 +59,7 @@
 
                             <div class="letter_list_header col-md-9">
                             <h4>Unread Mail</h4>
+                            <p><a href="/showread">Show all unread mail <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
                             </div>
 
                             @endif
@@ -88,7 +89,8 @@
                         <?php $read_heading = true; ?>
 
                         <div class="letter_list_header col-md-9">
-                            <h4><a href="/showread">Read Mail</a></h4>
+                            <h4>Read Mail</h4>
+                            <p><a href="/showread">Show all read mail  <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
                         </div>
                         
                         @endif
