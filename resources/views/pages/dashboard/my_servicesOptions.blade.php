@@ -5,7 +5,7 @@
         <div class="col-md-8 col-sm-10 col-xs-12 services_toolbox">
           <!--Letters -->
           <div id="letters-0" class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
-            <a href="/inbox" role="button" class="btn btn-primary need_housing_button">
+            <a href="/inbox" role="button" class="btn btn-primary need_housing_button" aria-label="Letters">
              {!! file_get_contents(public_path('images/ico-inbox.svg')) !!}
              @if ($total_unread > 0 &&  $total_unread < 10)
                 <div class="tile-number-unread">{{$total_unread}}</div>
@@ -27,13 +27,13 @@
              <div class="tile-message">You are up to date, you've read all your letters.</div>
          @else
                 @if (!empty($latest_unread->id))
-          <a href="/letter/{{$latest_unread->id}}" role="button" class="btn btn-primary need_housing_button">
+          <a href="/letter/{{$latest_unread->id}}" role="button" class="btn btn-primary need_housing_button" aria-label="Latest unread letter">
                 @else
-          <a href="/inbox" role="button" class="btn btn-primary need_housing_button">
+          <a href="/inbox" role="button" class="btn btn-primary need_housing_button" aria-label="Letters">
                 @endif
 
              <div class="tile-new">
-               <div class="tile-new-header">New</div>
+               <div class="tile-new-header">New letter</div>
                @if (!empty($latest_unread->action_needed) && ($latest_unread->action_needed == 1))
                <div class="tile-action">
                    {!! file_get_contents(public_path('images/action-needed.svg')) !!}
@@ -63,12 +63,12 @@
          <!-- My Profile -->
          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
             @if ( Auth::user()->usertype == '1' )
-            <a href="/accounts" role="button" class="btn btn-primary need_housing_button">
+            <a href="/accounts" role="button" class="btn btn-primary need_housing_button" aria-label="User Accounts">
               {!! file_get_contents(public_path('images/ico-profile.svg')) !!}
               <br/>
               User Accounts</a>
               @else
-              <a href="/accounts/{{ Auth::user()->id }}" role="button" class="btn btn-primary need_housing_button">
+              <a href="/accounts/{{ Auth::user()->id }}" role="button" class="btn btn-primary need_housing_button" aria-label="My Profile">
                 {!! file_get_contents(public_path('images/ico-profile.svg')) !!}
                 <br/>
                 My Profile</a>
@@ -77,7 +77,7 @@
             </div>
           <!-- Payments -->
           <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
-            <a href="/placeholder" role="button" class="btn btn-primary need_housing_button">
+            <a href="/placeholder" role="button" class="btn btn-primary need_housing_button" aria-label="Payments">
               {!! file_get_contents(public_path('images/ico-payment.svg')) !!}
               <br/>
               Payments
@@ -85,7 +85,7 @@
           </div>
           <!-- Services -->
           <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
-            <a href="/placeholder" role="button" class="btn btn-primary need_housing_button">
+            <a href="/placeholder" role="button" class="btn btn-primary need_housing_button" aria-label="Services">
               {!! file_get_contents(public_path('images/ico-services.svg')) !!}
               <br/>
               Services
@@ -93,7 +93,7 @@
           </div>
           <!-- Appointments -->
           <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_buttons">
-            <a href="/placeholder" role="button" class="btn btn-primary need_housing_button">
+            <a href="/placeholder" role="button" class="btn btn-primary need_housing_button" aria-label="Appointments">
               {!! file_get_contents(public_path('images/ico-appointments.svg')) !!}
               <br/>
               Appointments

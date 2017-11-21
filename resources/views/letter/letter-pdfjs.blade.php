@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 @if (count($letters)>0)
   <head>
     <meta charset="utf-8">
