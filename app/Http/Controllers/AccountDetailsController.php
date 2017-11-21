@@ -97,12 +97,16 @@ class AccountDetailsController extends Controller
         $lastName = $request->input('lastName');
         $email = $request->input('email');
         $mobile = $request->input('mobile');
+        $address_1 = $request->input('address_1');
+        $suburb_town = $request->input('suburb_town');
+        $postcode = $request->input('postcode');
         $reference_id = $request->input('reference_id');
         $client_id = $request->input('client_id');
         $password_confirmation = $request->input('password_confirmation');
 
             // Find the User to update
         $updateUser = AccountDetails::where('id', $id)->first();
+        $updateUserAddress = userAddress::where('user_id', $id)->first();
 
         $updateUser->firstName = $firstName;
         $updateUser->lastName = $lastName;
@@ -110,6 +114,9 @@ class AccountDetailsController extends Controller
         $updateUser->email = $email;
         $updateUser->mobile = $mobile;
         $updateUser->reference_id = $reference_id;
+        $updateUserAddress->address_1 = $address_1;
+        $updateUserAddress->suburb_town = $suburb_town;
+        $updateUserAddress->postcode = $postcode;
 
         if($password == '') {
 
@@ -128,6 +135,7 @@ class AccountDetailsController extends Controller
 
 
         $updateUser->save();
+        $updateUserAddress->save();
 
         if (!$updateUser) {
            Session::flash('message.level', 'danger');
@@ -154,15 +162,22 @@ class AccountDetailsController extends Controller
         $lastName = $request->input('lastName');
         $email = $request->input('email');
         $mobile = $request->input('mobile');
+        $address_1 = $request->input('address_1');
+        $suburb_town = $request->input('suburb_town');
+        $postcode = $request->input('postcode');
         $password_confirmation = $request->input('password_confirmation');
 
         // Find the User to update
         $updateUser = AccountDetails::where('id', $id)->first();
+        $updateUserAddress = UserAddress::where('user_id', $id)->first();
 
         $updateUser->firstName = $firstName;
         $updateUser->lastName = $lastName;
         $updateUser->email = $email;
         $updateUser->mobile = $mobile;
+        $updateUserAddress->address_1 = $address_1;
+        $updateUserAddress->suburb_town = $suburb_town;
+        $updateUserAddress->postcode = $postcode;
         
         if ($current_password != '') {
             // if current password is not empty
@@ -196,6 +211,7 @@ class AccountDetailsController extends Controller
         }
 
         $updateUser->save();
+        $updateUserAddress->save();
 
         if (!$updateUser) {
             Session::flash('message.level', 'danger');

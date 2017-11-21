@@ -42,6 +42,45 @@
 		</div>
 	</div>
 
+	<div class="form-group{{ $errors->has('address_1') ? ' has-error' : '' }}">
+	<label for="address_1" class="col-md-4 control-label">Address:</label>
+		<div class="col-md-6">
+			<input id="address_1" type="text" class="form-control" name="address_1" value="{{ $UserAddress[0]->address_1 }}"/>
+
+			@if ($errors->has('address_1'))
+			<span class="help-block">
+				<strong>{{ $errors->first('address_1') }}</strong>
+			</span>
+			@endif
+		</div>
+	</div>
+
+	<div class="form-group{{ $errors->has('address_1') ? ' has-error' : '' }}">
+		<label for="suburb_town" class="col-md-4 control-label">Suburb/Town:</label>
+		<div class="col-md-6">
+			<input id="suburb_town" type="text" class="form-control" name="suburb_town" value="{{ $UserAddress[0]->suburb_town }}"/>
+
+			@if ($errors->has('suburb_town'))
+			<span class="help-block">
+				<strong>{{ $errors->first('suburb_town') }}</strong>
+			</span>
+			@endif
+		</div>
+	</div>
+
+	<div class="form-group{{ $errors->has('address_1') ? ' has-error' : '' }}">
+		<label for="postcode" class="col-md-4 control-label">Postcode:</label>
+		<div class="col-md-6">
+			<input id="postcode" type="text" class="form-control" name="postcode" value="{{ $UserAddress[0]->postcode }}"/>
+
+			@if ($errors->has('postcode'))
+			<span class="help-block">
+				<strong>{{ $errors->first('postcode') }}</strong>
+			</span>
+			@endif
+		</div>
+	</div>
+
 	<div class="form-group{{ $errors->has('mobile') ? ' has-error' : '' }}">
 		<label for="mobile" class="col-md-4 col-sm-4 col-xs-8 control-label">Change Password:</label>
 		<div class="col-md-6 col-sm-6 col-xs-4 ">	
@@ -51,14 +90,14 @@
 
 	<div id="password_hide">
 
-	<div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-		<label for="current_password" class="col-sm-4 control-label">Current Password:</label>
-		<div class="col-sm-6">
-			<input type="hidden" name="_token" value="{{ csrf_token() }}"> 
-			<input type="password" class="form-control" id="current_password" name="current_password" placeholder="Password">
+		<div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+			<label for="current_password" class="col-sm-4 control-label">Current Password:</label>
+			<div class="col-sm-6">
+				<input type="hidden" name="_token" value="{{ csrf_token() }}"> 
+				<input type="password" class="form-control" id="current_password" name="current_password" placeholder="Password">
 
+			</div>
 		</div>
-	</div>
 
 		<div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
 			<label for="password" class="col-sm-4 control-label">New Password:</label>

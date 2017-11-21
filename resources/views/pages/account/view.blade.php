@@ -45,6 +45,9 @@
 
 <div class="container">
 	<div class="row">
+		<div class="noSpace">
+			<a class="backButton" href="">&lt;&nbsp;&nbsp;Back</a>
+		</div>
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
@@ -99,45 +102,51 @@
 
 					</div>
 					<div class="col-md-7 services_heading_right">
-						<h4>Contact Details</h4>
-						<div class="col-md-6 contact-address-details">
-							<p>{{ $UserAddress[0]->address_1 }} <br class="show-sm-down"/>{{ $UserAddress[0]->suburb_town }} VIC {{ $UserAddress[0]->postcode }}</p>
+						<div class="col-md-12 contact-address-details">
+							<h4>Contact Details</h4>
+						</div>
+						<div class="col-md-12 contact-address-details">
+							<p>Address: {{ $UserAddress[0]->address_1 }} <br class="show-sm-down"/>{{ $UserAddress[0]->suburb_town }} VIC {{ $UserAddress[0]->postcode }}</p>
+						</div>
+						<div class="col-md-12 contact-address-details">
+							<p>
+								E-mail: {{ $AccountDetails[0]->email }}
+								<br/>
+								Mobile: {{ $AccountDetails[0]->mobile }}
+							</p>
+						</div>
+						<div class="col-md-12 contact-address-details">
+							<h4>Services</h4>
 						</div>
 						<div class="col-md-6 contact-address-details">
 							<p>
-								{{ $AccountDetails[0]->email }}
+								Victorian Housing Register
 								<br/>
-								{{ $AccountDetails[0]->mobile }}
+								Effective Date 17 July, 2017
+								<br/>
+								#90181390812
+							</p>
+							<p>
+								Bond - 8 King Rd,
+								<br/>
+								Collingwood VIC 3000
+								<br/>
+								#12490375623
+							</p>
+							<p>
+								Bond - 1 Victoria St,
+								<br/>
+								Melbourne VIC 3000
+								<br/>
+								#234719051923
+							</p>
+							<h4>Privacy & Security</h4>
+							<p>
+								Security Password
+								<br/>
+								<span style="font-size: 24px">**********************</span>
 							</p>
 						</div>
-						<h4>Services</h4>
-						<p>
-							Victorian Housing Register
-							<br/>
-							Effective Date 17 July, 2017
-							<br/>
-							#90181390812
-						</p>
-						<p>
-							Bond - 8 King Rd,
-							<br/>
-							Collingwood VIC 3000
-							<br/>
-							#12490375623
-						</p>
-						<p>
-							Bond - 1 Victoria St,
-							<br/>
-							Melbourne VIC 3000
-							<br/>
-							#234719051923
-						</p>
-						<h4>Privacy & Security</h4>
-						<p>
-							Security Password
-							<br/>
-							<span style="font-size: 24px">**********************</span>
-						</p>
 					</div>
 				</div>
 			</div>

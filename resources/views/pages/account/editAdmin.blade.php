@@ -54,6 +54,45 @@
 							</div>
 						</div>
 
+						<div class="form-group{{ $errors->has('address_1') ? ' has-error' : '' }}">
+							<label for="address_1" class="col-md-4 control-label">Address:</label>
+							<div class="col-md-6">
+								<input id="address_1" type="text" class="form-control" name="address_1" value="{{ $UserAddress[0]->address_1 }}"/>
+
+								@if ($errors->has('address_1'))
+								<span class="help-block">
+									<strong>{{ $errors->first('address_1') }}</strong>
+								</span>
+								@endif
+							</div>
+						</div>
+
+						<div class="form-group{{ $errors->has('address_1') ? ' has-error' : '' }}">
+							<label for="suburb_town" class="col-md-4 control-label">Suburb/Town:</label>
+							<div class="col-md-6">
+								<input id="suburb_town" type="text" class="form-control" name="suburb_town" value="{{ $UserAddress[0]->suburb_town }}"/>
+
+								@if ($errors->has('suburb_town'))
+								<span class="help-block">
+									<strong>{{ $errors->first('suburb_town') }}</strong>
+								</span>
+								@endif
+							</div>
+						</div>
+
+						<div class="form-group{{ $errors->has('address_1') ? ' has-error' : '' }}">
+							<label for="postcode" class="col-md-4 control-label">Postcode:</label>
+							<div class="col-md-6">
+								<input id="postcode" type="text" class="form-control" name="postcode" value="{{ $UserAddress[0]->postcode }}"/>
+
+								@if ($errors->has('postcode'))
+								<span class="help-block">
+									<strong>{{ $errors->first('postcode') }}</strong>
+								</span>
+								@endif
+							</div>
+						</div>
+
 						<div class="form-group{{ $errors->has('client_id') ? ' has-error' : '' }}">
 							<label for="client_id" class="col-md-4 control-label">Client ID:</label>
 							<div class="col-md-6">	
