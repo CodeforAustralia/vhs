@@ -166,21 +166,20 @@
     width: 140px;
   }
 
+	.tile-action {
+		width: 16px;
+		height: 16px;
+	}
 
-		.tile-action {
-			width: 16px;
-			height: 16px;
-		}
+	.tile-action svg {
+		width: 16px !important;
+		height: 16px !important;
+	}
 
-		.tile-action svg {
-			width: 16px !important;
-			height: 16px !important;
-		}
-
-		.summary-wrapper {
-	    margin-left: -6px;
-	    width: 126px;
-		}
+	.summary-wrapper {
+	  margin-left: -6px;
+	  width: 126px;
+	}
 
 	.lots {
     padding: 4px 0 !important;
@@ -194,30 +193,67 @@
 		cursor: pointer;
 	}
 
+	.loading {
+    padding: 20px 5px;
+		font-size: 16px;
+	}
+
 	.letter-banner, .letter-banner h3, .letter-banner span {
 		font-size: 16px;
     line-height: 26px;
 	}
 
 	.btn-vhs_wrapper {
-		    margin-top: 20px !important;
-		    margin-bottom: 0 !important;
-		}
+		margin-top: 20px !important;
+		margin-bottom: 0 !important;
+	}
 
-		.btn-vhs, .btn-vhs:focus .btn-vhs:hover, .btn-vhs:active {
-	    font-size: 14px;
-	    padding: 8px 20px;
-	    min-width: 100px;
+	.btn-vhs, .btn-vhs:focus .btn-vhs:hover, .btn-vhs:active {
+	  font-size: 14px;
+	  padding: 8px 20px;
+	  min-width: 100px;
 	}
 
 	#ripplePrint {
-	    margin-left: 10px;
+	  margin-left: 10px;
 	}
 
-		.backButton, .backButton:focus, .backButton:hover, .backButton:active {
-	    font-size: 16px;
-		}
+	.backButton, .backButton:focus, .backButton:hover, .backButton:active {
+	  font-size: 16px;
+	}
 
+	.interpreting-wrapper {
+	    padding: 20px 0 0 0;
+			margin-bottom: -60px;
+	}
+
+	.interpreting-mobile {
+			display: inline-block;
+	}
+
+	.interpreting {
+		display: none;
+	}
+
+	.interpreting-mobile {
+	    margin: 0 auto;
+	    float: none;
+	}
+
+	.first-question {
+    font-size: 16px;
+    position: relative;
+    top: -42px;
+    left: 20px;
+    color: #232323;
+	}
+
+	.interpreting-text {
+    font-size: 16px;
+		padding: 16px 30px 16px 20px;
+    top: -92px;
+    left: 0;
+	}
 }
 
 /* For really small screens */

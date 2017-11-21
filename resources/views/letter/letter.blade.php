@@ -50,7 +50,7 @@
     <div class="row">
       <!-- Loader -->
       <div class="loading">
-        Loading&nbsp;
+        Loading&nbsp;&nbsp;
         <img src="{{ asset('images/rendering.gif') }}" />
       </div>
       <!-- Letter (in iframe)-->

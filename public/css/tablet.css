@@ -70,6 +70,7 @@
 a span.external-link svg {
 	width: 11px;
 	height: 12px;
+	margin-top: 3px;
 }
 
 .tile-message {
