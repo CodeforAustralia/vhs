@@ -33,27 +33,71 @@
                                 <h4>{{ Session::get('message.title') }}</h4>
                             </div>
                             <div class="letter_list_header_right col-md-3">
-                             <div class="dropdown">
-                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                  <span class="float-left sort_by_text">Sort your letters</span>
-                                  <span class="sort_by_text sort_by_icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-                              </button>
-                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li>
-                                    <!-- <li><a href="#">Option not available yet</a></li> -->
-                                    <li><a href="/inbox">Default</a></li>
-                                    <li><a href="/sortbydate">Sort by date</a></li>
-                                    <li><a href="/sortbyservices">Sort by services</a></li>
-                                    <li><a href="/showunread">Show only unread letters</a></li>
-                                    <li><a href="/showread">Show only read letters</a></li>
-                                </ul>
+                               <div class="dropdown">
+                                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                      <span class="float-left sort_by_text">Sort your letters</span>
+                                      <span class="sort_by_text sort_by_icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                  </button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li>
+                                        <!-- <li><a href="#">Option not available yet</a></li> -->
+                                        <li><a href="/inbox">Default</a></li>
+                                        <li><a href="/sortbydate">Sort by date</a></li>
+                                        <li><a href="/sortbyservices">Sort by services</a></li>
+                                        <li><a href="/showunread">Show only unread letters</a></li>
+                                        <li><a href="/showread">Show only read letters</a></li>
+                                    </ul>
+                                </div>
                             </div>
+
+                            <?php $unread_heading = false; ?>
+                            <?php $read_heading = false; ?>
+                            @foreach($all_letters as $letter) 
+                            @if (Session::get('message.class') == 'all-letters')
+                            @if ($letter->unread == '1' && !$unread_heading)
+                            <?php $unread_heading = true; ?>
+
+                            <div class="letter_list_header col-md-9">
+                            <h4>Unread Mail</h4>
+                            </div>
+
+                            @endif
+                            @endif
+                            @if($letter->unread == '1') 
+                            <div class="col-md-12 all_letter_list">
+                               <a href="/letter/{{ $letter->id }}" class="letter_list_unread">
+                                   <div class="col-md-3">
+                                    {{ $letter->type }} -
+                                    {{ $letter->description }}
+                                </div>
+                                <div class="col-md-6">
+                                    {{ $letter->summary }}
+                                </div>
+                                <div class="col-md-2">
+                                    {{ date("j M", strtotime($letter->letter_date)) }}
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                            </a>
                         </div>
-                        @foreach($all_letters as $letter) 
-                        @if ($letter->unread == '1')
+
+                        @endif
+                        @if (Session::get('message.class') == 'all-letters')
+                        @if ($letter->unread == '0' && !$read_heading)
+                        <?php $read_heading = true; ?>
+
+                        <div class="letter_list_header col-md-9">
+                            <h4><a href="/showread">Read Mail</a></h4>
+                        </div>
+                        
+                        @endif
+
+                        @endif
+                        @if ($letter->unread == '0')
                         <div class="col-md-12 all_letter_list">
-                         <a href="/letter/{{ $letter->id }}" class="letter_list_unread">
-                             <div class="col-md-3">
+                           <a href="/letter/{{ $letter->id }}">
+                               <div class="col-md-3">
                                 {{ $letter->type }} -
                                 {{ $letter->description }}
                             </div>
@@ -68,56 +112,38 @@
                             </div>
                         </a>
                     </div>
-                    @elseif ($letter->unread == '0')
-                    <div class="col-md-12 all_letter_list">
-                     <a href="/letter/{{ $letter->id }}">
-                         <div class="col-md-3">
-                            {{ $letter->type }} -
-                            {{ $letter->description }}
-                        </div>
-                        <div class="col-md-6">
-                            {{ $letter->summary }}
-                        </div>
-                        <div class="col-md-2">
-                            {{ date("j M", strtotime($letter->letter_date)) }}
-                        </div>
-                        <div class="col-md-1">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </div>
+                    @endif
+                    @endforeach
+
+                </div>
+                <div class="col-md-12 load_more_button">
+                    <a href="#">
+                        <button  id="loadMore" class="btn btn-primary">
+                            Load More
+                        </button>
                     </a>
                 </div>
+
+                <p class="totop"> 
+                    <a href="#top">Back to top</a> 
+                </p>
                 @endif
-                @endforeach
+
+
+
 
             </div>
-            <div class="col-md-12 load_more_button">
-            <a href="#">
-                <button  id="loadMore" class="btn btn-primary">
-                    Load More
-                </button>
-                </a>
+
+            <div class="col-md-2 services_heading_right">
+                <div class="toolbox-banner mail_icon-link">
+                </div>
             </div>
-
-            <p class="totop"> 
-                <a href="#top">Back to top</a> 
-            </p>
-            @endif
-
-
-
-
-        </div>
-
-        <div class="col-md-2 services_heading_right">
-            <div class="toolbox-banner mail_icon-link">
-            </div>
-        </div>
-        <div class="col-md-1 services_heading_right">
-            <div class="toolbox-banner mail_icon-link">
+            <div class="col-md-1 services_heading_right">
+                <div class="toolbox-banner mail_icon-link">
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 </div>
 </div>
