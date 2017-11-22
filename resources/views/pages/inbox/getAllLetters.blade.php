@@ -131,7 +131,7 @@
 
         </div>
         <div class="col-md-12 load_more_button">
-            <a href="#" role="presentation">
+            <a href="#" role="none">
             <button  id="loadMore" class="btn btn-primary" aria-label="Load More">
                     Load More
                 </button>
