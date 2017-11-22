@@ -152,7 +152,6 @@
 			</div>
 		</div>
 	</div>
-</div>
 <div class="edit_profile-wrapper">
 	<div class="container">
 		<div class="row">
@@ -162,6 +161,7 @@
 		</div>
 	</div>
 </div>
-@include('pages.account.hoInfo');
+</div>
+@include('pages.account.hoInfo')
 
 @endsection
