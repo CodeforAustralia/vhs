@@ -76,7 +76,7 @@
                         @if($letter->unread == '1') 
                         <a href="/letter/{{ $letter->id }}" class="letter_list_unread">
                             <div class="col-md-12 all_letter_list all_letter_list_unread">
-                               
+
                                <div class="col-md-3 col-xs-12">
                                 {{ $letter->type }} -
                                 {{ $letter->description }}
@@ -90,7 +90,7 @@
                             <div class="col-md-1 hide-on-mobile">
                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
                             </div>
-                            
+
                         </div>
                     </a>
 
@@ -110,7 +110,7 @@
                     @if ($letter->unread == '0')
                     <a href="/letter/{{ $letter->id }}">
                         <div class="col-md-12 all_letter_list">
-                           
+
                            <div class="col-md-3 col-xs-12">
                             {{ $letter->type }} -
                             {{ $letter->description }}
@@ -132,7 +132,7 @@
             </div>
             <div class="col-md-12 load_more_button">
                 <a href="#">
-                    <button  id="loadMore" class="btn btn-primary">
+                <button  id="loadMore" class="btn btn-primary" role="presentation">
                         Load More
                     </button>
                 </a>
