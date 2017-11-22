@@ -99,6 +99,7 @@ $(function () {
   $(".all_letter_list").slice(0, 20).show();
   if ($(".all_letter_list:hidden").length == 0) {
     $("#loadMore").fadeOut('slow');
+    $("#loadmore-href").fadeOut('fast');
   }
   $("#loadMore").on('click', function (e) {
     e.preventDefault();
@@ -106,7 +107,6 @@ $(function () {
     if ($(".all_letter_list:hidden").length == 0) {
       $("#load").fadeOut('slow');
       $("#loadMore").fadeOut('fast');
-      $("#loadmore-href").fadeOut('fast');
     }
     $('html,body').animate({
       scrollTop: $(this).offset().top
