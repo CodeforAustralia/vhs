@@ -126,8 +126,7 @@
 	}
 
 	.tile-message {
-	    font-size: 13px;
-	    margin: 6px 35px 0 -35px;
+			margin: 6px 10px 0 -25px;
 	}
 
 	.tile-new {
@@ -277,4 +276,10 @@
 		top: -160px;
 		left: -46px;
 	}
+
+	.tile-message {
+		font-size: 15px;
+    margin: 6px 10px 0 -25px;
+	}
+
 }
