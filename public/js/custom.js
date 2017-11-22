@@ -106,6 +106,7 @@ $(function () {
     if ($(".all_letter_list:hidden").length == 0) {
       $("#load").fadeOut('slow');
       $("#loadMore").fadeOut('fast');
+      $("#loadmore-href").fadeOut('fast');
     }
     $('html,body').animate({
       scrollTop: $(this).offset().top
