@@ -1,18 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19">
-    <defs>
-        <filter id="ac" width="100.6%" height="113.3%" x="-.3%" y="-3.3%" filterUnits="objectBoundingBox">
-            <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
-            <feColorMatrix in="shadowOffsetOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0.232941425 0 0 0 0 0.409412202 0 0 0 1 0"/>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"/>
-                <feMergeNode in="SourceGraphic"/>
-            </feMerge>
-        </filter>
-    </defs>
-    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(-373 -14)">
-        <path d="M369 10h24v24h-24z"/>
-        <g fill="#FFF">
-            <path d="M374.5 26.72v-2.19H373v4.75h4.75v-1.5h-2.19l3.72-3.72-1.06-1.06zM383.53 14v1.5h2.19L382 19.22l1.06 1.06 3.72-3.719v2.19h1.5V14z"/>
-        </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 19">
+  <title>Full Screen</title>
+  <g fill="none" fill-rule="evenodd" transform="translate(-373 -14)">
+    <path d="M369 10h24v24h-24z" />
+    <g fill="#fff">
+      <path d="M374.5 26.72v-2.19H373v4.75h4.75v-1.5h-2.19l3.72-3.72-1.06-1.06zM383.53 14v1.5h2.19L382 19.22l1.06 1.06 3.72-3.719v2.19h1.5V14z" />
     </g>
+  </g>
 </svg>

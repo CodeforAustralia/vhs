@@ -1,16 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" viewBox="0 0 14 20">
-    <defs>
-        <filter id="ad" width="100.6%" height="113.3%" x="-.3%" y="-3.3%" filterUnits="objectBoundingBox">
-            <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
-            <feColorMatrix in="shadowOffsetOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0.232941425 0 0 0 0 0.409412202 0 0 0 1 0"/>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"/>
-                <feMergeNode in="SourceGraphic"/>
-            </feMerge>
-        </filter>
-    </defs>
-    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(-24 -14)">
-        <path d="M19 10h24v24H19z"/>
-        <path fill="#FFF" d="M24 30.5h13.5V29H24zM30.462 14v11.059l-4.387-4.511L25 21.593l6.211 6.389 6.213-6.389-1.076-1.045-4.387 4.512V14z"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 20">
+  <title>Download PDF</title>
+  <g fill="none" fill-rule="evenodd" transform="translate(-24 -14)">
+    <path d="M19 10h24v24H19z" />
+    <path fill="#fff" d="M24 30.5h13.5V29H24zM30.462 14v11.059l-4.387-4.511L25 21.593l6.211 6.389 6.213-6.389-1.076-1.045-4.387 4.512V14z" />
+  </g>
 </svg>
