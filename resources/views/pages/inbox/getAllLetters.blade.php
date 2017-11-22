@@ -68,7 +68,7 @@
 
                     <div class="letter_list_header col-md-9">
                         <h4>Unread Mail ( {{ $countUnread }} )</h4>
-                        <p><a href="/showread">Show all unread mail <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+                        <p><a href="/showread" role="none">Show all unread mail <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
                     </div>
 
                     @endif
@@ -101,7 +101,7 @@
 
                 <div class="letter_list_header col-md-9">
                     <h4>Read Mail ( {{ $countRead }} )</h4>
-                    <p><a href="/showread">Show all read mail  <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+                    <p><a href="/showread" role="none">Show all read mail  <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
                 </div>
 
                 @endif
@@ -131,7 +131,7 @@
 
         </div>
         <div class="col-md-12 load_more_button">
-            <a href="#" role="none">
+            <a href="#">
             <button  id="loadMore" class="btn btn-primary" aria-label="Load More">
                     Load More
                 </button>
