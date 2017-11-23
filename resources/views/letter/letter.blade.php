@@ -15,10 +15,10 @@
       <div class="welcome-banner letter-banner">
           <h3>
           @if (!empty($service))
-          {{$service->type}} - {{$service->description}}<br/>
+            {{$service->type}} - {{$service->description}}<br/>
           @endif
           @if (!empty($letter->template->summary))
-          {{$letter->template->summary}}<br/>
+            {{$letter->template->summary}}<br/>
           @endif
         </h3>
           <span class="ref_no">Reference Number: {{$letter->reference_id}}</span>
@@ -62,6 +62,8 @@
   </div>
 </div>
 
-@include('letter/interpreting') @include('pages.dashboard.housing_office')
+@include('letter/interpreting')
+@include('pages.dashboard.housing_office')
+
 @endforeach
 @endsection

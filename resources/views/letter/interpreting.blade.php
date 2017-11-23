@@ -25,7 +25,6 @@
         <div class="first-question">
           Need an interpreter?
         </div>
-
         <div class="sandwich-filler">
         </div>
         <div class="interpreting-text">
@@ -35,7 +34,7 @@
           </a>
         </div>
       </div>
-
-    </div> <!-- /.row -->
+      
+    </div>  <!-- /.row -->
   </div> <!-- /.container -->
 </div> <!-- /.container-wrapper -->
