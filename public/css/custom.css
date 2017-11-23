@@ -1025,8 +1025,7 @@ Footer
 	margin: 6px 35px 0 -95px;
 }
 
-#letters-0 .need_housing_button,
-#letters-1 .need_housing_button {
+.need_housing_button {
 	height: 6.88em;
 }
 
