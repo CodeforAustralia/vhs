@@ -1,8 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21">
-<title>Action needed</title>
     <g fill="none" fill-rule="evenodd" transform="translate(.2 -.592)">
-        <ellipse cx="11.11" cy="11.11" fill="#EB8D00" rx="10" ry="10.11"/>
-        <text fill="#FFF" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="17.52" font-weight="bold">
+        <ellipse cx="10" cy="11.11" fill="#FBE5DA" rx="10" ry="10.11"/>
+        <text fill="#B33E01" font-family="HelveticaNeue, Roboto, Arial, sans-serif" font-size="17.52" font-weight="bold">
             <tspan x="7.353" y="17.132">!</tspan>
         </text>
     </g>

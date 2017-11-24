@@ -2,10 +2,10 @@
 <svg width="64px" height="45px" viewBox="0 0 64 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Aboriginal Flag</title>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="flag-0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="flag-aboriginal" fill-rule="nonzero">
-            <rect id="Rectangle-path" fill="#000000" x="0" y="0" width="64" height="44.3076923"></rect>
-            <rect id="Rectangle-path" fill="#DE3831" x="0.246153846" y="22.1538462" width="63.5076923" height="22.1538462"></rect>
+            <rect id="Rectangle-path-0-0" fill="#000000" x="0" y="0" width="64" height="44.3076923"></rect>
+            <rect id="Rectangle-path-0-1" fill="#DE3831" x="0.246153846" y="22.1538462" width="63.5076923" height="22.1538462"></rect>
             <circle id="Oval" fill="#FDC82F" cx="32" cy="22.1538462" r="9.84615385"></circle>
         </g>
     </g>
