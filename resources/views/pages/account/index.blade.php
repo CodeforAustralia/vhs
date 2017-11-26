@@ -4,40 +4,42 @@
 
 @section('content')
 
-<div class="container">
-	<div class="row">
-		<div class="noSpace">
-			<a class="backButton" href="">&lt;&nbsp;&nbsp;Back</a>
-		</div>
-		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<div class="col-md-2">
+<div class="container-wrapper services-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="noSpace">
+				<a class="backButton" href="">&lt;&nbsp;&nbsp;Back</a>
+			</div>
+			<div class="col-md-8 col-md-offset-2">
+				<div class="account_title_header">
+					<div class="panel-heading">
+						<div class="col-md-2">
 
-					</div>
-					<div class="col-md-7 services_heading_right">
-						<h3>All Users</h3>
-					</div>
-					<div class="col-md-2 services_heading_right">
-						<div class="toolbox-banner">
-							<form action="/search" method="POST" role="search">
-								{{ csrf_field() }}
-								<div class="input-group">
-									<input type="text" aria-label="Search User Field" class="form-control" name="q"
-									placeholder="Search users">
-									<span class="input-group-btn">
-										<button type="submit" aria-label="Start searching account" class="btn btn-default">
-											<i class="fa fa-search" aria-hidden="true"></i>
-										</button>
-									</span>
-								</div>
-							</form>
 						</div>
-					</div>
-					<div class="col-md-1 services_heading_right">
-						<div class="toolbox-banner mail_icon-link">
-							<form action="/search" method="POST" role="search">
+						<div class="col-md-7 services_heading_right">
+							<h3>All Users</h3>
+						</div>
+						<div class="col-md-2 services_heading_right">
+							<div class="toolbox-banner">
+								<form action="/search" method="POST" role="search">
+									{{ csrf_field() }}
+									<div class="input-group">
+										<input type="text" aria-label="Search User Field" class="form-control" name="q"
+										placeholder="Search users">
+										<span class="input-group-btn">
+											<button type="submit" aria-label="Start searching account" class="btn btn-default">
+												<i class="fa fa-search" aria-hidden="true"></i>
+											</button>
+										</span>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-1 services_heading_right">
+							<div class="toolbox-banner mail_icon-link">
+								<form action="/search" method="POST" role="search">
 
+								</div>
 							</div>
 						</div>
 					</div>
@@ -45,9 +47,6 @@
 			</div>
 		</div>
 	</div>
-</div>
-
-<div class="container-wrapper  services-wrapper">
 	<div class="container">
 		<div class="row">
 			<div class="panel-body">
@@ -80,4 +79,5 @@
 		</div>
 	</div>
 </div>
+
 @endsection

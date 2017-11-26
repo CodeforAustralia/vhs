@@ -48,7 +48,7 @@
 
 .container-wrapper.services-wrapper {
 	background-color: #faf8f7;
-	padding: 0 0 50px 0;
+	padding: 0px 0 0px 0;
 }
 
 .sort_by_icon {
@@ -108,31 +108,46 @@
 	padding-top: 20px;
 }
 
+/*Accounts*/
+
+.account_title_header {
+	border: 0px;
+	box-shadow: none !important;
+	margin: 5px 0px;
+	/* padding: 30px 20px; */
+}
+
+.account_body {
+	border: 0px;
+	box-shadow: none !important;
+	padding-bottom: 20px;
+}
+
 /*Buttons*/
 a {
-    color: #0363ab;
-    text-decoration: none;
+	color: #0363ab;
+	text-decoration: none;
 }
 html > body > .services-wrapper > .container > .row > .panel-body > .services_heading_right > ul > li:nth-child(1) > span {
 	color: #333333;
 }
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
-    z-index: 3;
-    color: #fff;
-    background-color: #0363ab;
-    border-color: #0363ab;
-    cursor: default;
+	z-index: 3;
+	color: #fff;
+	background-color: #0363ab;
+	border-color: #0363ab;
+	cursor: default;
 }
 .pagination>li>a, .pagination>li>span {
-    position: relative;
-    float: left;
-    padding: 6px 12px;
-    line-height: 1.6;
-    text-decoration: none;
-    color: #0363ab;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin-left: -1px;
+	position: relative;
+	float: left;
+	padding: 6px 12px;
+	line-height: 1.6;
+	text-decoration: none;
+	color: #0363ab;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	margin-left: -1px;
 }
 .pagination>li:nth-child(10) > span{
 	color: #333333;
@@ -182,6 +197,21 @@ html > body > .services-wrapper > .container > .row > .panel-body > .services_he
 }
 
 @media screen and (max-width: 991px) {
+
+	
+	.toolbox-banner.mail_icon-link {
+		display: flex;
+	}
+
+	.toolbox-banner.mail_icon-link > p:first-child {
+		padding-left: 0px !important;
+		border-left: none;
+	}
+
+	.mail_icon-link > p {
+		padding: 0 10px;
+		border-left: 2px solid darkgrey;
+	}
 
 	.acount_title_right {
 		padding-left: 20px;
