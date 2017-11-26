@@ -19,11 +19,16 @@
                 @if($letter->unread == '1') 
                 <a href="/letter/{{ $letter->id }}" class="letter_list_unread">
                     <div class="col-md-12 all_letter_list all_letter_list_unread">
+                        <div class="col-md-1 col-xs-12">
+                            @if ($letter->action_needed == 1)
+                            {!! file_get_contents(public_path('images/action-needed.svg')) !!}
+                            @endif
+                        </div>
                         <div class="col-md-3 col-xs-12">
                             {{ $letter->type }} -
                             {{ $letter->description }}
                         </div>
-                        <div class="col-md-6 col-xs-12">
+                        <div class="col-md-5 col-xs-12">
                             {{ $letter->summary }}
                         </div>
                         <div class="col-md-2">
@@ -48,12 +53,16 @@
                 @if ($letter->unread == '0')
                 <a href="/letter/{{ $letter->id }}">
                     <div class="col-md-12 all_letter_list">
-
+                        <div class="col-md-1 col-xs-12">
+                            @if ($letter->action_needed == 1)
+                            {!! file_get_contents(public_path('images/action-needed.svg')) !!}
+                            @endif
+                        </div>
                         <div class="col-md-3 col-xs-12">
                             {{ $letter->type }} -
                             {{ $letter->description }}
                         </div>
-                        <div class="col-md-6 col-xs-12">
+                        <div class="col-md-5 col-xs-12">
                             {{ $letter->summary }}
                         </div>
                         <div class="col-md-2">
