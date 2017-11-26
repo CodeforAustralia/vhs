@@ -11,27 +11,29 @@
 	<div class="closeCrossDiv"><a href="javascript: hideObject('#sessionStatus');">&times;</a></div>
 </div>
 @endif
-
+<div class="container-wrapper">
 <div class="container">
 	<div class="row">
-	 <div class="noSpace">
-              <a class="backButton" href="">&lt;&nbsp;&nbsp;Back</a>
-          </div>
+		<div class="noSpace">
+			<a class="backButton" href="">&lt;&nbsp;&nbsp;Back</a>
+		</div>
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
-					<div class="col-md-2">
+					<div class="col-md-2 hide-on-mobile">
 					</div>
 					<div class="col-md-7 services_heading_right">
 						@if ( Auth::user()->usertype == '1' )
 						<h3><a href="/accounts">All Accounts</a></h3>
+						<p>You may edit {{ $AccountDetails[0]->firstName }} {{ $AccountDetails[0]->lastName }}'s account information here</p>
 						@else
-						<h3>Account Details</h3>
+						<h3>Edit Account Information</h3>
+						<p>You may edit your account information here</p>
 						@endif
 					</div>
-					<div class="col-md-2 services_heading_right">
+					<div class="col-md-2 col-sm-5 services_heading_right">
 						<div class="toolbox-banner mail_icon-link">
-							<p class="pull-right"><a class="panel-heading_link" href="/accounts/{{ $AccountDetails[0]->id }}">Back to Profile</a></p>
+							<p class="acount_title_right"><a class="panel-heading_link" href="/accounts/{{ $AccountDetails[0]->id }}">Back to Profile</a></p>
 						</div>
 					</div>
 					<div class="col-md-1 services_heading_right">
@@ -39,10 +41,19 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="container-wrapper services-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
 				<div class="panel-body">
 					<!-- Add client ID -->
 					@if ( Auth::user()->usertype == '1' )
-					
+
 					<!-- IF ADMIN USER -->
 					@include('pages.account.editAdmin')
 					@else
@@ -54,5 +65,6 @@
 	</div>
 </div>
 
-@include('pages.account.hoInfo');
+@include('letter/interpreting')
+@include('pages.dashboard.housing_office')
 @endsection
