@@ -98,14 +98,15 @@ $(document).ready(function () {
 $(function () {
   $(".all_letter_list").slice(0, 20).show();
   if ($(".all_letter_list:hidden").length == 0) {
-    $("#loadMore").fadeOut('slow');
+    $("#loadMore").fadeOut('fast');
     $("#loadmore-href").fadeOut('fast');
   }
   $("#loadMore").on('click', function (e) {
     e.preventDefault();
     $(".all_letter_list:hidden").slice(0, 10).slideDown();
     if ($(".all_letter_list:hidden").length == 0) {
-      $("#load").fadeOut('slow');
+      $("#load").fadeOut('fast');
+      $("#loadMore").fadeOut('fast');
       $("#loadMore").fadeOut('fast');
     }
     $('html,body').animate({

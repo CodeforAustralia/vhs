@@ -33,7 +33,7 @@
 }
 
 .letter_list_header {
-	padding: 20px 0px;
+	padding: 10px 0px;
 }
 
 .letter_list_header_right .dropdown button {
@@ -44,6 +44,11 @@
 .letter_list_header_right {
 	padding: 20px 0px;
 	text-align: right;
+}
+
+.container-wrapper.services-wrapper {
+    background-color: #faf8f7;
+    padding: 0 0 50px 0;
 }
 
 .sort_by_icon {
@@ -85,11 +90,15 @@
 	color: #0063ae;
 }
 
-.letter_list_wrapper .letter_list_header h4 {
+.letter_list_header h4 {
 	font-size: 18px;
-	color: #0063ae;
 	font-weight: bold;
 	padding-top: 10px;
+}
+
+.letter_list_header h4,
+.letter_list_header a {
+	color: #0063ae;
 }
 
 .inbox_panel-primary {
