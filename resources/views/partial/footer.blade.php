@@ -16,14 +16,14 @@
 						The department acknowledges Aboriginal and Torres Strait Islander people as the Traditional Custodians of the land and acknowledges and pays respect to their Elders, past and present.
 					</div>
 				</div>
-				<div id="nrs-logo-div" class="col-md-2 col-sm-2 col-xs-3">
+				<div id="nrs-logo-div" class="col-md-2 col-sm-3 col-xs-3">
 					<div class="footer-image-marker">
 						<div class="nrs-logo">
 							{!! file_get_contents(public_path('images/nrs-logo.svg')) !!}
 						</div>
 					</div>
 				</div>
-				<div id="nrs-text-div" class="col-md-3 col-sm-3 col-xs-9">
+				<div id="nrs-text-div" class="col-md-3 col-sm-9 col-xs-9">
 					<div class="footer-text">
 						Deaf, hearing or speech impaired? Contact the National Relay Service:
 						Call <a href="tel:1800555660" class="footer-link phone">1800&nbsp;555&nbsp;660</a>

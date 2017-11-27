@@ -62,15 +62,12 @@
 }
 
 #nrs-text-div .footer-text {
-	margin-left: 0;
-	margin-right: -40px;
-	margin-top: 32px;
+	margin: 40px 30px 0 -30px;
 }
 
 a span.external-link svg {
 	width: 11px;
 	height: 12px;
-	margin-top: 3px;
 }
 
 .tile-message {
