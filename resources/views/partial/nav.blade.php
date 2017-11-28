@@ -9,9 +9,12 @@
         <span class="icon-bar bottom-bar"></span>
       </button>
       <!-- Branding -->
+      <a id="menu" href="">MENU</a>
+
       <a class="navbar-brand" href="{{ url('/dashboard') }} ">
         Housing Services Victoria
       </a>
+
     </div>
     @if (Auth::guest())
     <div id="navbar" class="navbar-collapse collapse">

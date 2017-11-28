@@ -129,6 +129,17 @@ nav div.container-fluid {
   position: absolute;
 }
 
+#menu {
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #ffffff;
+	text-decoration: none;
+	position: relative;
+	top: 14px;
+  left: -10px;
+}
+
 .navbar-toggle .icon-bar {
     height: 3px;
 }

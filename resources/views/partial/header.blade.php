@@ -48,7 +48,7 @@ header('Cache-Control: post-check=0, pre-check=0', false);
       ]); ?>
     </script>
 
-    <title>VHS</title>
+    <title>Housing Services Victoria</title>
 
     <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon"/>
     <link rel="shortcut icon" href="{{ asset('images/index.png') }}" type="image/x-icon"/>

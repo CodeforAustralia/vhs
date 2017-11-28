@@ -1,3 +1,9 @@
+// Menu
+$('#menu').on('click',function(e){
+  $('.navbar-header button').trigger( "click" );
+  e.preventDefault();
+});
+
 // Ripple Print and Expand button events to the iframe
 $('#ripplePrint').on('click',function(e){
   $('#letterIframe').contents().find('#print').trigger( "click" );

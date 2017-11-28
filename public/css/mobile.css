@@ -20,6 +20,11 @@
 		transform: none;
 		position: static;
 	}
+
+	#menu {
+		display: none;
+	}
+
 	.edit_profile-wrapper .container {
 		padding: 0px;
 	}
