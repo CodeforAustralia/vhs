@@ -483,20 +483,20 @@ a span.external-link svg {
 }
 
 .ho-header {
-	margin-top: 20px;
-	margin-left: -15px;ho-text-wrapper
+	margin-left: -15px;
 	font-size: 18px;
 	color: #000;
 	font-size: 18px;
 }
 
 .ho-text-wrapper {
-	margin: 20px 0 20px -15px;
+	margin: 20px 0 0 -15px;
 }
 
 .ho-text {
 	color: #232323;
 	font-size: 13px;
+	line-height: 22px;
 }
 
 .ho-text a {
@@ -996,6 +996,12 @@ Recommendation buttons
 	margin: 0 auto !important;
 	float: none;
 }
+
+.ho-wrapper {
+	margin: 0 auto -40px auto !important;
+	float: none;
+}
+
 .recommendation_links-wrapper {
 	background-color: #ffffff;
 	padding: 40px 0px;

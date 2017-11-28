@@ -256,6 +256,10 @@
     left: 0;
 		display: block;
 	}
+
+	.ho-header {
+    margin-top: 20px;
+	}
 }
 
 /* For really small screens */

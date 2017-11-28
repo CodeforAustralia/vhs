@@ -46,10 +46,12 @@
 	text-align: right;
 }
 
+/* TO-DO: Rachelle to change
 .container-wrapper.services-wrapper {
 	background-color: #faf8f7;
 	padding: 0px 0 0px 0;
 }
+*/
 
 .sort_by_icon {
 	font-size: 18px;
@@ -124,10 +126,14 @@
 }
 
 /*Buttons*/
+
+/* TO-DO: Rachelle to change
 a {
 	color: #0363ab;
 	text-decoration: none;
 }
+*/
+
 html > body > .services-wrapper > .container > .row > .panel-body > .services_heading_right > ul > li:nth-child(1) > span {
 	color: #333333;
 }
@@ -152,12 +158,14 @@ html > body > .services-wrapper > .container > .row > .panel-body > .services_he
 .pagination>li:nth-child(10) > span{
 	color: #333333;
 }
+
+/* TO-DO: Rachelle to change
 .btn-primary {
 	color: #fff;
 	background-color: #0363ab;
 	border-color: #2a88bd;
 }
-
+*/
 /*LOAD MORE */
 
 
@@ -198,7 +206,7 @@ html > body > .services-wrapper > .container > .row > .panel-body > .services_he
 
 @media screen and (max-width: 991px) {
 
-	
+
 	.toolbox-banner.mail_icon-link {
 		display: flex;
 	}

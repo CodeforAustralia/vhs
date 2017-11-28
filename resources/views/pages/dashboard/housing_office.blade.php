@@ -2,7 +2,7 @@
 <div class="container-wrapper services-wrapper">
   <div class="container">
     <div class="row odd-row">
-      <div class="col-md-8 col-sm-8 col-xs-12 recommendation_buttons-wrapper">
+      <div class="col-md-8 col-sm-8 col-xs-12 ho-wrapper">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
