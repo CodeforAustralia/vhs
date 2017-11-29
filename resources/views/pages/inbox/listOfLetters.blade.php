@@ -1,7 +1,7 @@
 <div class="container-wrapper inbox-wrapper">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-8 col-md-offset-2 letter_list_divider">
                 <?php $unread_heading = false; ?>
                 <?php $read_heading = false; ?>
                 <?php $countUnread = $all_letters->where("unread", 1)->count(); ?>
@@ -77,7 +77,7 @@
                 @endforeach
                 <div class="col-md-12 load_more_button">
                     <a href="#" role="none" id="loadmore-href">
-                        <button  id="loadMore" class="btn btn-primary" aria-label="Load More">
+                        <button  id="loadMore" class="btn btn-primary btn-vhs" aria-label="Load More">
                             Load More
                         </button>
                     </a>

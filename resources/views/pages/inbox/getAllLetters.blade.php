@@ -33,7 +33,7 @@
                         @else
                         <div class="col-md-12 services_heading_right">
                             <div class="letter_list_wrapper">
-                                <div class="letter_list_header col-md-9">
+                                <div class="letter_list_header col-md-9 sort-order-text">
 
                                     <h4>{{ Session::get('message.title') }}</h4>
                                 </div>

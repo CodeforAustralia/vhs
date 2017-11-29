@@ -2,6 +2,11 @@
 	padding: 0px;
 }
 
+.hide-on-mobile svg {
+	width: 21px;
+	padding-top: 6px;
+}
+
 .all_letter_list {
 	padding: 10px 10px;
 	border-top: 1px solid lightgrey;
@@ -45,13 +50,6 @@
 	padding: 20px 0px;
 	text-align: right;
 }
-
-/* TO-DO: Rachelle to change
-.container-wrapper.services-wrapper {
-	background-color: #faf8f7;
-	padding: 0px 0 0px 0;
-}
-*/
 
 .sort_by_icon {
 	font-size: 18px;
@@ -125,15 +123,6 @@
 	padding-bottom: 20px;
 }
 
-/*Buttons*/
-
-/* TO-DO: Rachelle to change
-a {
-	color: #0363ab;
-	text-decoration: none;
-}
-*/
-
 html > body > .services-wrapper > .container > .row > .panel-body > .services_heading_right > ul > li:nth-child(1) > span {
 	color: #333333;
 }
@@ -185,6 +174,8 @@ html > body > .services-wrapper > .container > .row > .panel-body > .services_he
 .totop a {
 	display: none;
 }
+
+/*
 #loadMore {
 	padding: 10px;
 	text-align: center;
@@ -198,6 +189,7 @@ html > body > .services-wrapper > .container > .row > .panel-body > .services_he
 	width: 200px;
 	font-size: 18px;
 }
+*/
 
 .col-md-12.load_more_button {
 	text-align: center;
@@ -265,4 +257,58 @@ html > body > .services-wrapper > .container > .row > .panel-body > .services_he
 	.all_letter_list > div:nth-child(2), .all_letter_list > div:nth-child(1) {
 		width: 1000px;
 	}
+}
+
+
+@media screen and (max-width: 767px) {
+
+	.letter_list_divider {
+    padding: 0;
+	}
+
+	.all_letter_list {
+		border-bottom: 1px solid #E1E1E1;
+		background-color: ##FBFBFB;
+	}
+
+	.letter_list_header + a div.all_letter_list {
+		border-top: 1px solid #E1E1E1;
+		text-decoration: none;
+	}
+
+	.all_letter_list:last-child {
+    box-shadow: none !important;
+    padding: 10px 0 10px 2px;
+    margin-bottom: 0;
+	}
+
+	.all_letter_list .col-md-3 {
+		height: 22px;
+		overflow: hidden;
+	}
+
+	.all_letter_list .col-md-5 {
+		height: 44px;
+		overflow: hidden;
+	}
+
+	.all_letter_list .col-md-2 {
+	    width: 70px;
+			padding: 14px 10px;
+			margin-top: -80px;
+		}
+
+		.letter_list_header {
+	    padding: 0 30px 20px 30px;
+		}
+
+		.sort-order-text h4 {
+			padding: 20px 0 0 0;
+    	margin: 0 0 -10px -30px;
+	  }
+
+		.letter_list_header_right {
+    	padding: 20px 0 0 0;
+    	text-align: right;
+		}
 }

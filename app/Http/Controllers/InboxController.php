@@ -77,6 +77,7 @@ class InboxController extends Controller
       ->join('services', 'letter_history.reference_id', '=', 'services.reference_id')
       ->select('letters.letter_date','letters.id', 'letter_history.reference_id', 'letter_history.unread', 'templates.summary', 'templates.action_needed', 'services.type', 'services.description')
       ->orderBy('reference_id', 'desc')
+      ->orderBy('letter_date', 'desc')
       ->get();
 
       Session::flash('message.title', 'Sort by services');
@@ -246,6 +247,7 @@ class InboxController extends Controller
       ->join('services', 'letter_history.reference_id', '=', 'services.reference_id')
       ->select('letters.letter_date','letters.id', 'letter_history.reference_id', 'letter_history.unread', 'templates.summary', 'templates.action_needed', 'services.type', 'services.description')
       ->orderBy('unread', 'desc')
+      ->orderBy('letter_date', 'desc')
       ->get();
 
       //number of rows

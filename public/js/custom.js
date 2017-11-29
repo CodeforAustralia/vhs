@@ -102,7 +102,7 @@ $(document).ready(function () {
 });
 
 $(function () {
-  $(".all_letter_list").slice(0, 20).show();
+  $(".all_letter_list").slice(0, 10).show();
   if ($(".all_letter_list:hidden").length == 0) {
     $("#loadMore").fadeOut('fast');
     $("#loadmore-href").fadeOut('fast');
