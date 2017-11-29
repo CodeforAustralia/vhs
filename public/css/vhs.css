@@ -78,7 +78,7 @@
 }
 
 .all_letter_list .col-md-1 i {
-	color: #e08a0f;
+	color: #B33E01;
 	font-size: 24px;
 }
 
@@ -102,13 +102,18 @@
 }
 
 .account_panel h4 {
-	font-size: 14px;
+	font-size: 16px;
+	line-height: 1.69em;
 	color: #0063ae;
 	font-weight: bold;
 	padding-top: 20px;
 }
 
 /*Accounts*/
+
+.profile-wrapper {
+	background-color: #faf8f7;
+}
 
 .account_title_header {
 	border: 0px;
@@ -118,9 +123,13 @@
 }
 
 .account_body {
-	border: 0px;
+	border: none;
 	box-shadow: none !important;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
+	font-size: 16px;
+	line-height: 1.69em;
+	text-align: left;
+	color: #232323;
 }
 
 html > body > .services-wrapper > .container > .row > .panel-body > .services_heading_right > ul > li:nth-child(1) > span {
@@ -148,13 +157,6 @@ html > body > .services-wrapper > .container > .row > .panel-body > .services_he
 	color: #333333;
 }
 
-/* TO-DO: Rachelle to change
-.btn-primary {
-	color: #fff;
-	background-color: #0363ab;
-	border-color: #2a88bd;
-}
-*/
 /*LOAD MORE */
 
 
@@ -224,6 +226,10 @@ html > body > .services-wrapper > .container > .row > .panel-body > .services_he
 	.mail_icon-link > p {
 		padding: 0 10px;
 		border-left: 2px solid darkgrey;
+	}
+
+	.profile-wrapper {
+	    padding: 40px 10px 20px 10px;
 	}
 
 	.acount_title_right {
