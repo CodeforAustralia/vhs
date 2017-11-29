@@ -51,13 +51,11 @@
 						<a class="backButton" href="">&lt;&nbsp;&nbsp;Back</a>
 					</div>
 				</div>
-
 				<div class="col-md-8 col-md-offset-2">
 					<div class="account_title_header">
 						<div class="panel-heading">
 							<div class="welcome-banner">
 								<div class="col-md-2">
-
 								</div>
 								<div class="col-md-7 services_heading_right">
 									<h3>{{ $AccountDetails[0]->firstName }} {{ $AccountDetails[0]->lastName }}</h3>
@@ -73,8 +71,6 @@
 					          @endif
 									</div>
 								</div>
-
-
 								@if ( Auth::user()->usertype == '1' )
 								<div class="col-md-3 services_heading_right">
 									<div class="toolbox-banner mail_icon-link">
@@ -88,8 +84,6 @@
 						</div>
 					</div>
 				</div>
-
-
 			</div>
 		</div>
 </div>
@@ -141,7 +135,7 @@
 								<br/>
 								#234719051923
 							</p>
-							<h4>Privacy & Security</h4>
+							<h4>Privacy &amp; Security</h4>
 							<p>
 								Security Password
 								<br/>

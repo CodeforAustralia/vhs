@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 use Aloha\Twilio\Twilio;
 use App\User as User;
 use Aloha\Twilio\TwilioInterface;
-use Twilio\Rest\Client; 
+use Twilio\Rest\Client;
 use Autoload;
 use Log;
 use App\Models\AccountDetails;
@@ -36,17 +36,17 @@ class NotificationSMSController extends Controller
 		$this->sendMessage(
 			$user,
 			$user_mobile,
-			'You have a new letter in the Victorian Housing Services Portal. Please log into your account to access your mail.'
+			'You have a new letter in the Housing Services Victoria Portal. Please log into your account to access your mail.'
 			);
 	}
 
 	private function sendMessage($user, $user_mobile, $messageBody)
 	{
-		$account_sid = env('TWILIO_SID', ''); 
-		$auth_token = env('TWILIO_TOKEN', ''); 
-		$fromNumber = env('TWILIO_FROM', ''); 
-		$MessagingServiceSid = env('TWILIO_MessagingServiceSid', ''); 
-		$client = new Twilio($account_sid, $auth_token, $fromNumber); 
+		$account_sid = env('TWILIO_SID', '');
+		$auth_token = env('TWILIO_TOKEN', '');
+		$fromNumber = env('TWILIO_FROM', '');
+		$MessagingServiceSid = env('TWILIO_MessagingServiceSid', '');
+		$client = new Twilio($account_sid, $auth_token, $fromNumber);
 
 		$messageParams = array(
 			'Body' => $messageBody

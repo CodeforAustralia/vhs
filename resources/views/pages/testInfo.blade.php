@@ -22,7 +22,7 @@
   Password: <span class="grey">8@C3U!</span><br/>
   &nbsp;<br/>
   <span>N.B. The test users are all set up as applicants on the VHR register with an application for housing and a bond application, except for
-  Andy Waters (andywaters@gmail.com) and  Jules Williams (juleswilliams@gmail.com) who are existing Public Housing tenants.</span>
+  Andy Waters (andywaters@gmail.com) and  Jules Williams (juleswilliamshsv@gmail.com) who are existing Public Housing tenants.</span>
 
   <h1>Prototypes</h1>
     <a href="https://invis.io/9EE7Q9DKC" target="_blank">Mobile</a><br/>
@@ -37,9 +37,6 @@
   </ul>
   <div style="margin-top: 30px;">
     <div float:left>
-<!--
-      <h3>Thanks for taking part in testing Victorian Housing Services!</h3>
--->
       <h3>Thanks for taking the time to check out the Housing Services Victoria MVP</h3>
     </div>
     <div float:right>

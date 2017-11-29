@@ -51,7 +51,7 @@ class NewLetter extends Notification
                     // Subject line
                     ->subject('You have a new letter')
                     // Paragraph
-                    ->line('You have a new letter in the Victorian Housing Services Portal.')
+                    ->line('You have a new letter in the Housing Services Victoria Portal.')
                     // Uncomment if needed some buttons in the page
                     // ->action('Actionable Item', url('/'))
                     // Second Praragraph

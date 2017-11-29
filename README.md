@@ -1,5 +1,5 @@
 ********************
-VHS Project
+Housing Services Victoria Project
 ********************
 [![Travis](https://travis-ci.org/CodeforAustralia/vhs.svg?branch=master)]()
 
@@ -48,7 +48,7 @@ Password: TestPassword
 ### Notes for the Email Notification
 ********************
 
-The notification will work when you go to 
+The notification will work when you go to
 http://YOURAPPURL/notification
 
 The notification will be sent to the logged in user.

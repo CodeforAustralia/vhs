@@ -11,47 +11,42 @@
 	<div class="closeCrossDiv"><a href="javascript: hideObject('#sessionStatus');">&times;</a></div>
 </div>
 @endif
-
-<div class="container-wrapper profile-wrapper">
+<div class="container-wrapper services-wrapper">
+	<div class="container-wrapper">
 		<div class="container">
 			<div class="row">
-				<div class class="col-md-1 welcome_banner-wrapper">
-					<div class="noSpace">
-						<a class="backButton" href="">&lt;&nbsp;&nbsp;Back</a>
-					</div>
+				<div class="noSpace">
+					<a class="backButton" href="">&lt;&nbsp;&nbsp;Back</a>
 				</div>
-
 				<div class="col-md-8 col-md-offset-2">
 					<div class="account_title_header">
 						<div class="panel-heading">
-							<div class="welcome-banner">
-								<div class="col-md-2">
-
-								</div>
-								<div class="col-md-7 services_heading_right">
-										@if ( Auth::user()->usertype == '1' )
-										<h3><a href="/accounts">All Accounts</a></h3>
-										<p>You may edit {{ $AccountDetails[0]->firstName }} {{ $AccountDetails[0]->lastName }}'s account information here</p>
-										@else
-										<h3>Edit Account Information</h3>
-										<p>You may edit your account information here</p>
-										@endif
-								</div>
+							<div class="col-md-2 hide-on-mobile">
+							</div>
+							<div class="col-md-7 services_heading_right">
 								@if ( Auth::user()->usertype == '1' )
-								<div class="col-md-3 services_heading_right">
-									<div class="toolbox-banner mail_icon-link">
-										<p><a class="panel-heading_link" href="/notification/{{ $AccountDetails[0]->id }}">Send Notification</a></p>
-										<p><a class="panel-heading_link" href="#modalWindow" data-toggle="modal" data-target="#modalWindow">Send Sample Letters</a></p>
-										<p><a href="/accounts">All Users</a></p>
-									</div>
-								</div>
+								<h3><a href="/accounts">All Accounts</a></h3>
+								<p>You may edit {{ $AccountDetails[0]->firstName }} {{ $AccountDetails[0]->lastName }}'s account information here</p>
+								@else
+								<h3>Edit Account Information</h3>
+								<p>You may edit your account information here</p>
 								@endif
+							</div>
+							<div class="col-md-2 col-sm-5 services_heading_right">
+								<div class="toolbox-banner mail_icon-link">
+									<p class="acount_title_right"><a class="panel-heading_link" href="/accounts/{{ $AccountDetails[0]->id }}">Back to Profile</a></p>
+								</div>
+							</div>
+							<div class="col-md-1 services_heading_right">
+								<div class="toolbox-banner mail_icon-link">
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 </div>
 <div class="container">
 	<div class="row">
