@@ -31,10 +31,14 @@
 								<div class="col-md-7 services_heading_right">
 										@if ( Auth::user()->usertype == '1' )
 										<h3><a href="/accounts">All Accounts</a></h3>
-										<p>You may edit {{ $AccountDetails[0]->firstName }} {{ $AccountDetails[0]->lastName }}'s account information here</p>
+										<div class="account_instructions">
+											You may edit {{ $AccountDetails[0]->firstName }} {{ $AccountDetails[0]->lastName }}'s account information here
+										</div>
 										@else
 										<h3>Edit Account Information</h3>
-										<p>You may edit your account information here</p>
+										<div class="account_instructions">
+											You may edit your account information here
+										</div>
 										@endif
 								</div>
 								@if ( Auth::user()->usertype == '1' )
@@ -53,11 +57,15 @@
 			</div>
 		</div>
 </div>
+
+
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<div class="account_body">
-				<div class="panel-body">
+			<div class="account_edit_body">
+				<div class="panel-body account_edit_panel">
+
 					<!-- Add client ID -->
 					@if ( Auth::user()->usertype == '1' )
 

@@ -119,7 +119,6 @@
 	font-size: 14px;
 	line-height: 1.6;
 	color: #636b6f;
-	padding-top: 15px;
 }
 
 .account_title_header {
@@ -127,6 +126,13 @@
 	box-shadow: none !important;
 	margin: 5px 0px;
 	/* padding: 30px 20px; */
+}
+
+.account_instructions {
+	opacity: 0.8;
+  font-size: 14px;
+  line-height: 1.54em;
+  color: #232323;
 }
 
 .account_body {
@@ -139,7 +145,21 @@
 	color: #232323;
 }
 
-.account_body .form-control {
+.account_edit_body {
+	border: none;
+	box-shadow: none !important;
+	padding: 50px 0;
+	font-size: 16px !important;
+	line-height: 1.69em !important;
+	text-align: left;
+	color: #232323;
+}
+
+.account_edit_panel {
+	padding: 0 ;
+}
+
+.account_edit_body .form-control {
 	font-size: 16px !important;
 	line-height: 1.69em !important;
 	height: 40px;
@@ -250,6 +270,16 @@ html > body > .services-wrapper > .container > .row > .panel-body > .services_he
 		padding-left: 20px;
 		width: 150px;
 	}
+
+
+	.left-align-label {
+		text-align: left !important;
+	}
+
+	.request-text {
+    margin-left: -15px;
+	}
+
 	.all_letter_list {
 		display: none;
 		padding: 10px;

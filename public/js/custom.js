@@ -91,10 +91,10 @@ function hideObject( objectToHide ) {
   $(objectToHide).hide();
 }
 
+// Toggle password field for edit
 $(document).ready(function () {
     $('#password_checkbox').change(function () {
         if (!this.checked)
-        //  ^
            $('#password_hide').fadeOut('slow');
         else
             $('#password_hide').fadeIn('slow');

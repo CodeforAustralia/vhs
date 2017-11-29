@@ -82,8 +82,8 @@
 		</div>
 
 		<div class="form-group{{ $errors->has('mobile') ? ' has-error' : '' }}">
-			<label for="password_checkbox" class="col-md-4 col-sm-4 col-xs-8 control-label">Change Password:</label>
-			<div class="col-md-6 col-sm-6 col-xs-4 ">
+			<label for="password_checkbox" class="col-md-4 col-sm-3 col-xs-8 control-label pull-left left-align-label">Change Password:</label>
+			<div class="col-md-6 col-sm-7 col-xs-4">
 				<input type="checkbox" name="password_checkbox" value="password_checkbox" id="password_checkbox" class="password_checkbox"> <br>
 			</div>
 		</div>
@@ -120,8 +120,8 @@
 					Submit
 				</button>
 			</div>
-			<div class="col-md-8 col-md-offset-4 request-text">
-				Request change of details by submitting this form.
-			</div>
+		</div>
+		<div class="col-md-8 col-md-offset-4 request-text">
+			Request change of details by submitting this form.
 		</div>
 		</form>
