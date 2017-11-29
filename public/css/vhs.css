@@ -204,6 +204,19 @@ html > body > .services-wrapper > .container > .row > .panel-body > .services_he
 	padding: 20px;
 }
 
+#dropdownMenu1 span {
+	margin-top: 3px;
+}
+
+.letters-list-wrapper {
+	padding-bottom: 20px;
+}
+
+.inbox-wrapper {
+    background-color: #faf8f7;
+		padding: 22px 0 20px 0;
+}
+
 @media screen and (max-width: 991px) {
 
 

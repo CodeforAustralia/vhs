@@ -389,10 +389,11 @@ DASHBOARD
 	padding: 0px 0px;
 }
 .panel-heading .services_heading_right h3 {
-	font-size: 32px;
+	font-size: 20px;
 	color: #222222;
 	font-weight: bold;
 	margin-top: 0;
+	margin-bottom: 0;
 }
 .panel-footer {
 	background-color: #f8f6f5;

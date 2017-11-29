@@ -5,7 +5,7 @@
 @section('content')
 
 {{-- Page Title --}}
-<div class="container-wrapper">
+<div class="container-wrapper letters-list-wrapper">
     <div class="container">
         <div class="row">
             <div class class="col-md-1 welcome_banner-wrapper">

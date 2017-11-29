@@ -1,4 +1,4 @@
-<div class="container-wrapper services-wrapper">
+<div class="container-wrapper inbox-wrapper">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -6,7 +6,7 @@
                 <?php $read_heading = false; ?>
                 <?php $countUnread = $all_letters->where("unread", 1)->count(); ?>
                 <?php $countRead = $all_letters->where("unread", 0)->count(); ?>
-                @foreach($all_letters as $letter) 
+                @foreach($all_letters as $letter)
                 @if (Session::get('message.class') == 'all-letters')
                 @if ($letter->unread == '1' && !$unread_heading)
                 <?php $unread_heading = true; ?>
@@ -16,7 +16,7 @@
                 </div>
                 @endif
                 @endif
-                @if($letter->unread == '1') 
+                @if($letter->unread == '1')
                 <a href="/letter/{{ $letter->id }}" class="letter_list_unread">
                     <div class="col-md-12 all_letter_list all_letter_list_unread">
                         <div class="col-md-1 hide-on-mobile">
@@ -32,7 +32,7 @@
                             {{ $letter->summary }}
                         </div>
                         <div class="col-md-2">
-                            {{ date("j M", strtotime($letter->letter_date)) }}
+                            {{ date("j M Y", strtotime($letter->letter_date)) }}
                         </div>
                         <div class="col-md-1 hide-on-mobile">
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -66,7 +66,7 @@
                             {{ $letter->summary }}
                         </div>
                         <div class="col-md-2">
-                            {{ date("j M", strtotime($letter->letter_date)) }}
+                            {{ date("j M Y", strtotime($letter->letter_date)) }}
                         </div>
                         <div class="col-md-1 hide-on-mobile">
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -84,8 +84,8 @@
                 </div>
 
             </div>
-            <p class="totop"> 
-                <a href="#top">Back to top</a> 
+            <p class="totop">
+                <a href="#top">Back to top</a>
             </p>
         </div>
 

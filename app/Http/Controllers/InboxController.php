@@ -178,7 +178,7 @@ class InboxController extends Controller
         ]);
 
     }
-    
+
     /**
      * sort by date.
      *
@@ -219,7 +219,7 @@ class InboxController extends Controller
         'all_letters' => $all_letters
         ]);
     }
-    
+
     /**
      * Show All letters.
      *
@@ -250,7 +250,7 @@ class InboxController extends Controller
 
       //number of rows
 
-      Session::flash('message.title', 'All Letters');
+      Session::flash('message.title', 'Default - sorted by unread / read');
       Session::flash('message.class', 'all-letters');
 
       // var_dump('<pre>');
