@@ -61,20 +61,16 @@ The notification will be sent to the logged in user.
     <li>Rachelle Salvadora</li>
 </ul>
 
-### Acknowledgement
+#### Acknowledgement
 ********************
 
 A number of FOSS (Free and Open Source) libraries have been used.
-
 <ul>
-
     <li>Laravel 5.4 - [MIT license](https://github.com/laravel/laravel#license)</li>
     <li>jQuery 3.2.1 - [MIT license](https://jquery.org/license) </li>
     <li>Bootstrap 3.3.7 - [MIT license and copyright Twitter](https://getbootstrap.com/docs/3.3/getting-started/#license-faqs)</li>
     <li>normalize.css 3.0.3 - [MIT license](https://github.com/necolas/normalize.css/blob/master/LICENSE.md)</li>
     <li>[PDF.js](https://github.com/legalthings/pdf.js-viewer) which is a built of pdf.js 1.7.354 - [Apache 2.0 License](https://github.com/mozilla/pdf.js/blob/master/LICENSE)</li>
 </ul>
-
-
 
 
