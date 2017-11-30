@@ -66,7 +66,7 @@ The notification will be sent to the logged in user.
 
 A number of FOSS (Free and Open Source) libraries have been used.
 <ul>
-    <li>Laravel 5.4 - [MIT license](https://github.com/laravel/laravel#license)</li>
+    <li>Laravel 5.4 - (<a href="https://github.com/laravel/laravel#license" target="_blank">MIT license</a>)</li>
     <li>jQuery 3.2.1 - [MIT license](https://jquery.org/license) </li>
     <li>Bootstrap 3.3.7 - [MIT license and copyright Twitter](https://getbootstrap.com/docs/3.3/getting-started/#license-faqs)</li>
     <li>normalize.css 3.0.3 - [MIT license](https://github.com/necolas/normalize.css/blob/master/LICENSE.md)</li>
