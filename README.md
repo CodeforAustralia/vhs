@@ -53,7 +53,7 @@ http://YOURAPPURL/notification
 
 The notification will be sent to the logged in user.
 
-#### Team
+### Team
 ********************
 <ul>
     <li>Tatiana Lenz</li>
@@ -61,7 +61,7 @@ The notification will be sent to the logged in user.
     <li>Rachelle Salvadora</li>
 </ul>
 
-#### Acknowledgement
+### Acknowledgement
 ********************
 
 A number of FOSS (Free and Open Source) libraries have been used.
