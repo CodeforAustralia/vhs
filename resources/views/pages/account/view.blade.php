@@ -61,7 +61,7 @@
 									<h3>{{ $AccountDetails[0]->firstName }} {{ $AccountDetails[0]->lastName }}</h3>
 					        <div class="last-login">
 									  @if ( Auth::user()->usertype == '1' )
-											@if (empty($AccountDetails[0]->last_logged_in))
+											@if ( (empty($AccountDetails[0]) || empty($AccountDetails[0]->last_logged_in) )
 												User has not logged in before.
 											@else
 												Last login: {{ \Carbon\Carbon::parse($AccountDetails[0]->last_logged_in)->format('g:i a j M Y') }}.
