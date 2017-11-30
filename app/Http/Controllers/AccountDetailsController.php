@@ -49,11 +49,18 @@ class AccountDetailsController extends Controller
         $user_testType = Auth::user()->test_type;
         $AccountDetails = AccountDetails::where('id', $id)->get();
         $UserAddress = UserAddress::where('user_id', $id)->get();
+        /* Only authorized to view/ edit own profile, unless logged in as admin */
+        $authorized = ( (Auth::user()->id == $id) || (Auth::user()->usertype == 1) ) ? true : false;
+
+        if ($authorized) {
         return view('pages/account/view')->with([
             'AccountDetails' => $AccountDetails,
             'UserAddress' => $UserAddress,
             'user_testType' => $user_testType
             ]);
+        } else {
+            return redirect()->route('dashboard');
+        }
     }
 
      /**
@@ -79,10 +86,17 @@ class AccountDetailsController extends Controller
      {
         $AccountDetails = AccountDetails::where('id', $id)->get();
         $UserAddress = UserAddress::where('user_id', $id)->get();
-        return view('pages/account/edit')->with([
-            'AccountDetails' => $AccountDetails,
-            'UserAddress' => $UserAddress
-            ]);
+        /* Only authorized to view/ edit own profile, unless logged in as admin */
+        $authorized = ( (Auth::user()->id == $id) || (Auth::user()->usertype == 1) ) ? true : false;
+
+        if ($authorized) {
+            return view('pages/account/edit')->with([
+                'AccountDetails' => $AccountDetails,
+                'UserAddress' => $UserAddress
+                ]);
+        } else {
+            return redirect()->route('dashboard');
+        }
     }
 
      /**
@@ -131,7 +145,7 @@ class AccountDetailsController extends Controller
                         // change password
                 $updateUser->password = bcrypt($password);
             }
-        } 
+        }
 
 
         $updateUser->save();
@@ -178,7 +192,7 @@ class AccountDetailsController extends Controller
         $updateUserAddress->address_1 = $address_1;
         $updateUserAddress->suburb_town = $suburb_town;
         $updateUserAddress->postcode = $postcode;
-        
+
         if ($current_password != '') {
             // if current password is not empty
             if (Hash::check($request->input('current_password'), $updateUser->password)) {
@@ -199,7 +213,7 @@ class AccountDetailsController extends Controller
                         // change password
                         $updateUser->password = bcrypt($password);
                     }
-                } 
+                }
             } else {
                 Session::flash('message.level', 'danger');
                 Session::flash('message.content', 'Incorrect current password.');

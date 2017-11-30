@@ -31,21 +31,25 @@ footer p {
 }
 
 #sessionStatus {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: bold;
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 0;
 }
 
+.sessionMessage {
+	float: left;
+}
+
 .closeCrossDiv {
 	float: right;
-	margin-top: -4px !important;
+	margin-top: -14px !important; 
 }
 
 .closeCrossDiv a {
 	padding: 3px 10px;
-	font-size: 18px;
+	font-size: 32px;
 	text-decoration: none;
 }
 

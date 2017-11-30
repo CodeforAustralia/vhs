@@ -7,7 +7,10 @@
 <!-- Get session messages -->
 @if (Session::has('message.content'))
 <div id="sessionStatus" class="alert alert-{{ Session::get('message.level') }}">
-	<strong>Something went wrong.</strong> {{ Session::get('message.content') }}
+	@if ((Session::get('message.level')) == 'alert-danger')
+		<strong>Something went wrong. </strong>
+  @endif
+	{{ Session::get('message.content') }}
 	<div class="closeCrossDiv"><a href="javascript: hideObject('#sessionStatus');">&times;</a></div>
 </div>
 @endif

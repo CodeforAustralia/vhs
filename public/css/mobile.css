@@ -260,6 +260,10 @@
 	.ho-header {
     margin-top: 20px;
 	}
+
+	.closeCrossDiv {
+    margin-top: -40px !important;
+	}
 }
 
 /* For really small screens */

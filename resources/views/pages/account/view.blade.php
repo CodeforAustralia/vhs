@@ -38,7 +38,7 @@
 {{-- Get session messages --}}
 @if (Session::has('message.content'))
 <div id="sessionStatus" class="alert alert-{{ Session::get('message.level') }}">
-	{{Session::get('message.content')}}
+	{{ Session::get('message.content') }}
 	<div class="closeCrossDiv"><a href="javascript: hideObject('#sessionStatus');">&times;</a></div>
 </div>
 @endif
@@ -60,15 +60,19 @@
 								<div class="col-md-7 services_heading_right">
 									<h3>{{ $AccountDetails[0]->firstName }} {{ $AccountDetails[0]->lastName }}</h3>
 					        <div class="last-login">
-										@if (empty(Auth::user()->last_logged_in))
-											@if ( Auth::user()->usertype == '1' )
-					            You have not logged in before.
+									  @if ( Auth::user()->usertype == '1' )
+											@if (empty($AccountDetails[0]->last_logged_in))
+												User has not logged in before.
 											@else
-					            User has not logged in before.
+												Last login: {{ \Carbon\Carbon::parse($AccountDetails[0]->last_logged_in)->format('g:i a j M Y') }}.
 											@endif
-					          @else
-					            Last login: {{ \Carbon\Carbon::parse(Auth::user()->last_logged_in)->format('g:i a j M Y') }}.
-					          @endif
+										@else
+											@if (empty(Auth::user()->last_logged_in))
+												You have not logged in before.
+											@else
+												Last login: {{ \Carbon\Carbon::parse(Auth::user()->last_logged_in)->format('g:i a j M Y') }}.
+											@endif
+										@endif
 									</div>
 								</div>
 								@if ( Auth::user()->usertype == '1' )
