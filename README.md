@@ -1,9 +1,7 @@
 ********************
 Housing Services Victoria Project
 ********************
-[![Travis](https://travis-ci.org/CodeforAustralia/vhs.svg?branch=master)]()
-
-<img src="https://img.shields.io/badge/license-GPL-brightgreen.svg">
+[![Travis](https://travis-ci.org/CodeforAustralia/vhs.svg?branch=master)]() <img src="https://img.shields.io/badge/license-GPL-yellowgreen.svg">
 
 ### Built With
 ********************
