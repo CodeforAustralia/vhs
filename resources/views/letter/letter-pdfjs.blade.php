@@ -14,12 +14,6 @@
 			   console.log('Pages loaded.');
          fix_heights_on_pdf2html();
 		  });
-
-/*
-		  $(document).bind('pagerendered', function (e) {
-			   console.log('Page ' + e.detail.pageNumber + ' rendered.');
-		  });
-*/
     </script>
     <link rel="stylesheet" href="{{ asset('js/pdfjs/pdf.js-viewer/viewer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/custom-viewer.css') }}">

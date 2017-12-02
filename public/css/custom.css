@@ -31,25 +31,21 @@ footer p {
 }
 
 #sessionStatus {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: bold;
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 0;
 }
 
-.sessionMessage {
-	float: left;
-}
-
 .closeCrossDiv {
 	float: right;
-	margin-top: -14px !important; 
+	margin-top: -4px !important;
 }
 
 .closeCrossDiv a {
 	padding: 3px 10px;
-	font-size: 32px;
+	font-size: 18px;
 	text-decoration: none;
 }
 
@@ -849,7 +845,7 @@ LETTER
 .edit-button-wrapper {
     margin: 0 auto;
     float: none;
-    padding: 0 15px;
+    padding: 0px 20px;
 }
 .pdfjs {
 	display: none;
@@ -1367,4 +1363,8 @@ Footer
 	-webkit-box-shadow: 0px 3px 0px 0px rgba(0, 59, 104, 1);
 	-moz-box-shadow: 0px 3px 0px 0px rgba(0, 59, 104, 1);
 	*/
+}
+
+.extra-info {
+	margin: 20px 0 20px -15px; 
 }

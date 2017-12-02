@@ -72,7 +72,10 @@ class LettersListController extends Controller
        'service' => $service
      ]);
 
+   } else {
+     return redirect()->route('dashboard'); // if letter does not exist reroute to dashboard
    }
+
   }
 
   /**

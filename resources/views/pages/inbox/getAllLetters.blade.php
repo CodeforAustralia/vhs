@@ -28,13 +28,13 @@
                             </div>
                         </div>
                         @if ($letters->isEmpty())
-
-                        <div class="col-md-12"><h4>You have not recieved any letter from Housing Office</h4></div>
+                        <div class="col-md-12">
+                          <h4 class="extra-info">You have not recieved any letter from the Housing Office</h4>
+                        </div>
                         @else
                         <div class="col-md-12 services_heading_right">
                             <div class="letter_list_wrapper">
                                 <div class="letter_list_header col-md-9 sort-order-text">
-
                                     <h4>{{ Session::get('message.title') }}</h4>
                                 </div>
                                 <div class="letter_list_header_right col-md-3">
@@ -66,8 +66,8 @@
 </div>
 
 {{-- Page Content --}}
-@if (!empty($letters))
-@include('pages.inbox.listOfLetters')
+@if (!empty($letters) && (count($letters) > 0) )
+  @include('pages.inbox.listOfLetters')
 @endif
 @include('letter/interpreting')
 @include('pages.dashboard.housing_office')
