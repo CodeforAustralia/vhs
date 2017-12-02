@@ -15,7 +15,9 @@
 					<h5>It is intended as a future concept.</h5>
 				</div>
 				<div class="placeholder-banner">
-					<button type="button" class="btn btn-primary btn-vhs"><a class="panel-heading_link edit_button" href="/"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Go back to first page</a></button>
+						<a class="panel-heading_link edit_button" href="/dashboard">
+							<button type="button" class="btn btn-primary btn-vhs"><i class="fa  fa-angle-double-left" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Back to first page</button>
+						</a>
 					</div>
 				</div>
 			</div>
