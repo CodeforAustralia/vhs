@@ -53,6 +53,9 @@ http://YOURAPPURL/notification
 
 The notification will be sent to the logged in user.
 
+### API Credentials
+You may edit the API credentials for TWILIO and Mailgun in the .env file.
+
 ### Team
 ********************
 <ul>
