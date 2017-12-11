@@ -901,9 +901,11 @@ LETTER
 .btn-vhs_wrapper a {
 	border-radius: 5px;
 	text-align: center;
+/*
   box-shadow: 0 3px 0 0 #003b68;
 	-webkit-box-shadow: 0px 3px 0px 0px rgba(0, 59, 104, 1);
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 59, 104, 1);
+*/
 }
 
 .btn-vhs_wrapper .btn-group a:first-child {
@@ -919,6 +921,18 @@ LETTER
 .password_checkbox {
 	font-size: 26px;
 	margin-top: 10px !important;
+}
+.sr-wrapper {
+	padding-bottom: 0;
+}
+.sr-message {
+    margin: 0 -15px;
+		font-size: 16px;
+}
+
+.sr-message a {
+	text-decoration: underline;
+	color: #0063ae;
 }
 
 /************************
@@ -1366,5 +1380,5 @@ Footer
 }
 
 .extra-info {
-	margin: 20px 0 20px -15px; 
+	margin: 20px 0 20px -15px;
 }

@@ -26,6 +26,18 @@
       </div>
     </div>
 
+    <div class="container-wrapper sr-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 welcome_banner-wrapper">
+            <div class="welcome-banner sr-message">
+              Using a screen reader? <a href="/letter-accessible/{{$letter->id}}" target="_blank">Read a more accessible version</a> of this letter.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Buttons -->
     <div class="row">
       <div class="col-md-8 welcome_banner-wrapper btn-vhs_wrapper">

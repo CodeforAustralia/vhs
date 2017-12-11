@@ -1,6 +1,28 @@
 /* Mobile */
 @media screen and (max-width: 767px) {
 
+	.panel-login {
+	    margin-left: -15px;
+	    margin-right: -15px;
+	}
+
+	.panel-login .panel-heading .welcome-banner h3 {
+	    font-size: 18px;
+	    line-height: 20px;
+	}
+
+	.panel-login .panel-body form label {
+    font-size: 16px;
+	}
+
+	.panel-login .panel-body form {
+    margin: 0 20px 20px 20px;
+	}
+
+	.login-prompt {
+    font-size: 16px;
+	}
+
 	#quick-escape {
 		font-size: 16px;
 	}
@@ -264,6 +286,12 @@
 	.closeCrossDiv {
     margin-top: -40px !important;
 	}
+
+  .sr-message {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+
 }
 
 /* For really small screens */
