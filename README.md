@@ -1,73 +1,80 @@
-********************
-Housing Services Victoria Project
-********************
-[![Travis](https://travis-ci.org/CodeforAustralia/vhs.svg?branch=master)]() <img src="https://img.shields.io/badge/license-GPL-yellowgreen.svg">
+#  Housing Services Victoria Project
+
+![Travis](https://travis-ci.org/CodeforAustralia/vhs.svg?branch=master)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ### Built With
-********************
-<ul>
-    <li>Laravel 5.4</li>
-    <li>Bootstrap v4</li>
-</ul>
+Laravel 5.4
 
 ### Requirements
-********************
-To run your own version of this Web App, familiarity with Laravel 5.4+ is recommended.
+To run your own version of this web application, install it on a LAMP or LEMP (Linux, nginx, MySQL and PHP) stack. Familiarity with Laravel 5.4+ is required.
 
-Recommended technologies setup:
-<ul>
-    <li>Apache / Nginx</li>
+The recommended technical stack is:
+<ul type="square">
+    <li>Apache / nginx</li>
     <li>PHP 7+</li>
     <li>MySQL 5.6+</li>
     <li>Composer</li>
-    <li>Laravel Server Requirements: (<a href="https://laravel.com/docs/5.4/installation" target="_blank">https://laravel.com/docs/5.4/installation</a>)</li>
+    <li>Laravel - see <a href="https://laravel.com/docs/5.4/installation" target="_blank">https://laravel.com/docs/5.4/installation</a> for more detailed installation instructions</li>
 </ul>
 
+### API Credentials
+You will need to provide your API credentials for <a href="https://www.twilio.com" target="_blank">Twilio</a> and <a href="https://www.mailgun.com" target="_blank">Mailgun</a> in the _.env_ file.
+
 ### To Generate Data
-********************
-You will need to run:
+<b>In order to seed the database with some initial data</b>, you will need to run:-
 ```
 composer dump-autoload
 php artisan db:seed
 ```
 
-This command will add all the postcodes of victoria as well as suburbs.
-Postcode has a one to many relationship with Suburb.
+This command will
+<ul type="square">
+    <li>create a list of all Victorian postcodes and suburbs</li>
+    <li>create a list of correspondence templates</li>
+    <li>create a list of some sample services<br/>
+(at this point the services are fictional)</li>
+    <li>assign the services to existing users</li>
+</ul>
 
-If you haven't had data, go to /database to generate, it will generate up to 10 users with corresponding user address.
-The funtion will select a random Postcode and will also select a random suburb that is related to the postcode.
+Now if you do not have any users in the system yet, you may need to re-run the last step after you have entered or generated some users. The command to do that would be:-
 
---
-IMPORTANT - Change admin login details!!!
---
+```
+php artisan db:seed --class=UserServicesTableSeeder
+```
 
-Admin user is added in the generation of users. You will need to change admin credentials after users are generated.
-E-mail Address: test@test.com.au
-Password: TestPassword
+<b>To generate new users</b>, go to the following URL<br/>
+<a href="">https://&lt;your instance&gt;/database</a>.<br/>This will generate up to 10 users with user addresses (with random postcodes and related suburbs.)
 
-### Notes for the Email Notification
-********************
+The first user generated will be an administrator with the login credentials:-
+<ul type="none">
+<li>E-mail : test@test.com.au</li>
+<li>Password: TestPassword</li>
+</ul>
 
-The notification will work when you go to
-http://YOURAPPURL/notification
+```diff
+- It is IMPORTANT to immediately change the admin user login details!
+```
 
+### Notes on Notifications
+***
+
+#### To Receive Notification
+To receive sample SMS and email notification go to the following URL<br/>
+<a href="">https://&lt;your instance&gt;/notification</a>.<br/>
 The notification will be sent to the logged in user.
 
-### API Credentials
-You may edit the API credentials for TWILIO and Mailgun in the .env file.
+#### Email Notifications
 
-### Email Notification 
-Laravel has a built in function called ```notifiable``` which we used for the email notification.
-Reference link: https://laravel.com/docs/5.5/notifications 
+Laravel has a built-in `notifiable` trait ( for an explanation of PHP traits see <a href="http://php.net/manual/en/language.oop5.traits.php" target="_blank">http://php.net/manual/en/language.oop5.traits.php</a>) which was used for email notification. For further reference see <a href="https://laravel.com/docs/5.5/notifications" target="_blank">https://laravel.com/docs/5.5/notifications</a>.
 
+#### Twilio API Integration
 
-### Twilio API Integration
-For Twilio API, we used a ```package``` through ```composer```.
-See ```Aloha/Twilio``` for reference:
-https://github.com/aloha/laravel-twilio
+For Twilio API, the Composer package Aloha/Twilio  was used. For further reference see <a href="https://github.com/aloha/laravel-twilio" target="_blank">https://github.com/aloha/laravel-twilio</a>.
+
 
 ### Team
-********************
+***
 <ul>
     <li>Tatiana Lenz</li>
     <li>Teresa Villanueva</li>
@@ -75,7 +82,7 @@ https://github.com/aloha/laravel-twilio
 </ul>
 
 ### Acknowledgement
-********************
+***
 
 A number of FOSS (Free and Open Source) libraries have been used.
 <ul>
@@ -84,5 +91,3 @@ A number of FOSS (Free and Open Source) libraries have been used.
    <li>Bootstrap 3.3.7 - <a href="https://github.com/necolas/normalize.css/blob/master/LICENSE.md" target="_blank">MIT license</a></li>
    <li><a href="https://github.com/legalthings/pdf.js-viewer" target="_blank">PDF.js</a> which is a built of pdf.js 1.7.354 - <a href="https://github.com/mozilla/pdf.js/blob/master/LICENSE" target="_blank">Apache 2.0 License</a></li>
 </ul>
-
-
