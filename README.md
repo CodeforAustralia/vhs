@@ -41,7 +41,7 @@ The funtion will select a random Postcode and will also select a random suburb t
 IMPORTANT - Change admin login details!!!
 --
 
-Admin user is added in the generation of users
+Admin user is added in the generation of users. You will need to change admin credentials after users are generated.
 E-mail Address: test@test.com.au
 Password: TestPassword
 
@@ -55,6 +55,11 @@ The notification will be sent to the logged in user.
 
 ### API Credentials
 You may edit the API credentials for TWILIO and Mailgun in the .env file.
+
+### Twilio API Integration
+For Twilio API, we used a ```package``` through ```composer```.
+See ```Aloha/Twilio``` for reference:
+https://github.com/aloha/laravel-twilio
 
 ### Team
 ********************
