@@ -56,6 +56,11 @@ The notification will be sent to the logged in user.
 ### API Credentials
 You may edit the API credentials for TWILIO and Mailgun in the .env file.
 
+### Email Notification 
+Laravel has a built in function called ```notifiable``` which we used for the email notification.
+Reference link: https://laravel.com/docs/5.5/notifications 
+
+
 ### Twilio API Integration
 For Twilio API, we used a ```package``` through ```composer```.
 See ```Aloha/Twilio``` for reference:
@@ -78,7 +83,6 @@ A number of FOSS (Free and Open Source) libraries have been used.
    <li>jQuery 3.2.1 - <a href="https://getbootstrap.com/docs/3.3/getting-started/#license-faqs" target="_blank">MIT license</a></li>
    <li>Bootstrap 3.3.7 - <a href="https://github.com/necolas/normalize.css/blob/master/LICENSE.md" target="_blank">MIT license</a></li>
    <li><a href="https://github.com/legalthings/pdf.js-viewer" target="_blank">PDF.js</a> which is a built of pdf.js 1.7.354 - <a href="https://github.com/mozilla/pdf.js/blob/master/LICENSE" target="_blank">Apache 2.0 License</a></li>
-
 </ul>
 
 
