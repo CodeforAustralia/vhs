@@ -62,7 +62,7 @@ The first user generated will be an administrator with the login credentials:-
 #### To Receive Notification
 To receive sample SMS and email notification go to the following URL<br/>
 <a href="">https://&lt;your instance&gt;/notification</a>.<br/>
-The notification will be sent to the logged in user.
+The notification will be sent to the logged-in user.
 
 #### Email Notifications
 
