@@ -22,7 +22,7 @@ The recommended technical stack is:
 You will need to provide your API credentials for <a href="https://www.twilio.com" target="_blank">Twilio</a> and <a href="https://www.mailgun.com" target="_blank">Mailgun</a> in the _.env_ file.
 
 ### To Generate Data
-<b>In order to seed the database with some initial data</b>, you will need to run:-
+<b>In order to seed the database with some initial data</b>, you will need to run these two commands:-
 ```
 composer dump-autoload
 php artisan db:seed
@@ -44,7 +44,8 @@ php artisan db:seed --class=UserServicesTableSeeder
 ```
 
 <b>To generate new users</b>, go to the following URL<br/>
-<a href="">https://&lt;your instance&gt;/database</a>.<br/>This will generate up to 10 users with user addresses (with random postcodes and related suburbs.)
+<a href="">https://&lt;your instance&gt;/database</a>.<br/>This will generate up to 10 users with user addresses (with random postcodes and related suburbs.) <br/>
+You may change the amount of user to be generated in ```App/Http/Controllers/GenerateController.php```.
 
 The first user generated will be an administrator with the login credentials:-
 <ul type="none">
@@ -66,11 +67,11 @@ The notification will be sent to the logged-in user.
 
 #### Email Notifications
 
-Laravel has a built-in `notifiable` trait ( for an explanation of PHP traits see <a href="http://php.net/manual/en/language.oop5.traits.php" target="_blank">http://php.net/manual/en/language.oop5.traits.php</a>) which was used for email notification. For further reference see <a href="https://laravel.com/docs/5.5/notifications" target="_blank">https://laravel.com/docs/5.5/notifications</a>.
+Laravel has a built-in ```notifiable``` trait ( for an explanation of PHP traits see <a href="http://php.net/manual/en/language.oop5.traits.php" target="_blank">http://php.net/manual/en/language.oop5.traits.php</a>) which was used for email notification. For further reference see <a href="https://laravel.com/docs/5.5/notifications" target="_blank">https://laravel.com/docs/5.5/notifications</a>.
 
 #### Twilio API Integration
 
-For Twilio API, the Composer package Aloha/Twilio  was used. For further reference see <a href="https://github.com/aloha/laravel-twilio" target="_blank">https://github.com/aloha/laravel-twilio</a>.
+For Twilio API, we have installed ```Aloha/Twilio``` package through ```Composer```. For further reference see <a href="https://github.com/aloha/laravel-twilio" target="_blank">https://github.com/aloha/laravel-twilio</a>.
 
 
 ### Team
